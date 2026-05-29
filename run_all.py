@@ -2,7 +2,7 @@ import subprocess
 import os
 
 # Pindah ke folder proyek
-os.chdir(r"D:\INSPEKSI MOBIL")
+# os.chdir(r"D:\INSPEKSI MOBIL")
 
 # Daftar script yang mau dijalankan
 scripts = ["scrape_spil.py", "scrape_meratus.py", "scrape_tanto.py", "scrape_icon.py"]
