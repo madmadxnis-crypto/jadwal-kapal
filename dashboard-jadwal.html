@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jadwal Kapal Pelayaran - GoTrans SCM</title>
+    <title>Dashboard Jadwal Kapal - GoTrans SCM</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Library Sakti untuk Export Excel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <style>
         body { 
             font-family: 'Poppins', sans-serif; 
@@ -24,291 +26,189 @@
             border-top: 6px solid #f97316; 
         }
         
-        .logo-container { text-align: center; margin-bottom: 20px; }
-        .logo-container img { max-height: 85px; width: auto; object-fit: contain; drop-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        
-        h2 { text-align: center; color: #0f172a; margin-bottom: 5px; margin-top: 5px; font-weight: 700; letter-spacing: -0.5px; }
-        p.subtitle { text-align: center; color: #64748b; margin-bottom: 25px; font-size: 13px; font-weight: 400; }
-        
-        .toolbar { 
-            display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;
-            background: #f8fafc; padding: 16px 20px; border-radius: 10px; 
-            border: 1px solid #e2e8f0; margin-bottom: 20px;
+        .header-area {
+            text-align: center;
+            margin-bottom: 30px; 
         }
-        .filter-group { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
-        .toolbar label { font-weight: 600; color: #334155; margin-right: 8px; font-size: 14px;}
+        h1 { color: #0f172a; margin: 0 0 5px 0; font-weight: 700; letter-spacing: -0.5px; }
+        .last-update { font-size: 13px; color: #64748b; font-style: italic; }
         
-        input[type="text"], select { 
-            padding: 9px 15px; border-radius: 6px; border: 1px solid #cbd5e1; 
-            font-family: 'Poppins', sans-serif; font-weight: 600; color: #0f172a;
-            background-color: white; outline: none; cursor: pointer; transition: all 0.2s;
+        .controls-wrapper {
+            display: flex; justify-content: space-between; align-items: center;
+            background: #f8fafc; padding: 15px 20px; border-radius: 10px; border: 1px solid #e2e8f0;
+            margin-bottom: 20px; flex-wrap: wrap; gap: 15px;
         }
-        input[type="text"] { width: 200px; cursor: text; }
-        input[type="text"]:focus, select:focus { border-color: #f97316; box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.15); }
         
-        .action-buttons { display: flex; gap: 10px; }
-        
-        .btn-refresh { 
-            background-color: #f97316; color: white; border: none; 
-            padding: 10px 20px; cursor: pointer; border-radius: 6px; 
-            font-weight: 600; font-family: 'Poppins', sans-serif; text-decoration: none;
-            transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(249, 115, 22, 0.2);
-            display: inline-block; line-height: 20px;
+        .filter-section { display: flex; gap: 15px; align-items: center; flex-wrap: wrap;}
+        .filter-box { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600;}
+        .filter-box input, .filter-box select {
+            padding: 8px 12px; border-radius: 6px; border: 1px solid #cbd5e1;
+            font-family: 'Poppins', sans-serif; font-size: 13px; outline: none;
         }
-        .btn-refresh:hover { background-color: #ea580c; transform: translateY(-2px); box-shadow: 0 6px 12px rgba(249, 115, 22, 0.3); }
-        .btn-refresh:active { transform: translateY(0); }
-        
-        /* Tombol Spesifik Lacak Kapal */
-        .btn-lacak { background-color: #0f172a; box-shadow: 0 4px 6px rgba(15, 23, 42, 0.2); }
-        .btn-lacak:hover { background-color: #1e293b; box-shadow: 0 6px 12px rgba(15, 23, 42, 0.3); }
+        .filter-box input:focus, .filter-box select:focus { border-color: #f97316; }
 
-        .table-responsive { overflow-x: auto; border-radius: 8px; box-shadow: 0 0 0 1px #e2e8f0; }
-        table { width: 100%; border-collapse: collapse; white-space: nowrap; }
-        th, td { padding: 14px 16px; text-align: left; border-bottom: 1px solid #e2e8f0; font-size: 13px; }
-        th { 
-            background-color: #0f172a; 
-            color: #f8fafc; text-transform: uppercase; font-size: 11px; 
-            font-weight: 700; letter-spacing: 0.5px;
+        .btn-group { display: flex; gap: 10px; }
+        .btn {
+            padding: 9px 16px; border-radius: 6px; font-weight: 600; font-size: 13px;
+            cursor: pointer; transition: all 0.2s; border: none; text-decoration: none;
+            display: flex; align-items: center; gap: 5px; font-family: 'Poppins', sans-serif;
         }
-        tr { transition: all 0.2s ease; }
-        tr:hover { background-color: #f1f5f9; }
+        .btn-excel { background-color: #10b981; color: white; }
+        .btn-excel:hover { background-color: #059669; transform: translateY(-1px); }
+        .btn-lacak { background-color: #0f172a; color: white; }
+        .btn-lacak:hover { background-color: #1e293b; transform: translateY(-1px); }
+
+        .table-container { overflow-x: auto; border-radius: 8px; border: 1px solid #e2e8f0; }
+        table { width: 100%; border-collapse: collapse; background: white; font-size: 13px; }
+        th { 
+            background-color: #1e293b; color: white; text-transform: uppercase; 
+            font-size: 12px; letter-spacing: 0.5px; padding: 14px 15px; text-align: left;
+        }
+        td { padding: 12px 15px; border-bottom: 1px solid #f1f5f9; color: #334155; }
+        tr:hover td { background-color: #f8fafc; }
         
-        .badge { padding: 5px 10px; border-radius: 6px; font-size: 11px; font-weight: 700; letter-spacing: 0.3px; }
-        .badge-fastest { background-color: #22c55e; color: white; margin-left: 8px; box-shadow: 0 2px 4px rgba(34, 197, 94, 0.2); }
-        .badge-rute { background-color: #cbd5e1; color: #334155; }
-        .badge-spil { background-color: #eab308; color: #ffffff; }
-        .badge-temas { background-color: #06b6d4; color: white; }
-        .badge-meratus { background-color: #1e3a8a; color: white; }
-        .badge-tanto { background-color: #334155; color: white; }
-        .badge-icon { background-color: #f97316; color: white; }
+        .vessel-name { font-weight: 700; color: #0f172a; display: block; }
+        .route-name { font-size: 11px; color: #64748b; font-weight: 400; }
+        
+        #loadingMsg { text-align: center; padding: 30px; color: #64748b; font-weight: 600; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="logo-container">
-        <img src="logo%20gobel.jpg" alt="Logo GoTrans Gobel">
+    <div class="header-area">
+        <h1>Jadwal Kapal Pelayaran</h1>
+        <div class="last-update" id="waktuUpdate">Terakhir diperbarui: Sedang menarik data...</div>
     </div>
-    
-    <h2>Jadwal Kapal Pelayaran</h2>
-    <p class="subtitle" id="lastUpdated">Terakhir diperbarui: -</p>
 
-    <div class="toolbar">
-        <div class="filter-group">
-            <div>
-                <label for="routeFilter">📍 Rute Tujuan:</label>
-                <input type="text" id="routeFilter" list="ruteOptions" oninput="tampilkanTabel()" placeholder="Ketik rute..." autocomplete="off">
-                <datalist id="ruteOptions">
-                    <option value="Semua Rute">
-                    <option value="Makassar">
-                    <option value="Bitung (Manado)">
-                    <option value="Gorontalo">
-                    <option value="Samarinda">
-                    <option value="Balikpapan">
-                    <option value="Banjarmasin">
-                    <option value="Belawan (Medan)">
-                    <option value="Palu (Tangkian)">
-                    <option value="Batam">
-                    <option value="Pontianak">
-                    <option value="Tanjung Pinang">
-                </datalist>
+    <div class="controls-wrapper">
+        <div class="filter-section">
+            <div class="filter-box">
+                📍 Rute Tujuan:
+                <input type="text" id="inputRute" placeholder="Ketik rute..." onkeyup="filterTabel()">
             </div>
-            
-            <div>
-                <label for="pelayaranFilter">🚢 Pelayaran:</label>
-                <select id="pelayaranFilter" onchange="tampilkanTabel()">
-                    <option value="ALL">Semua Pelayaran</option>
+            <div class="filter-box">
+                🚢 Pelayaran:
+                <select id="selectPelayaran" onchange="filterTabel()">
+                    <option value="">Semua Pelayaran</option>
                     <option value="SPIL">SPIL</option>
-                    <option value="TEMAS">TEMAS</option>
-                    <option value="MERATUS">MERATUS</option>
                     <option value="TANTO">TANTO</option>
-                    <option value="ICON">ICON</option>
+                    <option value="MERATUS">MERATUS</option>
                 </select>
             </div>
         </div>
         
-        <div class="action-buttons">
-            <a href="lacak-kapal.html" class="btn-refresh btn-lacak">🌐 Lacak Kapal (Live Map)</a>
-            <button class="btn-refresh" onclick="tarikDataJSON()">🔄 Refresh Data</button>
+        <div class="btn-group">
+            <button class="btn btn-excel" onclick="exportKeExcel()">📊 Export Excel</button>
+            <a href="lacak-kapal.html" class="btn btn-lacak">🌐 Lacak Kapal (Live)</a>
         </div>
     </div>
 
-    <div class="table-responsive">
-        <table>
+    <div class="table-container">
+        <table id="tableJadwal">
             <thead>
                 <tr>
-                    <th>Pelayaran</th>
-                    <th>Vessel Voyage</th>
-                    <th>Open Stack</th>
-                    <th>Closing Time</th>
-                    <th>Estimated Time Departure</th>
-                    <th>Estimated Time Arrival</th>
-                    <th>Estimated Time Berthing</th>
-                    <th>Sailing Route</th>
+                    <th>PELAYARAN</th>
+                    <th>VESSEL VOYAGE</th>
+                    <th>OPEN STACK</th>
+                    <th>CLOSING TIME</th>
+                    <th>ESTIMATED TIME DEPARTURE</th>
+                    <th>ESTIMATED TIME ARRIVAL</th>
                 </tr>
             </thead>
             <tbody id="tableBody">
-                <tr><td colspan="8" style="text-align: center; padding: 30px; font-weight: 600; color: #94a3b8;">⚙️ Menarik data jadwal terbaru...</td></tr>
+                <!-- Data jadwal masuk ke sini lewat Javascript -->
             </tbody>
         </table>
+        <div id="loadingMsg">⚙️ Menarik data jadwal terbaru...</div>
     </div>
 </div>
 
 <script>
     let dataJadwalGlobal = [];
 
-    function parseKeTanggal(dateStr) {
-        if (!dateStr || dateStr === "N/A") return 9999999999999;
+    // Fungsi narik data JSON dari GitHub
+    async function muatData() {
         try {
-            let cleanStr = dateStr.split('Reefer')[0].trim();
-            if (cleanStr.includes(',')) {
-                let textDate = cleanStr.split(',')[1].trim(); 
-                let parts = textDate.split(' ');
-                let dictBulan = {"Januari":"01", "Februari":"02", "Maret":"03", "April":"04", "Mei":"05", "Juni":"06", "Juli":"07", "Agustus":"08", "September":"09", "Oktober":"10", "November":"11", "Desember":"12"};
-                let m = dictBulan[parts[1]] || "01";
-                return new Date(`${parts[2]}-${m}-${parts[0]}T${parts[3] || '00:00'}`).getTime();
-            }
-            if (cleanStr.includes('/')) {
-                let parts = cleanStr.split(' ');
-                let dParts = parts[0].split('/');
-                let time = parts[1] || '00:00';
-                return new Date(`${dParts[2]}-${dParts[1]}-${dParts[0]}T${time}`).getTime();
-            } else {
-                let safeStr = cleanStr.replace("Mei", "May").replace("Agt", "Aug").replace("Okt", "Oct").replace("Des", "Dec");
-                let d = new Date(safeStr);
-                if (!isNaN(d.getTime())) return d.getTime();
-            }
-        } catch(e) {}
-        return 9999999999999;
-    }
-
-    function formatTanggalStandar(dateStr) {
-        if (!dateStr || dateStr === "N/A" || dateStr === "") return '<span style="color:#cbd5e1;">N/A</span>';
-        let cleanStr = dateStr.split('Reefer')[0].trim();
-        if (cleanStr.includes(',')) {
-            let parts = cleanStr.split(',')[1].trim().split(' ');
-            if (parts.length >= 3) return `${parts[0]} ${parts[1].substring(0,3)} ${parts[2]}`;
-        }
-        if (cleanStr.includes('/')) {
-            let parts = cleanStr.split(' ')[0].split('/'); 
-            if (parts.length === 3) {
-                const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-                let m = parseInt(parts[1]) - 1;
-                return `${parts[0]} ${months[m]} ${parts[2]}`; 
-            }
-            return cleanStr.split(' ')[0]; 
-        }
-        let parts = cleanStr.split(' ');
-        if (parts.length >= 3) return `${parts[0]} ${parts[1]} ${parts[2]}`; 
-        return cleanStr;
-    }
-
-    function ruteCocok(ruteJSON, filterPilihan) {
-        let r = (ruteJSON || "").toLowerCase();
-        let f = filterPilihan.toLowerCase().trim().split(' ')[0]; 
-        if (f === "all" || f === "semua" || f === "") return true;
-        
-        let aliases = r;
-        if (r.includes("belawan")) aliases += " medan";
-        if (r.includes("palu")) aliases += " tangkian";
-        if (r.includes("bitung")) aliases += " manado";
-        if (r.includes("tanjung pinang")) aliases += " kid";
-        
-        return aliases.includes(f);
-    }
-
-    async function tarikDataJSON() {
-        try {
+            // Pakai time() biar nggak nyangkut di cache browser
             const response = await fetch('jadwal.json?v=' + new Date().getTime());
-            if (!response.ok) throw new Error("Gagal mengambil file JSON.");
+            if (!response.ok) throw new Error("Gagal mengambil data");
             
-            let rawData = await response.json();
-            if (!Array.isArray(rawData)) throw new Error("Format JSON bukan Array.");
+            dataJadwalGlobal = await response.json();
             
-            let hariIni = new Date();
-            hariIni.setHours(0, 0, 0, 0); 
-            let waktuHariIni = hariIni.getTime();
-
-            dataJadwalGlobal = rawData.filter(item => {
-                if (!item || !item.rute) return false;
-                let waktuETD = parseKeTanggal(item.etd);
-                return waktuETD >= waktuHariIni; 
-            });
+            document.getElementById('loadingMsg').style.display = 'none';
+            document.getElementById('waktuUpdate').innerText = "Terakhir diperbarui: Hari ini (Live dari GitHub Actions)";
             
-            dataJadwalGlobal.sort((a, b) => parseKeTanggal(a.etd) - parseKeTanggal(b.etd));
-            
-            document.getElementById('lastUpdated').innerText = `Diperbarui otomatis: ${new Date().toLocaleString('id-ID')}`;
-            tampilkanTabel();
+            tampilkanData(dataJadwalGlobal);
         } catch (error) {
-            document.getElementById('tableBody').innerHTML = `<tr><td colspan="8" style="text-align: center; padding: 30px; color: #ef4444; font-weight: 600;">❌ Gagal Memuat Data: Cek file jadwal.json</td></tr>`;
+            document.getElementById('loadingMsg').innerText = "❌ Gagal memuat data. Pastikan bot scraper GitHub sudah berjalan sukses.";
         }
     }
 
-    function tampilkanTabel() {
-        const filterRute = document.getElementById('routeFilter').value;
-        const filterPelayaran = document.getElementById('pelayaranFilter').value;
+    // Fungsi nyetak data ke dalam tabel HTML
+    function tampilkanData(data) {
         const tbody = document.getElementById('tableBody');
-        tbody.innerHTML = '';
+        tbody.innerHTML = ''; // Bersihkan tabel dulu
 
-        let disaring = dataJadwalGlobal.filter(item => {
-            let matchRute = ruteCocok(item.rute, filterRute);
-            let matchPelayaran = true;
-            if (filterPelayaran !== "ALL") {
-                let p = item.pelayaran ? item.pelayaran.toUpperCase() : "SPIL";
-                matchPelayaran = (p === filterPelayaran);
-            }
-            return matchRute && matchPelayaran;
-        });
-
-        if(disaring.length === 0) {
-            tbody.innerHTML = `<tr><td colspan="8" style="text-align: center; padding: 40px; color: #64748b; font-weight:500;">📭 Tidak ada jadwal kapal yang cocok dengan filter.</td></tr>`;
+        if(data.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding:20px;">Jadwal tidak ditemukan / Rute kosong</td></tr>';
             return;
         }
 
-        disaring.forEach((item, index) => {
-            let badgeTercepat = (index === 0 && ruteCocok(item.rute, filterRute) && filterRute.toLowerCase() !== "semua rute" && filterRute !== "") ? '<span class="badge badge-fastest">TERCEPAT</span>' : '';
-            
-            let line = item.pelayaran ? item.pelayaran.toUpperCase() : "SPIL";
-            let badgePelayaran = 'badge-rute';
-            if (line === "SPIL") badgePelayaran = 'badge-spil';
-            else if (line === "TEMAS") badgePelayaran = 'badge-temas';
-            else if (line === "MERATUS") badgePelayaran = 'badge-meratus';
-            else if (line === "TANTO") badgePelayaran = 'badge-tanto';
-            else if (line === "ICON") badgePelayaran = 'badge-icon';
-
-            let mentahKapal = item.nama_kapal;
-            let mentahClosing = item.closing || "N/A";
-            
-            if ((!mentahKapal || mentahKapal === "") && line === "SPIL" && mentahClosing.includes("IMO")) {
-                mentahKapal = mentahClosing.split("IMO")[0].trim();
-                mentahClosing = "N/A";
-            }
-            if (!mentahKapal || mentahKapal === "") mentahKapal = "Tanpa Nama Kapal";
-
-            let namaKapalBersih = mentahKapal.replace("[TEMAS]", "").replace("[SPIL]", "").trim();
-            
-            let openStack = formatTanggalStandar(item.open_stack);
-            let closing   = formatTanggalStandar(mentahClosing);
-            let etd       = formatTanggalStandar(item.etd);
-            let eta       = formatTanggalStandar(item.eta);
-            let etb       = formatTanggalStandar(item.etb);
-
-            let ruteTampil = (item.rute || "").toUpperCase();
-
-            tbody.innerHTML += `<tr>
-                <td><span class="badge ${badgePelayaran}">${line}</span></td>
-                <td><strong style="color:#0f172a;">${namaKapalBersih}</strong>${badgeTercepat}</td>
-                <td>${openStack}</td>
-                <td>${closing}</td>
-                <td><strong style="color:#0f172a;">${etd}</strong></td>
-                <td>${eta}</td>
-                <td>${etb}</td>
-                <td><span class="badge badge-rute">${ruteTampil}</span></td>
-            </tr>`;
+        data.forEach(item => {
+            let tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td><strong>${item.pelayaran || 'SPIL'}</strong></td>
+                <td>
+                    <span class="vessel-name">${item.nama_kapal || '-'}</span>
+                    <span class="route-name">${item.rute || '-'}</span>
+                </td>
+                <td>${formatTanggal(item.open_stack)}</td>
+                <td>${formatTanggal(item.closing)}</td>
+                <td>${formatTanggal(item.etd)}</td>
+                <td>${formatTanggal(item.eta)}</td>
+            `;
+            tbody.appendChild(tr);
         });
     }
 
-    window.onload = tarikDataJSON;
+    // Fungsi Filter Rute & Pelayaran
+    function filterTabel() {
+        let inputRute = document.getElementById('inputRute').value.toLowerCase();
+        let inputPelayaran = document.getElementById('selectPelayaran').value.toLowerCase();
+
+        let dataTersaring = dataJadwalGlobal.filter(item => {
+            let cocokRute = (item.rute || '').toLowerCase().includes(inputRute);
+            let cocokPelayaran = inputPelayaran === "" || (item.pelayaran || '').toLowerCase().includes(inputPelayaran);
+            
+            return cocokRute && cocokPelayaran;
+        });
+
+        tampilkanData(dataTersaring);
+    }
+
+    // Fungsi Sakti Export Excel
+    function exportKeExcel() {
+        let tabel = document.getElementById("tableJadwal");
+        // Convert tabel HTML jadi format buku kerja Excel (Workbook)
+        let wb = XLSX.utils.table_to_book(tabel, {sheet: "Jadwal Kapal SCM"});
+        
+        // Bikin nama file otomatis tanggal hari ini
+        let tgl = new Date().toISOString().slice(0,10);
+        let namaFile = "Rekap_Jadwal_GoTrans_" + tgl + ".xlsx";
+        
+        // Trigger download
+        XLSX.writeFile(wb, namaFile);
+    }
+
+    // Pembersih teks tanggal biar rapi di tabel
+    function formatTanggal(str) {
+        if (!str || str === "N/A" || str === "") return '-';
+        return str.replace("Reefer", "").trim();
+    }
+
+    // Panggil fungsi saat web dibuka
+    window.onload = muatData;
 </script>
 </body>
 </html>
