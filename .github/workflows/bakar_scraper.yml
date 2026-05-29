@@ -2,20 +2,20 @@ name: Auto Scrape Jadwal Kapal GoTrans
 
 on:
   schedule:
-    - cron: '0 23 * * *' # Ini kode biar robotnya jalan tiap jam 6 pagi WIB
-  workflow_dispatch: # Biar bisa lu pencet tombol "Run" manual kapan aja
+    - cron: '0 23 * * *'
+  workflow_dispatch:
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
     - name: Ambil kode proyek
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Install Python & Selenium
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
-        python-node: '3.10'
+        python-version: '3.10'
 
     - name: Install Dependencies
       run: |
@@ -28,5 +28,6 @@ jobs:
       run: |
         git config --global user.name 'GoTrans Bot'
         git config --global user.email 'bot@gotrans.com'
-        git commit -am "Automated update jadwal.json" || exit 0
+        git add jadwal.json
+        git commit -m "Automated update jadwal.json" || exit 0
         git push
