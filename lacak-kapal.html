@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Vessel Tracking - GoTrans SCM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background: linear-gradient(135deg, #eef2f7 0%, #d9e2ec 100%); 
+            padding: 30px 15px; 
+            color: #334155; 
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container { 
+            max-width: 1300px; 
+            margin: auto; 
+            background: #ffffff; 
+            padding: 35px; 
+            border-radius: 16px; 
+            box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08); 
+            border-top: 6px solid #0f172a; 
+        }
+        
+        .header-area {
+            display: flex; justify-content: space-between; align-items: center;
+            margin-bottom: 25px; border-bottom: 2px solid #e2e8f0; padding-bottom: 15px;
+        }
+        h2 { color: #0f172a; margin: 0; font-weight: 700; letter-spacing: -0.5px; }
+        
+        .btn-kembali {
+            background-color: #64748b; color: white; text-decoration: none;
+            padding: 8px 16px; border-radius: 6px; font-weight: 600; font-size: 13px;
+            transition: all 0.2s;
+        }
+        .btn-kembali:hover { background-color: #475569; }
+
+        .tracking-layout { display: flex; gap: 25px; }
+
+        .vessel-panel {
+            width: 340px; background: #f8fafc; padding: 20px;
+            border-radius: 10px; border: 1px solid #e2e8f0; height: 600px; overflow-y: auto;
+        }
+        .panel-title { font-weight: 700; font-size: 14px; color: #0f172a; margin-bottom: 15px; text-transform: uppercase; }
+        
+        .search-box { display: flex; flex-direction: column; gap: 10px; margin-bottom: 10px; }
+        .search-box input {
+            width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #cbd5e1;
+            font-family: 'Poppins', sans-serif; font-size: 13px; outline: none; box-sizing: border-box;
+        }
+        .search-box input:focus { border-color: #f97316; }
+        
+        /* Kartu Info Kapal */
+        .info-card {
+            background: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px;
+            padding: 15px; margin-bottom: 20px; display: none; box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .info-card.active { display: block; }
+        .info-card h4 { margin: 0 0 10px 0; color: #f97316; font-size: 14px; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px; }
+        .info-row { display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 5px; }
+        .info-row strong { color: #0f172a; }
+        
+        .btn-lacak-live {
+            background: #0f172a; color: white; border: none; padding: 8px; width: 100%;
+            border-radius: 6px; cursor: pointer; font-weight: 600; transition: 0.2s; margin-top: 10px; font-size: 12px;
+        }
+        .btn-lacak-live:hover { background: #1e293b; }
+
+        .vessel-item {
+            background: white; padding: 12px 15px; border-radius: 8px;
+            border: 1px solid #cbd5e1; margin-bottom: 10px; cursor: pointer;
+            transition: all 0.2s; font-size: 13px; font-weight: 600;
+        }
+        .vessel-item:hover { border-color: #007bff; background: #f0f7ff; transform: translateX(3px); }
+        .vessel-item.active { background: #0f172a; color: white; border-color: #0f172a; }
+        .vessel-item span { display: block; font-size: 11px; color: #64748b; font-weight: 400; margin-top: 4px; }
+        .vessel-item.active span { color: #94a3b8; }
+
+        .map-panel {
+            flex-grow: 1; background: #e2e8f0; border-radius: 10px;
+            border: 1px solid #cbd5e1; height: 600px; overflow: hidden; position: relative;
+        }
+        iframe { width: 100%; height: 100%; border: none; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header-area">
+        <h2>🌐 Live Vessel Tracking</h2>
+        <a href="dashboard-jadwal.html" class="btn-kembali">← Kembali ke Jadwal</a>
+    </div>
+
+    <div class="tracking-layout">
+        <div class="vessel-panel">
+            
+            <div class="panel-title">🔍 Lacak Kapal Spesifik</div>
+            <div class="search-box">
+                <input type="text" id="inputKapal" list="kapalOptions" placeholder="Ketik nama kapal & tekan Enter..." onchange="tampilkanInfoKapal()" autocomplete="off">
+                <datalist id="kapalOptions"></datalist>
+            </div>
+
+            <div id="vesselInfoCard" class="info-card">
+                <h4 id="infoNamaKapal">NAMA KAPAL</h4>
+                <div class="info-row"><span>Rute Tujuan:</span> <strong id="infoRute">-</strong></div>
+                <div class="info-row"><span>Pelayaran:</span> <strong id="infoPelayaran">-</strong></div>
+                <div class="info-row"><span>Closing:</span> <strong id="infoClosing">-</strong></div>
+                <div class="info-row"><span>ETD (Berangkat):</span> <strong id="infoETD">-</strong></div>
+                <div class="info-row"><span>ETA (Tiba):</span> <strong id="infoETA">-</strong></div>
+                <button class="btn-lacak-live" onclick="bukaRadarLive()">Cari Posisi Live di Radar</button>
+            </div>
+
+            <div class="panel-title" style="margin-top: 15px;">📍 Radar Pelabuhan (MarineTraffic)</div>
+            
+            <div class="vessel-item active" onclick="gantiPeta('global', this)">
+                🗺️ Seluruh Perairan Indonesia
+                <span>Pantau kepadatan laut secara umum</span>
+            </div>
+            <div class="vessel-item" onclick="gantiPeta('priok', this)">
+                ⚓ Jakarta (Tj. Priok)
+                <span>Pantau kapal sandar di Priok</span>
+            </div>
+            <div class="vessel-item" onclick="gantiPeta('perak', this)">
+                ⚓ Surabaya (Tj. Perak)
+                <span>Pantau perairan Jawa Timur</span>
+            </div>
+            <div class="vessel-item" onclick="gantiPeta('belawan', this)">
+                ⚓ Medan (Belawan)
+                <span>Pantau traffic perairan Sumatera</span>
+            </div>
+            <div class="vessel-item" onclick="gantiPeta('makassar', this)">
+                ⚓ Makassar (Soekarno-Hatta)
+                <span>Pantau hub Indonesia Timur</span>
+            </div>
+        </div>
+
+        <div class="map-panel">
+            <iframe id="vesselMap" src="https://www.marinetraffic.com/en/ais/embed?zoom=5&centery=-2.5&centerx=118.0&maptype=1&showmenu=false&shownames=true"></iframe>
+        </div>
+    </div>
+</div>
+
+<script>
+    let databaseKapal = [];
+
+    async function muatSuggestKapal() {
+        try {
+            const response = await fetch('jadwal.json?v=' + new Date().getTime());
+            if (!response.ok) return;
+            const data = await response.json();
+            
+            databaseKapal = data.filter(item => item.nama_kapal && item.nama_kapal !== "N/A" && item.nama_kapal !== "");
+            
+            const datalist = document.getElementById('kapalOptions');
+            let setKapal = new Set();
+            
+            databaseKapal.forEach(item => {
+                let namaBersih = item.nama_kapal.replace(/\[.*?\]/g, "").trim();
+                if(!setKapal.has(namaBersih)) {
+                    setKapal.add(namaBersih);
+                    let option = document.createElement('option');
+                    option.value = namaBersih;
+                    datalist.appendChild(option);
+                }
+            });
+        } catch (error) {
+            console.log("Gagal memuat daftar kapal:", error);
+        }
+    }
+
+    window.onload = muatSuggestKapal;
+
+    function tampilkanInfoKapal() {
+        let inputNama = document.getElementById('inputKapal').value.trim();
+        let card = document.getElementById('vesselInfoCard');
+        
+        if(inputNama === "") {
+            card.classList.remove('active');
+            return;
+        }
+
+        let kapalDitemukan = databaseKapal.find(item => {
+            let namaBersih = item.nama_kapal.replace(/\[.*?\]/g, "").trim();
+            return namaBersih.toLowerCase() === inputNama.toLowerCase();
+        });
+
+        if(kapalDitemukan) {
+            document.getElementById('infoNamaKapal').innerText = kapalDitemukan.nama_kapal.replace(/\[.*?\]/g, "").trim().toUpperCase();
+            document.getElementById('infoRute').innerText = kapalDitemukan.rute.toUpperCase();
+            document.getElementById('infoPelayaran').innerText = kapalDitemukan.pelayaran || "SPIL";
+            document.getElementById('infoClosing').innerText = formatTanggalPendek(kapalDitemukan.closing);
+            document.getElementById('infoETD').innerText = formatTanggalPendek(kapalDitemukan.etd);
+            document.getElementById('infoETA').innerText = formatTanggalPendek(kapalDitemukan.eta);
+            
+            card.classList.add('active');
+        } else {
+            card.classList.remove('active');
+        }
+    }
+
+    // --- FIX SUPER SAKTI: PINDAH KE VESSELFINDER ---
+    function bukaRadarLive() {
+        let inputNama = document.getElementById('inputKapal').value.trim();
+        
+        // Buang nomor voyage biar aman
+        let namaMurni = inputNama.split('/')[0].split('-')[0].trim();
+        
+        if(namaMurni !== "") {
+            // Tembak ke VesselFinder yang jauh lebih ramah URL
+            let urlSearch = 'https://www.vesselfinder.com/vessels?name=' + encodeURIComponent(namaMurni);
+            window.open(urlSearch, '_blank');
+        }
+    }
+
+    function formatTanggalPendek(dateStr) {
+        if (!dateStr || dateStr === "N/A" || dateStr === "") return 'N/A';
+        let cleanStr = dateStr.split('Reefer')[0].trim();
+        return cleanStr.split(' ')[0] + " " + (cleanStr.split(' ')[1] || "");
+    }
+
+    function gantiPeta(lokasi, elemen) {
+        document.querySelectorAll('.vessel-item').forEach(item => item.classList.remove('active'));
+        elemen.classList.add('active');
+
+        const iframe = document.getElementById('vesselMap');
+        let baseUrl = "https://www.marinetraffic.com/en/ais/embed?maptype=1&showmenu=false&shownames=true";
+        
+        if (lokasi === 'global') iframe.src = baseUrl + "&zoom=5&centery=-2.5&centerx=118.0";
+        else if (lokasi === 'priok') iframe.src = baseUrl + "&zoom=12&centery=-6.095&centerx=106.895";
+        else if (lokasi === 'perak') iframe.src = baseUrl + "&zoom=13&centery=-7.195&centerx=112.730";
+        else if (lokasi === 'belawan') iframe.src = baseUrl + "&zoom=13&centery=3.785&centerx=98.685";
+        else if (lokasi === 'makassar') iframe.src = baseUrl + "&zoom=13&centery=-5.125&centerx=119.410";
+    }
+</script>
+</body>
+</html>

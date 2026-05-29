@@ -1,0 +1,858 @@
+[
+    {
+        "rute": "Makassar",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Ifama Mas - 28/26",
+        "closing": "N/A",
+        "etd": "07 Jun 2026",
+        "eta": "10 Jun 2026"
+    },
+    {
+        "rute": "Makassar",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Ifama Mas - 31/26",
+        "closing": "N/A",
+        "etd": "17 Jun 2026",
+        "eta": "19 Jun 2026"
+    },
+    {
+        "rute": "Makassar",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Telaga Mas - 16/26",
+        "closing": "N/A",
+        "etd": "31 May 2026",
+        "eta": "03 Jun 2026"
+    },
+    {
+        "rute": "Bitung",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Fraser Mas - 6/26",
+        "closing": "N/A",
+        "etd": "08 Jun 2026",
+        "eta": "15 Jun 2026"
+    },
+    {
+        "rute": "Bitung",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Fraser Mas - 8/26",
+        "closing": "N/A",
+        "etd": "24 Jun 2026",
+        "eta": "01 Jul 2026"
+    },
+    {
+        "rute": "Bitung",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Gaung Mas - 27/26",
+        "closing": "N/A",
+        "etd": "30 May 2026",
+        "eta": "06 Jun 2026"
+    },
+    {
+        "rute": "Bitung",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Huanghe Mas - 34/26",
+        "closing": "N/A",
+        "etd": "04 Jun 2026",
+        "eta": "12 Jun 2026"
+    },
+    {
+        "rute": "Bitung",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Gangga Mas - 29/26",
+        "closing": "N/A",
+        "etd": "05 Jun 2026",
+        "eta": "13 Jun 2026"
+    },
+    {
+        "rute": "Bitung",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Gihon Mas - 34/26",
+        "closing": "N/A",
+        "etd": "14 Jun 2026",
+        "eta": "22 Jun 2026"
+    },
+    {
+        "rute": "Bitung",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Gaung Mas - 31/26",
+        "closing": "N/A",
+        "etd": "16 Jun 2026",
+        "eta": "24 Jun 2026"
+    },
+    {
+        "rute": "Bitung",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Huanghe Mas - 39/26",
+        "closing": "N/A",
+        "etd": "22 Jun 2026",
+        "eta": "30 Jun 2026"
+    },
+    {
+        "rute": "Bitung",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Gangga Mas - 34/26",
+        "closing": "N/A",
+        "etd": "23 Jun 2026",
+        "eta": "01 Jul 2026"
+    },
+    {
+        "rute": "Samarinda",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Estuari Mas - 31/26",
+        "closing": "N/A",
+        "etd": "02 Jun 2026",
+        "eta": "07 Jun 2026"
+    },
+    {
+        "rute": "Balikpapan",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Estuari Mas - 31/26",
+        "closing": "N/A",
+        "etd": "02 Jun 2026",
+        "eta": "05 Jun 2026"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Gaung Mas - 27/26",
+        "closing": "N/A",
+        "etd": "30 May 2026",
+        "eta": "04 Jun 2026"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Gangga Mas - 29/26",
+        "closing": "N/A",
+        "etd": "05 Jun 2026",
+        "eta": "08 Jun 2026"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Huanghe Mas - 34/26",
+        "closing": "N/A",
+        "etd": "04 Jun 2026",
+        "eta": "08 Jun 2026"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Gaung Mas - 31/26",
+        "closing": "N/A",
+        "etd": "16 Jun 2026",
+        "eta": "23 Jun 2026"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Gihon Mas - 34/26",
+        "closing": "N/A",
+        "etd": "14 Jun 2026",
+        "eta": "23 Jun 2026"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Telaga Mas - 16/26",
+        "closing": "N/A",
+        "etd": "31 May 2026",
+        "eta": "12 Jun 2026"
+    },
+    {
+        "rute": "Belawan",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Izumi Mas - 30/26",
+        "closing": "N/A",
+        "etd": "06 Jun 2026",
+        "eta": "08 Jun 2026"
+    },
+    {
+        "rute": "Belawan",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Sungai Mas - 35/26",
+        "closing": "N/A",
+        "etd": "06 Jun 2026",
+        "eta": "09 Jun 2026"
+    },
+    {
+        "rute": "Makassar",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Silver - 07/2026",
+        "closing": "31/05/2026 22:00",
+        "etd": "03/06/2026 06:00",
+        "eta": "05/06/2026 13:00",
+        "etb": "05/06/2026 15:00",
+        "open_stack": "26/05/2026 08:00 @ADP (101-105)"
+    },
+    {
+        "rute": "Makassar",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Ruby - 07/2026",
+        "closing": "01/06/2026 22:00",
+        "etd": "05/06/2026 10:00",
+        "eta": "11/06/2026 14:00",
+        "etb": "11/06/2026 16:00",
+        "open_stack": "26/04/2026 15:00"
+    },
+    {
+        "rute": "Bitung",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Silver - 07/2026",
+        "closing": "31/05/2026 22:00",
+        "etd": "03/06/2026 06:00",
+        "eta": "05/06/2026 13:00",
+        "etb": "05/06/2026 15:00",
+        "open_stack": "26/05/2026 08:00 @ADP (101-105)"
+    },
+    {
+        "rute": "Gorontalo",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Ruby - 07/2026",
+        "closing": "01/06/2026 22:00",
+        "etd": "05/06/2026 10:00",
+        "eta": "06/06/2026 10:00",
+        "etb": "06/06/2026 13:00",
+        "open_stack": "26/04/2026 15:00"
+    },
+    {
+        "rute": "Samarinda",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Pulau Nunukan - 12/2026",
+        "closing": "02/06/2026 22:00",
+        "etd": "03/06/2026 16:00",
+        "eta": "08/06/2026 14:00",
+        "etb": "08/06/2026 16:00",
+        "open_stack": "26/05/2026 15:00 @DSN (004-005)"
+    },
+    {
+        "rute": "Balikpapan",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Pulau Nunukan - 12/2026",
+        "closing": "02/06/2026 22:00",
+        "etd": "03/06/2026 16:00",
+        "eta": "07/06/2026 08:00",
+        "etb": "07/06/2026 10:00",
+        "open_stack": "26/05/2026 15:00 @DSN (004-005)"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Pulau Wetar - 10/2026",
+        "closing": "29/05/2026 22:00",
+        "etd": "31/05/2026 12:00",
+        "eta": "02/06/2026 19:00",
+        "etb": "02/06/2026 21:00",
+        "open_stack": "25/05/2026 14:00 @ADP (101-105)"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Armada Senada - 09/2026",
+        "closing": "02/06/2026 10:00",
+        "etd": "03/06/2026 03:00",
+        "eta": "05/06/2026 17:00",
+        "etb": "05/06/2026 19:00",
+        "open_stack": "29/05/2026 15:00"
+    },
+    {
+        "rute": "Belawan",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Gold - 08/2026",
+        "closing": "03/06/2026 22:00",
+        "etd": "07/06/2026 08:00",
+        "eta": "10/06/2026 05:00",
+        "etb": "10/06/2026 07:00",
+        "open_stack": "29/05/2026 15:00"
+    },
+    {
+        "rute": "Palu",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Ruby - 07/2026",
+        "closing": "01/06/2026 22:00",
+        "etd": "05/06/2026 10:00",
+        "eta": "06/06/2026 10:00",
+        "etb": "06/06/2026 13:00",
+        "open_stack": "26/04/2026 15:00"
+    },
+    {
+        "rute": "Batam",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Bali Gianyar - 16/2026",
+        "closing": "30/05/2026 22:00",
+        "etd": "31/05/2026 20:00",
+        "eta": "03/06/2026 12:00",
+        "etb": "03/06/2026 14:00",
+        "open_stack": "26/05/2026 15:00 @ADP (101-105)"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Bali Sanur - 12/2026",
+        "closing": "30/05/2026 22:00",
+        "etd": "31/05/2026 08:00",
+        "eta": "04/06/2026 05:00",
+        "etb": "04/06/2026 07:00",
+        "open_stack": "24/05/2026 12:00 @ADP (101-105)"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Spil Retno - 17/2026",
+        "closing": "29/05/2026 22:00",
+        "etd": "31/05/2026 12:00",
+        "eta": "03/06/2026 21:00",
+        "etb": "03/06/2026 23:00",
+        "open_stack": "24/05/2026 12:00 @ADP (101-105)"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Spil Rumi - 18/2026",
+        "closing": "03/06/2026 12:00",
+        "etd": "04/06/2026 14:00",
+        "eta": "06/06/2026 07:00",
+        "etb": "06/06/2026 09:00",
+        "open_stack": "30/05/2026 15:00"
+    },
+    {
+        "rute": "Bitung",
+        "pelayaran": "MERATUS",
+        "nama_kapal": "MERATUS MAMIRI - BG213N",
+        "closing": "01 Jun 2026 18:00",
+        "etd": "04 Jun 2026",
+        "eta": "12 Jun 2026",
+        "etb": "02 Jun 2026",
+        "open_stack": "26 May 2026 08:00"
+    },
+    {
+        "rute": "Bitung",
+        "pelayaran": "MERATUS",
+        "nama_kapal": "MERATUS WAKATOBI - BG214N",
+        "closing": "07 Jun 2026 23:59",
+        "etd": "09 Jun 2026",
+        "eta": "18 Jun 2026",
+        "etb": "07 Jun 2026",
+        "open_stack": "02 Jun 2026 12:54"
+    },
+    {
+        "rute": "Gorontalo",
+        "pelayaran": "MERATUS",
+        "nama_kapal": "MERATUS MAMIRI - BG213N",
+        "closing": "01 Jun 2026 18:00",
+        "etd": "04 Jun 2026",
+        "eta": "15 Jun 2026",
+        "etb": "02 Jun 2026",
+        "open_stack": "26 May 2026 08:00"
+    },
+    {
+        "rute": "Gorontalo",
+        "pelayaran": "MERATUS",
+        "nama_kapal": "MERATUS WAKATOBI - BG214N",
+        "closing": "07 Jun 2026 23:59",
+        "etd": "09 Jun 2026",
+        "eta": "20 Jun 2026",
+        "etb": "07 Jun 2026",
+        "open_stack": "02 Jun 2026 12:54"
+    },
+    {
+        "rute": "Samarinda",
+        "pelayaran": "MERATUS",
+        "nama_kapal": "MERATUS KOLAKA - BS431N",
+        "closing": "26 May 2026 18:00",
+        "etd": "29 May 2026",
+        "eta": "02 Jun 2026",
+        "etb": "28 May 2026",
+        "open_stack": "22 May 2026 13:00"
+    },
+    {
+        "rute": "Samarinda",
+        "pelayaran": "MERATUS",
+        "nama_kapal": "MERATUS KATINGAN - BS433N",
+        "closing": "03 Jun 2026 04:00",
+        "etd": "04 Jun 2026",
+        "eta": "08 Jun 2026",
+        "etb": "03 Jun 2026",
+        "open_stack": "29 May 2026 13:00"
+    },
+    {
+        "rute": "Samarinda",
+        "pelayaran": "MERATUS",
+        "nama_kapal": "MERATUS KOLAKA - BS435N",
+        "closing": "09 Jun 2026 23:59",
+        "etd": "10 Jun 2026",
+        "eta": "15 Jun 2026",
+        "etb": "09 Jun 2026",
+        "open_stack": "04 Jun 2026 16:10"
+    },
+    {
+        "rute": "Balikpapan",
+        "pelayaran": "MERATUS",
+        "nama_kapal": "MERATUS KOLAKA - BS431N",
+        "closing": "26 May 2026 18:00",
+        "etd": "29 May 2026",
+        "eta": "02 Jun 2026",
+        "etb": "28 May 2026",
+        "open_stack": "22 May 2026 13:00"
+    },
+    {
+        "rute": "Balikpapan",
+        "pelayaran": "MERATUS",
+        "nama_kapal": "MERATUS KATINGAN - BS433N",
+        "closing": "03 Jun 2026 04:00",
+        "etd": "04 Jun 2026",
+        "eta": "08 Jun 2026",
+        "etb": "03 Jun 2026",
+        "open_stack": "29 May 2026 13:00"
+    },
+    {
+        "rute": "Balikpapan",
+        "pelayaran": "MERATUS",
+        "nama_kapal": "MERATUS KOLAKA - BS435N",
+        "closing": "09 Jun 2026 23:59",
+        "etd": "10 Jun 2026",
+        "eta": "14 Jun 2026",
+        "etb": "09 Jun 2026",
+        "open_stack": "04 Jun 2026 16:10"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "MERATUS",
+        "nama_kapal": "MERATUS BARITO - PJ119N",
+        "closing": "29 May 2026 17:00",
+        "etd": "01 Jun 2026",
+        "eta": "03 Jun 2026",
+        "etb": "31 May 2026",
+        "open_stack": "23 May 2026 16:00"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "MERATUS",
+        "nama_kapal": "MERATUS BARITO - PJ120N",
+        "closing": "07 Jun 2026 23:59",
+        "etd": "08 Jun 2026",
+        "eta": "10 Jun 2026",
+        "etb": "07 Jun 2026",
+        "open_stack": "02 Jun 2026 13:11"
+    },
+    {
+        "rute": "Batam",
+        "pelayaran": "MERATUS",
+        "nama_kapal": "MERATUS GORONTALO - JB469N",
+        "closing": "28 May 2026 18:00",
+        "etd": "31 May 2026",
+        "eta": "02 Jun 2026",
+        "etb": "29 May 2026",
+        "open_stack": "24 May 2026 16:00"
+    },
+    {
+        "rute": "Batam",
+        "pelayaran": "MERATUS",
+        "nama_kapal": "MERATUS AMPANA - JB470N",
+        "closing": "08 Jun 2026 23:59",
+        "etd": "11 Jun 2026",
+        "eta": "13 Jun 2026",
+        "etb": "09 Jun 2026",
+        "open_stack": "04 Jun 2026 09:00"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "MERATUS",
+        "nama_kapal": "MERATUS LEMBATA - BP166E",
+        "closing": "30 May 2026 18:00",
+        "etd": "02 Jun 2026",
+        "eta": "05 Jun 2026",
+        "etb": "02 Jun 2026",
+        "open_stack": "25 May 2026 16:00"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "MERATUS",
+        "nama_kapal": "MERATUS SAMPIT - BP167E",
+        "closing": "04 Jun 2026 23:59",
+        "etd": "06 Jun 2026",
+        "eta": "08 Jun 2026",
+        "etb": "05 Jun 2026",
+        "open_stack": "31 May 2026 05:31"
+    },
+    {
+        "rute": "Belawan",
+        "pelayaran": "MERATUS",
+        "nama_kapal": "MERATUS GORONTALO - JB469N",
+        "closing": "28 May 2026 18:00",
+        "etd": "31 May 2026",
+        "eta": "05 Jun 2026",
+        "etb": "29 May 2026",
+        "open_stack": "24 May 2026 16:00"
+    },
+    {
+        "rute": "Belawan",
+        "pelayaran": "MERATUS",
+        "nama_kapal": "MERATUS AMPANA - JB470N",
+        "closing": "08 Jun 2026 23:59",
+        "etd": "11 Jun 2026",
+        "eta": "16 Jun 2026",
+        "etb": "09 Jun 2026",
+        "open_stack": "04 Jun 2026 09:00"
+    },
+    {
+        "rute": "Makassar",
+        "pelayaran": "TANTO",
+        "nama_kapal": "TANTO TERANG / 297",
+        "closing": "01 Jun 2026",
+        "etd": "02 Jun 2026",
+        "eta": "05 Jun 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Makassar",
+        "pelayaran": "TANTO",
+        "nama_kapal": "TANTO TENANG / 281",
+        "closing": "05 Jun 2026",
+        "etd": "06 Jun 2026",
+        "eta": "09 Jun 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Gorontalo",
+        "pelayaran": "TANTO",
+        "nama_kapal": "TANTO JAYA / 310",
+        "closing": "02 Jun 2026",
+        "etd": "04 Jun 2026",
+        "eta": "N/A",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Samarinda",
+        "pelayaran": "TANTO",
+        "nama_kapal": "TANTO MITRA / 358",
+        "closing": "30 May 2026",
+        "etd": "31 May 2026",
+        "eta": "04 Jun 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Samarinda",
+        "pelayaran": "TANTO",
+        "nama_kapal": "TANTO LANCAR / 366",
+        "closing": "03 Jun 2026",
+        "etd": "04 Jun 2026",
+        "eta": "08 Jun 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Samarinda",
+        "pelayaran": "TANTO",
+        "nama_kapal": "TANTO MITRA / 359",
+        "closing": "09 Jun 2026",
+        "etd": "10 Jun 2026",
+        "eta": "14 Jun 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Balikpapan",
+        "pelayaran": "TANTO",
+        "nama_kapal": "TANTO LANCAR / 366",
+        "closing": "03 Jun 2026",
+        "etd": "04 Jun 2026",
+        "eta": "11 Jun 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "TANTO",
+        "nama_kapal": "TANTO HEMAT / 423",
+        "closing": "03 Jun 2026",
+        "etd": "05 Jun 2026",
+        "eta": "08 Jun 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "TANTO",
+        "nama_kapal": "ICON GALATIA V / 24",
+        "closing": "05 Jun 2026",
+        "etd": "07 Jun 2026",
+        "eta": "10 Jun 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "TANTO",
+        "nama_kapal": "TANTO HEMAT / 424",
+        "closing": "11 Jun 2026",
+        "etd": "13 Jun 2026",
+        "eta": "16 Jun 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "TANTO",
+        "nama_kapal": "ICON GALATIA V / 25",
+        "closing": "13 Jun 2026",
+        "etd": "15 Jun 2026",
+        "eta": "18 Jun 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "TANTO",
+        "nama_kapal": "TANTO HEMAT / 425",
+        "closing": "19 Jun 2026",
+        "etd": "21 Jun 2026",
+        "eta": "24 Jun 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "TANTO",
+        "nama_kapal": "ICON GALATIA V / 26",
+        "closing": "21 Jun 2026",
+        "etd": "23 Jun 2026",
+        "eta": "26 Jun 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "TANTO",
+        "nama_kapal": "TANTO HEMAT / 426",
+        "closing": "27 Jun 2026",
+        "etd": "29 Jun 2026",
+        "eta": "01 Aug 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "TANTO",
+        "nama_kapal": "TANTO BERSAMA / 416",
+        "closing": "29 May 2026",
+        "etd": "31 May 2026",
+        "eta": "03 Jun 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "TANTO",
+        "nama_kapal": "TANTO BERSATU / 386",
+        "closing": "02 Jun 2026",
+        "etd": "04 Jun 2026",
+        "eta": "07 Jun 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "TANTO",
+        "nama_kapal": "TANTO NUSANTARA / 102",
+        "closing": "05 Jun 2026",
+        "etd": "07 Jun 2026",
+        "eta": "10 Jun 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "TANTO",
+        "nama_kapal": "TANTO PRATAMA / 380",
+        "closing": "08 Jun 2026",
+        "etd": "10 Jun 2026",
+        "eta": "13 Jun 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "TANTO",
+        "nama_kapal": "TANTO SETIA / 416",
+        "closing": "11 Jun 2026",
+        "etd": "13 Jun 2026",
+        "eta": "16 Jun 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Tangkian",
+        "pelayaran": "TANTO",
+        "nama_kapal": "TANTO JAYA / 310",
+        "closing": "02 Jun 2026",
+        "etd": "04 Jun 2026",
+        "eta": "N/A",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Batam",
+        "pelayaran": "TANTO",
+        "nama_kapal": "TANTO LANGGENG / 381",
+        "closing": "29 May 2026",
+        "etd": "31 May 2026",
+        "eta": "02 Jun 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Batam",
+        "pelayaran": "TANTO",
+        "nama_kapal": "TANTO KARUNIA II / 494",
+        "closing": "04 Jun 2026",
+        "etd": "06 Jun 2026",
+        "eta": "08 Jun 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Batam",
+        "pelayaran": "TANTO",
+        "nama_kapal": "TANTO LANGGENG / 382",
+        "closing": "09 Jun 2026",
+        "etd": "11 Jun 2026",
+        "eta": "13 Jun 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Batam",
+        "pelayaran": "TANTO",
+        "nama_kapal": "TANTO KARUNIA II / 495",
+        "closing": "14 Jun 2026",
+        "etd": "16 Jun 2026",
+        "eta": "18 Jun 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Samarinda",
+        "pelayaran": "ICON",
+        "nama_kapal": "IE I 17 V.22/26 - ICON EFESUS I 17",
+        "closing": "27/02/2026 11:59",
+        "etd": "Senin, 02 Maret 2026 23:57",
+        "eta": "Jumat, 06 Maret 2026 11:57",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Samarinda",
+        "pelayaran": "ICON",
+        "nama_kapal": "IE I 17 V.26/26 - ICON EFESUS I 17",
+        "closing": "09/03/2026 10:03",
+        "etd": "N/A",
+        "eta": "N/A",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Samarinda",
+        "pelayaran": "ICON",
+        "nama_kapal": "ICON VESSEL",
+        "closing": "N/A",
+        "etd": "N/A",
+        "eta": "N/A",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Balikpapan",
+        "pelayaran": "ICON",
+        "nama_kapal": "IE I 17 V.21/26 - ICON EFESUS I 17",
+        "closing": "27/02/2026 11:58",
+        "etd": "Senin, 02 Maret 2026 23:56",
+        "eta": "Kamis, 05 Maret 2026 11:56",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Balikpapan",
+        "pelayaran": "ICON",
+        "nama_kapal": "IE I 17 V.25/26 - ICON EFESUS I 17",
+        "closing": "09/03/2026 10:01",
+        "etd": "Kamis, 12 Maret 2026 09:59",
+        "eta": "Minggu, 15 Maret 2026 09:59",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Balikpapan",
+        "pelayaran": "ICON",
+        "nama_kapal": "IB V.49/26 - ICON BRAVO",
+        "closing": "01/06/2026 12:51",
+        "etd": "Rabu, 03 Juni 2026 12:48",
+        "eta": "Sabtu, 06 Juni 2026 12:49",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "ICON",
+        "nama_kapal": "IC V.34/26 - MV. ICON CORINTUS",
+        "closing": "29/05/2026 15:18",
+        "etd": "Jumat, 29 Mei 2026 10:17",
+        "eta": "Minggu, 31 Mei 2026 10:17",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "ICON",
+        "nama_kapal": "IG V V.24/26 - MV. ICON GALATIA V",
+        "closing": "31/05/2026 16:10",
+        "etd": "Minggu, 07 Juni 2026 16:08",
+        "eta": "Selasa, 09 Juni 2026 16:08",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "ICON",
+        "nama_kapal": "IC V,36/26 - MV. ICON CORINTUS",
+        "closing": "07/07/2026 13:19",
+        "etd": "Selasa, 09 Juni 2026 13:17",
+        "eta": "Selasa, 16 Juni 2026 13:17",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Batam",
+        "pelayaran": "ICON",
+        "nama_kapal": "II XI V.60/26 - ICON IBRANI XI",
+        "closing": "26/05/2026 10:47",
+        "etd": "Kamis, 28 Mei 2026 10:46",
+        "eta": "Sabtu, 30 Mei 2026 10:46",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Batam",
+        "pelayaran": "ICON",
+        "nama_kapal": "II XI V.62/26 - ICON IBRANI XI",
+        "closing": "03/06/2026 13:15",
+        "etd": "Jumat, 05 Juni 2026 13:14",
+        "eta": "Minggu, 07 Juni 2026 13:14",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Tanjung Pinang",
+        "pelayaran": "ICON",
+        "nama_kapal": "IC V.37/26 - MV. ICON CORINTUS",
+        "closing": "02/06/2026 10:02",
+        "etd": "Kamis, 04 Juni 2026 09:47",
+        "eta": "Minggu, 07 Juni 2026 09:48",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    }
+]

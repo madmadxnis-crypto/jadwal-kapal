@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Tracking SCM</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f4f7f6; padding: 20px; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h2 { text-align: center; color: #333; }
+        .card { border: 1px solid #ddd; padding: 15px; border-radius: 5px; background-color: #fafafa; }
+        .btn { background-color: #007bff; color: white; border: none; padding: 10px 15px; cursor: pointer; border-radius: 4px; font-weight: bold; }
+        .btn:hover { background-color: #0056b3; }
+        input { padding: 9px; width: 65%; margin-right: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        .result-box { margin-top: 15px; padding: 15px; background-color: #e9ecef; border-radius: 4px; min-height: 50px; font-size: 15px; line-height: 1.5; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>🚢 Lacak Status Container</h2>
+    <div class="card">
+        <p>Masukkan Nomor Container / Bill of Lading:</p>
+        <input type="text" id="containerInput" placeholder="Contoh: TGHU1234567">
+        <button class="btn" onclick="getContainerData()">Lacak</button>
+        <div id="containerResult" class="result-box">Hasil tracking akan muncul di sini...</div>
+    </div>
+</div>
+
+<script>
+    async function getContainerData() {
+        const containerNo = document.getElementById('containerInput').value;
+        const resultDiv = document.getElementById('containerResult');
+        
+        if(!containerNo) {
+            resultDiv.innerHTML = "<span style='color:red; font-weight:bold;'>Isi nomor container-nya dulu, bro!</span>";
+            return;
+        }
+
+        resultDiv.innerHTML = `<i>Sedang melacak container ${containerNo} ke server...</i>`;
+        
+        // Nanti di sini kita masukin script Fetch API beneran ke aggregator
+        
+        setTimeout(() => {
+            resultDiv.innerHTML = `
+                <b>Nomor Container:</b> ${containerNo} <br>
+                <b>Status:</b> <span style="color: green; font-weight: bold;">Discharged</span> <br>
+                <b>ATA:</b> 2026-05-28 10:00 WIB <br>
+                <b>Lokasi Saat Ini:</b> Port of Tanjung Priok <br>
+                <b>Vessel:</b> MSC ALICANTE
+            `;
+        }, 1200);
+    }
+</script>
+
+</body>
+</html>
