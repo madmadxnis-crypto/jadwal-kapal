@@ -28,6 +28,6 @@ jobs:
       run: |
         git config --global user.name 'GoTrans Bot'
         git config --global user.email 'bot@gotrans.com'
-        git add jadwal.json trend_vendor.json
-        git commit -m "Automated update jadwal.json & trend_vendor.json" || exit 0
+        git add jadwal.json
+        git commit -m "Automated update jadwal.json" || exit 0
         git push
