@@ -6,18 +6,25 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
 
 print("🚀 Memulai Master Scraper ICON (Revisi Mapping Rute)...")
-driver = webdriver.Chrome()
+
+# Setup Chrome Options (Biar aman jalan di GitHub Actions)
+chrome_options = Options()
+chrome_options.add_argument("--headless") # Dijalankan tanpa buka jendela browser
+chrome_options.add_argument("--no-sandbox")
+chrome_options.add_argument("--disable-dev-shm-usage")
+driver = webdriver.Chrome(options=chrome_options)
 
 # Mapping rute sesuai ketersediaan di ICON dan revisi kode
 rute_icon = {
     "Samarinda": "SRI",
     "Balikpapan": "BPN",
-    "Banjarmasin": "BJM", # Revisi
-    "Batam": "BAT", # Rute Baru ICON
+    "Banjarmasin": "BJM", 
+    "Batam": "BAT", 
     "Pontianak": "PTK", # Rute Baru ICON
-    "Tanjung Pinang": "KID" # Rute Baru ICON
+    "Tanjung Pinang": "KID" 
 }
 
 data_jadwal_global = []
@@ -31,31 +38,34 @@ for tujuan, kode in rute_icon.items():
     
     try:
         driver.get(url)
-        time.sleep(3) # Tunggu loading halaman beres
+        time.sleep(4) # Tunggu loading halaman beres (Dinaikin jadi 4 detik biar aman)
         
         try:
-            WebDriverWait(driver, 5).until(
+            WebDriverWait(driver, 10).until(
                 EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Closing Cargo')]"))
             )
         except:
             print(f"   ⚠️ Rute {tujuan} kosong (Data Tidak Ditemukan).")
             continue
             
-        tanda_closing = driver.find_elements(By.XPATH, "//*[contains(text(), 'Closing Cargo :')]")
+        # Cari semua card jadwal
+        tanda_closing = driver.find_elements(By.XPATH, "//*[contains(text(), 'Closing Cargo')]")
         jumlah_kapal = 0
         
         for el in tanda_closing:
             try:
+                # Ambil kotak utuh jadwalnya
                 card = el.find_element(By.XPATH, "./ancestor::div[contains(., 'Estimasi Keberangkatan')][1]")
                 text_mentah = card.text
                 
-                # 1. NAMA KAPAL
+                # 1. NAMA KAPAL (Revisi: Lebih spesifik ambil baris pertama)
                 nama_kapal = "ICON VESSEL"
                 baris_teks = text_mentah.split('\n')
-                for baris in baris_teks:
-                    if "ICON" in baris or "IE" in baris or "V." in baris:
-                        nama_kapal = baris.split('Closing')[0].strip()
-                        break
+                if len(baris_teks) > 0:
+                    # Ambil teks sebelum tulisan "Closing Cargo"
+                    nama_kapal = baris_teks[0].split('Closing')[0].strip()
+                    # Buang tulisan "- Jakarta - Pontianak" di belakang nama kapal
+                    nama_kapal = nama_kapal.split('- Jakarta')[0].strip()
                         
                 # 2. CLOSING CARGO
                 closing_match = re.search(r'Closing Cargo\s*:\s*([\d/]+\s[\d:]+)', text_mentah)
@@ -87,7 +97,7 @@ for tujuan, kode in rute_icon.items():
                 pass
                 
         if jumlah_kapal > 0:
-            print(f"   ✅ Sukses ditarik: {jumlah_kapal} kapal ICON.")
+            print(f"   ✅ Sukses ditarik: {jumlah_kapal} kapal ICON ke {tujuan}.")
         
     except Exception as e:
         print(f"   ❌ Terjadi error di rute {tujuan}: {e}")
@@ -101,7 +111,9 @@ if os.path.exists('jadwal.json') and os.path.getsize('jadwal.json') > 0:
             if not isinstance(data_gabungan, list): data_gabungan = []
     except: data_gabungan = []
 
+# Hapus data ICON yang lama
 data_gabungan = [j for j in data_gabungan if j.get('pelayaran') != 'ICON']
+# Masukkan data ICON yang baru
 data_gabungan.extend(data_jadwal_global)
 
 with open('jadwal.json', 'w') as f:
