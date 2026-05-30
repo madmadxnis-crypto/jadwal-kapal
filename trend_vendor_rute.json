@@ -1,0 +1,210 @@
+{
+    "BANJARMASIN": {
+        "AAR": {
+            "SPIL": 2
+        },
+        "APU": {
+            "MERATUS": 4,
+            "SAMUDRA": 4,
+            "SPIL": 15,
+            "TANTO": 6,
+            "TEMAS": 1
+        },
+        "BAL": {
+            "TEMAS": 2
+        },
+        "HST": {
+            "TEMAS": 1
+        },
+        "IRE": {
+            "ICON": 5,
+            "MERATUS": 3,
+            "SAMUDERA": 4,
+            "TANTO": 1
+        },
+        "LSJ": {
+            "MERATUS": 13,
+            "SAMUDERA": 2
+        },
+        "PAT": {
+            "ICON": 2
+        },
+        "RMB": {
+            "TEMAS": 1
+        },
+        "TAR": {
+            "CTP": 3,
+            "MERATUS": 18,
+            "TANTO": 1,
+            "TEMAS": 5
+        },
+        "TPL": {
+            "SPIL": 2
+        }
+    },
+    "BANJARNMASIN": {
+        "APU": {
+            "TEMAS": 1
+        }
+    },
+    "BATAM": {
+        "APU": {
+            "ICON": 1,
+            "MERATUS": 1,
+            "SPIL": 8,
+            "TANTO": 2
+        },
+        "TAR": {
+            "TANTO": 1
+        }
+    },
+    "MAKASSAR": {
+        "APU": {
+            "MERATUS": 1
+        },
+        "DFF": {
+            "MERATUS": 1
+        },
+        "GCL": {
+            "MERATUS": 1
+        },
+        "HST": {
+            "TEMAS": 3
+        },
+        "IRE": {
+            "CTP": 11,
+            "MAKASSAR": 2,
+            "MERATUS": 3,
+            "SAMUDERA": 6,
+            "TANTO": 14
+        },
+        "LSJ": {
+            "MERATUS": 7,
+            "TEMAS": 2
+        },
+        "PAT": {
+            "TEMAS": 1
+        },
+        "RMB": {
+            "TANTO": 2
+        },
+        "SBT": {
+            "MERATUS": 1
+        },
+        "TAR": {
+            "CTP": 5,
+            "MERATUS": 30,
+            "SPIL": 2,
+            "TANTO": 2,
+            "TEMAS": 10
+        },
+        "TPL": {
+            "SPIL": 1
+        }
+    },
+    "MANADO": {
+        "APU": {
+            "MERATUS": 1,
+            "SPIL": 2
+        },
+        "LSJ": {
+            "MERATUS": 11
+        },
+        "TAR": {
+            "SPIL": 4,
+            "TANTO": 4,
+            "TEMAS": 2
+        },
+        "TPL": {
+            "SPIL": 1
+        }
+    },
+    "MEDAN": {
+        "TAR": {
+            "MERATUS": 3,
+            "TANTO": 5
+        }
+    },
+    "PALU": {
+        "APU": {
+            "MERATUS": 1
+        },
+        "TAR": {
+            "MERATUS": 2,
+            "SPIL": 1,
+            "SPIL PRIME": 1,
+            "TEMAS": 1
+        },
+        "TPL": {
+            "SPIL": 1
+        }
+    },
+    "PEKANBARU": {
+        "TAR": {
+            "MERATUS": 1,
+            "TANTO": 1
+        }
+    },
+    "PONTIANAK": {
+        "AAR": {
+            "SPIL": 1
+        },
+        "APU": {
+            "MERATUS": 2,
+            "SAMUDRA": 1,
+            "SPIL": 17,
+            "TEMAS": 3
+        },
+        "HST": {
+            "TEMAS": 2
+        },
+        "LSJ": {
+            "MERATUS": 1
+        },
+        "SBT": {
+            "MERATUS": 4,
+            "SPIL": 1
+        },
+        "TAR": {
+            "MERATUS": 3,
+            "SPIL PRIME": 2,
+            "TEMAS": 2
+        },
+        "TPL": {
+            "SPIL": 5
+        }
+    },
+    "SAMARINDA": {
+        "APU": {
+            "MERATUS": 1,
+            "SPIL": 13,
+            "TEMAS": 1
+        },
+        "HST": {
+            "TANTO": 1
+        },
+        "IRE": {
+            "MERATUS": 7,
+            "SPIL": 2,
+            "TANTO": 11,
+            "TEMAS": 5
+        },
+        "LSJ": {
+            "ICON": 3,
+            "MERATUS": 5
+        },
+        "PAT": {
+            "ICON": 1
+        },
+        "RMB": {
+            "MERATUS": 1
+        },
+        "TAR": {
+            "TANTO": 1,
+            "TEMAS": 1
+        },
+        "TPL": {
+            "SPIL": 1
+        }
+    }
+}
