@@ -5,7 +5,7 @@ import os
 # os.chdir(r"D:\INSPEKSI MOBIL")
 
 # Daftar script yang mau dijalankan
-scripts = ["scrape_spil.py", "scrape_meratus.py", "scrape_tanto.py", "scrape_icon.py"]
+scripts = ["scrape_spil.py", "scrape_meratus.py", "scrape_tanto.py", "scrape_icon.py", "scrape_samudera.py", "generate_trend.py"]
 
 for script in scripts:
     print(f"🚀 Menjalankan {script}...")
