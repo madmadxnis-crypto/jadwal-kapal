@@ -16,7 +16,7 @@
             margin: 0;
         }
         .container { 
-            max-width: 1300px; 
+            max-width: 1400px; 
             margin: auto; 
             background: #ffffff; 
             padding: 25px; 
@@ -29,58 +29,63 @@
         .logo-container img { max-height: 85px; width: auto; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.05)); }
         
         h2 { text-align: center; color: #0f172a; margin-bottom: 5px; margin-top: 5px; font-weight: 700; letter-spacing: -0.5px; }
-        p.subtitle { text-align: center; color: #64748b; margin-bottom: 25px; font-size: 13px; font-weight: 400; }
+        p.subtitle { text-align: center; color: #64748b; margin-bottom: 20px; font-size: 13px; font-weight: 400; }
         
+        /* Toolbar Grid System untuk nampung banyak filter */
         .toolbar { 
-            display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;
             background: #f8fafc; padding: 16px 20px; border-radius: 10px; 
-            border: 1px solid #e2e8f0; margin-bottom: 20px;
+            border: 1px solid #e2e8f0; margin-bottom: 20px; align-items: end;
         }
-        .filter-group { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
-        .toolbar label { font-weight: 600; color: #334155; margin-right: 8px; font-size: 13px;}
+        .filter-item { display: flex; flex-direction: column; gap: 6px; }
+        .toolbar label { font-weight: 600; color: #334155; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;}
         
-        input[type="text"], select { 
+        input[type="text"], input[type="date"], select { 
             padding: 8px 12px; border-radius: 6px; border: 1px solid #cbd5e1; 
             font-family: 'Poppins', sans-serif; font-weight: 600; color: #0f172a; font-size: 13px;
-            background-color: white; outline: none; cursor: pointer; transition: all 0.2s;
+            background-color: white; outline: none; cursor: pointer; transition: all 0.2s; width: 100%; box-sizing: border-box;
         }
-        input[type="text"] { width: 180px; cursor: text; }
-        input[type="text"]:focus, select:focus { border-color: #f97316; box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.15); }
+        input[type="text"]:focus, input[type="date"]:focus, select:focus { border-color: #f97316; box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.15); }
 
-        .action-buttons { display: flex; gap: 10px; }
+        .action-buttons { display: flex; gap: 10px; grid-column: 1 / -1; justify-content: flex-end; margin-top: 5px;}
         
         .btn-refresh { 
             background-color: #f97316; color: white; border: none; 
             padding: 9px 16px; cursor: pointer; border-radius: 6px; 
             font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 13px; text-decoration: none;
             transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(249, 115, 22, 0.2);
-            display: inline-block; line-height: 20px;
+            display: inline-flex; align-items: center; justify-content: center; gap: 5px;
         }
         .btn-refresh:hover { background-color: #ea580c; transform: translateY(-2px); box-shadow: 0 6px 12px rgba(249, 115, 22, 0.3); }
         .btn-refresh:active { transform: translateY(0); }
         
-        /* Tombol Spesifik */
         .btn-lacak { background-color: #0f172a; box-shadow: 0 4px 6px rgba(15, 23, 42, 0.2); }
         .btn-lacak:hover { background-color: #1e293b; box-shadow: 0 6px 12px rgba(15, 23, 42, 0.3); }
         .btn-excel { background-color: #10b981; box-shadow: 0 4px 6px rgba(16, 185, 129, 0.2); }
         .btn-excel:hover { background-color: #059669; box-shadow: 0 6px 12px rgba(16, 185, 129, 0.3); }
 
-        .table-responsive { overflow-x: auto; border-radius: 8px; box-shadow: 0 0 0 1px #e2e8f0; }
+        /* TABEL STICKY HEADER & SCROLL */
+        .table-responsive { max-height: 650px; overflow-y: auto; overflow-x: auto; border-radius: 8px; box-shadow: 0 0 0 1px #e2e8f0; position: relative;}
         table { width: 100%; border-collapse: collapse; } 
         th, td { padding: 12px 10px; text-align: left; border-bottom: 1px solid #e2e8f0; font-size: 12px; } 
         th { 
-            background-color: #0f172a; 
-            color: #f8fafc; text-transform: uppercase; font-size: 11px; 
-            font-weight: 700; letter-spacing: 0.5px;
+            background-color: #0f172a; color: #f8fafc; text-transform: uppercase; font-size: 11px; 
+            font-weight: 700; letter-spacing: 0.5px; position: sticky; top: 0; z-index: 10; cursor: pointer;
+            transition: background-color 0.2s;
         }
-        tr { transition: all 0.2s ease; }
+        th:hover { background-color: #1e293b; }
+        tr { transition: background-color 0.2s ease; }
         tr:hover { background-color: #f1f5f9; }
         
         .badge { padding: 4px 8px; border-radius: 6px; font-size: 10px; font-weight: 700; letter-spacing: 0.3px; display: inline-block;}
         .badge-fastest { background-color: #22c55e; color: white; margin-top: 4px; box-shadow: 0 2px 4px rgba(34, 197, 94, 0.2); display: block; width: fit-content;}
         .badge-rute { background-color: #cbd5e1; color: #334155; }
         
-        /* Warna Pelayaran */
+        /* ALERT CLOSING TIME */
+        .closing-danger { color: #dc2626; font-weight: bold; background: #fee2e2; padding: 2px 6px; border-radius: 4px; display: inline-block;}
+        .closing-warning { color: #d97706; font-weight: bold; background: #fef3c7; padding: 2px 6px; border-radius: 4px; display: inline-block;}
+
+        /* Warna Pelayaran & Vendor */
         .badge-spil { background-color: #eab308; color: #ffffff; }
         .badge-temas { background-color: #06b6d4; color: white; }
         .badge-meratus { background-color: #1e3a8a; color: white; }
@@ -88,7 +93,6 @@
         .badge-icon { background-color: #f97316; color: white; }
         .badge-samudera { background-color: #dc2626; color: white; }
 
-        /* WARNA 13 VENDOR SAKTI GOTRANS */
         .badge-vendor-apu { background-color: #8b5cf6; color: white; border: 1px solid #7c3aed; } 
         .badge-vendor-tar { background-color: #14b8a6; color: white; border: 1px solid #0d9488; } 
         .badge-vendor-ire { background-color: #ec4899; color: white; border: 1px solid #db2777; } 
@@ -112,44 +116,59 @@
         <img src="logo%20gobel.jpg" alt="Logo GoTrans Gobel">
     </div>
     
-    <h2>Jadwal Kapal dari Jakarta</h2>
+    <h2>Dashboard Master Jadwal Kapal</h2>
     <p class="subtitle" id="lastUpdated">Terakhir diperbarui: -</p>
 
     <div class="toolbar">
-        <div class="filter-group">
-            <div>
-                <label for="routeFilter">📍 Rute Tujuan:</label>
-                <input type="text" id="routeFilter" list="ruteOptions" oninput="tampilkanTabel()" placeholder="Ketik rute..." autocomplete="off">
-                <datalist id="ruteOptions">
-                    <option value="Semua Rute">
-                    <option value="Makassar">
-                    <option value="Bitung (Manado)">
-                    <option value="Gorontalo">
-                    <option value="Samarinda">
-                    <option value="Balikpapan">
-                    <option value="Banjarmasin">
-                    <option value="Belawan (Medan)">
-                    <option value="Palu (Tangkian)">
-                    <option value="Batam">
-                    <option value="Pontianak">
-                    <option value="Tanjung Pinang">
-                </datalist>
-            </div>
-            
-            <div>
-                <label for="pelayaranFilter">🚢 Pelayaran:</label>
-                <select id="pelayaranFilter" onchange="tampilkanTabel()">
-                    <option value="ALL">Semua Pelayaran</option>
-                    <option value="SPIL">SPIL</option>
-                    <option value="TEMAS">TEMAS</option>
-                    <option value="MERATUS">MERATUS</option>
-                    <option value="TANTO">TANTO</option>
-                    <option value="ICON">ICON</option>
-                    <option value="SAMUDERA">SAMUDERA</option>
-                </select>
-            </div>
+        <div class="filter-item">
+            <label for="routeFilter">📍 Rute Tujuan</label>
+            <input type="text" id="routeFilter" list="ruteOptions" oninput="tampilkanTabel()" placeholder="Ketik rute..." autocomplete="off">
+            <datalist id="ruteOptions">
+                <option value="Semua Rute">
+                <option value="Makassar">
+                <option value="Bitung (Manado)">
+                <option value="Gorontalo">
+                <option value="Samarinda">
+                <option value="Balikpapan">
+                <option value="Banjarmasin">
+                <option value="Belawan (Medan)">
+                <option value="Palu (Tangkian)">
+                <option value="Batam">
+                <option value="Pontianak">
+                <option value="Tanjung Pinang">
+            </datalist>
         </div>
         
+        <div class="filter-item">
+            <label for="pelayaranFilter">🚢 Pelayaran</label>
+            <select id="pelayaranFilter" onchange="tampilkanTabel()">
+                <option value="ALL">Semua Pelayaran</option>
+                <option value="SPIL">SPIL</option>
+                <option value="TEMAS">TEMAS</option>
+                <option value="MERATUS">MERATUS</option>
+                <option value="TANTO">TANTO</option>
+                <option value="ICON">ICON</option>
+                <option value="SAMUDERA">SAMUDERA</option>
+            </select>
+        </div>
+
+        <div class="filter-item">
+            <label for="searchVessel">🔍 Cari Nama Kapal</label>
+            <input type="text" id="searchVessel" oninput="tampilkanTabel()" placeholder="Misal: Sinar Sanur...">
+        </div>
+
+        <div class="filter-item" style="grid-column: span 2; display: flex; flex-direction: row; align-items: end; gap: 10px;">
+            <div style="flex: 1;">
+                <label>📅 ETD Mulai</label>
+                <input type="date" id="startDate" onchange="tampilkanTabel()">
+            </div>
+            <div style="padding-bottom: 8px; font-weight: 600; color: #64748b;">s/d</div>
+            <div style="flex: 1;">
+                <label>ETD Sampai</label>
+                <input type="date" id="endDate" onchange="tampilkanTabel()">
+            </div>
+        </div>
+
         <div class="action-buttons">
             <button class="btn-refresh btn-excel" onclick="exportKeExcel()">📊 Export Excel</button>
             <a href="lacak-kapal.html" class="btn-refresh btn-lacak">🌐 Lacak Kapal (Live Map)</a>
@@ -161,15 +180,15 @@
         <table>
             <thead>
                 <tr>
-                    <th>Pelayaran</th>
-                    <th style="min-width: 50px;">TOP Vendor</th> 
-                    <th style="min-width: 150px;">Vessel Voyage</th>
+                    <th onclick="sortTable('pelayaran')" title="Klik untuk mengurutkan">Pelayaran ↕️</th>
+                    <th>Suggest Vendor</th> 
+                    <th onclick="sortTable('nama_kapal')" title="Klik untuk mengurutkan">Vessel Voyage ↕️</th>
                     <th>Open Stack</th>
-                    <th>Closing Time</th>
-                    <th>ETD</th> 
-                    <th>ETA</th> 
+                    <th onclick="sortTable('closing')" title="Klik untuk mengurutkan">Closing Time ↕️</th>
+                    <th onclick="sortTable('etd')" title="Klik untuk mengurutkan">ETD ↕️</th> 
+                    <th onclick="sortTable('eta')" title="Klik untuk mengurutkan">ETA ↕️</th> 
                     <th>ETB</th> 
-                    <th>Rute</th>
+                    <th onclick="sortTable('rute')" title="Klik untuk mengurutkan">Rute ↕️</th>
                 </tr>
             </thead>
             <tbody id="tableBody">
@@ -182,6 +201,7 @@
 <script>
     let dataJadwalGlobal = [];
     let dataTrendGlobal = null; 
+    let currentSort = { column: 'etd', asc: true }; // Default urut berdasar ETD tercepat
 
     function parseKeTanggal(dateStr) {
         if (!dateStr || dateStr === "N/A") return 9999999999999;
@@ -235,9 +255,7 @@
             if (resTrend.ok) {
                 dataTrendGlobal = await resTrend.json();
             }
-        } catch (e) { 
-            console.log("File Trend gagal diload."); 
-        }
+        } catch (e) { console.log("File Trend gagal diload."); }
 
         try {
             const response = await fetch('jadwal.json?v=' + new Date().getTime());
@@ -253,15 +271,12 @@
             dataJadwalGlobal = rawData.filter(item => {
                 if (!item || !item.rute) return false;
                 
-                // NORMALISASI RUTE SEJAK AWAL
                 if (item.rute.toUpperCase() === "MEDAN") item.rute = "Belawan";
                 if (item.rute.toUpperCase() === "MANADO") item.rute = "Bitung";
                 
                 let waktuETD = parseKeTanggal(item.etd);
                 return waktuETD >= waktuHariIni; 
             });
-            
-            dataJadwalGlobal.sort((a, b) => parseKeTanggal(a.etd) - parseKeTanggal(b.etd));
             
             document.getElementById('lastUpdated').innerText = `Diperbarui otomatis: ${new Date().toLocaleString('id-ID')}`;
             tampilkanTabel();
@@ -298,12 +313,8 @@
                             totalPake += dataPelayaran[namaLine]; 
                         }
                     }
-
-                    if (totalPake > 0) {
-                        rankingVendor.push({ vendor: namaVendor, skor: totalPake });
-                    }
+                    if (totalPake > 0) rankingVendor.push({ vendor: namaVendor, skor: totalPake });
                 }
-
                 rankingVendor.sort((a, b) => b.skor - a.skor);
                 listVendor = rankingVendor.slice(0, 3).map(v => v.vendor);
             }
@@ -332,11 +343,9 @@
             
             badgesHTML += `<span class="badge ${namaClass}" style="margin-right: 2px; margin-bottom: 2px;" title="Top Vendor">${vClean}</span>`;
         });
-
         return badgesHTML;
     }
 
-    // FUNGSI FILTER DUA ARAH (MEDAN = BELAWAN, BELAWAN = MEDAN)
     function ruteCocok(ruteJSON, filterPilihan) {
         let r = (ruteJSON || "").toLowerCase();
         let f = filterPilihan.toLowerCase().trim().split(' ')[0]; 
@@ -351,28 +360,53 @@
         return aliases.includes(f);
     }
 
+    // FUNGSI SORTING (URUTKAN)
+    function sortTable(column) {
+        if (currentSort.column === column) {
+            currentSort.asc = !currentSort.asc;
+        } else {
+            currentSort.column = column;
+            currentSort.asc = true;
+        }
+        tampilkanTabel();
+    }
+
     function tampilkanTabel() {
         const filterRute = document.getElementById('routeFilter').value;
         const filterPelayaran = document.getElementById('pelayaranFilter').value;
+        const searchVal = document.getElementById('searchVessel').value.toLowerCase();
+        
+        // Setup Date Range
+        const startVal = document.getElementById('startDate').value;
+        const endVal = document.getElementById('endDate').value;
+        let startMs = startVal ? new Date(startVal).setHours(0,0,0,0) : 0;
+        let endMs = endVal ? new Date(endVal).setHours(23,59,59,999) : 9999999999999;
+
         const tbody = document.getElementById('tableBody');
         tbody.innerHTML = '';
 
+        // 1. FILTER UMUM (Rute, Pelayaran, Tanggal, dan Global Search Nama Kapal)
         let disaringAwal = dataJadwalGlobal.filter(item => {
             let matchRute = ruteCocok(item.rute, filterRute);
-            let matchPelayaran = true;
-            if (filterPelayaran !== "ALL") {
-                let p = item.pelayaran ? item.pelayaran.toUpperCase() : "SPIL";
-                matchPelayaran = (p === filterPelayaran);
-            }
-            return matchRute && matchPelayaran;
+            let matchPelayaran = (filterPelayaran === "ALL") ? true : ((item.pelayaran || "").toUpperCase() === filterPelayaran);
+            
+            // Search Kapal
+            let kapalNama = (item.nama_kapal || "").toLowerCase();
+            let matchSearch = kapalNama.includes(searchVal);
+
+            // Filter Tanggal ETD
+            let waktuETD = parseKeTanggal(item.etd);
+            let matchDate = (waktuETD >= startMs && waktuETD <= endMs);
+
+            return matchRute && matchPelayaran && matchSearch && matchDate;
         });
 
+        // 2. LOGIKA PEMUSNAH SPAM SAMUDERA
         let disaringFinal = [];
         let trackerSamudera = {}; 
 
         disaringAwal.forEach(item => {
             let line = item.pelayaran ? item.pelayaran.toUpperCase() : "SPIL";
-            
             if (line === "SAMUDERA") {
                 let namaKapal = item.nama_kapal || "";
                 let kapalPertama = namaKapal.split('->')[0].trim();
@@ -391,19 +425,33 @@
             }
         });
 
-        for (let key in trackerSamudera) {
-            disaringFinal.push(trackerSamudera[key]);
-        }
+        for (let key in trackerSamudera) disaringFinal.push(trackerSamudera[key]);
 
-        disaringFinal.sort((a, b) => parseKeTanggal(a.etd) - parseKeTanggal(b.etd));
+        // 3. LOGIKA SORTING DINAMIS
+        disaringFinal.sort((a, b) => {
+            let valA, valB;
+            if (currentSort.column === 'etd') { valA = parseKeTanggal(a.etd); valB = parseKeTanggal(b.etd); }
+            else if (currentSort.column === 'eta') { valA = parseKeTanggal(a.eta); valB = parseKeTanggal(b.eta); }
+            else if (currentSort.column === 'closing') { valA = parseKeTanggal(a.closing); valB = parseKeTanggal(b.closing); }
+            else if (currentSort.column === 'pelayaran') { valA = (a.pelayaran || "").toLowerCase(); valB = (b.pelayaran || "").toLowerCase(); }
+            else if (currentSort.column === 'nama_kapal') { valA = (a.nama_kapal || "").toLowerCase(); valB = (b.nama_kapal || "").toLowerCase(); }
+            else if (currentSort.column === 'rute') { valA = (a.rute || "").toLowerCase(); valB = (b.rute || "").toLowerCase(); }
+            
+            if (valA < valB) return currentSort.asc ? -1 : 1;
+            if (valA > valB) return currentSort.asc ? 1 : -1;
+            return 0;
+        });
 
         if(disaringFinal.length === 0) {
             tbody.innerHTML = `<tr><td colspan="9" style="text-align: center; padding: 40px; color: #64748b; font-weight:500;">📭 Tidak ada jadwal kapal yang cocok dengan filter.</td></tr>`;
             return;
         }
 
+        // Variable buat nandain waktu sekarang buat Alert
+        const sekarangMs = new Date().getTime();
+
         disaringFinal.forEach((item, index) => {
-            let badgeTercepat = (index === 0 && ruteCocok(item.rute, filterRute) && filterRute.toLowerCase() !== "semua rute" && filterRute !== "") ? '<span class="badge badge-fastest">TERCEPAT</span>' : '';
+            let badgeTercepat = (index === 0 && ruteCocok(item.rute, filterRute) && filterRute.toLowerCase() !== "semua rute" && filterRute !== "" && currentSort.column === 'etd' && currentSort.asc) ? '<span class="badge badge-fastest">TERCEPAT</span>' : '';
             
             let line = item.pelayaran ? item.pelayaran.toUpperCase() : "SPIL";
             let badgePelayaran = 'badge-rute';
@@ -422,17 +470,38 @@
                 mentahClosing = "N/A";
             }
             if (!mentahKapal || mentahKapal === "") mentahKapal = "Tanpa Nama Kapal";
-
             let namaKapalBersih = mentahKapal.replace("[TEMAS]", "").replace("[SPIL]", "").trim();
             
+            // Format Tanggal
             let openStack = formatTanggalStandar(item.open_stack);
-            let closing   = formatTanggalStandar(mentahClosing);
-            let etd       = formatTanggalStandar(item.etd);
-            let eta       = formatTanggalStandar(item.eta);
-            let etb       = formatTanggalStandar(item.etb);
+            let closingStr = formatTanggalStandar(mentahClosing);
+            let etdStr = formatTanggalStandar(item.etd);
+            let etaStr = formatTanggalStandar(item.eta);
+            let etbStr = formatTanggalStandar(item.etb);
+
+            // LOGIKA 1: CLOSING URGENCY ALERT 🚨
+            let timeClosing = parseKeTanggal(mentahClosing);
+            let finalClosingHTML = closingStr;
+            if (timeClosing !== 9999999999999 && timeClosing > sekarangMs) {
+                let sisaJam = (timeClosing - sekarangMs) / (1000 * 60 * 60);
+                if (sisaJam <= 24) finalClosingHTML = `<span class="closing-danger" title="Kurang dari 24 Jam!">⏳ ${closingStr}</span>`;
+                else if (sisaJam <= 48) finalClosingHTML = `<span class="closing-warning" title="Kurang dari 48 Jam!">⚠️ ${closingStr}</span>`;
+            } else if (timeClosing !== 9999999999999 && timeClosing < sekarangMs) {
+                finalClosingHTML = `<span class="closing-danger">❌ CLOSED</span>`;
+            }
+
+            // LOGIKA 2: LEAD TIME (Sailing Time) ⏱️
+            let timeETD = parseKeTanggal(item.etd);
+            let timeETA = parseKeTanggal(item.eta);
+            let leadTimeHTML = "";
+            if (timeETD < 9999999999999 && timeETA < 9999999999999 && timeETA >= timeETD) {
+                let hariSailing = Math.ceil((timeETA - timeETD) / (1000 * 60 * 60 * 24));
+                leadTimeHTML = `<br><span style="font-size: 10px; color: #10b981; font-weight: 700;">(± ${hariSailing} Hari)</span>`;
+            }
 
             let ruteTampil = (item.rute || "").toUpperCase();
-            
+            if (ruteTampil === "MEDAN") ruteTampil = "BELAWAN"; 
+
             let suggestVendorHTML = getVendorBadgesHTML(item.rute, line);
 
             tbody.innerHTML += `<tr>
@@ -440,10 +509,10 @@
                 <td>${suggestVendorHTML}</td> 
                 <td><strong style="color:#0f172a; line-height: 1.4;">${namaKapalBersih}</strong>${badgeTercepat}</td>
                 <td>${openStack}</td>
-                <td>${closing}</td>
-                <td><strong style="color:#0f172a;">${etd}</strong></td>
-                <td>${eta}</td>
-                <td>${etb}</td>
+                <td>${finalClosingHTML}</td>
+                <td><strong style="color:#0f172a;">${etdStr}</strong></td>
+                <td>${etaStr}${leadTimeHTML}</td>
+                <td>${etbStr}</td>
                 <td><span class="badge badge-rute">${ruteTampil}</span></td>
             </tr>`;
         });
