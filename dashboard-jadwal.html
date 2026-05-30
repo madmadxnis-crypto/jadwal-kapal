@@ -558,6 +558,17 @@
             let etdStr = formatTanggalStandar(item.etd);
             let etaStr = formatTanggalStandar(item.eta);
             let etbStr = formatTanggalStandar(item.etb);
+let timeETB = parseKeTanggal(item.etb);
+let timeETD = parseKeTanggal(item.etd);
+
+// LOGIC AUTO-DETECT ETB ORIGIN VS TUJUAN
+if (timeETB !== 9999999999999 && timeETD !== 9999999999999) {
+    if (timeETB < timeETD) {
+        etbStr = `${etbStr}<br><span style="font-size: 9px; color: #3b82f6; font-weight: 600;">(Sandar Priok)</span>`;
+    } else {
+        etbStr = `${etbStr}<br><span style="font-size: 9px; color: #8b5cf6; font-weight: 600;">(Sandar Tujuan)</span>`;
+    }
+}
 
             let timeClosing = parseKeTanggal(mentahClosing);
             let finalClosingHTML = closingStr;
