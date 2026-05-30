@@ -29,25 +29,13 @@
         .logo-container img { max-height: 85px; width: auto; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.05)); }
         
         h2 { text-align: center; color: #0f172a; margin-bottom: 5px; margin-top: 5px; font-weight: 700; letter-spacing: -0.5px; }
-        p.subtitle { text-align: center; color: #64748b; margin-bottom: 20px; font-size: 13px; font-weight: 400; }
+        p.subtitle { text-align: center; color: #64748b; margin-bottom: 15px; font-size: 13px; font-weight: 400; }
         
-        .toolbar { 
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;
-            background: #f8fafc; padding: 16px 20px; border-radius: 10px; 
-            border: 1px solid #e2e8f0; margin-bottom: 20px; align-items: end;
+        /* TOMBOL ACTION PINDAH KE ATAS SINI */
+        .top-actions {
+            display: flex; justify-content: flex-end; gap: 10px; margin-bottom: 15px;
         }
-        .filter-item { display: flex; flex-direction: column; gap: 6px; }
-        .toolbar label { font-weight: 600; color: #334155; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;}
-        
-        input[type="text"], input[type="date"], select { 
-            padding: 8px 12px; border-radius: 6px; border: 1px solid #cbd5e1; 
-            font-family: 'Poppins', sans-serif; font-weight: 600; color: #0f172a; font-size: 13px;
-            background-color: white; outline: none; cursor: pointer; transition: all 0.2s; width: 100%; box-sizing: border-box;
-        }
-        input[type="text"]:focus, input[type="date"]:focus, select:focus { border-color: #f97316; box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.15); }
 
-        .action-buttons { display: flex; gap: 10px; grid-column: 1 / -1; justify-content: flex-end; margin-top: 5px;}
-        
         .btn-refresh { 
             background-color: #f97316; color: white; border: none; 
             padding: 9px 16px; cursor: pointer; border-radius: 6px; 
@@ -63,21 +51,32 @@
         .btn-excel { background-color: #10b981; box-shadow: 0 4px 6px rgba(16, 185, 129, 0.2); }
         .btn-excel:hover { background-color: #059669; box-shadow: 0 6px 12px rgba(16, 185, 129, 0.3); }
 
-        /* PERBAIKAN TABEL: RATA TENGAH & GARIS PISAH */
+        .toolbar { 
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;
+            background: #f8fafc; padding: 16px 20px; border-radius: 10px; 
+            border: 1px solid #e2e8f0; margin-bottom: 20px; align-items: end;
+        }
+        .filter-item { display: flex; flex-direction: column; gap: 6px; }
+        .toolbar label { font-weight: 600; color: #334155; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;}
+        
+        input[type="text"], input[type="date"], select { 
+            padding: 8px 12px; border-radius: 6px; border: 1px solid #cbd5e1; 
+            font-family: 'Poppins', sans-serif; font-weight: 600; color: #0f172a; font-size: 13px;
+            background-color: white; outline: none; cursor: pointer; transition: all 0.2s; width: 100%; box-sizing: border-box;
+        }
+        input[type="text"]:focus, input[type="date"]:focus, select:focus { border-color: #f97316; box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.15); }
+
+        /* PERBAIKAN TABEL: GARIS VERTIKAL DIHAPUS */
         .table-responsive { max-height: 650px; overflow-y: auto; overflow-x: auto; border-radius: 8px; border: 1px solid #e2e8f0; position: relative;}
         table { width: 100%; border-collapse: collapse; } 
         
         th, td { 
-            padding: 12px 10px; 
-            text-align: center; /* Bikin Rata Tengah */
-            border-bottom: 1px solid #e2e8f0; 
-            border-right: 1px solid #e2e8f0; /* Garis vertikal pemisah kolom */
+            padding: 14px 10px; 
+            text-align: center; /* Rata Tengah */
+            border-bottom: 1px solid #e2e8f0; /* CUMA GARIS BAWAH */
             font-size: 12px; 
             vertical-align: middle;
         } 
-        
-        /* Hapus garis kanan di kolom paling ujung */
-        th:last-child, td:last-child { border-right: none; }
         
         /* Khusus Vessel Voyage dibikin rata kiri biar enak dibaca */
         td:nth-child(3) { text-align: left; }
@@ -85,16 +84,21 @@
         th { 
             background-color: #0f172a; color: #f8fafc; text-transform: uppercase; font-size: 11px; 
             font-weight: 700; letter-spacing: 0.5px; position: sticky; top: 0; z-index: 10; cursor: pointer;
-            transition: background-color 0.2s;
+            transition: background-color 0.2s; user-select: none;
         }
         th:hover { background-color: #1e293b; }
         tr { transition: background-color 0.2s ease; }
         tr:hover { background-color: #f1f5f9; }
+
+        /* DESAIN ICON SORTING BARU BIAR NOTICEABLE */
+        .sort-icon {
+            display: inline-block; margin-left: 5px; font-size: 13px; color: #64748b; transition: all 0.2s;
+        }
+        th:hover .sort-icon { color: #f8fafc; }
         
         .badge { padding: 4px 8px; border-radius: 6px; font-size: 10px; font-weight: 700; letter-spacing: 0.3px; display: inline-block;}
         .badge-fastest { background-color: #22c55e; color: white; margin-top: 4px; box-shadow: 0 2px 4px rgba(34, 197, 94, 0.2); display: block; width: fit-content; margin-left: auto; margin-right: auto;}
         
-        /* Buat badge tercepat di Vessel Voyage (yang rata kiri) biar tetep nyender kiri */
         td:nth-child(3) .badge-fastest { margin-left: 0; margin-right: 0; }
 
         .badge-rute { background-color: #cbd5e1; color: #334155; }
@@ -137,6 +141,12 @@
     
     <h2>Dashboard Master Jadwal Kapal</h2>
     <p class="subtitle" id="lastUpdated">Terakhir diperbarui: -</p>
+
+    <div class="top-actions">
+        <button class="btn-refresh btn-excel" onclick="exportKeExcel()">📊 Export Excel</button>
+        <a href="lacak-kapal.html" class="btn-refresh btn-lacak">🌐 Lacak Kapal (Live Map)</a>
+        <button class="btn-refresh" onclick="tarikSemuaData()">🔄 Refresh Data</button>
+    </div>
 
     <div class="toolbar">
         <div class="filter-item">
@@ -187,27 +197,21 @@
                 <input type="date" id="endDate" onchange="tampilkanTabel()">
             </div>
         </div>
-
-        <div class="action-buttons">
-            <button class="btn-refresh btn-excel" onclick="exportKeExcel()">📊 Export Excel</button>
-            <a href="lacak-kapal.html" class="btn-refresh btn-lacak">🌐 Lacak Kapal (Live Map)</a>
-            <button class="btn-refresh" onclick="tarikSemuaData()">🔄 Refresh Data</button>
-        </div>
     </div>
 
     <div class="table-responsive">
         <table>
             <thead>
                 <tr>
-                    <th onclick="sortTable('pelayaran')" title="Klik untuk mengurutkan">Pelayaran ⇕</th>
+                    <th id="th-pelayaran" onclick="sortTable('pelayaran')" title="Klik untuk mengurutkan">Pelayaran <span class="sort-icon">⇅</span></th>
                     <th>Suggest Vendor</th> 
-                    <th onclick="sortTable('nama_kapal')" title="Klik untuk mengurutkan">Vessel Voyage ⇕</th>
+                    <th id="th-nama_kapal" onclick="sortTable('nama_kapal')" title="Klik untuk mengurutkan">Vessel Voyage <span class="sort-icon">⇅</span></th>
                     <th>Open Stack</th>
-                    <th onclick="sortTable('closing')" title="Klik untuk mengurutkan">Closing Time ⇕</th>
-                    <th onclick="sortTable('etd')" title="Klik untuk mengurutkan">ETD ⇕</th> 
-                    <th onclick="sortTable('eta')" title="Klik untuk mengurutkan">ETA ⇕</th> 
+                    <th id="th-closing" onclick="sortTable('closing')" title="Klik untuk mengurutkan">Closing Time <span class="sort-icon">⇅</span></th>
+                    <th id="th-etd" onclick="sortTable('etd')" title="Klik untuk mengurutkan">ETD <span class="sort-icon">⇅</span></th> 
+                    <th id="th-eta" onclick="sortTable('eta')" title="Klik untuk mengurutkan">ETA <span class="sort-icon">⇅</span></th> 
                     <th>ETB</th> 
-                    <th onclick="sortTable('rute')" title="Klik untuk mengurutkan">Rute ⇕</th>
+                    <th id="th-rute" onclick="sortTable('rute')" title="Klik untuk mengurutkan">Rute <span class="sort-icon">⇅</span></th>
                 </tr>
             </thead>
             <tbody id="tableBody">
@@ -389,6 +393,32 @@
         tampilkanTabel();
     }
 
+    // UPDATE TAMPILAN ICON SORTING
+    function updateSortIcons() {
+        const headers = {
+            'pelayaran': 'th-pelayaran',
+            'nama_kapal': 'th-nama_kapal',
+            'closing': 'th-closing',
+            'etd': 'th-etd',
+            'eta': 'th-eta',
+            'rute': 'th-rute'
+        };
+
+        for (let key in headers) {
+            let th = document.getElementById(headers[key]);
+            if (th) {
+                let iconSpan = th.querySelector('.sort-icon');
+                if (currentSort.column === key) {
+                    iconSpan.innerHTML = currentSort.asc ? '▲' : '▼';
+                    iconSpan.style.color = '#f97316'; // Warna Oranye nyala
+                } else {
+                    iconSpan.innerHTML = '⇅';
+                    iconSpan.style.color = '#64748b'; // Abu-abu pudar
+                }
+            }
+        }
+    }
+
     function tampilkanTabel() {
         const filterRute = document.getElementById('routeFilter').value;
         const filterPelayaran = document.getElementById('pelayaranFilter').value;
@@ -454,8 +484,10 @@
             return 0;
         });
 
+        updateSortIcons();
+
         if(disaringFinal.length === 0) {
-            tbody.innerHTML = `<tr><td colspan="9" style="text-align: center; padding: 40px; color: #64748b; font-weight:500; border-right: none;">📭 Tidak ada jadwal kapal yang cocok dengan filter.</td></tr>`;
+            tbody.innerHTML = `<tr><td colspan="9" style="text-align: center; padding: 40px; color: #64748b; font-weight:500;">📭 Tidak ada jadwal kapal yang cocok dengan filter.</td></tr>`;
             return;
         }
 
