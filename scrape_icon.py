@@ -12,9 +12,14 @@ print("🚀 Memulai Master Scraper ICON (Revisi Mapping Rute)...")
 
 # Setup Chrome Options (Biar aman jalan di GitHub Actions)
 chrome_options = Options()
-chrome_options.add_argument("--headless") # Dijalankan tanpa buka jendela browser
+chrome_options.add_argument("--headless") 
 chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")
+# Tiga baris sakti di bawah ini wajib ditambahin:
+chrome_options.add_argument("--window-size=1920,1080") # Biar webnya ngebuka versi Desktop
+chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36") # Biar ga dikira robot botak
+chrome_options.add_argument("--disable-blink-features=AutomationControlled")
+
 driver = webdriver.Chrome(options=chrome_options)
 
 # Mapping rute sesuai ketersediaan di ICON dan revisi kode
