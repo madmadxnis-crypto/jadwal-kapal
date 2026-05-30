@@ -31,7 +31,6 @@
         h2 { text-align: center; color: #0f172a; margin-bottom: 5px; margin-top: 5px; font-weight: 700; letter-spacing: -0.5px; }
         p.subtitle { text-align: center; color: #64748b; margin-bottom: 20px; font-size: 13px; font-weight: 400; }
         
-        /* Toolbar Grid System untuk nampung banyak filter */
         .toolbar { 
             display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;
             background: #f8fafc; padding: 16px 20px; border-radius: 10px; 
@@ -64,10 +63,25 @@
         .btn-excel { background-color: #10b981; box-shadow: 0 4px 6px rgba(16, 185, 129, 0.2); }
         .btn-excel:hover { background-color: #059669; box-shadow: 0 6px 12px rgba(16, 185, 129, 0.3); }
 
-        /* TABEL STICKY HEADER & SCROLL */
-        .table-responsive { max-height: 650px; overflow-y: auto; overflow-x: auto; border-radius: 8px; box-shadow: 0 0 0 1px #e2e8f0; position: relative;}
+        /* PERBAIKAN TABEL: RATA TENGAH & GARIS PISAH */
+        .table-responsive { max-height: 650px; overflow-y: auto; overflow-x: auto; border-radius: 8px; border: 1px solid #e2e8f0; position: relative;}
         table { width: 100%; border-collapse: collapse; } 
-        th, td { padding: 12px 10px; text-align: left; border-bottom: 1px solid #e2e8f0; font-size: 12px; } 
+        
+        th, td { 
+            padding: 12px 10px; 
+            text-align: center; /* Bikin Rata Tengah */
+            border-bottom: 1px solid #e2e8f0; 
+            border-right: 1px solid #e2e8f0; /* Garis vertikal pemisah kolom */
+            font-size: 12px; 
+            vertical-align: middle;
+        } 
+        
+        /* Hapus garis kanan di kolom paling ujung */
+        th:last-child, td:last-child { border-right: none; }
+        
+        /* Khusus Vessel Voyage dibikin rata kiri biar enak dibaca */
+        td:nth-child(3) { text-align: left; }
+
         th { 
             background-color: #0f172a; color: #f8fafc; text-transform: uppercase; font-size: 11px; 
             font-weight: 700; letter-spacing: 0.5px; position: sticky; top: 0; z-index: 10; cursor: pointer;
@@ -78,14 +92,18 @@
         tr:hover { background-color: #f1f5f9; }
         
         .badge { padding: 4px 8px; border-radius: 6px; font-size: 10px; font-weight: 700; letter-spacing: 0.3px; display: inline-block;}
-        .badge-fastest { background-color: #22c55e; color: white; margin-top: 4px; box-shadow: 0 2px 4px rgba(34, 197, 94, 0.2); display: block; width: fit-content;}
+        .badge-fastest { background-color: #22c55e; color: white; margin-top: 4px; box-shadow: 0 2px 4px rgba(34, 197, 94, 0.2); display: block; width: fit-content; margin-left: auto; margin-right: auto;}
+        
+        /* Buat badge tercepat di Vessel Voyage (yang rata kiri) biar tetep nyender kiri */
+        td:nth-child(3) .badge-fastest { margin-left: 0; margin-right: 0; }
+
         .badge-rute { background-color: #cbd5e1; color: #334155; }
         
         /* ALERT CLOSING TIME */
-        .closing-danger { color: #dc2626; font-weight: bold; background: #fee2e2; padding: 2px 6px; border-radius: 4px; display: inline-block;}
-        .closing-warning { color: #d97706; font-weight: bold; background: #fef3c7; padding: 2px 6px; border-radius: 4px; display: inline-block;}
+        .closing-danger { color: #dc2626; font-weight: bold; background: #fee2e2; padding: 3px 8px; border-radius: 4px; display: inline-block;}
+        .closing-warning { color: #d97706; font-weight: bold; background: #fef3c7; padding: 3px 8px; border-radius: 4px; display: inline-block;}
 
-        /* Warna Pelayaran & Vendor */
+        /* Warna Pelayaran */
         .badge-spil { background-color: #eab308; color: #ffffff; }
         .badge-temas { background-color: #06b6d4; color: white; }
         .badge-meratus { background-color: #1e3a8a; color: white; }
@@ -93,6 +111,7 @@
         .badge-icon { background-color: #f97316; color: white; }
         .badge-samudera { background-color: #dc2626; color: white; }
 
+        /* WARNA 13 VENDOR */
         .badge-vendor-apu { background-color: #8b5cf6; color: white; border: 1px solid #7c3aed; } 
         .badge-vendor-tar { background-color: #14b8a6; color: white; border: 1px solid #0d9488; } 
         .badge-vendor-ire { background-color: #ec4899; color: white; border: 1px solid #db2777; } 
@@ -180,15 +199,15 @@
         <table>
             <thead>
                 <tr>
-                    <th onclick="sortTable('pelayaran')" title="Klik untuk mengurutkan">Pelayaran ↕️</th>
+                    <th onclick="sortTable('pelayaran')" title="Klik untuk mengurutkan">Pelayaran ⇕</th>
                     <th>Suggest Vendor</th> 
-                    <th onclick="sortTable('nama_kapal')" title="Klik untuk mengurutkan">Vessel Voyage ↕️</th>
+                    <th onclick="sortTable('nama_kapal')" title="Klik untuk mengurutkan">Vessel Voyage ⇕</th>
                     <th>Open Stack</th>
-                    <th onclick="sortTable('closing')" title="Klik untuk mengurutkan">Closing Time ↕️</th>
-                    <th onclick="sortTable('etd')" title="Klik untuk mengurutkan">ETD ↕️</th> 
-                    <th onclick="sortTable('eta')" title="Klik untuk mengurutkan">ETA ↕️</th> 
+                    <th onclick="sortTable('closing')" title="Klik untuk mengurutkan">Closing Time ⇕</th>
+                    <th onclick="sortTable('etd')" title="Klik untuk mengurutkan">ETD ⇕</th> 
+                    <th onclick="sortTable('eta')" title="Klik untuk mengurutkan">ETA ⇕</th> 
                     <th>ETB</th> 
-                    <th onclick="sortTable('rute')" title="Klik untuk mengurutkan">Rute ↕️</th>
+                    <th onclick="sortTable('rute')" title="Klik untuk mengurutkan">Rute ⇕</th>
                 </tr>
             </thead>
             <tbody id="tableBody">
@@ -201,7 +220,7 @@
 <script>
     let dataJadwalGlobal = [];
     let dataTrendGlobal = null; 
-    let currentSort = { column: 'etd', asc: true }; // Default urut berdasar ETD tercepat
+    let currentSort = { column: 'etd', asc: true }; 
 
     function parseKeTanggal(dateStr) {
         if (!dateStr || dateStr === "N/A") return 9999999999999;
@@ -360,7 +379,6 @@
         return aliases.includes(f);
     }
 
-    // FUNGSI SORTING (URUTKAN)
     function sortTable(column) {
         if (currentSort.column === column) {
             currentSort.asc = !currentSort.asc;
@@ -376,7 +394,6 @@
         const filterPelayaran = document.getElementById('pelayaranFilter').value;
         const searchVal = document.getElementById('searchVessel').value.toLowerCase();
         
-        // Setup Date Range
         const startVal = document.getElementById('startDate').value;
         const endVal = document.getElementById('endDate').value;
         let startMs = startVal ? new Date(startVal).setHours(0,0,0,0) : 0;
@@ -385,23 +402,19 @@
         const tbody = document.getElementById('tableBody');
         tbody.innerHTML = '';
 
-        // 1. FILTER UMUM (Rute, Pelayaran, Tanggal, dan Global Search Nama Kapal)
         let disaringAwal = dataJadwalGlobal.filter(item => {
             let matchRute = ruteCocok(item.rute, filterRute);
             let matchPelayaran = (filterPelayaran === "ALL") ? true : ((item.pelayaran || "").toUpperCase() === filterPelayaran);
             
-            // Search Kapal
             let kapalNama = (item.nama_kapal || "").toLowerCase();
             let matchSearch = kapalNama.includes(searchVal);
 
-            // Filter Tanggal ETD
             let waktuETD = parseKeTanggal(item.etd);
             let matchDate = (waktuETD >= startMs && waktuETD <= endMs);
 
             return matchRute && matchPelayaran && matchSearch && matchDate;
         });
 
-        // 2. LOGIKA PEMUSNAH SPAM SAMUDERA
         let disaringFinal = [];
         let trackerSamudera = {}; 
 
@@ -427,7 +440,6 @@
 
         for (let key in trackerSamudera) disaringFinal.push(trackerSamudera[key]);
 
-        // 3. LOGIKA SORTING DINAMIS
         disaringFinal.sort((a, b) => {
             let valA, valB;
             if (currentSort.column === 'etd') { valA = parseKeTanggal(a.etd); valB = parseKeTanggal(b.etd); }
@@ -443,11 +455,10 @@
         });
 
         if(disaringFinal.length === 0) {
-            tbody.innerHTML = `<tr><td colspan="9" style="text-align: center; padding: 40px; color: #64748b; font-weight:500;">📭 Tidak ada jadwal kapal yang cocok dengan filter.</td></tr>`;
+            tbody.innerHTML = `<tr><td colspan="9" style="text-align: center; padding: 40px; color: #64748b; font-weight:500; border-right: none;">📭 Tidak ada jadwal kapal yang cocok dengan filter.</td></tr>`;
             return;
         }
 
-        // Variable buat nandain waktu sekarang buat Alert
         const sekarangMs = new Date().getTime();
 
         disaringFinal.forEach((item, index) => {
@@ -472,14 +483,12 @@
             if (!mentahKapal || mentahKapal === "") mentahKapal = "Tanpa Nama Kapal";
             let namaKapalBersih = mentahKapal.replace("[TEMAS]", "").replace("[SPIL]", "").trim();
             
-            // Format Tanggal
             let openStack = formatTanggalStandar(item.open_stack);
             let closingStr = formatTanggalStandar(mentahClosing);
             let etdStr = formatTanggalStandar(item.etd);
             let etaStr = formatTanggalStandar(item.eta);
             let etbStr = formatTanggalStandar(item.etb);
 
-            // LOGIKA 1: CLOSING URGENCY ALERT 🚨
             let timeClosing = parseKeTanggal(mentahClosing);
             let finalClosingHTML = closingStr;
             if (timeClosing !== 9999999999999 && timeClosing > sekarangMs) {
@@ -490,7 +499,6 @@
                 finalClosingHTML = `<span class="closing-danger">❌ CLOSED</span>`;
             }
 
-            // LOGIKA 2: LEAD TIME (Sailing Time) ⏱️
             let timeETD = parseKeTanggal(item.etd);
             let timeETA = parseKeTanggal(item.eta);
             let leadTimeHTML = "";
