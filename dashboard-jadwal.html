@@ -35,33 +35,36 @@
             --text-th: #f8fafc;
             --hover-tr: #334155;
         }
+
+        /* PERBAIKAN CSS MENGGUNAKAN VARIABEL TEMA */
         body { 
             font-family: 'Poppins', sans-serif; 
-            background: linear-gradient(135deg, #eef2f7 0%, #d9e2ec 100%); 
+            background: var(--bg-body); 
             padding: 30px 15px; 
-            color: #334155; 
+            color: var(--text-main); 
             min-height: 100vh;
             margin: 0;
+            transition: background 0.3s ease, color 0.3s ease;
         }
         .container { 
             max-width: 1400px; 
             margin: auto; 
-            background: #ffffff; 
+            background: var(--bg-container); 
             padding: 25px; 
             border-radius: 16px; 
-            box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08); 
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); 
             border-top: 6px solid #f97316; 
+            transition: background 0.3s ease;
         }
         
         .logo-container { text-align: center; margin-bottom: 20px; }
-        .logo-container img { max-height: 85px; width: auto; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.05)); }
+        .logo-container img { max-height: 85px; width: auto; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.05)); background: white; padding: 5px; border-radius: 8px; }
         
-        h2 { text-align: center; color: #0f172a; margin-bottom: 5px; margin-top: 5px; font-weight: 700; letter-spacing: -0.5px; }
+        h2 { text-align: center; color: var(--text-heading); margin-bottom: 5px; margin-top: 5px; font-weight: 700; letter-spacing: -0.5px; }
         p.subtitle { text-align: center; color: #64748b; margin-bottom: 15px; font-size: 13px; font-weight: 400; }
         
-        /* TOMBOL ACTION PINDAH KE ATAS SINI */
         .top-actions {
-            display: flex; justify-content: flex-end; gap: 10px; margin-bottom: 15px;
+            display: flex; justify-content: flex-end; gap: 10px; margin-bottom: 15px; flex-wrap: wrap;
         }
 
         .btn-refresh { 
@@ -78,65 +81,62 @@
         .btn-lacak:hover { background-color: #1e293b; box-shadow: 0 6px 12px rgba(15, 23, 42, 0.3); }
         .btn-excel { background-color: #10b981; box-shadow: 0 4px 6px rgba(16, 185, 129, 0.2); }
         .btn-excel:hover { background-color: #059669; box-shadow: 0 6px 12px rgba(16, 185, 129, 0.3); }
+        
+        /* Tombol Dark Mode Baru */
+        .btn-theme { background-color: #64748b; box-shadow: 0 4px 6px rgba(100, 116, 139, 0.2); }
+        .btn-theme:hover { background-color: #475569; }
 
         .toolbar { 
             display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;
-            background: #f8fafc; padding: 16px 20px; border-radius: 10px; 
-            border: 1px solid #e2e8f0; margin-bottom: 20px; align-items: end;
+            background: var(--bg-toolbar); padding: 16px 20px; border-radius: 10px; 
+            border: 1px solid var(--border-color); margin-bottom: 20px; align-items: end;
         }
         .filter-item { display: flex; flex-direction: column; gap: 6px; }
-        .toolbar label { font-weight: 600; color: #334155; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;}
+        .toolbar label { font-weight: 600; color: var(--text-main); font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;}
         
         input[type="text"], input[type="date"], select { 
-            padding: 8px 12px; border-radius: 6px; border: 1px solid #cbd5e1; 
-            font-family: 'Poppins', sans-serif; font-weight: 600; color: #0f172a; font-size: 13px;
-            background-color: white; outline: none; cursor: pointer; transition: all 0.2s; width: 100%; box-sizing: border-box;
+            padding: 8px 12px; border-radius: 6px; border: 1px solid var(--border-color); 
+            font-family: 'Poppins', sans-serif; font-weight: 600; color: var(--text-heading); font-size: 13px;
+            background-color: var(--bg-input); outline: none; cursor: pointer; transition: all 0.2s; width: 100%; box-sizing: border-box;
         }
         input[type="text"]:focus, input[type="date"]:focus, select:focus { border-color: #f97316; box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.15); }
 
-        /* PERBAIKAN TABEL: GARIS VERTIKAL DIHAPUS */
-        .table-responsive { max-height: 650px; overflow-y: auto; overflow-x: auto; border-radius: 8px; border: 1px solid #e2e8f0; position: relative;}
+        .table-responsive { max-height: 650px; overflow-y: auto; overflow-x: auto; border-radius: 8px; border: 1px solid var(--border-color); position: relative;}
         table { width: 100%; border-collapse: collapse; } 
         
         th, td { 
             padding: 14px 10px; 
-            text-align: center; /* Rata Tengah */
-            border-bottom: 1px solid #e2e8f0; /* CUMA GARIS BAWAH */
+            text-align: center; 
+            border-bottom: 1px solid var(--border-color); 
             font-size: 12px; 
             vertical-align: middle;
         } 
         
-        /* URUTAN BARU: Vessel Voyage sekarang di kolom ke-4 */
         td:nth-child(4) { text-align: left; }
 
         th { 
-            background-color: #0f172a; color: #f8fafc; text-transform: uppercase; font-size: 11px; 
+            background-color: var(--bg-th); color: var(--text-th); text-transform: uppercase; font-size: 11px; 
             font-weight: 700; letter-spacing: 0.5px; position: sticky; top: 0; z-index: 10; cursor: pointer;
             transition: background-color 0.2s; user-select: none;
         }
-        th:hover { background-color: #1e293b; }
         tr { transition: background-color 0.2s ease; }
-        tr:hover { background-color: #f1f5f9; }
+        tr:hover { background-color: var(--hover-tr); }
 
-        /* DESAIN ICON SORTING BARU BIAR NOTICEABLE */
-        .sort-icon {
-            display: inline-block; margin-left: 5px; font-size: 13px; color: #64748b; transition: all 0.2s;
-        }
+        .sort-icon { display: inline-block; margin-left: 5px; font-size: 13px; color: #64748b; transition: all 0.2s; }
         th:hover .sort-icon { color: #f8fafc; }
         
         .badge { padding: 4px 8px; border-radius: 6px; font-size: 10px; font-weight: 700; letter-spacing: 0.3px; display: inline-block;}
         .badge-fastest { background-color: #22c55e; color: white; margin-top: 4px; box-shadow: 0 2px 4px rgba(34, 197, 94, 0.2); display: block; width: fit-content; margin-left: auto; margin-right: auto;}
         
-        /* Sesuaikan posisi lencana tercepat ke kolom ke 4 */
         td:nth-child(4) .badge-fastest { margin-left: 0; margin-right: 0; }
 
+        /* Khusus dark mode biar rute keliatan */
+        body.dark-mode .badge-rute { background-color: #334155; color: #f8fafc; }
         .badge-rute { background-color: #cbd5e1; color: #334155; }
         
-        /* ALERT CLOSING TIME */
         .closing-danger { color: #dc2626; font-weight: bold; background: #fee2e2; padding: 3px 8px; border-radius: 4px; display: inline-block;}
         .closing-warning { color: #d97706; font-weight: bold; background: #fef3c7; padding: 3px 8px; border-radius: 4px; display: inline-block;}
 
-        /* Warna Pelayaran */
         .badge-spil { background-color: #eab308; color: #ffffff; }
         .badge-temas { background-color: #06b6d4; color: white; }
         .badge-meratus { background-color: #1e3a8a; color: white; }
@@ -144,7 +144,6 @@
         .badge-icon { background-color: #f97316; color: white; }
         .badge-samudera { background-color: #dc2626; color: white; }
 
-        /* WARNA 13 VENDOR */
         .badge-vendor-apu { background-color: #8b5cf6; color: white; border: 1px solid #7c3aed; } 
         .badge-vendor-tar { background-color: #14b8a6; color: white; border: 1px solid #0d9488; } 
         .badge-vendor-ire { background-color: #ec4899; color: white; border: 1px solid #db2777; } 
@@ -160,7 +159,6 @@
         .badge-vendor-dff { background-color: #f59e0b; color: white; border: 1px solid #d97706; } 
         .badge-vendor-default { background-color: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; } 
 
-        /* TOMBOL WA CHAT */
         .btn-wa { 
             background-color: #25D366; color: white; text-decoration: none; 
             padding: 6px 12px; border-radius: 6px; font-size: 11px; font-weight: 600; 
@@ -180,7 +178,9 @@
     <h2>Jadwal Kapal dari Jakarta</h2>
     <p class="subtitle" id="lastUpdated">Terakhir diperbarui: -</p>
 
+    <!-- BUTTON THEME DITAMBAHKAN DISINI -->
     <div class="top-actions">
+        <button class="btn-refresh btn-theme" id="themeToggle" onclick="toggleTheme()">🌙 Dark Mode</button>
         <button class="btn-refresh btn-excel" onclick="exportKeExcel()">📊 Export Excel</button>
         <a href="lacak-kapal.html" class="btn-refresh btn-lacak">🌐 Lacak Kapal (Live Map)</a>
         <button class="btn-refresh" onclick="tarikSemuaData()">🔄 Refresh Data</button>
@@ -254,7 +254,7 @@
                 </tr>
             </thead>
             <tbody id="tableBody">
-                <tr><td colspan="10" style="text-align: center; padding: 30px; font-weight: 600; color: #94a3b8;">⚙️ Menarik data jadwal & trend terbaru...</td></tr>
+                <tr><td colspan="10" style="text-align: center; padding: 30px; font-weight: 600; color: var(--text-main);">⚙️ Menarik data jadwal & trend terbaru...</td></tr>
             </tbody>
         </table>
     </div>
@@ -264,6 +264,31 @@
     let dataJadwalGlobal = [];
     let dataTrendGlobal = null; 
     let currentSort = { column: 'etd', asc: true }; 
+
+    // FUNGSI TOGGLE THEME
+    function toggleTheme() {
+        const body = document.body;
+        const themeBtn = document.getElementById('themeToggle');
+        body.classList.toggle('dark-mode');
+        
+        if (body.classList.contains('dark-mode')) {
+            localStorage.setItem('theme', 'dark');
+            themeBtn.innerHTML = '☀️ Light Mode';
+        } else {
+            localStorage.setItem('theme', 'light');
+            themeBtn.innerHTML = '🌙 Dark Mode';
+        }
+    }
+
+    // FUNGSI CEK THEME SAAT LOAD
+    function checkTheme() {
+        const savedTheme = localStorage.getItem('theme');
+        const themeBtn = document.getElementById('themeToggle');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            themeBtn.innerHTML = '☀️ Light Mode';
+        }
+    }
 
     function parseKeTanggal(dateStr) {
         if (!dateStr || dateStr === "N/A") return 9999999999999;
@@ -525,7 +550,7 @@
         updateSortIcons();
 
         if(disaringFinal.length === 0) {
-            tbody.innerHTML = `<tr><td colspan="10" style="text-align: center; padding: 40px; color: #64748b; font-weight:500;">📭 Tidak ada jadwal kapal yang cocok dengan filter.</td></tr>`;
+            tbody.innerHTML = `<tr><td colspan="10" style="text-align: center; padding: 40px; color: var(--text-main); font-weight:500;">📭 Tidak ada jadwal kapal yang cocok dengan filter.</td></tr>`;
             return;
         }
 
@@ -559,13 +584,11 @@
             let etaStr = formatTanggalStandar(item.eta);
             let etbStr = formatTanggalStandar(item.etb);
 
-            // DEKLARASI WAKTU DIJADIIN SATU DI SINI BIAR GAK BENTROK
             let timeETB = parseKeTanggal(item.etb);
             let timeETD = parseKeTanggal(item.etd);
             let timeETA = parseKeTanggal(item.eta);
             let timeClosing = parseKeTanggal(mentahClosing);
 
-            // LOGIC AUTO-DETECT ETB ORIGIN VS TUJUAN
             if (timeETB !== 9999999999999 && timeETD !== 9999999999999) {
                 if (timeETB < timeETD) {
                     etbStr = `${etbStr}<br><span style="font-size: 9px; color: #3b82f6; font-weight: 600;">(Sandar Priok)</span>`;
@@ -594,7 +617,6 @@
 
             let suggestVendorHTML = getVendorBadgesHTML(item.rute, line);
 
-            // KONFIGURASI TEKS WHATSAPP
             let waClosingText = (!mentahClosing || mentahClosing.trim() === "" || mentahClosing === "N/A" || closingStr.includes("N/A")) ? "N/A" : closingStr;
             
             let waText = `*Info Jadwal Kapal (GoTrans)*\nTujuan: ${ruteTampil}\nPelayaran: ${line}\nKapal: ${namaKapalBersih}\nClosing: ${waClosingText}\nETD: ${etdStr}\nETA: ${etaStr}\n\n_Segera siapkan DOnya_`;
@@ -609,20 +631,21 @@
                 </svg> Share
             </a>`;
 
+            /* WARNA TEXT DIGANTI PAKE VARIABEL var(--text-heading) BIAR KELIHATAN PAS DARK MODE */
             tbody.innerHTML += `<tr>
                 <td><span class="badge ${badgePelayaran}">${line}</span></td>
                 <td><span class="badge badge-rute">${ruteTampil}</span></td>
                 <td>${suggestVendorHTML}</td> 
-                <td><strong style="color:#0f172a; line-height: 1.4;">${namaKapalBersih}</strong>${badgeTercepat}</td>
+                <td><strong style="color:var(--text-heading); line-height: 1.4;">${namaKapalBersih}</strong>${badgeTercepat}</td>
                 <td>${openStack}</td>
                 <td>${finalClosingHTML}</td>
                 <td>${etbStr}</td>
-                <td><strong style="color:#0f172a;">${etdStr}</strong></td>
+                <td><strong style="color:var(--text-heading);">${etdStr}</strong></td>
                 <td>${etaStr}${leadTimeHTML}</td>
                 <td>${btnShare}</td>
             </tr>`;
         });
-    } // INI DIA KURUNG KURAWAL YANG ILANG TADI WKWK
+    }
 
     function exportKeExcel() {
         let tabel = document.querySelector("table");
@@ -632,7 +655,11 @@
         XLSX.writeFile(wb, namaFile);
     }
 
-    window.onload = tarikSemuaData;
+    // PANGGIL checkTheme() JUGA PAS PERTAMA KALI LOAD
+    window.onload = () => {
+        checkTheme();
+        tarikSemuaData();
+    };
 </script>
 </body>
 </html>
