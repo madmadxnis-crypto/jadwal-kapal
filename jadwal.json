@@ -736,36 +736,6 @@
         "open_stack": "N/A"
     },
     {
-        "rute": "Samarinda",
-        "pelayaran": "ICON",
-        "nama_kapal": "IE I 17 V.22/26 - ICON EFESUS I 17",
-        "closing": "27/02/2026 04:59",
-        "etd": "N/A",
-        "eta": "N/A",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Samarinda",
-        "pelayaran": "ICON",
-        "nama_kapal": "",
-        "closing": "N/A",
-        "etd": "N/A",
-        "eta": "N/A",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Samarinda",
-        "pelayaran": "ICON",
-        "nama_kapal": "",
-        "closing": "N/A",
-        "etd": "N/A",
-        "eta": "N/A",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
         "rute": "Balikpapan",
         "pelayaran": "ICON",
         "nama_kapal": "IE I 17 V.21/26 - ICON EFESUS I 17",
@@ -792,26 +762,6 @@
         "closing": "01/06/2026 05:51",
         "etd": "Rabu, 03 Juni 2026 05:48",
         "eta": "Sabtu, 06 Juni 2026 05:49",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Banjarmasin",
-        "pelayaran": "ICON",
-        "nama_kapal": "IG V V.24/26 - MV. ICON GALATIA V",
-        "closing": "31/05/2026 09:10",
-        "etd": "Minggu, 07 Juni 2026 09:08",
-        "eta": "Selasa, 09 Juni 2026 09:08",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Banjarmasin",
-        "pelayaran": "ICON",
-        "nama_kapal": "IC V,36/26 - MV. ICON CORINTUS",
-        "closing": "07/07/2026 06:19",
-        "etd": "Selasa, 09 Juni 2026 06:17",
-        "eta": "Selasa, 16 Juni 2026 06:17",
         "etb": "N/A",
         "open_stack": "N/A"
     },
