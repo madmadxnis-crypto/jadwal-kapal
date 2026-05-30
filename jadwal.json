@@ -736,36 +736,6 @@
         "open_stack": "N/A"
     },
     {
-        "rute": "Samarinda",
-        "pelayaran": "ICON",
-        "nama_kapal": "IE I 17 V.22/26 - ICON EFESUS I 17",
-        "closing": "27/02/2026 04:59",
-        "etd": "Senin, 02 Maret 2026 16:57",
-        "eta": "Jumat, 06 Maret 2026 04:57",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Samarinda",
-        "pelayaran": "ICON",
-        "nama_kapal": "IE I 17 V.26/26 - ICON EFESUS I 17",
-        "closing": "09/03/2026 03:03",
-        "etd": "Kamis, 12 Maret 2026 03:00",
-        "eta": "Senin, 16 Maret 2026 03:00",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Samarinda",
-        "pelayaran": "ICON",
-        "nama_kapal": "IB V.50/26 - ICON BRAVO",
-        "closing": "01/06/2026 05:53",
-        "etd": "Rabu, 03 Juni 2026 05:50",
-        "eta": "Minggu, 07 Juni 2026 05:50",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
         "rute": "Balikpapan",
         "pelayaran": "ICON",
         "nama_kapal": "IE I 17 V.21/26 - ICON EFESUS I 17",
