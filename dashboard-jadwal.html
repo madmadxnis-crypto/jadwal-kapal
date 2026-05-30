@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jadwal Kapal Pelayaran - GoTrans SCM</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Library untuk Export Excel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <style>
         body { 
@@ -27,7 +26,7 @@
         }
         
         .logo-container { text-align: center; margin-bottom: 20px; }
-        .logo-container img { max-height: 85px; width: auto; object-fit: contain; drop-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .logo-container img { max-height: 85px; width: auto; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.05)); }
         
         h2 { text-align: center; color: #0f172a; margin-bottom: 5px; margin-top: 5px; font-weight: 700; letter-spacing: -0.5px; }
         p.subtitle { text-align: center; color: #64748b; margin-bottom: 25px; font-size: 13px; font-weight: 400; }
@@ -48,6 +47,14 @@
         input[type="text"] { width: 200px; cursor: text; }
         input[type="text"]:focus, select:focus { border-color: #f97316; box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.15); }
         
+        /* Box Suggest Vendor */
+        .vendor-suggest-box {
+            padding: 9px 15px; background-color: #fef9c3; color: #854d0e; 
+            border-radius: 6px; font-weight: 700; font-size: 14px; 
+            border: 1px dashed #eab308; display: flex; align-items: center; 
+            min-width: 150px; transition: all 0.3s;
+        }
+
         .action-buttons { display: flex; gap: 10px; }
         
         .btn-refresh { 
@@ -60,7 +67,7 @@
         .btn-refresh:hover { background-color: #ea580c; transform: translateY(-2px); box-shadow: 0 6px 12px rgba(249, 115, 22, 0.3); }
         .btn-refresh:active { transform: translateY(0); }
         
-        /* Tombol Spesifik Lacak Kapal & Excel */
+        /* Tombol Spesifik */
         .btn-lacak { background-color: #0f172a; box-shadow: 0 4px 6px rgba(15, 23, 42, 0.2); }
         .btn-lacak:hover { background-color: #1e293b; box-shadow: 0 6px 12px rgba(15, 23, 42, 0.3); }
         .btn-excel { background-color: #10b981; box-shadow: 0 4px 6px rgba(16, 185, 129, 0.2); }
@@ -85,6 +92,7 @@
         .badge-meratus { background-color: #1e3a8a; color: white; }
         .badge-tanto { background-color: #334155; color: white; }
         .badge-icon { background-color: #f97316; color: white; }
+        .badge-samudera { background-color: #dc2626; color: white; } /* Tambahan Warna Samudera */
     </style>
 </head>
 <body>
@@ -127,14 +135,21 @@
                     <option value="MERATUS">MERATUS</option>
                     <option value="TANTO">TANTO</option>
                     <option value="ICON">ICON</option>
-                </select>
+                    <option value="SAMUDERA">SAMUDERA</option> </select>
+            </div>
+
+            <div>
+                <label>🏆 Suggest Vendor:</label>
+                <div id="vendorSuggest" class="vendor-suggest-box">
+                    Pilih Rute Dulu
+                </div>
             </div>
         </div>
         
         <div class="action-buttons">
             <button class="btn-refresh btn-excel" onclick="exportKeExcel()">📊 Export Excel</button>
             <a href="lacak-kapal.html" class="btn-refresh btn-lacak">🌐 Lacak Kapal (Live Map)</a>
-            <button class="btn-refresh" onclick="tarikDataJSON()">🔄 Refresh Data</button>
+            <button class="btn-refresh" onclick="tarikSemuaData()">🔄 Refresh Data</button>
         </div>
     </div>
 
@@ -153,7 +168,7 @@
                 </tr>
             </thead>
             <tbody id="tableBody">
-                <tr><td colspan="8" style="text-align: center; padding: 30px; font-weight: 600; color: #94a3b8;">⚙️ Menarik data jadwal terbaru...</td></tr>
+                <tr><td colspan="8" style="text-align: center; padding: 30px; font-weight: 600; color: #94a3b8;">⚙️ Menarik data jadwal & trend terbaru...</td></tr>
             </tbody>
         </table>
     </div>
@@ -161,6 +176,7 @@
 
 <script>
     let dataJadwalGlobal = [];
+    let dataTrendGlobal = null; 
 
     function parseKeTanggal(dateStr) {
         if (!dateStr || dateStr === "N/A") return 9999999999999;
@@ -222,7 +238,16 @@
         return aliases.includes(f);
     }
 
-    async function tarikDataJSON() {
+    async function tarikSemuaData() {
+        // Tarik file Excel / Trend Vendor
+        try {
+            const resTrend = await fetch('trend_vendor_rute.json?v=' + new Date().getTime());
+            if (resTrend.ok) {
+                dataTrendGlobal = await resTrend.json();
+            }
+        } catch (e) { console.log("File Trend belum ada."); }
+
+        // Tarik Data Jadwal Kapal
         try {
             const response = await fetch('jadwal.json?v=' + new Date().getTime());
             if (!response.ok) throw new Error("Gagal mengambil file JSON.");
@@ -249,11 +274,54 @@
         }
     }
 
+    function updateVendorSuggest(filterRute) {
+        const suggestBox = document.getElementById('vendorSuggest');
+        
+        if (!filterRute || filterRute.toLowerCase() === "semua rute" || filterRute.trim() === "") {
+            suggestBox.innerHTML = "Pilih Rute Dulu";
+            suggestBox.style.backgroundColor = "#fef9c3";
+            suggestBox.style.color = "#854d0e";
+            suggestBox.style.borderColor = "#eab308";
+            return;
+        }
+
+        if (!dataTrendGlobal) {
+            suggestBox.innerHTML = "Data Trend Kosong";
+            return;
+        }
+
+        let bestVendor = "Belum Analisa";
+        
+        if (Array.isArray(dataTrendGlobal)) {
+            let match = dataTrendGlobal.find(t => {
+                let r = t.Rute || t.rute || t.Destination || t.Tujuan || "";
+                return ruteCocok(r, filterRute);
+            });
+            if (match) {
+                bestVendor = match.Vendor || match.Best_Vendor || match.Pelayaran || match.Rekomendasi || Object.values(match)[1] || "Ada Data";
+            }
+        } else {
+            for (let key in dataTrendGlobal) {
+                if (ruteCocok(key, filterRute)) {
+                    bestVendor = dataTrendGlobal[key];
+                    break;
+                }
+            }
+        }
+
+        suggestBox.innerHTML = `✨ ${bestVendor.toUpperCase()}`;
+        suggestBox.style.backgroundColor = "#dcfce7";
+        suggestBox.style.color = "#166534";
+        suggestBox.style.borderColor = "#22c55e";
+    }
+
     function tampilkanTabel() {
         const filterRute = document.getElementById('routeFilter').value;
         const filterPelayaran = document.getElementById('pelayaranFilter').value;
         const tbody = document.getElementById('tableBody');
         tbody.innerHTML = '';
+
+        updateVendorSuggest(filterRute);
 
         let disaring = dataJadwalGlobal.filter(item => {
             let matchRute = ruteCocok(item.rute, filterRute);
@@ -280,6 +348,7 @@
             else if (line === "MERATUS") badgePelayaran = 'badge-meratus';
             else if (line === "TANTO") badgePelayaran = 'badge-tanto';
             else if (line === "ICON") badgePelayaran = 'badge-icon';
+            else if (line === "SAMUDERA") badgePelayaran = 'badge-samudera'; // Tambahan Samudera
 
             let mentahKapal = item.nama_kapal;
             let mentahClosing = item.closing || "N/A";
@@ -315,21 +384,14 @@
 
     // Fungsi Sakti Export Excel
     function exportKeExcel() {
-        // Ambil elemen tabel
         let tabel = document.querySelector("table");
-        
-        // Convert tabel HTML ke format buku kerja Excel (Workbook)
         let wb = XLSX.utils.table_to_book(tabel, {sheet: "Jadwal Kapal"});
-        
-        // Buat nama file otomatis sesuai tanggal hari ini
         let tgl = new Date().toISOString().slice(0,10);
         let namaFile = "Rekap_Jadwal_GoTrans_" + tgl + ".xlsx";
-        
-        // Jalankan download file
         XLSX.writeFile(wb, namaFile);
     }
 
-    window.onload = tarikDataJSON;
+    window.onload = tarikSemuaData;
 </script>
 </body>
 </html>
