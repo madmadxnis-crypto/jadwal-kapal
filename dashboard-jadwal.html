@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jadwal Kapal Pelayaran - GoTrans SCM</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Library untuk Export Excel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <style>
         body { 
@@ -20,7 +19,7 @@
             max-width: 1300px; 
             margin: auto; 
             background: #ffffff; 
-            padding: 35px; 
+            padding: 25px; 
             border-radius: 16px; 
             box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08); 
             border-top: 6px solid #f97316; 
@@ -38,22 +37,22 @@
             border: 1px solid #e2e8f0; margin-bottom: 20px;
         }
         .filter-group { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
-        .toolbar label { font-weight: 600; color: #334155; margin-right: 8px; font-size: 14px;}
+        .toolbar label { font-weight: 600; color: #334155; margin-right: 8px; font-size: 13px;}
         
         input[type="text"], select { 
-            padding: 9px 15px; border-radius: 6px; border: 1px solid #cbd5e1; 
-            font-family: 'Poppins', sans-serif; font-weight: 600; color: #0f172a;
+            padding: 8px 12px; border-radius: 6px; border: 1px solid #cbd5e1; 
+            font-family: 'Poppins', sans-serif; font-weight: 600; color: #0f172a; font-size: 13px;
             background-color: white; outline: none; cursor: pointer; transition: all 0.2s;
         }
-        input[type="text"] { width: 200px; cursor: text; }
+        input[type="text"] { width: 180px; cursor: text; }
         input[type="text"]:focus, select:focus { border-color: #f97316; box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.15); }
 
         .action-buttons { display: flex; gap: 10px; }
         
         .btn-refresh { 
             background-color: #f97316; color: white; border: none; 
-            padding: 10px 20px; cursor: pointer; border-radius: 6px; 
-            font-weight: 600; font-family: 'Poppins', sans-serif; text-decoration: none;
+            padding: 9px 16px; cursor: pointer; border-radius: 6px; 
+            font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 13px; text-decoration: none;
             transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(249, 115, 22, 0.2);
             display: inline-block; line-height: 20px;
         }
@@ -67,8 +66,8 @@
         .btn-excel:hover { background-color: #059669; box-shadow: 0 6px 12px rgba(16, 185, 129, 0.3); }
 
         .table-responsive { overflow-x: auto; border-radius: 8px; box-shadow: 0 0 0 1px #e2e8f0; }
-        table { width: 100%; border-collapse: collapse; white-space: nowrap; }
-        th, td { padding: 14px 16px; text-align: left; border-bottom: 1px solid #e2e8f0; font-size: 13px; }
+        table { width: 100%; border-collapse: collapse; } 
+        th, td { padding: 12px 10px; text-align: left; border-bottom: 1px solid #e2e8f0; font-size: 12px; } 
         th { 
             background-color: #0f172a; 
             color: #f8fafc; text-transform: uppercase; font-size: 11px; 
@@ -77,8 +76,8 @@
         tr { transition: all 0.2s ease; }
         tr:hover { background-color: #f1f5f9; }
         
-        .badge { padding: 5px 10px; border-radius: 6px; font-size: 11px; font-weight: 700; letter-spacing: 0.3px; display: inline-block;}
-        .badge-fastest { background-color: #22c55e; color: white; margin-left: 8px; box-shadow: 0 2px 4px rgba(34, 197, 94, 0.2); }
+        .badge { padding: 4px 8px; border-radius: 6px; font-size: 10px; font-weight: 700; letter-spacing: 0.3px; display: inline-block;}
+        .badge-fastest { background-color: #22c55e; color: white; margin-top: 4px; box-shadow: 0 2px 4px rgba(34, 197, 94, 0.2); display: block; width: fit-content;}
         .badge-rute { background-color: #cbd5e1; color: #334155; }
         
         /* Warna Pelayaran */
@@ -90,20 +89,20 @@
         .badge-samudera { background-color: #dc2626; color: white; }
 
         /* WARNA 13 VENDOR SAKTI GOTRANS */
-        .badge-vendor-apu { background-color: #8b5cf6; color: white; border: 1px solid #7c3aed; } /* Ungu */
-        .badge-vendor-tar { background-color: #14b8a6; color: white; border: 1px solid #0d9488; } /* Teal */
-        .badge-vendor-ire { background-color: #ec4899; color: white; border: 1px solid #db2777; } /* Pink */
-        .badge-vendor-lsj { background-color: #3b82f6; color: white; border: 1px solid #2563eb; } /* Biru */
-        .badge-vendor-aar { background-color: #f97316; color: white; border: 1px solid #ea580c; } /* Oranye */
-        .badge-vendor-bjl { background-color: #22c55e; color: white; border: 1px solid #16a34a; } /* Hijau */
-        .badge-vendor-rmb { background-color: #ef4444; color: white; border: 1px solid #dc2626; } /* Merah */
-        .badge-vendor-tpl { background-color: #eab308; color: white; border: 1px solid #ca8a04; } /* Kuning */
-        .badge-vendor-hst { background-color: #6366f1; color: white; border: 1px solid #4f46e5; } /* Indigo */
-        .badge-vendor-bal { background-color: #06b6d4; color: white; border: 1px solid #0891b2; } /* Cyan */
-        .badge-vendor-pat { background-color: #84cc16; color: white; border: 1px solid #65a30d; } /* Lime */
-        .badge-vendor-sbt { background-color: #f43f5e; color: white; border: 1px solid #e11d48; } /* Rose */
-        .badge-vendor-dff { background-color: #f59e0b; color: white; border: 1px solid #d97706; } /* Amber */
-        .badge-vendor-default { background-color: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; } /* Abu-abu Default */
+        .badge-vendor-apu { background-color: #8b5cf6; color: white; border: 1px solid #7c3aed; } 
+        .badge-vendor-tar { background-color: #14b8a6; color: white; border: 1px solid #0d9488; } 
+        .badge-vendor-ire { background-color: #ec4899; color: white; border: 1px solid #db2777; } 
+        .badge-vendor-lsj { background-color: #3b82f6; color: white; border: 1px solid #2563eb; } 
+        .badge-vendor-aar { background-color: #f97316; color: white; border: 1px solid #ea580c; } 
+        .badge-vendor-bjl { background-color: #22c55e; color: white; border: 1px solid #16a34a; } 
+        .badge-vendor-rmb { background-color: #ef4444; color: white; border: 1px solid #dc2626; } 
+        .badge-vendor-tpl { background-color: #eab308; color: white; border: 1px solid #ca8a04; } 
+        .badge-vendor-hst { background-color: #6366f1; color: white; border: 1px solid #4f46e5; } 
+        .badge-vendor-bal { background-color: #06b6d4; color: white; border: 1px solid #0891b2; } 
+        .badge-vendor-pat { background-color: #84cc16; color: white; border: 1px solid #65a30d; } 
+        .badge-vendor-sbt { background-color: #f43f5e; color: white; border: 1px solid #e11d48; } 
+        .badge-vendor-dff { background-color: #f59e0b; color: white; border: 1px solid #d97706; } 
+        .badge-vendor-default { background-color: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; } 
     </style>
 </head>
 <body>
@@ -163,14 +162,14 @@
             <thead>
                 <tr>
                     <th>Pelayaran</th>
-                    <th>Suggest Vendor</th> <!-- KOLOM VENDOR DI SINI -->
-                    <th>Vessel Voyage</th>
+                    <th style="min-width: 50px;">TOP Vendor</th> 
+                    <th style="min-width: 150px;">Vessel Voyage</th>
                     <th>Open Stack</th>
                     <th>Closing Time</th>
-                    <th>Estimated Time Departure</th>
-                    <th>Estimated Time Arrival</th>
-                    <th>Estimated Time Berthing</th>
-                    <th>Sailing Route</th>
+                    <th>ETD</th> 
+                    <th>ETA</th> 
+                    <th>ETB</th> 
+                    <th>Rute</th>
                 </tr>
             </thead>
             <tbody id="tableBody">
@@ -184,7 +183,6 @@
     let dataJadwalGlobal = [];
     let dataTrendGlobal = null; 
 
-    // --- Fungsi Helper Tanggal ---
     function parseKeTanggal(dateStr) {
         if (!dateStr || dateStr === "N/A") return 9999999999999;
         try {
@@ -231,33 +229,16 @@
         return cleanStr;
     }
 
-    function ruteCocok(ruteJSON, filterPilihan) {
-        let r = (ruteJSON || "").toLowerCase();
-        let f = filterPilihan.toLowerCase().trim().split(' ')[0]; 
-        if (f === "all" || f === "semua" || f === "") return true;
-        
-        let aliases = r;
-        if (r.includes("belawan")) aliases += " medan";
-        if (r.includes("palu")) aliases += " tangkian";
-        if (r.includes("bitung")) aliases += " manado";
-        if (r.includes("tanjung pinang")) aliases += " kid";
-        
-        return aliases.includes(f);
-    }
-
-    // --- Fungsi Penarik Data JSON ---
     async function tarikSemuaData() {
-        // 1. Tarik Data Trend Vendor
         try {
             const resTrend = await fetch('trend_vendor_rute.json?v=' + new Date().getTime());
             if (resTrend.ok) {
                 dataTrendGlobal = await resTrend.json();
             }
         } catch (e) { 
-            console.log("File Trend gagal diload, tabel akan tetap berjalan tanpa error."); 
+            console.log("File Trend gagal diload."); 
         }
 
-        // 2. Tarik Data Jadwal
         try {
             const response = await fetch('jadwal.json?v=' + new Date().getTime());
             if (!response.ok) throw new Error("Gagal mengambil file JSON.");
@@ -271,6 +252,11 @@
 
             dataJadwalGlobal = rawData.filter(item => {
                 if (!item || !item.rute) return false;
+                
+                // NORMALISASI RUTE SEJAK AWAL
+                if (item.rute.toUpperCase() === "MEDAN") item.rute = "Belawan";
+                if (item.rute.toUpperCase() === "MANADO") item.rute = "Bitung";
+                
                 let waktuETD = parseKeTanggal(item.etd);
                 return waktuETD >= waktuHariIni; 
             });
@@ -284,45 +270,47 @@
         }
     }
 
-    // --- Fungsi Ngeracik Badge Vendor Asli dari JSON Trend ---
     function getVendorBadgesHTML(ruteTujuan, pelayaran) {
         if (!dataTrendGlobal) return '<span style="color:#cbd5e1; font-size:11px;">-</span>';
 
         let listVendor = [];
         try {
-            let match = null;
-            if (Array.isArray(dataTrendGlobal)) {
-                // Cari data rute dan pelayaran yang cocok dari Excel lu
-                match = dataTrendGlobal.find(t => {
-                    let r = t.Rute || t.rute || t.Destination || t.Tujuan || "";
-                    let p = t.Pelayaran || t.pelayaran || t.Line || "";
-                    // Cocokin, kalau pelayaran di JSON Excel-nya kosong/gak spesifik, anggep match
-                    return ruteCocok(r, ruteTujuan) && (p.toUpperCase() === pelayaran.toUpperCase() || p === "");
-                });
-            }
+            let ruteDicari = (ruteTujuan || "").toLowerCase();
+            if (ruteDicari.includes("bitung")) ruteDicari = "manado";
+            if (ruteDicari.includes("belawan")) ruteDicari = "medan";
+            
+            let matchedRouteKey = Object.keys(dataTrendGlobal).find(k => {
+                let kLower = k.toLowerCase();
+                return kLower.includes(ruteDicari) || ruteDicari.includes(kLower);
+            });
 
-            if (match) {
-                // Cari key data vendor (apapun nama kolom di Python lu)
-                let rawVendors = match.Vendors || match.Top_Vendors || match.Vendor || match.Suggest || "";
-                
-                if (Array.isArray(rawVendors)) {
-                    listVendor = rawVendors;
-                } else if (typeof rawVendors === 'string' && rawVendors.length > 0) {
-                    listVendor = rawVendors.split(',').map(v => v.trim()); // Pisahin berdasarkan koma
-                } else {
-                    // Kalau di excel lu pisahin per kolom: Vendor1, Vendor2, dst
-                    if (match.Vendor1) listVendor.push(match.Vendor1);
-                    if (match.Vendor2) listVendor.push(match.Vendor2);
-                    if (match.Vendor3) listVendor.push(match.Vendor3);
+            if (matchedRouteKey) {
+                let vendorsDiRute = dataTrendGlobal[matchedRouteKey]; 
+                let pelayaranDicari = pelayaran.toUpperCase().trim();
+                let rankingVendor = [];
+
+                for (let namaVendor in vendorsDiRute) {
+                    let dataPelayaran = vendorsDiRute[namaVendor];
+                    let totalPake = 0;
+                    
+                    for (let namaLine in dataPelayaran) {
+                        if (namaLine.toUpperCase().includes(pelayaranDicari) || pelayaranDicari.includes(namaLine.toUpperCase())) {
+                            totalPake += dataPelayaran[namaLine]; 
+                        }
+                    }
+
+                    if (totalPake > 0) {
+                        rankingVendor.push({ vendor: namaVendor, skor: totalPake });
+                    }
                 }
-            }
-        } catch(e) {}
 
-        // Potong jadi top 3 aja
-        listVendor = listVendor.slice(0, 3);
+                rankingVendor.sort((a, b) => b.skor - a.skor);
+                listVendor = rankingVendor.slice(0, 3).map(v => v.vendor);
+            }
+        } catch(e) { }
+
         if (listVendor.length === 0) return '<span style="color:#cbd5e1; font-size:11px;">-</span>';
 
-        // Generate HTML Badge warna-warni sesuai 13 list lu
         let badgesHTML = '';
         listVendor.forEach(v => {
             let namaClass = 'badge-vendor-default';
@@ -342,22 +330,34 @@
             else if (vClean === 'SBT') namaClass = 'badge-vendor-sbt';
             else if (vClean === 'DFF') namaClass = 'badge-vendor-dff';
             
-            if (vClean !== "") {
-                badgesHTML += `<span class="badge ${namaClass}" style="margin-right: 4px; margin-bottom: 2px;">${vClean}</span>`;
-            }
+            badgesHTML += `<span class="badge ${namaClass}" style="margin-right: 2px; margin-bottom: 2px;" title="Top Vendor">${vClean}</span>`;
         });
 
         return badgesHTML;
     }
 
-    // --- Fungsi Render Tabel ---
+    // FUNGSI FILTER DUA ARAH (MEDAN = BELAWAN, BELAWAN = MEDAN)
+    function ruteCocok(ruteJSON, filterPilihan) {
+        let r = (ruteJSON || "").toLowerCase();
+        let f = filterPilihan.toLowerCase().trim().split(' ')[0]; 
+        if (f === "all" || f === "semua" || f === "") return true;
+        
+        let aliases = r;
+        if (r.includes("belawan") || r.includes("medan")) aliases += " belawan medan";
+        if (r.includes("palu") || r.includes("tangkian")) aliases += " palu tangkian";
+        if (r.includes("bitung") || r.includes("manado")) aliases += " bitung manado";
+        if (r.includes("tanjung pinang") || r.includes("kid")) aliases += " tanjung pinang kid";
+        
+        return aliases.includes(f);
+    }
+
     function tampilkanTabel() {
         const filterRute = document.getElementById('routeFilter').value;
         const filterPelayaran = document.getElementById('pelayaranFilter').value;
         const tbody = document.getElementById('tableBody');
         tbody.innerHTML = '';
 
-        let disaring = dataJadwalGlobal.filter(item => {
+        let disaringAwal = dataJadwalGlobal.filter(item => {
             let matchRute = ruteCocok(item.rute, filterRute);
             let matchPelayaran = true;
             if (filterPelayaran !== "ALL") {
@@ -367,12 +367,42 @@
             return matchRute && matchPelayaran;
         });
 
-        if(disaring.length === 0) {
+        let disaringFinal = [];
+        let trackerSamudera = {}; 
+
+        disaringAwal.forEach(item => {
+            let line = item.pelayaran ? item.pelayaran.toUpperCase() : "SPIL";
+            
+            if (line === "SAMUDERA") {
+                let namaKapal = item.nama_kapal || "";
+                let kapalPertama = namaKapal.split('->')[0].trim();
+                let waktuKeberangkatan = parseKeTanggal(item.etd);
+
+                if (!trackerSamudera[kapalPertama]) {
+                    trackerSamudera[kapalPertama] = item;
+                } else {
+                    let waktuYangKecatet = parseKeTanggal(trackerSamudera[kapalPertama].etd);
+                    if (waktuKeberangkatan < waktuYangKecatet) {
+                        trackerSamudera[kapalPertama] = item;
+                    }
+                }
+            } else {
+                disaringFinal.push(item);
+            }
+        });
+
+        for (let key in trackerSamudera) {
+            disaringFinal.push(trackerSamudera[key]);
+        }
+
+        disaringFinal.sort((a, b) => parseKeTanggal(a.etd) - parseKeTanggal(b.etd));
+
+        if(disaringFinal.length === 0) {
             tbody.innerHTML = `<tr><td colspan="9" style="text-align: center; padding: 40px; color: #64748b; font-weight:500;">📭 Tidak ada jadwal kapal yang cocok dengan filter.</td></tr>`;
             return;
         }
 
-        disaring.forEach((item, index) => {
+        disaringFinal.forEach((item, index) => {
             let badgeTercepat = (index === 0 && ruteCocok(item.rute, filterRute) && filterRute.toLowerCase() !== "semua rute" && filterRute !== "") ? '<span class="badge badge-fastest">TERCEPAT</span>' : '';
             
             let line = item.pelayaran ? item.pelayaran.toUpperCase() : "SPIL";
@@ -402,14 +432,13 @@
             let etb       = formatTanggalStandar(item.etb);
 
             let ruteTampil = (item.rute || "").toUpperCase();
-
-            // Panggil fungsi penarik vendor dari JSON
+            
             let suggestVendorHTML = getVendorBadgesHTML(item.rute, line);
 
             tbody.innerHTML += `<tr>
                 <td><span class="badge ${badgePelayaran}">${line}</span></td>
-                <td>${suggestVendorHTML}</td> <!-- KOLOM SUGGEST MUNCUL DI SINI -->
-                <td><strong style="color:#0f172a;">${namaKapalBersih}</strong>${badgeTercepat}</td>
+                <td>${suggestVendorHTML}</td> 
+                <td><strong style="color:#0f172a; line-height: 1.4;">${namaKapalBersih}</strong>${badgeTercepat}</td>
                 <td>${openStack}</td>
                 <td>${closing}</td>
                 <td><strong style="color:#0f172a;">${etd}</strong></td>
