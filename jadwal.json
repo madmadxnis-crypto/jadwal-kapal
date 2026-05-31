@@ -818,16 +818,6 @@
     {
         "rute": "Batam",
         "pelayaran": "ICON",
-        "nama_kapal": "II XI V.60/26 - ICON IBRANI XI",
-        "closing": "26/05/2026 03:47",
-        "etd": "Jumat, 29 Mei 2026 09:18",
-        "eta": "Senin, 01 Juni 2026 02:18",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Batam",
-        "pelayaran": "ICON",
         "nama_kapal": "II XI V.62/26 - ICON IBRANI XI",
         "closing": "03/06/2026 06:15",
         "etd": "Jumat, 05 Juni 2026 06:14",
