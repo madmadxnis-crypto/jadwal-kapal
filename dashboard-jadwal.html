@@ -36,7 +36,6 @@
             --hover-tr: #334155;
         }
 
-        /* PERBAIKAN CSS MENGGUNAKAN VARIABEL TEMA */
         body { 
             font-family: 'Poppins', sans-serif; 
             background: var(--bg-body); 
@@ -82,7 +81,6 @@
         .btn-excel { background-color: #10b981; box-shadow: 0 4px 6px rgba(16, 185, 129, 0.2); }
         .btn-excel:hover { background-color: #059669; box-shadow: 0 6px 12px rgba(16, 185, 129, 0.3); }
         
-        /* Tombol Dark Mode Baru */
         .btn-theme { background-color: #64748b; box-shadow: 0 4px 6px rgba(100, 116, 139, 0.2); }
         .btn-theme:hover { background-color: #475569; }
 
@@ -130,7 +128,6 @@
         
         td:nth-child(4) .badge-fastest { margin-left: 0; margin-right: 0; }
 
-        /* Khusus dark mode biar rute keliatan */
         body.dark-mode .badge-rute { background-color: #334155; color: #f8fafc; }
         .badge-rute { background-color: #cbd5e1; color: #334155; }
         
@@ -178,7 +175,6 @@
     <h2>Jadwal Kapal dari Jakarta</h2>
     <p class="subtitle" id="lastUpdated">Terakhir diperbarui: -</p>
 
-    <!-- BUTTON THEME DITAMBAHKAN DISINI -->
     <div class="top-actions">
         <button class="btn-refresh btn-theme" id="themeToggle" onclick="toggleTheme()">🌙 Dark Mode</button>
         <button class="btn-refresh btn-excel" onclick="exportKeExcel()">📊 Export Excel</button>
@@ -265,7 +261,6 @@
     let dataTrendGlobal = null; 
     let currentSort = { column: 'etd', asc: true }; 
 
-    // FUNGSI TOGGLE THEME
     function toggleTheme() {
         const body = document.body;
         const themeBtn = document.getElementById('themeToggle');
@@ -280,7 +275,6 @@
         }
     }
 
-    // FUNGSI CEK THEME SAAT LOAD
     function checkTheme() {
         const savedTheme = localStorage.getItem('theme');
         const themeBtn = document.getElementById('themeToggle');
@@ -396,7 +390,12 @@
                     let totalPake = 0;
                     
                     for (let namaLine in dataPelayaran) {
-                        if (namaLine.toUpperCase().includes(pelayaranDicari) || pelayaranDicari.includes(namaLine.toUpperCase())) {
+                        let lineTrend = namaLine.toUpperCase().trim(); 
+                        
+                        let isSamudera = (pelayaranDicari === "SAMUDERA" || pelayaranDicari === "SAMUDRA") && 
+                                         (lineTrend === "SAMUDERA" || lineTrend === "SAMUDRA");
+
+                        if (lineTrend.includes(pelayaranDicari) || pelayaranDicari.includes(lineTrend) || isSamudera) {
                             totalPake += dataPelayaran[namaLine]; 
                         }
                     }
@@ -405,7 +404,7 @@
                 rankingVendor.sort((a, b) => b.skor - a.skor);
                 listVendor = rankingVendor.slice(0, 3).map(v => v.vendor);
             }
-        } catch(e) { }
+        } catch(e) { console.error("Error getVendorBadges:", e); }
 
         if (listVendor.length === 0) return '<span style="color:#cbd5e1; font-size:11px;">-</span>';
 
@@ -496,8 +495,11 @@
         tbody.innerHTML = '';
 
         let disaringAwal = dataJadwalGlobal.filter(item => {
+            let p = (item.pelayaran || "").toUpperCase().trim();
+            if (p === "SAMUDRA") p = "SAMUDERA"; 
+
             let matchRute = ruteCocok(item.rute, filterRute);
-            let matchPelayaran = (filterPelayaran === "ALL") ? true : ((item.pelayaran || "").toUpperCase() === filterPelayaran);
+            let matchPelayaran = (filterPelayaran === "ALL") ? true : (p === filterPelayaran);
             
             let kapalNama = (item.nama_kapal || "").toLowerCase();
             let matchSearch = kapalNama.includes(searchVal);
@@ -512,7 +514,9 @@
         let trackerSamudera = {}; 
 
         disaringAwal.forEach(item => {
-            let line = item.pelayaran ? item.pelayaran.toUpperCase() : "SPIL";
+            let line = item.pelayaran ? item.pelayaran.toUpperCase().trim() : "SPIL";
+            if (line === "SAMUDRA") line = "SAMUDERA";
+
             if (line === "SAMUDERA") {
                 let namaKapal = item.nama_kapal || "";
                 let kapalPertama = namaKapal.split('->')[0].trim();
@@ -559,7 +563,9 @@
         disaringFinal.forEach((item, index) => {
             let badgeTercepat = (index === 0 && ruteCocok(item.rute, filterRute) && filterRute.toLowerCase() !== "semua rute" && filterRute !== "" && currentSort.column === 'etd' && currentSort.asc) ? '<span class="badge badge-fastest">TERCEPAT</span>' : '';
             
-            let line = item.pelayaran ? item.pelayaran.toUpperCase() : "SPIL";
+            let line = item.pelayaran ? item.pelayaran.toUpperCase().trim() : "SPIL";
+            if (line === "SAMUDRA") line = "SAMUDERA";
+
             let badgePelayaran = 'badge-rute';
             if (line === "SPIL") badgePelayaran = 'badge-spil';
             else if (line === "TEMAS") badgePelayaran = 'badge-temas';
@@ -631,7 +637,6 @@
                 </svg> Share
             </a>`;
 
-            /* WARNA TEXT DIGANTI PAKE VARIABEL var(--text-heading) BIAR KELIHATAN PAS DARK MODE */
             tbody.innerHTML += `<tr>
                 <td><span class="badge ${badgePelayaran}">${line}</span></td>
                 <td><span class="badge badge-rute">${ruteTampil}</span></td>
@@ -655,7 +660,6 @@
         XLSX.writeFile(wb, namaFile);
     }
 
-    // PANGGIL checkTheme() JUGA PAS PERTAMA KALI LOAD
     window.onload = () => {
         checkTheme();
         tarikSemuaData();
