@@ -520,14 +520,19 @@
             if (line === "SAMUDERA") {
                 let namaKapal = item.nama_kapal || "";
                 let kapalPertama = namaKapal.split('->')[0].trim();
+                
+                // PERBAIKAN: Bikin kunci unik gabungan Nama Kapal + Rute biar nggak saling timpa
+                let ruteTujuan = (item.rute || "").trim().toUpperCase();
+                let trackerKey = kapalPertama + "_" + ruteTujuan; 
+                
                 let waktuKeberangkatan = parseKeTanggal(item.etd);
 
-                if (!trackerSamudera[kapalPertama]) {
-                    trackerSamudera[kapalPertama] = item;
+                if (!trackerSamudera[trackerKey]) {
+                    trackerSamudera[trackerKey] = item;
                 } else {
-                    let waktuYangKecatet = parseKeTanggal(trackerSamudera[kapalPertama].etd);
+                    let waktuYangKecatet = parseKeTanggal(trackerSamudera[trackerKey].etd);
                     if (waktuKeberangkatan < waktuYangKecatet) {
-                        trackerSamudera[kapalPertama] = item;
+                        trackerSamudera[trackerKey] = item;
                     }
                 }
             } else {
