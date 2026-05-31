@@ -1,5 +1,6 @@
 import json
 import os
+import time  # Pastikan import time ditambahkan
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -17,6 +18,11 @@ for tujuan in daftar_tujuan:
 
     try:
         driver.get(url)
+        
+        # PERBAIKAN: Beri jeda 4 detik agar animasi loading AJAX mySPIL selesai 
+        # dan tabel benar-benar berubah menjadi rute yang dituju.
+        time.sleep(4) 
+        
         WebDriverWait(driver, 8).until(
             EC.presence_of_element_located((By.XPATH, "//table/tbody/tr"))
         )
