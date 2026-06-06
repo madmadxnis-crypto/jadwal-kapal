@@ -760,8 +760,8 @@
         "pelayaran": "ICON",
         "nama_kapal": "IB V.50/26 - ICON BRAVO",
         "closing": "01/06/2026 05:53",
-        "etd": "Rabu, 03 Juni 2026 05:50",
-        "eta": "Minggu, 07 Juni 2026 05:50",
+        "etd": "Kamis, 04 Juni 2026 16:48",
+        "eta": "Selasa, 09 Juni 2026 06:00",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -800,8 +800,8 @@
         "pelayaran": "ICON",
         "nama_kapal": "IB V.49/26 - ICON BRAVO",
         "closing": "01/06/2026 05:51",
-        "etd": "Rabu, 03 Juni 2026 05:48",
-        "eta": "Sabtu, 06 Juni 2026 05:49",
+        "etd": "Kamis, 04 Juni 2026 16:48",
+        "eta": "Senin, 08 Juni 2026 06:00",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -836,10 +836,20 @@
         "open_stack": "N/A"
     },
     {
+        "rute": "Banjarmasin",
+        "pelayaran": "ICON",
+        "nama_kapal": "IG V V.25/26 - MV. ICON GALATIA V",
+        "closing": "13/06/2026 02:45",
+        "etd": "Selasa, 16 Juni 2026 02:44",
+        "eta": "Kamis, 18 Juni 2026 02:44",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
         "rute": "Batam",
         "pelayaran": "ICON",
         "nama_kapal": "II XI V.62/26 - ICON IBRANI XI",
-        "closing": "03/06/2026 06:15",
+        "closing": "07/06/2026 06:15",
         "etd": "Jumat, 05 Juni 2026 06:14",
         "eta": "Minggu, 07 Juni 2026 06:14",
         "etb": "N/A",
@@ -852,16 +862,6 @@
         "closing": "11/06/2026 02:53",
         "etd": "Sabtu, 13 Juni 2026 02:52",
         "eta": "Selasa, 16 Juni 2026 02:52",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "ICON",
-        "nama_kapal": "IL XIX V.21/26 - ICON LUKAS XIX",
-        "closing": "06/06/2026 02:16",
-        "etd": "Rabu, 03 Juni 2026 02:14",
-        "eta": "Jumat, 05 Juni 2026 02:15",
         "etb": "N/A",
         "open_stack": "N/A"
     },
