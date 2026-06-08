@@ -23,11 +23,14 @@ jobs:
 
     - name: Jalankan Scraper Sakti
       run: python run_all.py
-
-    - name: Simpan Data Terbaru ke Web
-      run: |
-        git config --global user.name 'GoTrans Bot'
-        git config --global user.email 'bot@gotrans.com'
-        git add jadwal.json
-        git commit -m "Automated update jadwal.json" || exit 0
-        git push
+- name: Simpan Data Terbaru ke Web
+        run: |
+          git config --global user.name 'GoTrans Bot'
+          git config --global user.email 'bot@gotrans.com'
+          git add .
+          git commit -m "Automated update jadwal.json" || exit 0
+          
+          # Tambahin baris ini buat narik update terbaru sebelum nge-push
+          git pull --rebase origin main
+          
+          git push origin main
