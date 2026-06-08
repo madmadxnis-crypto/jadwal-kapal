@@ -1,36 +1,49 @@
-name: Auto Scrape Jadwal Kapal GoTrans
+name: bakar_scraper.yml
 
 on:
-  schedule:
-    - cron: '0 23 * * *'
   workflow_dispatch:
+  # schedule:
+  #   - cron: '0 0 * * *' # Boleh di-uncomment nanti kalau mau dijalanin otomatis tiap hari
+
+permissions:
+  contents: write
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
-    - name: Ambil kode proyek
-      uses: actions/checkout@v4
+      - name: Ambil kode proyek
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # INI PENTING: Biar bot bisa baca seluruh histori dan gak nabrak pas git pull
 
-    - name: Install Python & Selenium
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.10'
+      - name: Install Python & Selenium
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
 
-    - name: Install Dependencies
-      run: |
-        pip install selenium requests
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt
+          # Catatan: Kalau gagal di sini karena gak ada requirements.txt, ganti baris ini pakai:
+          # pip install selenium webdriver-manager bs4 requests
 
-    - name: Jalankan Scraper Sakti
-      run: python run_all.py
-- name: Simpan Data Terbaru ke Web
+      - name: Jalankan Scraper Sakti
+        run: python run_all.py
+
+      - name: Simpan Data Terbaru ke Web
         run: |
           git config --global user.name 'GoTrans Bot'
           git config --global user.email 'bot@gotrans.com'
-          git add .
-          git commit -m "Automated update jadwal.json" || exit 0
           
-          # Tambahin baris ini buat narik update terbaru sebelum nge-push
+          # Daftarin semua file yang abis diubah (termasuk jadwal.json)
+          git add .
+          
+          # Commit perubahannya, kalau gak ada yang berubah biarin aja jalan terus
+          git commit -m "[Automated] Update jadwal.json" || echo "Tidak ada perubahan data."
+          
+          # Tarik data terbaru dari GitHub lu supaya sinkron dan gak kena 'rejected fetch first'
           git pull --rebase origin main
           
+          # Dorong hasil akhirnya ke GitHub
           git push origin main
