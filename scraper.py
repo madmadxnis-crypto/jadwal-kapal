@@ -5,9 +5,23 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 
-print("🚀 Memulai Master Scraper SPIL (Fokus ETB & Open Stack)...")
-driver = webdriver.Chrome()
+print("🚀 Memulai Master Scraper SPIL (Mode Headless untuk GitHub Actions)...")
+
+# --- KONFIGURASI HEADLESS CHROME ---
+chrome_options = Options()
+chrome_options.add_argument("--headless=new") # Jalanin tanpa buka layar
+chrome_options.add_argument("--no-sandbox") # Wajib untuk server Linux/GitHub
+chrome_options.add_argument("--disable-dev-shm-usage") # Mencegah Chrome kehabisan memori
+chrome_options.add_argument("--window-size=1920,1080") # Resolusi layar virtual
+
+# Setup driver dengan opsi di atas
+service = Service(ChromeDriverManager().install())
+driver = webdriver.Chrome(service=service, options=chrome_options)
+# -----------------------------------
 
 daftar_tujuan = ["Makassar", "Bitung", "Gorontalo", "Samarinda", "Balikpapan", "Banjarmasin", "Belawan", "Palu", "Batam", "Pontianak"]
 data_jadwal_global = []
