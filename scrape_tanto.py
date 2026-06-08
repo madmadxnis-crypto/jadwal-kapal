@@ -4,9 +4,22 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 
-print("🚀 Memulai Master Scraper TANTO (Mapping Rute Khusus & Fix Closing)...")
-driver = webdriver.Chrome()
+print("🚀 Memulai Master Scraper TANTO (Mode Headless & Fix Closing)...")
+
+# --- KONFIGURASI HEADLESS CHROME ---
+chrome_options = Options()
+chrome_options.add_argument("--headless=new")
+chrome_options.add_argument("--no-sandbox")
+chrome_options.add_argument("--disable-dev-shm-usage")
+chrome_options.add_argument("--window-size=1920,1080")
+
+service = Service(ChromeDriverManager().install())
+driver = webdriver.Chrome(service=service, options=chrome_options)
+# -----------------------------------
 
 # Rute Standar Dashboard Kita
 daftar_tujuan = ["Makassar", "Bitung", "Gorontalo", "Samarinda", "Balikpapan", "Banjarmasin", "Medan", "Tangkian", "Pontianak", "Batam"]
@@ -118,4 +131,4 @@ with open('jadwal.json', 'w') as f:
     json.dump(data_gabungan, f, indent=4)
 
 driver.quit()
-print("\n🎉 MASTER TANTO SELESAI! Silakan refresh dashboard Chrome kamu.")
+print("\n🎉 MASTER TANTO SELESAI! Data sudah diamankan ke jadwal.json.")
