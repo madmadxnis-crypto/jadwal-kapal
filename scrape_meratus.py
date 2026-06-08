@@ -6,14 +6,27 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 
-print("🚀 Memulai Master Scraper MERATUS (Fokus ETB & Open Stack)...")
-driver = webdriver.Chrome()
+print("🚀 Memulai Master Scraper MERATUS (Mode Headless - Fokus ETB & Open Stack)...")
+
+# --- KONFIGURASI HEADLESS CHROME ---
+chrome_options = Options()
+chrome_options.add_argument("--headless=new")
+chrome_options.add_argument("--no-sandbox")
+chrome_options.add_argument("--disable-dev-shm-usage")
+chrome_options.add_argument("--window-size=1920,1080")
+
+service = Service(ChromeDriverManager().install())
+driver = webdriver.Chrome(service=service, options=chrome_options)
+# -----------------------------------
 
 rute_meratus = {
     "Makassar": "IDMAK", "Bitung": "IDBIT", "Gorontalo": "IDGTO",
     "Samarinda": "IDSRI", "Balikpapan": "IDBPN", "Pontianak": "IDPNK", "Batam": "IDBTH", "Banjarmasin": "IDBDJ",
-    "Belawan": "IDBLW", "Palu": "IDPTN,"
+    "Belawan": "IDBLW", "Palu": "IDPTN"
 }
 
 data_jadwal_global = []
