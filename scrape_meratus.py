@@ -8,13 +8,23 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 
-print("🚀 Memulai Master Scraper MERATUS (Fokus ETB & Open Stack)...")
-driver = webdriver.Chrome()
+print("🚀 Memulai Master Scraper MERATUS (Fokus ETB & Open Stack - Headless GitHub)...")
+
+# --- KONFIGURASI CHROME HEADLESS WAJIB UNTUK GITHUB ACTIONS ---
+chrome_options = Options()
+chrome_options.add_argument("--headless=new")
+chrome_options.add_argument("--no-sandbox")
+chrome_options.add_argument("--disable-dev-shm-usage")
+chrome_options.add_argument("--window-size=1920,1080")
+chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
+
+driver = webdriver.Chrome(options=chrome_options)
+# --------------------------------------------------------------
 
 rute_meratus = {
     "Makassar": "IDMAK", "Bitung": "IDBIT", "Gorontalo": "IDGTO",
     "Samarinda": "IDSRI", "Balikpapan": "IDBPN", "Pontianak": "IDPNK", "Batam": "IDBTH", "Banjarmasin": "IDBDJ",
-    "Belawan": "IDBLW", "Palu": "IDPTN,"
+    "Belawan": "IDBLW", "Palu": "IDPTN"
 }
 
 data_jadwal_global = []
@@ -26,14 +36,14 @@ for kota_tujuan, kode_port in rute_meratus.items():
 
     try:
         driver.get(url_meratus)
-        time.sleep(4)
+        time.sleep(6) # Sedikit dipanjangin biar loading di server Github lebih aman
 
         try:
             driver.find_element(By.XPATH, "//*[contains(text(), 'Direct')]").click()
-            time.sleep(2)
+            time.sleep(3)
         except: pass
 
-        WebDriverWait(driver, 10).until(
+        WebDriverWait(driver, 15).until(
             EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Route Detail')]"))
         )
 
