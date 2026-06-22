@@ -16,7 +16,7 @@ bulan_depan = (datetime.now() + timedelta(days=30)).strftime("%Y-%m-%d")
 rute_temas = {
     "Makassar": "IDMKS~MAKASSAR", "Bitung": "IDBIT~BITUNG", "Gorontalo": "IDGTO~GORONTALO",
     "Samarinda": "IDSRI~SAMARINDA", "Balikpapan": "IDBPN~BALIKPAPAN", "Banjarmasin": "IDBDJ~BANJARMASIN",
-    "MEDAN": "IDMDN~MEDAN", "Palu": "IDPTN~PANTOLOAN", "Pontianak": "IDPNK~PONTIANAK", "BATAM": "IDBTH~BATAM" 
+    "BELAWAN": "IDBLW~BELAWAN", "PALU": "IDPTL~PALU", "Pontianak": "IDPNK~PONTIANAK", "BATAM": "IDBTH~BATAM" 
 }
 
 data_jadwal_global = []
