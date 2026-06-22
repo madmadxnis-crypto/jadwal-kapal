@@ -2,25 +2,24 @@ import json
 import os
 import time
 import re
-from selenium import webdriver
+import undetected_chromedriver as uc
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
 
-print("🚀 Memulai Master Scraper MERATUS (Mode Headless - Fokus ETB & Open Stack)...")
+print("🚀 Memulai Master Scraper MERATUS (Mode Headless Anti-Bot - Fokus ETB & Open Stack)...")
 
-# --- KONFIGURASI HEADLESS CHROME ---
-chrome_options = Options()
-chrome_options.add_argument("--headless=new")
-chrome_options.add_argument("--no-sandbox")
-chrome_options.add_argument("--disable-dev-shm-usage")
-chrome_options.add_argument("--window-size=1920,1080")
+# --- KONFIGURASI UNDETECTED CHROMEDRIVER ---
+options = uc.ChromeOptions()
+options.add_argument("--headless=new")
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-dev-shm-usage")
+options.add_argument("--window-size=1920,1080")
+# Penyamaran tambahan agar tidak terlihat seperti headless browser
+options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+options.add_argument('--disable-blink-features=AutomationControlled')
 
-service = Service(ChromeDriverManager().install())
-driver = webdriver.Chrome(service=service, options=chrome_options)
+driver = uc.Chrome(options=options)
 # -----------------------------------
 
 rute_meratus = {
@@ -38,14 +37,17 @@ for kota_tujuan, kode_port in rute_meratus.items():
 
     try:
         driver.get(url_meratus)
-        time.sleep(4)
+        # Tambah waktu tunggu render awal karena server GitHub lemot
+        time.sleep(6) 
 
         try:
+            # Cari tombol filter Direct
             driver.find_element(By.XPATH, "//*[contains(text(), 'Direct')]").click()
-            time.sleep(2)
+            time.sleep(3)
         except: pass
 
-        WebDriverWait(driver, 10).until(
+        # Perpanjang waktu tunggu elemen jadwal muncul hingga 25 detik
+        WebDriverWait(driver, 25).until(
             EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Route Detail')]"))
         )
 
@@ -96,7 +98,8 @@ for kota_tujuan, kode_port in rute_meratus.items():
                     jumlah_kapal += 1
             except: pass
         print(f"   ✅ Sukses ditarik: {jumlah_kapal} kapal.")
-    except: print(f"   ⚠️ Rute {kota_tujuan} kosong.")
+    except Exception as e: 
+        print(f"   ⚠️ Rute {kota_tujuan} kosong atau gagal render HTML.")
 
 # Simpan ke JSON
 data_gabungan = []
