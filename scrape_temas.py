@@ -6,9 +6,20 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
 
-print("🚀 Memulai Master Scraper TEMAS (Versi Filter Direct Terstandar)...")
-driver = webdriver.Chrome()
+print("🚀 Memulai Master Scraper TEMAS (Versi Filter Direct & Headless GitHub)...")
+
+# --- KONFIGURASI CHROME HEADLESS WAJIB UNTUK GITHUB ACTIONS ---
+chrome_options = Options()
+chrome_options.add_argument("--headless=new")
+chrome_options.add_argument("--no-sandbox")
+chrome_options.add_argument("--disable-dev-shm-usage")
+chrome_options.add_argument("--window-size=1920,1080")
+chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
+
+driver = webdriver.Chrome(options=chrome_options)
+# --------------------------------------------------------------
 
 hari_ini = datetime.now().strftime("%Y-%m-%d")
 bulan_depan = (datetime.now() + timedelta(days=30)).strftime("%Y-%m-%d")
@@ -27,18 +38,18 @@ for kota_tujuan, kode_port in rute_temas.items():
     
     try:
         driver.get(url_temas)
-        time.sleep(3) # Tunggu render filter samping
+        time.sleep(4) # Waktu tunggu dilebihin sedikit buat server GitHub
         
         # AKTIVASI FILTER DIRECT: Cari teks 'Direct' lalu klik checkbox/labelnya
         try:
             checkbox_direct = driver.find_element(By.XPATH, "//*[contains(text(), 'Direct')]")
             checkbox_direct.click()
             print("   [FILTER] Berhasil mengaktifkan rute Direct.")
-            time.sleep(2) # Tunggu tabel refresh otomatis setelah diklik
+            time.sleep(3) # Tunggu tabel refresh otomatis setelah diklik
         except Exception:
             print("   [FILTER] Tombol Direct tidak ditemukan atau sudah aktif.")
 
-        WebDriverWait(driver, 8).until(
+        WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, "//div[contains(text(), 'Est. Departure')]"))
         )
         
