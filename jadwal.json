@@ -230,6 +230,16 @@
         "open_stack": "19/06/2026 11:00 @DSN (004-005)"
     },
     {
+        "rute": "Samarinda",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Pulau Nunukan - 14/2026",
+        "closing": "26/06/2026 22:00",
+        "etd": "29/06/2026 06:00",
+        "eta": "04/07/2026 04:00",
+        "etb": "04/07/2026 06:00",
+        "open_stack": "23/06/2026 12:00"
+    },
+    {
         "rute": "Balikpapan",
         "pelayaran": "SPIL",
         "nama_kapal": "Pulau Layang - 14/2026",
@@ -238,6 +248,16 @@
         "eta": "04/07/2026 00:00",
         "etb": "04/07/2026 02:00",
         "open_stack": "19/06/2026 11:00 @DSN (004-005)"
+    },
+    {
+        "rute": "Balikpapan",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Pulau Nunukan - 14/2026",
+        "closing": "26/06/2026 22:00",
+        "etd": "29/06/2026 06:00",
+        "eta": "02/07/2026 22:00",
+        "etb": "03/07/2026 00:00",
+        "open_stack": "23/06/2026 12:00"
     },
     {
         "rute": "Banjarmasin",
@@ -704,18 +724,18 @@
         "pelayaran": "ICON",
         "nama_kapal": "IL XIX V.27/26 - ICON LUKAS XIX",
         "closing": "26/06/2026 00:36",
-        "etd": "Minggu, 28 Juni 2026 00:34",
-        "eta": "Selasa, 30 Juni 2026 00:34",
+        "etd": "N/A",
+        "eta": "N/A",
         "etb": "N/A",
         "open_stack": "N/A"
     },
     {
         "rute": "Pontianak",
         "pelayaran": "ICON",
-        "nama_kapal": "IM VI 8 V.9/26 - ICON MIKHA VI 8",
-        "closing": "26/06/2026 01:04",
-        "etd": "Minggu, 28 Juni 2026 01:03",
-        "eta": "Selasa, 30 Juni 2026 01:03",
+        "nama_kapal": "",
+        "closing": "N/A",
+        "etd": "N/A",
+        "eta": "N/A",
         "etb": "N/A",
         "open_stack": "N/A"
     },
