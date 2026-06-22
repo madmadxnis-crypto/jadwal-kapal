@@ -23,10 +23,9 @@ jobs:
           python-version: '3.10'
 
       - name: Install Dependencies
-        # Bagian ini gw ubah jadi install manual tanpa requirements.txt
         run: |
           python -m pip install --upgrade pip
-          pip install selenium webdriver-manager bs4 requests pandas
+          pip install selenium webdriver-manager bs4 requests pandas undetected-chromedriver
 
       - name: Jalankan Scraper Sakti
         run: python run_all.py
