@@ -2,25 +2,23 @@ import json
 import os
 import time
 from datetime import datetime, timedelta
-from selenium import webdriver
+import undetected_chromedriver as uc
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
 
-print("🚀 Memulai Master Scraper TEMAS (Versi Filter Direct Terstandar & Headless)...")
+print("🚀 Memulai Master Scraper TEMAS (Versi Anti-Bot & Tunggu Render Ekstra)...")
 
-# --- KONFIGURASI HEADLESS CHROME ---
-chrome_options = Options()
-chrome_options.add_argument("--headless=new")
-chrome_options.add_argument("--no-sandbox")
-chrome_options.add_argument("--disable-dev-shm-usage")
-chrome_options.add_argument("--window-size=1920,1080")
+# --- KONFIGURASI UNDETECTED CHROMEDRIVER ---
+options = uc.ChromeOptions()
+options.add_argument("--headless=new")
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-dev-shm-usage")
+options.add_argument("--window-size=1920,1080")
+options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+options.add_argument('--disable-blink-features=AutomationControlled')
 
-service = Service(ChromeDriverManager().install())
-driver = webdriver.Chrome(service=service, options=chrome_options)
+driver = uc.Chrome(options=options)
 # -----------------------------------
 
 hari_ini = datetime.now().strftime("%Y-%m-%d")
@@ -40,18 +38,21 @@ for kota_tujuan, kode_port in rute_temas.items():
     
     try:
         driver.get(url_temas)
-        time.sleep(3) # Tunggu render filter samping
+        # Tunggu render filter samping (Diperpanjang untuk server Github)
+        time.sleep(6) 
         
         # AKTIVASI FILTER DIRECT: Cari teks 'Direct' lalu klik checkbox/labelnya
         try:
             checkbox_direct = driver.find_element(By.XPATH, "//*[contains(text(), 'Direct')]")
             checkbox_direct.click()
             print("   [FILTER] Berhasil mengaktifkan rute Direct.")
-            time.sleep(2) # Tunggu tabel refresh otomatis setelah diklik
+            # Tunggu tabel refresh otomatis setelah diklik
+            time.sleep(4) 
         except Exception:
             print("   [FILTER] Tombol Direct tidak ditemukan atau sudah aktif.")
 
-        WebDriverWait(driver, 8).until(
+        # Tunggu kotak jadwal beneran muncul (Diperpanjang ke 20 detik)
+        WebDriverWait(driver, 20).until(
             EC.presence_of_element_located((By.XPATH, "//div[contains(text(), 'Est. Departure')]"))
         )
         
@@ -65,7 +66,7 @@ for kota_tujuan, kode_port in rute_temas.items():
             try:
                 nama_kapal = "TEMAS VESSEL"
                 for baris in teks_semua:
-                    # Logika deteksi Vessel Voyage (mencari tanda strip "-" pemisah nomor voyage)
+                    # Logika deteksi Vessel Voyage
                     if "-" in baris and not any(x in baris for x in ["Est.", "PT TEMAS", "JAKARTA", "MAKASSAR", "SAILING", "ARRIVAL", "DEPARTURE"]):
                         nama_kapal = baris
                         break
@@ -87,7 +88,7 @@ for kota_tujuan, kode_port in rute_temas.items():
                         "rute": kota_tujuan,
                         "pelayaran": "TEMAS",
                         "nama_kapal": nama_kapal,
-                        "closing": "N/A", # Sesuai request, dikunci N/A karena TEMAS direct tidak ada kolom closing manual di modul ini
+                        "closing": "N/A",
                         "etd": etd,
                         "eta": eta
                     })
@@ -95,7 +96,7 @@ for kota_tujuan, kode_port in rute_temas.items():
             except: pass
         print(f"   ✅ Sukses menarik {jumlah_kapal} kapal TEMAS Direct.")
     except Exception:
-        print(f"   ⚠️ Rute {kota_tujuan} kosong/tidak ada jadwal.")
+        print(f"   ⚠️ Rute {kota_tujuan} kosong/tidak ada jadwal atau timeout.")
 
 # ==================== LOGIKA PENYIMPANAN AMAN (ANTI TIMPA) ====================
 data_gabungan = []
@@ -108,9 +109,7 @@ if os.path.exists('jadwal.json') and os.path.getsize('jadwal.json') > 0:
     except json.JSONDecodeError:
         data_gabungan = []
 
-# Bersihkan data TEMAS lama saja, data pelayaran lain (SPIL, dll) tetap aman
 data_gabungan = [j for j in data_gabungan if j.get('pelayaran') != 'TEMAS']
-# Gabungkan data TEMAS yang baru didapat
 data_gabungan.extend(data_jadwal_global)
 
 with open('jadwal.json', 'w') as f:
