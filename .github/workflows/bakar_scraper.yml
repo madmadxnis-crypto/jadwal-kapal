@@ -21,18 +21,20 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-- name: Install Dependencies
+
+      - name: Install Dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y xvfb
+          sudo apt-get install -y xvfb xauth
           python -m pip install --upgrade pip
           pip install selenium webdriver-manager bs4 requests pandas undetected-chromedriver
+
       - name: Jalankan Scraper Sakti
         run: xvfb-run --auto-servernum python run_all.py
 
       - name: Upload Screenshot Kalo Error
         uses: actions/upload-artifact@v4
-        if: always() # Biar tetep jalan buat nge-upload foto walaupun script python-nya ada yang timeout/gagal
+        if: always()
         with:
           name: error-screenshots
           path: "*.png"
