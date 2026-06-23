@@ -113,7 +113,11 @@ for tujuan in daftar_tujuan:
         if jumlah_kapal > 0:
             print(f"   ✅ Sukses ditarik: {jumlah_kapal} kapal TANTO.")
         else:
-            print(f"   ⚠️ Rute {tujuan_tanto} kosong (Tidak ada kapal).")
+            print(f"   ⚠️ Rute {tujuan_tanto} kosong. Ambil foto TKP...")
+            try:
+                driver.save_screenshot(f"debug_tanto_kosong_{tujuan_tanto}.png")
+            except Exception:
+                pass
 
     except Exception as e:
         print(f"   ❌ Terjadi error di rute {tujuan_tanto}: {type(e).__name__} - {str(e)[:150]}")
