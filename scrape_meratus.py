@@ -36,14 +36,16 @@ for kota_tujuan, kode_port in rute_meratus.items():
 
     try:
         driver.get(url_meratus)
-        time.sleep(6) # Sedikit dipanjangin biar loading di server Github lebih aman
+        time.sleep(8) # Waktu tunggu diperpanjang biar aman di server GitHub
 
         try:
             driver.find_element(By.XPATH, "//*[contains(text(), 'Direct')]").click()
             time.sleep(3)
-        except: pass
+        except Exception: 
+            pass # Kalau ga ada tombol direct, lanjut aja tanpa bikin error log
 
-        WebDriverWait(driver, 15).until(
+        # Waktu tunggu ditarik sampai 30 detik karena web logistik sering lambat load data
+        WebDriverWait(driver, 30).until(
             EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Route Detail')]"))
         )
 
@@ -92,9 +94,22 @@ for kota_tujuan, kode_port in rute_meratus.items():
                         "open_stack": open_stack
                     })
                     jumlah_kapal += 1
-            except: pass
+            except Exception: 
+                pass
+                
         print(f"   ✅ Sukses ditarik: {jumlah_kapal} kapal.")
-    except: print(f"   ⚠️ Rute {kota_tujuan} kosong.")
+
+    except Exception as e:
+        # Menangkap error spesifik dan ambil screenshot
+        print(f"   ⚠️ GAGAL narik rute {kota_tujuan}. BUKAN KOSONG, tapi ada error.")
+        print(f"   🛑 Detail Error: {type(e).__name__} - {str(e)[:200]}")
+        
+        try:
+            nama_file_error = f"error_meratus_{kota_tujuan}.png"
+            driver.save_screenshot(nama_file_error)
+            print(f"   📸 Screenshot disimpan: {nama_file_error}")
+        except Exception as screenshot_err:
+            print(f"   Gagal mengambil screenshot: {screenshot_err}")
 
 # Simpan ke JSON
 data_gabungan = []
@@ -103,7 +118,8 @@ if os.path.exists('jadwal.json') and os.path.getsize('jadwal.json') > 0:
         with open('jadwal.json', 'r') as f:
             data_gabungan = json.load(f)
             if not isinstance(data_gabungan, list): data_gabungan = []
-    except: data_gabungan = []
+    except Exception: 
+        data_gabungan = []
 
 data_gabungan = [j for j in data_gabungan if j.get('pelayaran') != 'MERATUS']
 data_gabungan.extend(data_jadwal_global)
