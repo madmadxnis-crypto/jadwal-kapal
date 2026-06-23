@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 
-print("🚀 Memulai Master Scraper TEMAS (Versi Filter Direct & Headless GitHub)...")
+print("🚀 Memulai Master Scraper TEMAS (Versi Filter Direct JS & Headless GitHub)...")
 
 # --- KONFIGURASI CHROME HEADLESS WAJIB UNTUK GITHUB ACTIONS ---
 chrome_options = Options()
@@ -38,18 +38,22 @@ for kota_tujuan, kode_port in rute_temas.items():
     
     try:
         driver.get(url_temas)
-        time.sleep(4) # Waktu tunggu dilebihin sedikit buat server GitHub
+        time.sleep(6) # Waktu tunggu dinaikin jadi 6 detik buat server GitHub
         
-        # AKTIVASI FILTER DIRECT: Cari teks 'Direct' lalu klik checkbox/labelnya
+        # AKTIVASI FILTER DIRECT DENGAN JAVASCRIPT EXECUTOR
         try:
-            checkbox_direct = driver.find_element(By.XPATH, "//*[contains(text(), 'Direct')]")
-            checkbox_direct.click()
-            print("   [FILTER] Berhasil mengaktifkan rute Direct.")
-            time.sleep(3) # Tunggu tabel refresh otomatis setelah diklik
-        except Exception:
-            print("   [FILTER] Tombol Direct tidak ditemukan atau sudah aktif.")
+            # Cari elemen yang mengandung kata Direct (bisa label, span, atau div)
+            checkbox_direct = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Direct')]"))
+            )
+            # Eksekusi klik paksa dari dalam DOM, anti meleset
+            driver.execute_script("arguments[0].click();", checkbox_direct)
+            print("   [FILTER] Berhasil mengaktifkan rute Direct lewat JS.")
+            time.sleep(4) # Tunggu tabel refresh otomatis setelah diklik
+        except Exception as e_filter:
+            print(f"   [FILTER] Tombol Direct tidak ditemukan atau gagal diklik: {type(e_filter).__name__}")
 
-        WebDriverWait(driver, 10).until(
+        WebDriverWait(driver, 20).until(
             EC.presence_of_element_located((By.XPATH, "//div[contains(text(), 'Est. Departure')]"))
         )
         
@@ -63,7 +67,7 @@ for kota_tujuan, kode_port in rute_temas.items():
             try:
                 nama_kapal = "TEMAS VESSEL"
                 for baris in teks_semua:
-                    # Logika deteksi Vessel Voyage (mencari tanda strip "-" pemisah nomor voyage)
+                    # Logika deteksi Vessel Voyage
                     if "-" in baris and not any(x in baris for x in ["Est.", "PT TEMAS", "JAKARTA", "MAKASSAR", "SAILING", "ARRIVAL", "DEPARTURE"]):
                         nama_kapal = baris
                         break
@@ -85,15 +89,26 @@ for kota_tujuan, kode_port in rute_temas.items():
                         "rute": kota_tujuan,
                         "pelayaran": "TEMAS",
                         "nama_kapal": nama_kapal,
-                        "closing": "N/A", # Sesuai request, dikunci N/A karena TEMAS direct tidak ada kolom closing manual di modul ini
+                        "closing": "N/A", # Temas direct tidak ada kolom closing
                         "etd": etd,
                         "eta": eta
                     })
                     jumlah_kapal += 1
-            except: pass
+            except Exception: pass
+            
         print(f"   ✅ Sukses menarik {jumlah_kapal} kapal TEMAS Direct.")
-    except Exception:
-        print(f"   ⚠️ Rute {kota_tujuan} kosong/tidak ada jadwal.")
+        
+    except Exception as e:
+        # TANGKAP ERROR DAN AMBIL SCREENSHOT
+        print(f"   ⚠️ GAGAL narik rute {kota_tujuan}. BUKAN KOSONG, tapi ada error.")
+        print(f"   🛑 Detail Error: {type(e).__name__} - {str(e)[:200]}")
+        
+        try:
+            nama_file_error = f"error_temas_{kota_tujuan}.png"
+            driver.save_screenshot(nama_file_error)
+            print(f"   📸 Screenshot disimpan: {nama_file_error}")
+        except Exception as screenshot_err:
+            print(f"   Gagal mengambil screenshot: {screenshot_err}")
 
 # ==================== LOGIKA PENYIMPANAN AMAN (ANTI TIMPA) ====================
 data_gabungan = []
@@ -106,9 +121,8 @@ if os.path.exists('jadwal.json') and os.path.getsize('jadwal.json') > 0:
     except json.JSONDecodeError:
         data_gabungan = []
 
-# Bersihkan data TEMAS lama saja, data pelayaran lain (SPIL, dll) tetap aman
+# Bersihkan data TEMAS lama saja
 data_gabungan = [j for j in data_gabungan if j.get('pelayaran') != 'TEMAS']
-# Gabungkan data TEMAS yang baru didapat
 data_gabungan.extend(data_jadwal_global)
 
 with open('jadwal.json', 'w') as f:
