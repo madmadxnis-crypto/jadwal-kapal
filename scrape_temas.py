@@ -56,7 +56,7 @@ for kota_tujuan, kode_port in rute_temas.items():
         except Exception as e_filter:
             print(f"   [FILTER] Tombol Direct tidak ditemukan atau gagal diklik: {type(e_filter).__name__}")
 
-        # Batas tunggu tabel jadwal dinaikin ke 45 detik biar tahan banting di Github
+        # Batas tunggu tabel jadwal dinaikin ke 45 detik
         WebDriverWait(driver, 45).until(
             EC.presence_of_element_located((By.XPATH, "//div[contains(text(), 'Est. Departure')]"))
         )
