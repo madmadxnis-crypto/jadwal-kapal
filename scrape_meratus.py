@@ -2,24 +2,23 @@ import json
 import os
 import time
 import re
-from selenium import webdriver
+import undetected_chromedriver as uc
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
 
-print("🚀 Memulai Master Scraper MERATUS (Fokus ETB & Open Stack - Headless GitHub)...")
+print("🚀 Memulai Master Scraper MERATUS (Versi UNDETECTED-CHROMEDRIVER - Anti 403)...")
 
-# --- KONFIGURASI CHROME HEADLESS WAJIB UNTUK GITHUB ACTIONS ---
-chrome_options = Options()
-chrome_options.add_argument("--headless=new")
-chrome_options.add_argument("--no-sandbox")
-chrome_options.add_argument("--disable-dev-shm-usage")
-chrome_options.add_argument("--window-size=1920,1080")
-chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
+# --- KONFIGURASI UNDETECTED CHROMEDRIVER ---
+options = uc.ChromeOptions()
+options.add_argument("--headless") # Jangan pakai =new kalau di UC
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-dev-shm-usage")
+options.add_argument("--window-size=1920,1080")
+# Catatan: User-Agent sengaja ga diset biar UC yang generate otomatis
 
-driver = webdriver.Chrome(options=chrome_options)
-# --------------------------------------------------------------
+driver = uc.Chrome(options=options)
+# -------------------------------------------
 
 rute_meratus = {
     "Makassar": "IDMAK", "Bitung": "IDBIT", "Gorontalo": "IDGTO",
@@ -36,15 +35,14 @@ for kota_tujuan, kode_port in rute_meratus.items():
 
     try:
         driver.get(url_meratus)
-        time.sleep(8) # Waktu tunggu diperpanjang biar aman di server GitHub
+        time.sleep(8) 
 
         try:
             driver.find_element(By.XPATH, "//*[contains(text(), 'Direct')]").click()
             time.sleep(3)
         except Exception: 
-            pass # Kalau ga ada tombol direct, lanjut aja tanpa bikin error log
+            pass 
 
-        # Waktu tunggu ditarik sampai 30 detik karena web logistik sering lambat load data
         WebDriverWait(driver, 30).until(
             EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Route Detail')]"))
         )
@@ -73,7 +71,6 @@ for kota_tujuan, kode_port in rute_meratus.items():
                 closing_match = re.search(r'Close CY Dry\s*:\s*(\d{1,2}\s+[A-Za-z]+\s+\d{4}(?:\s+\d{2}:\d{2})?)', flat_text)
                 closing = closing_match.group(1).strip() if closing_match else "N/A"
 
-                # PENCARIAN ETB DAN OPEN STACK MERATUS
                 etb_match = re.search(r'ETB\s+(\d{1,2}\s+[A-Za-z]+\s+\d{4})', flat_text)
                 etb = etb_match.group(1).strip() if etb_match else "N/A"
 
@@ -100,7 +97,6 @@ for kota_tujuan, kode_port in rute_meratus.items():
         print(f"   ✅ Sukses ditarik: {jumlah_kapal} kapal.")
 
     except Exception as e:
-        # Menangkap error spesifik dan ambil screenshot
         print(f"   ⚠️ GAGAL narik rute {kota_tujuan}. BUKAN KOSONG, tapi ada error.")
         print(f"   🛑 Detail Error: {type(e).__name__} - {str(e)[:200]}")
         
