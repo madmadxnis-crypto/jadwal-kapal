@@ -14,16 +14,16 @@
         "pelayaran": "SPIL",
         "nama_kapal": "Armada Permata - 10/2026",
         "closing": "25/06/2026 22:00",
-        "etd": "28/06/2026 08:00",
+        "etd": "29/06/2026 08:00",
         "eta": "07/07/2026 17:00",
         "etb": "07/07/2026 20:00",
-        "open_stack": "24/06/2026 16:00"
+        "open_stack": "25/06/2026 16:00"
     },
     {
         "rute": "Samarinda",
         "pelayaran": "SPIL",
         "nama_kapal": "Pulau Layang - 14/2026",
-        "closing": "23/06/2026 10:00",
+        "closing": "23/06/2026 12:00",
         "etd": "24/06/2026 06:00",
         "eta": "27/06/2026 22:00",
         "etb": "28/06/2026 00:00",
@@ -34,16 +34,16 @@
         "pelayaran": "SPIL",
         "nama_kapal": "Pulau Nunukan - 14/2026",
         "closing": "26/06/2026 22:00",
-        "etd": "29/06/2026 06:00",
-        "eta": "04/07/2026 04:00",
-        "etb": "04/07/2026 06:00",
+        "etd": "28/06/2026 01:00",
+        "eta": "02/07/2026 23:00",
+        "etb": "03/07/2026 01:00",
         "open_stack": "23/06/2026 12:00"
     },
     {
         "rute": "Balikpapan",
         "pelayaran": "SPIL",
         "nama_kapal": "Pulau Layang - 14/2026",
-        "closing": "23/06/2026 10:00",
+        "closing": "23/06/2026 12:00",
         "etd": "24/06/2026 06:00",
         "eta": "04/07/2026 00:00",
         "etb": "04/07/2026 02:00",
@@ -54,19 +54,19 @@
         "pelayaran": "SPIL",
         "nama_kapal": "Pulau Nunukan - 14/2026",
         "closing": "26/06/2026 22:00",
-        "etd": "29/06/2026 06:00",
-        "eta": "02/07/2026 22:00",
-        "etb": "03/07/2026 00:00",
+        "etd": "28/06/2026 01:00",
+        "eta": "01/07/2026 17:00",
+        "etb": "01/07/2026 19:00",
         "open_stack": "23/06/2026 12:00"
     },
     {
         "rute": "Banjarmasin",
         "pelayaran": "SPIL",
         "nama_kapal": "Oriental Pacific - 12/2026",
-        "closing": "23/06/2026 22:00",
-        "etd": "26/06/2026 23:00",
-        "eta": "29/06/2026 13:00",
-        "etb": "29/06/2026 15:00",
+        "closing": "24/06/2026 10:00",
+        "etd": "26/06/2026 22:00",
+        "eta": "29/06/2026 12:00",
+        "etb": "29/06/2026 14:00",
         "open_stack": "18/06/2026 23:00"
     },
     {
@@ -110,24 +110,14 @@
         "open_stack": "20/06/2026 15:00"
     },
     {
-        "rute": "Makassar",
-        "pelayaran": "TANTO",
-        "nama_kapal": "TANTO CAHAYA / 387",
-        "closing": "24 Jun 2026",
-        "etd": "28 Jun 2026",
-        "eta": "01 Jul 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Makassar",
-        "pelayaran": "TANTO",
-        "nama_kapal": "TANTO TERANG / 299",
-        "closing": "29 Jun 2026",
-        "etd": "30 Jun 2026",
-        "eta": "03 Jul 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
+        "rute": "Pontianak",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Spil Renata - 20/2026",
+        "closing": "26/06/2026 22:00",
+        "etd": "29/06/2026 08:00",
+        "eta": "02/07/2026 17:00",
+        "etb": "02/07/2026 19:00",
+        "open_stack": "20/06/2026 23:00"
     },
     {
         "rute": "Bitung",
@@ -2780,6 +2770,94 @@
         "open_stack": "N/A"
     },
     {
+        "rute": "Bitung",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Fraser Mas - 10/26",
+        "closing": "N/A",
+        "etd": "09 Jul 2026",
+        "eta": "16 Jul 2026"
+    },
+    {
+        "rute": "Bitung",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Gaung Mas - 31/26",
+        "closing": "N/A",
+        "etd": "24 Jun 2026",
+        "eta": "02 Jul 2026"
+    },
+    {
+        "rute": "Bitung",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Huanghe Mas - 38/26",
+        "closing": "N/A",
+        "etd": "29 Jun 2026",
+        "eta": "07 Jul 2026"
+    },
+    {
+        "rute": "Bitung",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Gangga Mas - 33/26",
+        "closing": "N/A",
+        "etd": "04 Jul 2026",
+        "eta": "12 Jul 2026"
+    },
+    {
+        "rute": "Bitung",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Gihon Mas - 38/26",
+        "closing": "N/A",
+        "etd": "07 Jul 2026",
+        "eta": "15 Jul 2026"
+    },
+    {
+        "rute": "Bitung",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Gaung Mas - 36/26",
+        "closing": "N/A",
+        "etd": "12 Jul 2026",
+        "eta": "20 Jul 2026"
+    },
+    {
+        "rute": "Bitung",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Huanghe Mas - 43/26",
+        "closing": "N/A",
+        "etd": "17 Jul 2026",
+        "eta": "25 Jul 2026"
+    },
+    {
+        "rute": "Gorontalo",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Hilir Mas - 39/26",
+        "closing": "N/A",
+        "etd": "04 Jul 2026",
+        "eta": "08 Jul 2026"
+    },
+    {
+        "rute": "Gorontalo",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Huanghe Mas - 38/26",
+        "closing": "N/A",
+        "etd": "29 Jun 2026",
+        "eta": "09 Jul 2026"
+    },
+    {
+        "rute": "Gorontalo",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Gangga Mas - 33/26",
+        "closing": "N/A",
+        "etd": "04 Jul 2026",
+        "eta": "14 Jul 2026"
+    },
+    {
+        "rute": "Gorontalo",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Gaung Mas - 36/26",
+        "closing": "N/A",
+        "etd": "12 Jul 2026",
+        "eta": "22 Jul 2026"
+    },
+    {
         "rute": "Samarinda",
         "pelayaran": "TEMAS",
         "nama_kapal": "Huanghe Mas - 38/26",
@@ -2896,16 +2974,16 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Mare Mas - 38/26",
         "closing": "N/A",
-        "etd": "23 Jun 2026",
-        "eta": "25 Jun 2026"
+        "etd": "24 Jun 2026",
+        "eta": "26 Jun 2026"
     },
     {
         "rute": "Pontianak",
         "pelayaran": "TEMAS",
         "nama_kapal": "Mare Mas - 40/26",
         "closing": "N/A",
-        "etd": "29 Jun 2026",
-        "eta": "01 Jul 2026"
+        "etd": "30 Jun 2026",
+        "eta": "02 Jul 2026"
     },
     {
         "rute": "Pontianak",
