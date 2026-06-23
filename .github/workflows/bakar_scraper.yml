@@ -2,8 +2,8 @@ name: bakar_scraper.yml
 
 on:
   workflow_dispatch:
-  # schedule:
-  #   - cron: '0 0 * * *'
+  schedule:
+    - cron: '0 5,17 * * *'
 
 permissions:
   contents: write
