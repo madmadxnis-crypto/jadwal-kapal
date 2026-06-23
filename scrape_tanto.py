@@ -22,7 +22,7 @@ driver = webdriver.Chrome(service=service, options=chrome_options)
 # -----------------------------------
 
 # Rute Standar Dashboard Kita
-daftar_tujuan = ["Makassar", "Bitung", "Gorontalo", "Samarinda", "Balikpapan", "Banjarmasin", "Medan", "Tangkian", "Pontianak", "Batam"]
+daftar_tujuan = ["MAKASSAR", "Bitung", "Gorontalo", "Samarinda", "Balikpapan", "Banjarmasin", "Medan", "Tangkian", "Pontianak", "Batam"]
 data_jadwal_global = []
 
 for tujuan in daftar_tujuan:
