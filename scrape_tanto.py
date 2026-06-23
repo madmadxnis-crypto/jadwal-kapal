@@ -38,7 +38,7 @@ for tujuan in daftar_tujuan:
     try:
         driver.get("https://www.tantonet.com/schedule.php")
         
-        # 1. ISI PORT OF LOAD (JAKARTA) - KUNCI FIX LOADING ADA DI SINI
+        # 1. ISI PORT OF LOAD (JAKARTA)
         try:
             pol_container = WebDriverWait(driver, 30).until(
                 EC.element_to_be_clickable((By.ID, "select2-pol-container"))
