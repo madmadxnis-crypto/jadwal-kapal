@@ -122,20 +122,20 @@
     {
         "rute": "Samarinda",
         "pelayaran": "ICON",
-        "nama_kapal": "IB V.56/26 - ICON BRAVO",
-        "closing": "23/06/2026 02:02",
-        "etd": "Rabu, 24 Juni 2026 01:57",
-        "eta": "Minggu, 28 Juni 2026 01:57",
+        "nama_kapal": "IB V.54/26 - ICON BRAVO",
+        "closing": "22/06/2026 07:36",
+        "etd": "Rabu, 24 Juni 2026 07:34",
+        "eta": "Sabtu, 27 Juni 2026 07:34",
         "etb": "N/A",
         "open_stack": "N/A"
     },
     {
         "rute": "Samarinda",
         "pelayaran": "ICON",
-        "nama_kapal": "IB V.54/26 - ICON BRAVO",
-        "closing": "22/06/2026 07:36",
-        "etd": "Rabu, 24 Juni 2026 07:34",
-        "eta": "Sabtu, 27 Juni 2026 07:34",
+        "nama_kapal": "IB V.56/26 - ICON BRAVO",
+        "closing": "24/06/2026 16:02",
+        "etd": "Kamis, 25 Juni 2026 01:57",
+        "eta": "Minggu, 28 Juni 2026 01:57",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -173,9 +173,9 @@
         "rute": "Balikpapan",
         "pelayaran": "ICON",
         "nama_kapal": "IB v.55/26 - ICON BRAVO",
-        "closing": "23/06/2026 02:01",
-        "etd": "N/A",
-        "eta": "N/A",
+        "closing": "24/06/2026 16:01",
+        "etd": "Kamis, 25 Juni 2026 01:56",
+        "eta": "Jumat, 26 Juni 2026 01:56",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -203,9 +203,9 @@
         "rute": "Batam",
         "pelayaran": "ICON",
         "nama_kapal": "II XI V.67/26 - ICON IBRANI XI",
-        "closing": "19/06/2026 09:31",
-        "etd": "Jumat, 19 Juni 2026 09:30",
-        "eta": "Senin, 22 Juni 2026 09:30",
+        "closing": "18/06/2026 09:33",
+        "etd": "Sabtu, 20 Juni 2026 09:32",
+        "eta": "Senin, 22 Juni 2026 09:32",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -213,9 +213,9 @@
         "rute": "Batam",
         "pelayaran": "ICON",
         "nama_kapal": "II XI V.67/26 - ICON IBRANI XI",
-        "closing": "18/06/2026 09:33",
-        "etd": "Sabtu, 20 Juni 2026 09:32",
-        "eta": "Senin, 22 Juni 2026 09:32",
+        "closing": "19/06/2026 09:31",
+        "etd": "Senin, 22 Juni 2026 21:18",
+        "eta": "Kamis, 25 Juni 2026 14:00",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -244,8 +244,8 @@
         "pelayaran": "ICON",
         "nama_kapal": "IM VI 8 V.7/26 - ICON MIKHA VI 8",
         "closing": "23/06/2026 06:30",
-        "etd": "Senin, 22 Juni 2026 12:30",
-        "eta": "Rabu, 24 Juni 2026 14:01",
+        "etd": "Senin, 22 Juni 2026 12:00",
+        "eta": "Rabu, 24 Juni 2026 07:00",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -2596,18 +2596,18 @@
     {
         "rute": "Bitung",
         "pelayaran": "TEMAS",
-        "nama_kapal": "Gaung Mas - 31/26",
-        "closing": "N/A",
-        "etd": "24 Jun 2026",
-        "eta": "02 Jul 2026"
-    },
-    {
-        "rute": "Bitung",
-        "pelayaran": "TEMAS",
         "nama_kapal": "Huanghe Mas - 38/26",
         "closing": "N/A",
         "etd": "29 Jun 2026",
         "eta": "07 Jul 2026"
+    },
+    {
+        "rute": "Bitung",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Gaung Mas - 31/26",
+        "closing": "N/A",
+        "etd": "30 Jun 2026",
+        "eta": "08 Jul 2026"
     },
     {
         "rute": "Bitung",
@@ -2628,18 +2628,18 @@
     {
         "rute": "Bitung",
         "pelayaran": "TEMAS",
-        "nama_kapal": "Gaung Mas - 36/26",
-        "closing": "N/A",
-        "etd": "12 Jul 2026",
-        "eta": "20 Jul 2026"
-    },
-    {
-        "rute": "Bitung",
-        "pelayaran": "TEMAS",
         "nama_kapal": "Huanghe Mas - 43/26",
         "closing": "N/A",
         "etd": "17 Jul 2026",
         "eta": "25 Jul 2026"
+    },
+    {
+        "rute": "Bitung",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Gaung Mas - 36/26",
+        "closing": "N/A",
+        "etd": "18 Jul 2026",
+        "eta": "26 Jul 2026"
     },
     {
         "rute": "Gorontalo",
@@ -2670,8 +2670,16 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gaung Mas - 36/26",
         "closing": "N/A",
-        "etd": "12 Jul 2026",
-        "eta": "22 Jul 2026"
+        "etd": "18 Jul 2026",
+        "eta": "29 Jul 2026"
+    },
+    {
+        "rute": "Samarinda",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Gaung Mas - 31/26",
+        "closing": "N/A",
+        "etd": "30 Jun 2026",
+        "eta": "07 Jul 2026"
     },
     {
         "rute": "Samarinda",
@@ -2679,15 +2687,15 @@
         "nama_kapal": "Huanghe Mas - 38/26",
         "closing": "N/A",
         "etd": "29 Jun 2026",
-        "eta": "04 Jul 2026"
+        "eta": "07 Jul 2026"
     },
     {
-        "rute": "Samarinda",
+        "rute": "Balikpapan",
         "pelayaran": "TEMAS",
         "nama_kapal": "Gaung Mas - 31/26",
         "closing": "N/A",
-        "etd": "24 Jun 2026",
-        "eta": "04 Jul 2026"
+        "etd": "30 Jun 2026",
+        "eta": "08 Jul 2026"
     },
     {
         "rute": "Balikpapan",
@@ -2695,23 +2703,7 @@
         "nama_kapal": "Huanghe Mas - 38/26",
         "closing": "N/A",
         "etd": "29 Jun 2026",
-        "eta": "03 Jul 2026"
-    },
-    {
-        "rute": "Balikpapan",
-        "pelayaran": "TEMAS",
-        "nama_kapal": "Gaung Mas - 31/26",
-        "closing": "N/A",
-        "etd": "24 Jun 2026",
-        "eta": "03 Jul 2026"
-    },
-    {
-        "rute": "Banjarmasin",
-        "pelayaran": "TEMAS",
-        "nama_kapal": "Gaung Mas - 31/26",
-        "closing": "N/A",
-        "etd": "24 Jun 2026",
-        "eta": "29 Jun 2026"
+        "eta": "08 Jul 2026"
     },
     {
         "rute": "BELAWAN",
@@ -2740,58 +2732,58 @@
     {
         "rute": "PALU",
         "pelayaran": "TEMAS",
-        "nama_kapal": "Huanghe Mas - 38/26",
+        "nama_kapal": "Gaung Mas - 31/26",
         "closing": "N/A",
-        "etd": "29 Jun 2026",
-        "eta": "06 Jul 2026"
+        "etd": "30 Jun 2026",
+        "eta": "05 Jul 2026"
     },
     {
         "rute": "PALU",
         "pelayaran": "TEMAS",
-        "nama_kapal": "Gaung Mas - 31/26",
+        "nama_kapal": "Huanghe Mas - 38/26",
         "closing": "N/A",
-        "etd": "24 Jun 2026",
-        "eta": "06 Jul 2026"
+        "etd": "29 Jun 2026",
+        "eta": "05 Jul 2026"
     },
     {
         "rute": "Pontianak",
         "pelayaran": "TEMAS",
         "nama_kapal": "Damaskus Mas - 44/26",
         "closing": "N/A",
-        "etd": "24 Jun 2026",
-        "eta": "26 Jun 2026"
+        "etd": "26 Jun 2026",
+        "eta": "28 Jun 2026"
     },
     {
         "rute": "Pontianak",
         "pelayaran": "TEMAS",
         "nama_kapal": "Damaskus Mas - 46/26",
         "closing": "N/A",
-        "etd": "01 Jul 2026",
-        "eta": "03 Jul 2026"
+        "etd": "03 Jul 2026",
+        "eta": "05 Jul 2026"
     },
     {
         "rute": "Pontianak",
         "pelayaran": "TEMAS",
         "nama_kapal": "Damaskus Mas - 48/26",
         "closing": "N/A",
-        "etd": "07 Jul 2026",
-        "eta": "09 Jul 2026"
+        "etd": "09 Jul 2026",
+        "eta": "11 Jul 2026"
     },
     {
         "rute": "Pontianak",
         "pelayaran": "TEMAS",
         "nama_kapal": "Damaskus Mas - 50/26",
         "closing": "N/A",
-        "etd": "14 Jul 2026",
-        "eta": "16 Jul 2026"
+        "etd": "16 Jul 2026",
+        "eta": "18 Jul 2026"
     },
     {
         "rute": "Pontianak",
         "pelayaran": "TEMAS",
         "nama_kapal": "Mare Mas - 38/26",
         "closing": "N/A",
-        "etd": "24 Jun 2026",
-        "eta": "26 Jun 2026"
+        "etd": "23 Jun 2026",
+        "eta": "25 Jun 2026"
     },
     {
         "rute": "Pontianak",
@@ -2807,7 +2799,7 @@
         "nama_kapal": "Eagle Mas - 42/26",
         "closing": "N/A",
         "etd": "24 Jun 2026",
-        "eta": "27 Jun 2026"
+        "eta": "26 Jun 2026"
     },
     {
         "rute": "Pontianak",
@@ -2815,14 +2807,14 @@
         "nama_kapal": "Eagle Mas - 44/26",
         "closing": "N/A",
         "etd": "01 Jul 2026",
-        "eta": "04 Jul 2026"
+        "eta": "03 Jul 2026"
     },
     {
         "rute": "Pontianak",
         "pelayaran": "TEMAS",
         "nama_kapal": "Eagle Mas - 46/26",
         "closing": "N/A",
-        "etd": "09 Jul 2026",
+        "etd": "08 Jul 2026",
         "eta": "11 Jul 2026"
     },
     {
