@@ -43,7 +43,7 @@ for kota_tujuan, kode_port in rute_temas.items():
         # AKTIVASI FILTER DIRECT DENGAN JAVASCRIPT EXECUTOR
         try:
             # Cari elemen yang mengandung kata Direct (bisa label, span, atau div)
-            checkbox_direct = WebDriverWait(driver, 25).until(
+            checkbox_direct = WebDriverWait(driver, 45).until(
                 EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Direct')]"))
             )
             # Eksekusi klik paksa dari dalam DOM, anti meleset
