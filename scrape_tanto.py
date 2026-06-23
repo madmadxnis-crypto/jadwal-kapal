@@ -1,24 +1,22 @@
 import json
 import os
 import time
-from selenium import webdriver
+import undetected_chromedriver as uc
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
-print("🚀 Memulai Master Scraper TANTO (Mode Headless & Fix Closing)...")
+print("🚀 Memulai Master Scraper TANTO (Versi UNDETECTED-CHROMEDRIVER & Fix Loading)...")
 
-# --- KONFIGURASI HEADLESS CHROME ---
-chrome_options = Options()
-chrome_options.add_argument("--headless=new")
-chrome_options.add_argument("--no-sandbox")
-chrome_options.add_argument("--disable-dev-shm-usage")
-chrome_options.add_argument("--window-size=1920,1080")
+# --- KONFIGURASI UNDETECTED CHROMEDRIVER ---
+options = uc.ChromeOptions()
+options.add_argument("--headless") # Jangan pakai =new di UC
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-dev-shm-usage")
+options.add_argument("--window-size=1920,1080")
 
-service = Service(ChromeDriverManager().install())
-driver = webdriver.Chrome(service=service, options=chrome_options)
+driver = uc.Chrome(options=options)
 # -----------------------------------
 
 # Rute Standar Dashboard Kita
@@ -37,23 +35,27 @@ for tujuan in daftar_tujuan:
     
     try:
         driver.get("https://www.tantonet.com/schedule.php")
-        time.sleep(4) 
         
-        # 1. ISI PORT OF LOAD (JAKARTA)
+        # 1. ISI PORT OF LOAD (JAKARTA) - KUNCI FIX MAKASSAR ADA DI SINI
         try:
-            pol_container = driver.find_element(By.ID, "select2-pol-container")
-            if "JAKARTA" not in pol_container.text: 
+            # Ganti sleep 4 detik jadi WebDriverWait 30 detik biar aman saat load halaman pertama
+            pol_container = WebDriverWait(driver, 30).until(
+                EC.element_to_be_clickable((By.ID, "select2-pol-container"))
+            )
+            if "JAKARTA" not in pol_container.text.upper(): 
                 pol_container.click()
                 time.sleep(1)
                 driver.switch_to.active_element.send_keys("JAKARTA")
                 time.sleep(1)
                 driver.switch_to.active_element.send_keys(Keys.ENTER)
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"   ⚠️ Gagal set POL JAKARTA: {type(e).__name__}")
 
         # 2. ISI PORT OF DISCHARGE (PAKAI NAMA KOTA KHUSUS TANTO)
         try:
-            pod_input = driver.find_element(By.XPATH, "//input[@placeholder='Select Port of Discharge']")
+            pod_input = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//input[@placeholder='Select Port of Discharge']"))
+            )
             pod_input.send_keys(tujuan_tanto.upper())
             time.sleep(1.5)
             pod_input.send_keys(Keys.ENTER)
@@ -67,7 +69,14 @@ for tujuan in daftar_tujuan:
         driver.execute_script("arguments[0].click();", tombol_search) 
 
         print("   ⏳ Menunggu data ditarik dari server Tanto...")
-        time.sleep(4) 
+        
+        # Tunggu tabel datanya muncul biar nggak kecepetan ngambil
+        try:
+            WebDriverWait(driver, 15).until(
+                EC.presence_of_element_located((By.XPATH, "//table//tr[td]"))
+            )
+        except Exception:
+            pass # Lanjut aja, mungkin emang kosong rutenya
         
         # 4. EKSTRAK DATA DARI TABEL
         baris_tabel = driver.find_elements(By.XPATH, "//table//tr[td]")
@@ -92,7 +101,6 @@ for tujuan in daftar_tujuan:
                 if eta == "-": eta = "N/A"
                 if closing == "-": closing = "N/A"
                 
-                # Cetak ke layar beserta nilai Closing-nya biar yakin
                 print(f"   -> [DAPAT] {nama_kapal} | Closing: {closing} | ETD: {etd} | ETA: {eta}")
                 
                 data_jadwal_global.append({
@@ -113,7 +121,14 @@ for tujuan in daftar_tujuan:
             print(f"   ⚠️ Rute {tujuan_tanto} kosong (Tidak ada kapal).")
 
     except Exception as e:
-        print(f"   ❌ Terjadi error di rute {tujuan_tanto}: {e}")
+        # SISTEM SCREENSHOT ERROR
+        print(f"   ❌ Terjadi error di rute {tujuan_tanto}: {type(e).__name__} - {str(e)[:150]}")
+        try:
+            nama_file_error = f"error_tanto_{tujuan_tanto}.png"
+            driver.save_screenshot(nama_file_error)
+            print(f"   📸 Screenshot disimpan: {nama_file_error} (Cek di tab Artifacts Github)")
+        except Exception as screenshot_err:
+            print(f"   Gagal mengambil screenshot: {screenshot_err}")
 
 # ==================== LOGIKA PENYIMPANAN ====================
 data_gabungan = []
