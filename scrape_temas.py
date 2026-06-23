@@ -18,7 +18,12 @@ chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument("--window-size=1920,1080")
 chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
 
+# --- JURUS ANTI-TIMEOUT: MATIKAN LOAD GAMBAR BIAR LOADING NGEBUT ---
+prefs = {"profile.managed_default_content_settings.images": 2}
+chrome_options.add_experimental_option("prefs", prefs)
+
 driver = webdriver.Chrome(options=chrome_options)
+driver.set_page_load_timeout(60) # Kasih batas napas load halaman 60 detik
 # --------------------------------------------------------------
 
 hari_ini = datetime.now().strftime("%Y-%m-%d")
@@ -38,22 +43,21 @@ for kota_tujuan, kode_port in rute_temas.items():
     
     try:
         driver.get(url_temas)
-        time.sleep(6) # Waktu tunggu dinaikin jadi 6 detik buat server GitHub
+        time.sleep(6) 
         
         # AKTIVASI FILTER DIRECT DENGAN JAVASCRIPT EXECUTOR
         try:
-            # Cari elemen yang mengandung kata Direct (bisa label, span, atau div)
             checkbox_direct = WebDriverWait(driver, 45).until(
                 EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Direct')]"))
             )
-            # Eksekusi klik paksa dari dalam DOM, anti meleset
             driver.execute_script("arguments[0].click();", checkbox_direct)
             print("   [FILTER] Berhasil mengaktifkan rute Direct lewat JS.")
-            time.sleep(4) # Tunggu tabel refresh otomatis setelah diklik
+            time.sleep(4) 
         except Exception as e_filter:
             print(f"   [FILTER] Tombol Direct tidak ditemukan atau gagal diklik: {type(e_filter).__name__}")
 
-        WebDriverWait(driver, 20).until(
+        # Batas tunggu tabel jadwal dinaikin ke 45 detik biar tahan banting di Github
+        WebDriverWait(driver, 45).until(
             EC.presence_of_element_located((By.XPATH, "//div[contains(text(), 'Est. Departure')]"))
         )
         
@@ -67,7 +71,6 @@ for kota_tujuan, kode_port in rute_temas.items():
             try:
                 nama_kapal = "TEMAS VESSEL"
                 for baris in teks_semua:
-                    # Logika deteksi Vessel Voyage
                     if "-" in baris and not any(x in baris for x in ["Est.", "PT TEMAS", "JAKARTA", "MAKASSAR", "SAILING", "ARRIVAL", "DEPARTURE"]):
                         nama_kapal = baris
                         break
@@ -89,7 +92,7 @@ for kota_tujuan, kode_port in rute_temas.items():
                         "rute": kota_tujuan,
                         "pelayaran": "TEMAS",
                         "nama_kapal": nama_kapal,
-                        "closing": "N/A", # Temas direct tidak ada kolom closing
+                        "closing": "N/A",
                         "etd": etd,
                         "eta": eta
                     })
@@ -99,7 +102,6 @@ for kota_tujuan, kode_port in rute_temas.items():
         print(f"   ✅ Sukses menarik {jumlah_kapal} kapal TEMAS Direct.")
         
     except Exception as e:
-        # TANGKAP ERROR DAN AMBIL SCREENSHOT
         print(f"   ⚠️ GAGAL narik rute {kota_tujuan}. BUKAN KOSONG, tapi ada error.")
         print(f"   🛑 Detail Error: {type(e).__name__} - {str(e)[:200]}")
         
@@ -110,7 +112,7 @@ for kota_tujuan, kode_port in rute_temas.items():
         except Exception as screenshot_err:
             print(f"   Gagal mengambil screenshot: {screenshot_err}")
 
-# ==================== LOGIKA PENYIMPANAN AMAN (ANTI TIMPA) ====================
+# ==================== LOGIKA PENYIMPANAN AMAN ====================
 data_gabungan = []
 if os.path.exists('jadwal.json') and os.path.getsize('jadwal.json') > 0:
     try:
@@ -121,13 +123,11 @@ if os.path.exists('jadwal.json') and os.path.getsize('jadwal.json') > 0:
     except json.JSONDecodeError:
         data_gabungan = []
 
-# Bersihkan data TEMAS lama saja
 data_gabungan = [j for j in data_gabungan if j.get('pelayaran') != 'TEMAS']
 data_gabungan.extend(data_jadwal_global)
 
 with open('jadwal.json', 'w') as f:
     json.dump(data_gabungan, f, indent=4)
-# ==============================================================================
 
 driver.quit()
 print("\n🎉 MASTER TEMAS FILTER DIRECT SELESAI! Data berhasil diperbarui di jadwal.json.")
