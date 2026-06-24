@@ -2670,8 +2670,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gihon Mas - 38/26",
         "closing": "N/A",
-        "etd": "07 Jul 2026",
-        "eta": "15 Jul 2026"
+        "etd": "08 Jul 2026",
+        "eta": "16 Jul 2026"
     },
     {
         "rute": "Bitung",
@@ -2694,8 +2694,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Hilir Mas - 39/26",
         "closing": "N/A",
-        "etd": "04 Jul 2026",
-        "eta": "08 Jul 2026"
+        "etd": "05 Jul 2026",
+        "eta": "09 Jul 2026"
     },
     {
         "rute": "Gorontalo",
@@ -2863,22 +2863,22 @@
         "nama_kapal": "Eagle Mas - 46/26",
         "closing": "N/A",
         "etd": "08 Jul 2026",
-        "eta": "11 Jul 2026"
+        "eta": "10 Jul 2026"
     },
     {
         "rute": "Pontianak",
         "pelayaran": "TEMAS",
         "nama_kapal": "Eagle Mas - 48/26",
         "closing": "N/A",
-        "etd": "16 Jul 2026",
-        "eta": "18 Jul 2026"
+        "etd": "15 Jul 2026",
+        "eta": "17 Jul 2026"
     },
     {
         "rute": "Pontianak",
         "pelayaran": "TEMAS",
         "nama_kapal": "Eagle Mas - 50/26",
         "closing": "N/A",
-        "etd": "23 Jul 2026",
+        "etd": "22 Jul 2026",
         "eta": "25 Jul 2026"
     },
     {
@@ -2919,7 +2919,7 @@
         "nama_kapal": "Batanghari Mas - 48/26",
         "closing": "N/A",
         "etd": "03 Jul 2026",
-        "eta": "05 Jul 2026"
+        "eta": "06 Jul 2026"
     },
     {
         "rute": "BATAM",
@@ -2935,6 +2935,6 @@
         "nama_kapal": "Batanghari Mas - 48/26",
         "closing": "N/A",
         "etd": "18 Jul 2026",
-        "eta": "20 Jul 2026"
+        "eta": "21 Jul 2026"
     }
 ]
