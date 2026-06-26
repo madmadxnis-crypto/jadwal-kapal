@@ -92,16 +92,6 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SPIL",
-        "nama_kapal": "Spil Renata - 20/2026",
-        "closing": "26/06/2026 22:00",
-        "etd": "28/06/2026 09:00",
-        "eta": "04/07/2026 14:00",
-        "etb": "04/07/2026 16:00",
-        "open_stack": "23/06/2026 15:00 @ADP (101-105)"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SPIL",
         "nama_kapal": "Fortune - 16/2026",
         "closing": "29/06/2026 22:00",
         "etd": "30/06/2026 23:00",
@@ -152,20 +142,20 @@
     {
         "rute": "Samarinda",
         "pelayaran": "ICON",
-        "nama_kapal": "",
-        "closing": "N/A",
-        "etd": "N/A",
-        "eta": "N/A",
+        "nama_kapal": "IB V.56/26 - ICON BRAVO",
+        "closing": "25/06/2026 08:00",
+        "etd": "Kamis, 25 Juni 2026 06:30",
+        "eta": "Selasa, 30 Juni 2026 01:00",
         "etb": "N/A",
         "open_stack": "N/A"
     },
     {
         "rute": "Samarinda",
         "pelayaran": "ICON",
-        "nama_kapal": "",
-        "closing": "N/A",
-        "etd": "N/A",
-        "eta": "N/A",
+        "nama_kapal": "IB V.60/26 - ICON BRAVO",
+        "closing": "04/07/2026 03:28",
+        "etd": "Senin, 06 Juli 2026 03:25",
+        "eta": "Jumat, 10 Juli 2026 03:25",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -2311,14 +2301,14 @@
         "nama_kapal": "Tasik Mas - 29/26",
         "closing": "N/A",
         "etd": "26 Jun 2026",
-        "eta": "29 Jun 2026"
+        "eta": "30 Jun 2026"
     },
     {
         "rute": "Makassar",
         "pelayaran": "TEMAS",
         "nama_kapal": "Tasik Mas - 31/26",
         "closing": "N/A",
-        "etd": "04 Jul 2026",
+        "etd": "05 Jul 2026",
         "eta": "08 Jul 2026"
     },
     {
@@ -2495,7 +2485,7 @@
         "nama_kapal": "Ifama Mas - 30/26",
         "closing": "N/A",
         "etd": "26 Jun 2026",
-        "eta": "28 Jun 2026"
+        "eta": "29 Jun 2026"
     },
     {
         "rute": "BELAWAN",
