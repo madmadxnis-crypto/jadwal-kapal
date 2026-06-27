@@ -52,16 +52,6 @@
     {
         "rute": "Banjarmasin",
         "pelayaran": "SPIL",
-        "nama_kapal": "Armada Senada - 11/2026",
-        "closing": "27/06/2026 22:00",
-        "etd": "28/06/2026 16:00",
-        "eta": "01/07/2026 06:00",
-        "etb": "01/07/2026 08:00",
-        "open_stack": "23/06/2026 23:00 @DSN (004-005)"
-    },
-    {
-        "rute": "Banjarmasin",
-        "pelayaran": "SPIL",
         "nama_kapal": "Minas Baru - 15/2026",
         "closing": "29/06/2026 22:00",
         "etd": "30/06/2026 16:00",
@@ -152,10 +142,10 @@
     {
         "rute": "Samarinda",
         "pelayaran": "ICON",
-        "nama_kapal": "",
-        "closing": "N/A",
-        "etd": "N/A",
-        "eta": "N/A",
+        "nama_kapal": "IB V.60/26 - ICON BRAVO",
+        "closing": "04/07/2026 03:28",
+        "etd": "Senin, 06 Juli 2026 03:25",
+        "eta": "Jumat, 10 Juli 2026 03:25",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -2381,14 +2371,14 @@
         "nama_kapal": "Warih Mas - 42/26",
         "closing": "N/A",
         "etd": "27 Jun 2026",
-        "eta": "01 Jul 2026"
+        "eta": "02 Jul 2026"
     },
     {
         "rute": "Samarinda",
         "pelayaran": "TEMAS",
         "nama_kapal": "Warih Mas - 46/26",
         "closing": "N/A",
-        "etd": "09 Jul 2026",
+        "etd": "10 Jul 2026",
         "eta": "14 Jul 2026"
     },
     {
@@ -2397,14 +2387,14 @@
         "nama_kapal": "Warih Mas - 42/26",
         "closing": "N/A",
         "etd": "27 Jun 2026",
-        "eta": "30 Jun 2026"
+        "eta": "01 Jul 2026"
     },
     {
         "rute": "Balikpapan",
         "pelayaran": "TEMAS",
         "nama_kapal": "Warih Mas - 46/26",
         "closing": "N/A",
-        "etd": "09 Jul 2026",
+        "etd": "10 Jul 2026",
         "eta": "13 Jul 2026"
     },
     {
@@ -2445,15 +2435,15 @@
         "nama_kapal": "Warih Mas - 42/26",
         "closing": "N/A",
         "etd": "27 Jun 2026",
-        "eta": "03 Jul 2026"
+        "eta": "04 Jul 2026"
     },
     {
         "rute": "PALU",
         "pelayaran": "TEMAS",
         "nama_kapal": "Warih Mas - 46/26",
         "closing": "N/A",
-        "etd": "09 Jul 2026",
-        "eta": "15 Jul 2026"
+        "etd": "10 Jul 2026",
+        "eta": "16 Jul 2026"
     },
     {
         "rute": "Pontianak",
