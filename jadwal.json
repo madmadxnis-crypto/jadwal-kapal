@@ -2,16 +2,6 @@
     {
         "rute": "Makassar",
         "pelayaran": "SPIL",
-        "nama_kapal": "Oriental Ruby - 08/2026",
-        "closing": "29/06/2026 22:00",
-        "etd": "02/07/2026 09:00",
-        "eta": "08/07/2026 07:00",
-        "etb": "08/07/2026 09:00",
-        "open_stack": "24/06/2026 15:00 @ADP (101-105)"
-    },
-    {
-        "rute": "Makassar",
-        "pelayaran": "SPIL",
         "nama_kapal": "Oriental Emerald - 10/2026",
         "closing": "03/07/2026 22:00",
         "etd": "08/07/2026 23:00",
@@ -32,16 +22,6 @@
     {
         "rute": "Samarinda",
         "pelayaran": "SPIL",
-        "nama_kapal": "Minas Baru - 15/2026",
-        "closing": "29/06/2026 18:00",
-        "etd": "30/06/2026 12:00",
-        "eta": "06/07/2026 06:00",
-        "etb": "06/07/2026 08:00",
-        "open_stack": "26/06/2026 15:00"
-    },
-    {
-        "rute": "Samarinda",
-        "pelayaran": "SPIL",
         "nama_kapal": "Spil Retno - 21/2026",
         "closing": "02/07/2026 22:00",
         "etd": "06/07/2026 06:00",
@@ -52,32 +32,12 @@
     {
         "rute": "Balikpapan",
         "pelayaran": "SPIL",
-        "nama_kapal": "Minas Baru - 15/2026",
-        "closing": "29/06/2026 18:00",
-        "etd": "30/06/2026 12:00",
-        "eta": "05/07/2026 00:00",
-        "etb": "05/07/2026 02:00",
-        "open_stack": "26/06/2026 15:00"
-    },
-    {
-        "rute": "Balikpapan",
-        "pelayaran": "SPIL",
         "nama_kapal": "Spil Retno - 21/2026",
         "closing": "02/07/2026 22:00",
         "etd": "06/07/2026 06:00",
         "eta": "10/07/2026 18:00",
         "etb": "10/07/2026 20:00",
         "open_stack": "29/06/2026 12:00 @DSN (004-005)"
-    },
-    {
-        "rute": "Banjarmasin",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Minas Baru - 15/2026",
-        "closing": "29/06/2026 18:00",
-        "etd": "30/06/2026 12:00",
-        "eta": "02/07/2026 14:00",
-        "etb": "02/07/2026 16:00",
-        "open_stack": "26/06/2026 15:00"
     },
     {
         "rute": "Banjarmasin",
@@ -112,32 +72,12 @@
     {
         "rute": "Batam",
         "pelayaran": "SPIL",
-        "nama_kapal": "Armada Serasi - 12/2026",
-        "closing": "29/06/2026 22:00",
-        "etd": "30/06/2026 13:00",
-        "eta": "04/07/2026 14:00",
-        "etb": "04/07/2026 16:00",
-        "open_stack": "26/06/2026 11:00 @MSA 206"
-    },
-    {
-        "rute": "Batam",
-        "pelayaran": "SPIL",
         "nama_kapal": "Armada Senada - 12/2026",
         "closing": "04/07/2026 22:00",
         "etd": "09/07/2026 10:00",
         "eta": "12/07/2026 02:00",
         "etb": "12/07/2026 04:00",
         "open_stack": "29/06/2026 15:00 @MSA 206"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Fortune - 16/2026",
-        "closing": "29/06/2026 22:00",
-        "etd": "30/06/2026 23:00",
-        "eta": "03/07/2026 03:00",
-        "etb": "03/07/2026 05:00",
-        "open_stack": "26/06/2026 12:00"
     },
     {
         "rute": "Pontianak",
@@ -182,10 +122,10 @@
     {
         "rute": "Samarinda",
         "pelayaran": "ICON",
-        "nama_kapal": "",
-        "closing": "N/A",
-        "etd": "N/A",
-        "eta": "N/A",
+        "nama_kapal": "IB V.60/26 - ICON BRAVO",
+        "closing": "04/07/2026 03:28",
+        "etd": "Senin, 06 Juli 2026 03:25",
+        "eta": "Jumat, 10 Juli 2026 03:25",
         "etb": "N/A",
         "open_stack": "N/A"
     },
