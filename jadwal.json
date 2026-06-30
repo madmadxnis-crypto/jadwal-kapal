@@ -2,6 +2,16 @@
     {
         "rute": "Makassar",
         "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Jade - 09/2026",
+        "closing": "05/07/2026 22:00",
+        "etd": "07/07/2026 06:00",
+        "eta": "09/07/2026 06:00",
+        "etb": "09/07/2026 09:00",
+        "open_stack": "29/06/2026 15:00 @ADP (101-105)"
+    },
+    {
+        "rute": "Makassar",
+        "pelayaran": "SPIL",
         "nama_kapal": "Oriental Emerald - 10/2026",
         "closing": "03/07/2026 22:00",
         "etd": "08/07/2026 23:00",
@@ -24,9 +34,9 @@
         "pelayaran": "SPIL",
         "nama_kapal": "Spil Retno - 21/2026",
         "closing": "02/07/2026 22:00",
-        "etd": "06/07/2026 06:00",
-        "eta": "09/07/2026 15:00",
-        "etb": "09/07/2026 17:00",
+        "etd": "05/07/2026 06:00",
+        "eta": "08/07/2026 15:00",
+        "etb": "08/07/2026 17:00",
         "open_stack": "29/06/2026 12:00 @DSN (004-005)"
     },
     {
@@ -34,37 +44,27 @@
         "pelayaran": "SPIL",
         "nama_kapal": "Spil Retno - 21/2026",
         "closing": "02/07/2026 22:00",
-        "etd": "06/07/2026 06:00",
-        "eta": "10/07/2026 18:00",
-        "etb": "10/07/2026 20:00",
+        "etd": "05/07/2026 06:00",
+        "eta": "09/07/2026 18:00",
+        "etb": "09/07/2026 20:00",
         "open_stack": "29/06/2026 12:00 @DSN (004-005)"
     },
     {
         "rute": "Banjarmasin",
         "pelayaran": "SPIL",
         "nama_kapal": "Pahala - 15/2026",
-        "closing": "01/07/2026 22:00",
-        "etd": "04/07/2026 23:00",
-        "eta": "07/07/2026 13:00",
-        "etb": "07/07/2026 15:00",
+        "closing": "02/07/2026 12:00",
+        "etd": "04/07/2026 06:00",
+        "eta": "06/07/2026 20:00",
+        "etb": "06/07/2026 22:00",
         "open_stack": "29/06/2026 14:00 @DSN (004-005)"
-    },
-    {
-        "rute": "Belawan",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Oriental Gold - 10/2026",
-        "closing": "30/06/2026 22:00",
-        "etd": "04/07/2026 01:00",
-        "eta": "06/07/2026 22:00",
-        "etb": "07/07/2026 00:00",
-        "open_stack": "25/06/2026 23:00"
     },
     {
         "rute": "Palu",
         "pelayaran": "SPIL",
         "nama_kapal": "Oriental Jade - 09/2026",
         "closing": "05/07/2026 22:00",
-        "etd": "08/07/2026 08:00",
+        "etd": "07/07/2026 06:00",
         "eta": "09/07/2026 06:00",
         "etb": "09/07/2026 09:00",
         "open_stack": "29/06/2026 15:00 @ADP (101-105)"
@@ -84,10 +84,20 @@
         "pelayaran": "SPIL",
         "nama_kapal": "Spil Rumi - 21/2026",
         "closing": "01/07/2026 16:00",
-        "etd": "02/07/2026 03:00",
-        "eta": "05/07/2026 12:00",
-        "etb": "05/07/2026 14:00",
+        "etd": "02/07/2026 12:00",
+        "eta": "05/07/2026 21:00",
+        "etb": "05/07/2026 23:00",
         "open_stack": "29/06/2026 10:00 @ADP (101-105)"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Spil Renata - 21/2026",
+        "closing": "03/07/2026 22:00",
+        "etd": "06/07/2026 14:00",
+        "eta": "09/07/2026 23:00",
+        "etb": "10/07/2026 01:00",
+        "open_stack": "01/07/2026 10:00"
     },
     {
         "rute": "Samarinda",
@@ -164,18 +174,8 @@
         "pelayaran": "ICON",
         "nama_kapal": "IBV.59/26 - ICON BRAVO",
         "closing": "04/07/2026 03:26",
-        "etd": "Senin, 06 Juli 2026 03:24",
-        "eta": "Kamis, 09 Juli 2026 03:24",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Banjarmasin",
-        "pelayaran": "ICON",
-        "nama_kapal": "IG V V.26/26 - MV. ICON GALATIA V",
-        "closing": "29/06/2026 03:22",
-        "etd": "Selasa, 30 Juni 2026 03:21",
-        "eta": "Kamis, 03 Juni 2027 03:21",
+        "etd": "N/A",
+        "eta": "N/A",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -186,6 +186,26 @@
         "closing": "29/06/2026 00:57",
         "etd": "Rabu, 01 Juli 2026 00:55",
         "eta": "Sabtu, 04 Juli 2026 00:56",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "ICON",
+        "nama_kapal": "IG V V.27/26 - MV. ICON GALATIA V",
+        "closing": "05/06/2026 04:37",
+        "etd": "Rabu, 08 Juli 2026 04:36",
+        "eta": "Jumat, 10 Juli 2026 04:36",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "ICON",
+        "nama_kapal": "IC V.42/26 - MV. ICON CORINTUS",
+        "closing": "07/06/2026 04:43",
+        "etd": "Kamis, 09 Juli 2026 09:26",
+        "eta": "Minggu, 12 Juli 2026 09:26",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -203,8 +223,8 @@
         "rute": "Batam",
         "pelayaran": "ICON",
         "nama_kapal": "II XI V.69/26 - ICON IBRANI XI",
-        "closing": "27/06/2026 01:07",
-        "etd": "Senin, 29 Juni 2026 01:05",
+        "closing": "30/06/2026 07:00",
+        "etd": "Selasa, 30 Juni 2026 01:05",
         "eta": "Kamis, 02 Juli 2026 01:05",
         "etb": "N/A",
         "open_stack": "N/A"
@@ -922,10 +942,40 @@
     {
         "rute": "Batam",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "XIN YANG PU V.203W -> SINAR PANGANDARAN V.0114S",
+        "nama_kapal": "XIN YANG PU V.203W -> SINAR PANGANDARAN V.0111S",
         "closing": "N/A",
         "etd": "02 Jul 2026",
-        "eta": "08 Jul 2026",
+        "eta": "06 Jul 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Batam",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "CELSIUS EINDHOVEN V.032W -> SINAR PANGANDARAN V.0111S",
+        "closing": "N/A",
+        "etd": "02 Jul 2026",
+        "eta": "06 Jul 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Batam",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "CELSIUS EINDHOVEN V.032W -> SINAR PANGANDARAN V.0112S",
+        "closing": "N/A",
+        "etd": "02 Jul 2026",
+        "eta": "07 Jul 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Batam",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "XIN YANG PU V.203W -> SINAR PANGANDARAN V.0112S",
+        "closing": "N/A",
+        "etd": "02 Jul 2026",
+        "eta": "07 Jul 2026",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -942,20 +992,10 @@
     {
         "rute": "Batam",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "XIN YANG PU V.203W -> SINAR PANGANDARAN V.0115S",
+        "nama_kapal": "XIN YANG PU V.203W -> SINAR PANGANDARAN V.0114S",
         "closing": "N/A",
         "etd": "02 Jul 2026",
-        "eta": "10 Jul 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Batam",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "CELSIUS EINDHOVEN V.032W -> SINAR PANGANDARAN V.0115S",
-        "closing": "N/A",
-        "etd": "02 Jul 2026",
-        "eta": "10 Jul 2026",
+        "eta": "08 Jul 2026",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -982,7 +1022,7 @@
     {
         "rute": "Batam",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "CELSIUS EINDHOVEN V.032W -> SINAR PANGANDARAN V.0118S",
+        "nama_kapal": "XIN YANG PU V.203W -> SINAR PANGANDARAN V.0118S",
         "closing": "N/A",
         "etd": "02 Jul 2026",
         "eta": "17 Jul 2026",
@@ -992,7 +1032,7 @@
     {
         "rute": "Batam",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "XIN YANG PU V.203W -> SINAR PANGANDARAN V.0118S",
+        "nama_kapal": "CELSIUS EINDHOVEN V.032W -> SINAR PANGANDARAN V.0118S",
         "closing": "N/A",
         "etd": "02 Jul 2026",
         "eta": "17 Jul 2026",
@@ -1042,20 +1082,20 @@
     {
         "rute": "Batam",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "SINAR CARITA V.023N -> SINAR PANGANDARAN V.0114S",
+        "nama_kapal": "SINAR CARITA V.023N -> SINAR PANGANDARAN V.0112S",
         "closing": "N/A",
         "etd": "03 Jul 2026",
-        "eta": "08 Jul 2026",
+        "eta": "07 Jul 2026",
         "etb": "N/A",
         "open_stack": "N/A"
     },
     {
         "rute": "Batam",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "SINAR CARITA V.023N -> SINAR PANGANDARAN V.0115S",
+        "nama_kapal": "SINAR CARITA V.023N -> SINAR PANGANDARAN V.0114S",
         "closing": "N/A",
         "etd": "03 Jul 2026",
-        "eta": "10 Jul 2026",
+        "eta": "08 Jul 2026",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -1102,20 +1142,30 @@
     {
         "rute": "Batam",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "HIGHWAY V.374N -> SINAR PANGANDARAN V.0114S",
+        "nama_kapal": "HIGHWAY V.374N -> SINAR PANGANDARAN V.0111S",
         "closing": "N/A",
         "etd": "03 Jul 2026",
-        "eta": "08 Jul 2026",
+        "eta": "06 Jul 2026",
         "etb": "N/A",
         "open_stack": "N/A"
     },
     {
         "rute": "Batam",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "HIGHWAY V.374N -> SINAR PANGANDARAN V.0115S",
+        "nama_kapal": "HIGHWAY V.374N -> SINAR PANGANDARAN V.0112S",
         "closing": "N/A",
         "etd": "03 Jul 2026",
-        "eta": "10 Jul 2026",
+        "eta": "07 Jul 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Batam",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "HIGHWAY V.374N -> SINAR PANGANDARAN V.0114S",
+        "closing": "N/A",
+        "etd": "03 Jul 2026",
+        "eta": "08 Jul 2026",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -1162,16 +1212,6 @@
     {
         "rute": "Batam",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "NATTHA BHUM V.060N -> SINAR PANGANDARAN V.0115S",
-        "closing": "N/A",
-        "etd": "05 Jul 2026",
-        "eta": "10 Jul 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Batam",
-        "pelayaran": "SAMUDERA",
         "nama_kapal": "NATTHA BHUM V.060N -> SINAR PANGANDARAN V.0117S",
         "closing": "N/A",
         "etd": "05 Jul 2026",
@@ -1206,16 +1246,6 @@
         "closing": "N/A",
         "etd": "05 Jul 2026",
         "eta": "24 Jul 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Batam",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "XIN HANG ZHOU V.215W -> SINAR PANGANDARAN V.0115S",
-        "closing": "N/A",
-        "etd": "05 Jul 2026",
-        "eta": "10 Jul 2026",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -1432,7 +1462,7 @@
     {
         "rute": "Batam",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "XIN HANG ZHOU V.216W -> SINAR PANGANDARAN V.0120S",
+        "nama_kapal": "XIN YANG PU V.204W -> SINAR PANGANDARAN V.0120S",
         "closing": "N/A",
         "etd": "16 Jul 2026",
         "eta": "22 Jul 2026",
@@ -1442,7 +1472,7 @@
     {
         "rute": "Batam",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "XIN YANG PU V.204W -> SINAR PANGANDARAN V.0120S",
+        "nama_kapal": "XIN HANG ZHOU V.216W -> SINAR PANGANDARAN V.0120S",
         "closing": "N/A",
         "etd": "16 Jul 2026",
         "eta": "22 Jul 2026",
@@ -1472,7 +1502,7 @@
     {
         "rute": "Batam",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "NATTHA BHUM V.061N -> SINAR PANGANDARAN V.0121S",
+        "nama_kapal": "SINAR CARITA V.024N -> SINAR PANGANDARAN V.0121S",
         "closing": "N/A",
         "etd": "19 Jul 2026",
         "eta": "24 Jul 2026",
@@ -1482,7 +1512,7 @@
     {
         "rute": "Batam",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "SINAR CARITA V.024N -> SINAR PANGANDARAN V.0121S",
+        "nama_kapal": "NATTHA BHUM V.061N -> SINAR PANGANDARAN V.0121S",
         "closing": "N/A",
         "etd": "19 Jul 2026",
         "eta": "24 Jul 2026",
@@ -1542,7 +1572,7 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "CELSIUS EINDHOVEN V.032W -> INDO SUKSES 50 V.225E",
+        "nama_kapal": "XIN YANG PU V.203W -> INDO SUKSES 50 V.225E",
         "closing": "N/A",
         "etd": "02 Jul 2026",
         "eta": "24 Jul 2026",
@@ -1552,7 +1582,7 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "XIN YANG PU V.203W -> INDO SUKSES 50 V.225E",
+        "nama_kapal": "CELSIUS EINDHOVEN V.032W -> INDO SUKSES 50 V.225E",
         "closing": "N/A",
         "etd": "02 Jul 2026",
         "eta": "24 Jul 2026",
@@ -1576,6 +1606,16 @@
         "closing": "N/A",
         "etd": "02 Jul 2026",
         "eta": "31 Jul 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR CARITA V.023N -> INDO SUKSES 51 V.223E",
+        "closing": "N/A",
+        "etd": "03 Jul 2026",
+        "eta": "10 Jul 2026",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -1842,7 +1882,7 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "XIN YANG PU V.204W -> INDO SUKSES 50 V.225E",
+        "nama_kapal": "XIN HANG ZHOU V.216W -> INDO SUKSES 50 V.225E",
         "closing": "N/A",
         "etd": "16 Jul 2026",
         "eta": "24 Jul 2026",
@@ -1852,7 +1892,7 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "XIN HANG ZHOU V.216W -> INDO SUKSES 50 V.225E",
+        "nama_kapal": "XIN YANG PU V.204W -> INDO SUKSES 50 V.225E",
         "closing": "N/A",
         "etd": "16 Jul 2026",
         "eta": "24 Jul 2026",
@@ -2026,14 +2066,6 @@
     {
         "rute": "Bitung",
         "pelayaran": "TEMAS",
-        "nama_kapal": "Huanghe Mas - 38/26",
-        "closing": "N/A",
-        "etd": "29 Jun 2026",
-        "eta": "07 Jul 2026"
-    },
-    {
-        "rute": "Bitung",
-        "pelayaran": "TEMAS",
         "nama_kapal": "Gaung Mas - 31/26",
         "closing": "N/A",
         "etd": "30 Jun 2026",
@@ -2052,8 +2084,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gihon Mas - 38/26",
         "closing": "N/A",
-        "etd": "08 Jul 2026",
-        "eta": "16 Jul 2026"
+        "etd": "10 Jul 2026",
+        "eta": "18 Jul 2026"
     },
     {
         "rute": "Bitung",
@@ -2092,8 +2124,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Estuari Mas - 39/26",
         "closing": "N/A",
-        "etd": "05 Jul 2026",
-        "eta": "10 Jul 2026"
+        "etd": "06 Jul 2026",
+        "eta": "11 Jul 2026"
     },
     {
         "rute": "Balikpapan",
@@ -2108,8 +2140,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Estuari Mas - 39/26",
         "closing": "N/A",
-        "etd": "05 Jul 2026",
-        "eta": "09 Jul 2026"
+        "etd": "06 Jul 2026",
+        "eta": "10 Jul 2026"
     },
     {
         "rute": "Banjarmasin",
@@ -2156,23 +2188,15 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Estuari Mas - 39/26",
         "closing": "N/A",
-        "etd": "05 Jul 2026",
-        "eta": "12 Jul 2026"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "TEMAS",
-        "nama_kapal": "Damaskus Mas - 44/26",
-        "closing": "N/A",
-        "etd": "30 Jun 2026",
-        "eta": "02 Jul 2026"
+        "etd": "06 Jul 2026",
+        "eta": "13 Jul 2026"
     },
     {
         "rute": "Pontianak",
         "pelayaran": "TEMAS",
         "nama_kapal": "Damaskus Mas - 46/26",
         "closing": "N/A",
-        "etd": "07 Jul 2026",
+        "etd": "06 Jul 2026",
         "eta": "08 Jul 2026"
     },
     {
@@ -2188,8 +2212,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Damaskus Mas - 50/26",
         "closing": "N/A",
-        "etd": "20 Jul 2026",
-        "eta": "22 Jul 2026"
+        "etd": "19 Jul 2026",
+        "eta": "21 Jul 2026"
     },
     {
         "rute": "Pontianak",
@@ -2238,13 +2262,5 @@
         "closing": "N/A",
         "etd": "04 Jul 2026",
         "eta": "06 Jul 2026"
-    },
-    {
-        "rute": "BATAM",
-        "pelayaran": "TEMAS",
-        "nama_kapal": "Jales Mas - 45/26",
-        "closing": "N/A",
-        "etd": "11 Jul 2026",
-        "eta": "13 Jul 2026"
     }
 ]
