@@ -132,8 +132,8 @@
     {
         "rute": "Samarinda",
         "pelayaran": "ICON",
-        "nama_kapal": "IB V.60/26 - ICON BRAVO",
-        "closing": "04/07/2026 03:28",
+        "nama_kapal": "",
+        "closing": "N/A",
         "etd": "N/A",
         "eta": "N/A",
         "etb": "N/A",
@@ -242,20 +242,10 @@
     {
         "rute": "Pontianak",
         "pelayaran": "ICON",
-        "nama_kapal": "IL XIX V.27/26 - ICON LUKAS XIX",
-        "closing": "02/07/2026 03:00",
-        "etd": "Selasa, 30 Juni 2026 00:34",
-        "eta": "Kamis, 02 Juli 2026 00:34",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "ICON",
         "nama_kapal": "IM VI 8 V.9/26 - ICON MIKHA VI 8",
         "closing": "01/07/2026 04:00",
         "etd": "Selasa, 30 Juni 2026 23:18",
-        "eta": "Jumat, 03 Juli 2026 01:03",
+        "eta": "Kamis, 02 Juli 2026 20:00",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -2552,18 +2542,26 @@
     {
         "rute": "Banjarmasin",
         "pelayaran": "TEMAS",
+        "nama_kapal": "Kanal Mas - 38/26",
+        "closing": "N/A",
+        "etd": "01 Jul 2026",
+        "eta": "03 Jul 2026"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "TEMAS",
         "nama_kapal": "Kanal Mas - 40/26",
         "closing": "N/A",
-        "etd": "06 Jul 2026",
-        "eta": "09 Jul 2026"
+        "etd": "07 Jul 2026",
+        "eta": "10 Jul 2026"
     },
     {
         "rute": "Banjarmasin",
         "pelayaran": "TEMAS",
         "nama_kapal": "Kanal Mas - 42/26",
         "closing": "N/A",
-        "etd": "13 Jul 2026",
-        "eta": "15 Jul 2026"
+        "etd": "14 Jul 2026",
+        "eta": "16 Jul 2026"
     },
     {
         "rute": "BELAWAN",
