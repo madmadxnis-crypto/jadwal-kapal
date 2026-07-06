@@ -142,20 +142,20 @@
     {
         "rute": "Samarinda",
         "pelayaran": "ICON",
-        "nama_kapal": "",
-        "closing": "N/A",
-        "etd": "N/A",
-        "eta": "N/A",
+        "nama_kapal": "IB V.60/26 - ICON BRAVO",
+        "closing": "06/07/2026 14:30",
+        "etd": "Senin, 06 Juli 2026 03:25",
+        "eta": "Kamis, 09 Juli 2026 03:25",
         "etb": "N/A",
         "open_stack": "N/A"
     },
     {
         "rute": "Samarinda",
         "pelayaran": "ICON",
-        "nama_kapal": "",
-        "closing": "N/A",
-        "etd": "N/A",
-        "eta": "N/A",
+        "nama_kapal": "IB V.64/26 - ICON BRAVO",
+        "closing": "14/07/2026 02:28",
+        "etd": "Kamis, 16 Juli 2026 02:26",
+        "eta": "Senin, 20 Juli 2026 02:26",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -193,9 +193,9 @@
         "rute": "Balikpapan",
         "pelayaran": "ICON",
         "nama_kapal": "IBV.59/26 - ICON BRAVO",
-        "closing": "04/07/2026 03:26",
+        "closing": "06/07/2026 14:00",
         "etd": "Senin, 06 Juli 2026 03:24",
-        "eta": "Kamis, 09 Juli 2026 03:24",
+        "eta": "Rabu, 08 Juli 2026 03:24",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -1752,6 +1752,16 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
+        "nama_kapal": "INCRES V.076N -> INDO SUKSES 51 V.223E",
+        "closing": "N/A",
+        "etd": "06 Jul 2026",
+        "eta": "16 Jul 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SAMUDERA",
         "nama_kapal": "INCRES V.076N -> KREUZ 281 V.224E",
         "closing": "N/A",
         "etd": "06 Jul 2026",
@@ -1822,6 +1832,16 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SIGLI V.102N -> INDO SUKSES 51 V.223E",
+        "closing": "N/A",
+        "etd": "07 Jul 2026",
+        "eta": "16 Jul 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SAMUDERA",
         "nama_kapal": "SINAR SIGLI V.102N -> KREUZ 281 V.224E",
         "closing": "N/A",
         "etd": "07 Jul 2026",
@@ -1886,6 +1906,16 @@
         "closing": "N/A",
         "etd": "07 Jul 2026",
         "eta": "28 Aug 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "HALLEY V.014W -> INDO SUKSES 51 V.223E",
+        "closing": "N/A",
+        "etd": "09 Jul 2026",
+        "eta": "16 Jul 2026",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -2082,16 +2112,6 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "XIN HANG ZHOU V.216W -> INDO SUKSES 50 V.225E",
-        "closing": "N/A",
-        "etd": "16 Jul 2026",
-        "eta": "24 Jul 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SAMUDERA",
         "nama_kapal": "XIN YANG PU V.204W -> INDO SUKSES 50 V.225E",
         "closing": "N/A",
         "etd": "16 Jul 2026",
@@ -2102,7 +2122,17 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "XIN HANG ZHOU V.216W -> INDO SUKSES 51 V.226E",
+        "nama_kapal": "XIN HANG ZHOU V.216W -> INDO SUKSES 50 V.225E",
+        "closing": "N/A",
+        "etd": "16 Jul 2026",
+        "eta": "24 Jul 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "XIN YANG PU V.204W -> INDO SUKSES 51 V.226E",
         "closing": "N/A",
         "etd": "16 Jul 2026",
         "eta": "31 Jul 2026",
@@ -2112,7 +2142,7 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "XIN YANG PU V.204W -> INDO SUKSES 51 V.226E",
+        "nama_kapal": "XIN HANG ZHOU V.216W -> INDO SUKSES 51 V.226E",
         "closing": "N/A",
         "etd": "16 Jul 2026",
         "eta": "31 Jul 2026",
@@ -2142,7 +2172,7 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "XIN HANG ZHOU V.216W -> WAHANA 39 V.228E",
+        "nama_kapal": "XIN YANG PU V.204W -> WAHANA 39 V.228E",
         "closing": "N/A",
         "etd": "16 Jul 2026",
         "eta": "14 Aug 2026",
@@ -2152,7 +2182,7 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "XIN YANG PU V.204W -> WAHANA 39 V.228E",
+        "nama_kapal": "XIN HANG ZHOU V.216W -> WAHANA 39 V.228E",
         "closing": "N/A",
         "etd": "16 Jul 2026",
         "eta": "14 Aug 2026",
@@ -2182,16 +2212,6 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "XIN HANG ZHOU V.216W -> KREUZ 281 V.230E",
-        "closing": "N/A",
-        "etd": "16 Jul 2026",
-        "eta": "28 Aug 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SAMUDERA",
         "nama_kapal": "XIN YANG PU V.204W -> KREUZ 281 V.230E",
         "closing": "N/A",
         "etd": "16 Jul 2026",
@@ -2202,7 +2222,17 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "NATTHA BHUM V.061N -> INDO SUKSES 51 V.226E",
+        "nama_kapal": "XIN HANG ZHOU V.216W -> KREUZ 281 V.230E",
+        "closing": "N/A",
+        "etd": "16 Jul 2026",
+        "eta": "28 Aug 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR CARITA V.024N -> INDO SUKSES 51 V.226E",
         "closing": "N/A",
         "etd": "19 Jul 2026",
         "eta": "31 Jul 2026",
@@ -2212,7 +2242,7 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "SINAR CARITA V.024N -> INDO SUKSES 51 V.226E",
+        "nama_kapal": "NATTHA BHUM V.061N -> INDO SUKSES 51 V.226E",
         "closing": "N/A",
         "etd": "19 Jul 2026",
         "eta": "31 Jul 2026",
@@ -2262,7 +2292,7 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "NATTHA BHUM V.061N -> INDO SUKSES 51 V.229E",
+        "nama_kapal": "SINAR CARITA V.024N -> INDO SUKSES 51 V.229E",
         "closing": "N/A",
         "etd": "19 Jul 2026",
         "eta": "21 Aug 2026",
@@ -2272,7 +2302,7 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "SINAR CARITA V.024N -> INDO SUKSES 51 V.229E",
+        "nama_kapal": "NATTHA BHUM V.061N -> INDO SUKSES 51 V.229E",
         "closing": "N/A",
         "etd": "19 Jul 2026",
         "eta": "21 Aug 2026",
@@ -2532,16 +2562,6 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "NATTHA BHUM V.062N -> WAHANA 39 V.228E",
-        "closing": "N/A",
-        "etd": "02 Aug 2026",
-        "eta": "14 Aug 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SAMUDERA",
         "nama_kapal": "SINAR CARITA V.025N -> WAHANA 39 V.228E",
         "closing": "N/A",
         "etd": "02 Aug 2026",
@@ -2552,10 +2572,10 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "NATTHA BHUM V.062N -> INDO SUKSES 51 V.229E",
+        "nama_kapal": "NATTHA BHUM V.062N -> WAHANA 39 V.228E",
         "closing": "N/A",
         "etd": "02 Aug 2026",
-        "eta": "21 Aug 2026",
+        "eta": "14 Aug 2026",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -2572,7 +2592,17 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "NATTHA BHUM V.062N -> KREUZ 281 V.230E",
+        "nama_kapal": "NATTHA BHUM V.062N -> INDO SUKSES 51 V.229E",
+        "closing": "N/A",
+        "etd": "02 Aug 2026",
+        "eta": "21 Aug 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR CARITA V.025N -> KREUZ 281 V.230E",
         "closing": "N/A",
         "etd": "02 Aug 2026",
         "eta": "28 Aug 2026",
@@ -2582,7 +2612,7 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "SINAR CARITA V.025N -> KREUZ 281 V.230E",
+        "nama_kapal": "NATTHA BHUM V.062N -> KREUZ 281 V.230E",
         "closing": "N/A",
         "etd": "02 Aug 2026",
         "eta": "28 Aug 2026",
@@ -2855,7 +2885,7 @@
         "nama_kapal": "Damaskus Mas - 48/26",
         "closing": "N/A",
         "etd": "14 Jul 2026",
-        "eta": "15 Jul 2026"
+        "eta": "16 Jul 2026"
     },
     {
         "rute": "Pontianak",
