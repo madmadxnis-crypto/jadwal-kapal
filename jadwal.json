@@ -252,20 +252,10 @@
     {
         "rute": "Pontianak",
         "pelayaran": "ICON",
-        "nama_kapal": "IL XIX V.29/26 - ICON LUKAS XIX",
-        "closing": "08/07/2026 12:00",
-        "etd": "Rabu, 08 Juli 2026 10:30",
-        "eta": "Jumat, 10 Juli 2026 05:00",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "ICON",
         "nama_kapal": "IP V.55/26 - MV. ICON PERDANA",
-        "closing": "09/07/2026 05:00",
-        "etd": "Rabu, 08 Juli 2026 14:45",
-        "eta": "Jumat, 10 Juli 2026 06:45",
+        "closing": "08/07/2026 05:00",
+        "etd": "Rabu, 08 Juli 2026 15:06",
+        "eta": "Jumat, 10 Juli 2026 17:30",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -2719,7 +2709,7 @@
         "nama_kapal": "Damaskus Mas - 48/26",
         "closing": "N/A",
         "etd": "14 Jul 2026",
-        "eta": "15 Jul 2026"
+        "eta": "16 Jul 2026"
     },
     {
         "rute": "Pontianak",
