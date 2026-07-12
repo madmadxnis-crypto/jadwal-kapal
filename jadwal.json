@@ -1,15 +1,5 @@
 [
     {
-        "rute": "Bitung",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Manalagi Yasa - 08/2026",
-        "closing": "12/07/2026 23:59",
-        "etd": "15/07/2026 05:00",
-        "eta": "22/07/2026 10:00",
-        "etb": "22/07/2026 12:00",
-        "open_stack": "05/07/2026 15:00"
-    },
-    {
         "rute": "Samarinda",
         "pelayaran": "SPIL",
         "nama_kapal": "Pulau Nunukan - 15/2026",
@@ -38,16 +28,6 @@
         "eta": "20/07/2026 13:00",
         "etb": "20/07/2026 15:00",
         "open_stack": "10/07/2026 16:00"
-    },
-    {
-        "rute": "Palu",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Bali Sanur - 16/2026",
-        "closing": "12/07/2026 23:59",
-        "etd": "14/07/2026 12:00",
-        "eta": "16/07/2026 12:00",
-        "etb": "16/07/2026 15:00",
-        "open_stack": "11/07/2026 10:00 @ADP (101-105)"
     },
     {
         "rute": "Batam",
@@ -146,16 +126,6 @@
         "closing": "14/07/2026 02:27",
         "etd": "Kamis, 16 Juli 2026 02:26",
         "eta": "Minggu, 19 Juli 2026 02:26",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Banjarmasin",
-        "pelayaran": "ICON",
-        "nama_kapal": "IC V.42/26 - MV. ICON CORINTUS",
-        "closing": "12/07/2026 05:00",
-        "etd": "Sabtu, 11 Juli 2026 16:13",
-        "eta": "Senin, 13 Juli 2026 09:26",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -2784,8 +2754,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gangga Mas - 36/26",
         "closing": "N/A",
-        "etd": "19 Jul 2026",
-        "eta": "23 Jul 2026"
+        "etd": "20 Jul 2026",
+        "eta": "24 Jul 2026"
     },
     {
         "rute": "PALU",
@@ -2865,7 +2835,7 @@
         "nama_kapal": "Fraser Mas - 12/26",
         "closing": "N/A",
         "etd": "16 Jul 2026",
-        "eta": "18 Jul 2026"
+        "eta": "19 Jul 2026"
     },
     {
         "rute": "BATAM",
