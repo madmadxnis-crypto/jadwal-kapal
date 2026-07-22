@@ -83,7 +83,7 @@
         "rute": "Batam",
         "pelayaran": "SPIL",
         "nama_kapal": "Armada Senada - 14/2026",
-        "closing": "25/07/2026 22:00",
+        "closing": "24/07/2026 22:00",
         "etd": "29/07/2026 23:00",
         "eta": "03/08/2026 00:00",
         "etb": "03/08/2026 02:00",
@@ -142,8 +142,8 @@
     {
         "rute": "Samarinda",
         "pelayaran": "ICON",
-        "nama_kapal": "IB V.68/26 - ICON BRAVO",
-        "closing": "25/07/2026 09:37",
+        "nama_kapal": "",
+        "closing": "N/A",
         "etd": "N/A",
         "eta": "N/A",
         "etb": "N/A",
@@ -2547,7 +2547,7 @@
         "nama_kapal": "Warih Mas - 50/26",
         "closing": "N/A",
         "etd": "27 Jul 2026",
-        "eta": "31 Jul 2026"
+        "eta": "01 Aug 2026"
     },
     {
         "rute": "Balikpapan",
@@ -2578,8 +2578,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gaung Mas - 33/26",
         "closing": "N/A",
-        "etd": "22 Jul 2026",
-        "eta": "25 Jul 2026"
+        "etd": "23 Jul 2026",
+        "eta": "27 Jul 2026"
     },
     {
         "rute": "BELAWAN",
