@@ -10,6 +10,16 @@
         "open_stack": "21/07/2026 12:00 @ADP (101-105)"
     },
     {
+        "rute": "Makassar",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Emerald - 11/2026",
+        "closing": "29/07/2026 22:00",
+        "etd": "30/07/2026 20:00",
+        "eta": "02/08/2026 07:00",
+        "etb": "02/08/2026 09:00",
+        "open_stack": "27/08/2026 01:00"
+    },
+    {
         "rute": "Bitung",
         "pelayaran": "SPIL",
         "nama_kapal": "Oriental Emerald - 11/2026",
@@ -100,6 +110,16 @@
         "open_stack": "20/07/2026 23:00"
     },
     {
+        "rute": "Batam",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Pratiwi Satu - 17/2026",
+        "closing": "30/07/2026 12:00",
+        "etd": "31/07/2026 23:00",
+        "eta": "03/08/2026 15:00",
+        "etb": "03/08/2026 17:00",
+        "open_stack": "24/07/2026 15:00"
+    },
+    {
         "rute": "Pontianak",
         "pelayaran": "SPIL",
         "nama_kapal": "Spil Retno - 24/2026",
@@ -142,10 +162,10 @@
     {
         "rute": "Samarinda",
         "pelayaran": "ICON",
-        "nama_kapal": "",
-        "closing": "N/A",
-        "etd": "N/A",
-        "eta": "N/A",
+        "nama_kapal": "IB V.68/26 - ICON BRAVO",
+        "closing": "25/07/2026 09:37",
+        "etd": "Senin, 27 Juli 2026 09:20",
+        "eta": "Jumat, 31 Juli 2026 09:20",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -214,8 +234,8 @@
         "pelayaran": "ICON",
         "nama_kapal": "II XI V.75/26 - ICON IBRANI XI",
         "closing": "23/07/2026 05:00",
-        "etd": "Rabu, 22 Juli 2026 17:33",
-        "eta": "Sabtu, 25 Juli 2026 07:34",
+        "etd": "Rabu, 22 Juli 2026 18:18",
+        "eta": "Sabtu, 25 Juli 2026 10:53",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -253,8 +273,8 @@
         "rute": "Pontianak",
         "pelayaran": "ICON",
         "nama_kapal": "IL XIX V.33/26 - ICON LUKAS XIX",
-        "closing": "21/07/2026 02:37",
-        "etd": "Kamis, 23 Juli 2026 02:36",
+        "closing": "23/07/2026 12:00",
+        "etd": "Kamis, 23 Juli 2026 11:36",
         "eta": "Sabtu, 25 Juli 2026 02:36",
         "etb": "N/A",
         "open_stack": "N/A"
@@ -2492,14 +2512,6 @@
         "eta": "27 Jul 2026"
     },
     {
-        "rute": "Makassar",
-        "pelayaran": "TEMAS",
-        "nama_kapal": "Fraser Mas - 16/26",
-        "closing": "N/A",
-        "etd": "02 Aug 2026",
-        "eta": "06 Aug 2026"
-    },
-    {
         "rute": "Bitung",
         "pelayaran": "TEMAS",
         "nama_kapal": "Ifama Mas - 37/26",
@@ -2600,8 +2612,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gihon Mas - 40/26",
         "closing": "N/A",
-        "etd": "28 Jul 2026",
-        "eta": "01 Aug 2026"
+        "etd": "29 Jul 2026",
+        "eta": "02 Aug 2026"
     },
     {
         "rute": "BELAWAN",
