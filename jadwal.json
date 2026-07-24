@@ -42,32 +42,12 @@
     {
         "rute": "Samarinda",
         "pelayaran": "SPIL",
-        "nama_kapal": "Pulau Nunukan - 16/2026",
-        "closing": "24/07/2026 22:00",
-        "etd": "26/07/2026 14:00",
-        "eta": "31/07/2026 07:00",
-        "etb": "31/07/2026 09:00",
-        "open_stack": "20/07/2026 15:00 @DSN (004-005)"
-    },
-    {
-        "rute": "Samarinda",
-        "pelayaran": "SPIL",
         "nama_kapal": "Pulau Wetar - 15/2026",
         "closing": "29/07/2026 22:00",
         "etd": "30/07/2026 12:00",
         "eta": "04/08/2026 10:00",
         "etb": "04/08/2026 12:00",
         "open_stack": "24/07/2026 20:00 @DSN (004-005)"
-    },
-    {
-        "rute": "Balikpapan",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Pulau Nunukan - 16/2026",
-        "closing": "24/07/2026 22:00",
-        "etd": "26/07/2026 14:00",
-        "eta": "30/07/2026 06:00",
-        "etb": "30/07/2026 08:00",
-        "open_stack": "20/07/2026 15:00 @DSN (004-005)"
     },
     {
         "rute": "Balikpapan",
@@ -110,16 +90,6 @@
         "open_stack": "17/07/2026 15:00"
     },
     {
-        "rute": "Belawan",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Armada Permata - 12/2026",
-        "closing": "24/07/2026 22:00",
-        "etd": "27/07/2026 12:00",
-        "eta": "31/07/2026 05:24",
-        "etb": "31/07/2026 06:00",
-        "open_stack": "17/07/2026 18:00"
-    },
-    {
         "rute": "Palu",
         "pelayaran": "SPIL",
         "nama_kapal": "Derajat - 11/2026",
@@ -132,22 +102,12 @@
     {
         "rute": "Batam",
         "pelayaran": "SPIL",
-        "nama_kapal": "Armada Senada - 14/2026",
-        "closing": "24/07/2026 22:00",
-        "etd": "28/07/2026 14:00",
-        "eta": "03/08/2026 00:00",
-        "etb": "03/08/2026 02:00",
-        "open_stack": "20/07/2026 23:00"
-    },
-    {
-        "rute": "Batam",
-        "pelayaran": "SPIL",
         "nama_kapal": "Pratiwi Satu - 17/2026",
         "closing": "30/07/2026 12:00",
         "etd": "31/07/2026 16:00",
         "eta": "03/08/2026 08:00",
         "etb": "03/08/2026 10:00",
-        "open_stack": "24/07/2026 15:00"
+        "open_stack": "24/07/2026 15:00 @ADP (101-105)"
     },
     {
         "rute": "Pontianak",
@@ -192,10 +152,10 @@
     {
         "rute": "Samarinda",
         "pelayaran": "ICON",
-        "nama_kapal": "",
-        "closing": "N/A",
-        "etd": "N/A",
-        "eta": "N/A",
+        "nama_kapal": "IB V.68/26 - ICON BRAVO",
+        "closing": "25/07/2026 09:37",
+        "etd": "Senin, 27 Juli 2026 09:20",
+        "eta": "Jumat, 31 Juli 2026 09:20",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -234,8 +194,8 @@
         "pelayaran": "ICON",
         "nama_kapal": "IB V.67/26 - ICON BRAVO",
         "closing": "25/07/2026 09:24",
-        "etd": "N/A",
-        "eta": "N/A",
+        "etd": "Senin, 27 Juli 2026 09:19",
+        "eta": "Kamis, 30 Juli 2026 09:19",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -286,16 +246,6 @@
         "closing": "15/07/2026 01:22",
         "etd": "Jumat, 17 Juli 2026 01:21",
         "eta": "Minggu, 19 Juli 2026 01:21",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "ICON",
-        "nama_kapal": "IL XIX V.33/26 - ICON LUKAS XIX",
-        "closing": "23/07/2026 12:00",
-        "etd": "Kamis, 23 Juli 2026 11:36",
-        "eta": "Sabtu, 25 Juli 2026 02:36",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -2512,8 +2462,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Tasik Mas - 37/26",
         "closing": "N/A",
-        "etd": "29 Jul 2026",
-        "eta": "01 Aug 2026"
+        "etd": "31 Jul 2026",
+        "eta": "04 Aug 2026"
     },
     {
         "rute": "Makassar",
@@ -2522,6 +2472,14 @@
         "closing": "N/A",
         "etd": "03 Aug 2026",
         "eta": "06 Aug 2026"
+    },
+    {
+        "rute": "Makassar",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Fraser Mas - 14/26",
+        "closing": "N/A",
+        "etd": "24 Jul 2026",
+        "eta": "28 Jul 2026"
     },
     {
         "rute": "Bitung",
