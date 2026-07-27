@@ -13,7 +13,7 @@
         "rute": "Makassar",
         "pelayaran": "SPIL",
         "nama_kapal": "Oriental Jade - 10/2026",
-        "closing": "29/07/2026 23:59",
+        "closing": "31/07/2026 16:00",
         "etd": "01/08/2026 12:00",
         "eta": "07/08/2026 00:00",
         "etb": "07/08/2026 02:00",
@@ -33,7 +33,7 @@
         "rute": "Gorontalo",
         "pelayaran": "SPIL",
         "nama_kapal": "Oriental Jade - 10/2026",
-        "closing": "29/07/2026 23:59",
+        "closing": "31/07/2026 16:00",
         "etd": "01/08/2026 12:00",
         "eta": "02/08/2026 18:00",
         "etb": "02/08/2026 21:00",
@@ -82,18 +82,8 @@
     {
         "rute": "Palu",
         "pelayaran": "SPIL",
-        "nama_kapal": "Derajat - 11/2026",
-        "closing": "27/07/2026 22:00",
-        "etd": "29/07/2026 10:00",
-        "eta": "05/08/2026 13:00",
-        "etb": "05/08/2026 15:00",
-        "open_stack": "26/07/2026 21:00"
-    },
-    {
-        "rute": "Palu",
-        "pelayaran": "SPIL",
         "nama_kapal": "Oriental Jade - 10/2026",
-        "closing": "29/07/2026 23:59",
+        "closing": "31/07/2026 16:00",
         "etd": "01/08/2026 12:00",
         "eta": "02/08/2026 18:00",
         "etb": "02/08/2026 21:00",
@@ -2244,6 +2234,14 @@
     {
         "rute": "BELAWAN",
         "pelayaran": "TEMAS",
+        "nama_kapal": "Gangga Mas - 36/26",
+        "closing": "N/A",
+        "etd": "27 Jul 2026",
+        "eta": "31 Jul 2026"
+    },
+    {
+        "rute": "BELAWAN",
+        "pelayaran": "TEMAS",
         "nama_kapal": "Gihon Mas - 40/26",
         "closing": "N/A",
         "etd": "29 Jul 2026",
@@ -2254,8 +2252,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gangga Mas - 38/26",
         "closing": "N/A",
-        "etd": "05 Aug 2026",
-        "eta": "09 Aug 2026"
+        "etd": "06 Aug 2026",
+        "eta": "10 Aug 2026"
     },
     {
         "rute": "PALU",
@@ -2342,7 +2340,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Batanghari Mas - 57/26",
         "closing": "N/A",
-        "etd": "02 Aug 2026",
+        "etd": "03 Aug 2026",
         "eta": "05 Aug 2026"
     },
     {
