@@ -2,22 +2,12 @@
     {
         "rute": "Makassar",
         "pelayaran": "SPIL",
-        "nama_kapal": "Oriental Jade - 10/2026",
-        "closing": "01/08/2026 14:00",
-        "etd": "02/08/2026 08:00",
-        "eta": "08/08/2026 07:00",
-        "etb": "08/08/2026 09:00",
-        "open_stack": "26/07/2026 15:00"
-    },
-    {
-        "rute": "Makassar",
-        "pelayaran": "SPIL",
         "nama_kapal": "Oriental Diamond - 07/2026",
         "closing": "05/08/2026 23:59",
         "etd": "10/08/2026 08:00",
         "eta": "15/08/2026 18:00",
         "etb": "15/08/2026 20:00",
-        "open_stack": "01/08/2026 15:00"
+        "open_stack": "01/08/2026 15:00 @ADP (101-105)"
     },
     {
         "rute": "Bitung",
@@ -32,22 +22,12 @@
     {
         "rute": "Gorontalo",
         "pelayaran": "SPIL",
-        "nama_kapal": "Oriental Jade - 10/2026",
-        "closing": "01/08/2026 14:00",
-        "etd": "02/08/2026 08:00",
-        "eta": "03/08/2026 13:00",
-        "etb": "03/08/2026 16:00",
-        "open_stack": "26/07/2026 15:00"
-    },
-    {
-        "rute": "Gorontalo",
-        "pelayaran": "SPIL",
         "nama_kapal": "Oriental Diamond - 07/2026",
         "closing": "05/08/2026 23:59",
         "etd": "10/08/2026 08:00",
         "eta": "11/08/2026 14:00",
         "etb": "11/08/2026 17:00",
-        "open_stack": "01/08/2026 15:00"
+        "open_stack": "01/08/2026 15:00 @ADP (101-105)"
     },
     {
         "rute": "Samarinda",
@@ -107,7 +87,17 @@
         "etd": "10/08/2026 08:00",
         "eta": "11/08/2026 14:00",
         "etb": "11/08/2026 17:00",
-        "open_stack": "01/08/2026 15:00"
+        "open_stack": "01/08/2026 15:00 @ADP (101-105)"
+    },
+    {
+        "rute": "Batam",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Selili Baru - 17/2026",
+        "closing": "01/08/2026 18:00",
+        "etd": "05/08/2026 01:00",
+        "eta": "07/08/2026 10:00",
+        "etb": "07/08/2026 12:00",
+        "open_stack": "29/07/2026 10:00"
     },
     {
         "rute": "Batam",
@@ -118,16 +108,6 @@
         "eta": "09/08/2026 12:00",
         "etb": "09/08/2026 14:00",
         "open_stack": "01/08/2026 15:00"
-    },
-    {
-        "rute": "Batam",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Armada Serasi - 16/2026",
-        "closing": "04/08/2026 22:00",
-        "etd": "08/08/2026 10:00",
-        "eta": "11/08/2026 02:00",
-        "etb": "11/08/2026 04:00",
-        "open_stack": "28/07/2026 23:00"
     },
     {
         "rute": "Pontianak",
