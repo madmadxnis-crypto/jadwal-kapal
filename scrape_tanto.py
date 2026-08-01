@@ -7,7 +7,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-print("🚀 Memulai Master Scraper TANTO (Versi UNDETECTED-CHROMEDRIVER - Anti Zonk)...")
+print("🚀 Memulai Master Scraper TANTO (Versi UNDETECTED-CHROMEDRIVER - Super Stealth)...")
 
 # --- KONFIGURASI UNDETECTED CHROMEDRIVER ---
 options = uc.ChromeOptions()
@@ -15,6 +15,10 @@ options.add_argument("--headless")
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
 options.add_argument("--window-size=1920,1080")
+
+# TAMBAHAN SENJATA ANTI-BOT (Menyamar sebagai browser normal):
+options.add_argument("--disable-blink-features=AutomationControlled")
+options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
 
 # FIX: Gunakan uc.Chrome dan version_main=150 khusus untuk GitHub Actions
 driver = uc.Chrome(options=options, version_main=150)
@@ -34,9 +38,10 @@ for tujuan in daftar_tujuan:
     
     try:
         driver.get("https://www.tantonet.com/schedule.php")
-        time.sleep(3) # Tunggu loading awal page
+        print("   -> Menunggu loading awal halaman Tanto...")
+        time.sleep(5) # Tunggu loading awal page biar aman dari block server
         
-        # 1. ISI PORT OF LOAD (JAKARTA) - Diperbaiki logic kliknya
+        # 1. ISI PORT OF LOAD (JAKARTA)
         try:
             pol_container = WebDriverWait(driver, 15).until(
                 EC.element_to_be_clickable((By.ID, "select2-pol-container"))
@@ -44,7 +49,6 @@ for tujuan in daftar_tujuan:
             if "JAKARTA" not in pol_container.text.upper(): 
                 pol_container.click()
                 time.sleep(1)
-                # Langsung tembak input field-nya, lebih aman dari active_element
                 search_box = driver.find_element(By.XPATH, "//input[@class='select2-search__field']")
                 search_box.send_keys("JAKARTA")
                 time.sleep(1)
@@ -52,25 +56,31 @@ for tujuan in daftar_tujuan:
         except Exception as e:
             print(f"   ⚠️ Gagal set POL JAKARTA: {type(e).__name__}")
 
-        # 2. ISI PORT OF DISCHARGE
+        # 2. ISI PORT OF DISCHARGE (Dengan perbaikan deteksi error)
         try:
-            pod_input = WebDriverWait(driver, 10).until(
+            pod_input = WebDriverWait(driver, 15).until(
                 EC.presence_of_element_located((By.XPATH, "//input[@placeholder='Select Port of Discharge']"))
             )
-            # Bersihkan input dulu sebelum ngetik
             pod_input.clear()
-            time.sleep(0.5)
+            time.sleep(1)
             pod_input.send_keys(tujuan_tanto.upper())
-            time.sleep(1.5)
+            time.sleep(2)
             pod_input.send_keys(Keys.ENTER)
-        except Exception:
-            continue
+        except Exception as e:
+            print(f"   ⚠️ Halaman Tanto gagal loading/diblokir di form POD: {type(e).__name__}")
+            try:
+                driver.save_screenshot(f"error_tanto_form_{tujuan_tanto}.png")
+                print(f"   📸 Screenshot Tanto disimpan: error_tanto_form_{tujuan_tanto}.png")
+            except: pass
+            continue # Skip ke kota berikutnya kalau formnya nggak bisa diisi
 
         # 3. KLIK TOMBOL SEARCH
         time.sleep(1)
-        # Expansi locator pencarian tombol biar lebih tangguh
-        tombol_search = driver.find_element(By.XPATH, "//button[contains(text(), 'Search')] | //input[@value='Search']")
-        driver.execute_script("arguments[0].click();", tombol_search) 
+        try:
+            tombol_search = driver.find_element(By.XPATH, "//button[contains(text(), 'Search')] | //input[@value='Search']")
+            driver.execute_script("arguments[0].click();", tombol_search) 
+        except Exception as e:
+            print(f"   ⚠️ Gagal klik tombol search: {type(e).__name__}")
 
         print("   ⏳ Menunggu data ditarik dari server Tanto...")
         
@@ -125,7 +135,10 @@ for tujuan in daftar_tujuan:
                 pass
 
     except Exception as e:
-        print(f"   ❌ Terjadi error di rute {tujuan_tanto}: {type(e).__name__} - {str(e)[:150]}")
+        print(f"   ❌ Terjadi error sistem di rute {tujuan_tanto}: {type(e).__name__}")
+        try:
+            driver.save_screenshot(f"error_tanto_fatal_{tujuan_tanto}.png")
+        except: pass
 
 data_gabungan = []
 if os.path.exists('jadwal.json') and os.path.getsize('jadwal.json') > 0:
