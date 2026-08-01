@@ -17,7 +17,8 @@ options.add_argument("--disable-dev-shm-usage")
 options.add_argument("--window-size=1920,1080")
 # Catatan: User-Agent sengaja ga diset biar UC yang generate otomatis
 
-driver = uc.Chrome(options=options)
+# FIX: Tambahkan version_main=150 agar sesuai dengan versi Chrome di GitHub Actions
+driver = uc.Chrome(options=options, version_main=150)
 # -------------------------------------------
 
 rute_meratus = {
