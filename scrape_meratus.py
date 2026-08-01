@@ -7,17 +7,20 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
-print("🚀 Memulai Master Scraper MERATUS (Versi UNDETECTED-CHROMEDRIVER - Anti 403)...")
+print("🚀 Memulai Master Scraper MERATUS (Versi UNDETECTED-CHROMEDRIVER - Super Stealth)...")
 
 # --- KONFIGURASI UNDETECTED CHROMEDRIVER ---
 options = uc.ChromeOptions()
-options.add_argument("--headless") # Jangan pakai =new kalau di UC
+options.add_argument("--headless")
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
 options.add_argument("--window-size=1920,1080")
-# Catatan: User-Agent sengaja ga diset biar UC yang generate otomatis
 
-# FIX: Tambahkan version_main=150 agar sesuai dengan versi Chrome di GitHub Actions
+# TAMBAHAN SENJATA ANTI-BOT:
+options.add_argument("--disable-blink-features=AutomationControlled")
+options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
+
+# FIX: version_main=150 wajib untuk GitHub Actions
 driver = uc.Chrome(options=options, version_main=150)
 # -------------------------------------------
 
@@ -36,15 +39,20 @@ for kota_tujuan, kode_port in rute_meratus.items():
 
     try:
         driver.get(url_meratus)
-        time.sleep(8) 
+        print("   -> Menunggu loading awal (bypassing sistem keamanan jika ada)...")
+        time.sleep(10) # Waktu tunggu dilebihin biar Cloudflare kelar loading
 
         try:
-            driver.find_element(By.XPATH, "//*[contains(text(), 'Direct')]").click()
+            btn_direct = WebDriverWait(driver, 5).until(
+                EC.element_to_be_clickable((By.XPATH, "//*[contains(text(), 'Direct')]"))
+            )
+            btn_direct.click()
             time.sleep(3)
         except Exception: 
             pass 
 
-        WebDriverWait(driver, 30).until(
+        print("   -> Mencari data Route Detail...")
+        WebDriverWait(driver, 35).until(
             EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Route Detail')]"))
         )
 
@@ -95,11 +103,14 @@ for kota_tujuan, kode_port in rute_meratus.items():
             except Exception: 
                 pass
                 
-        print(f"   ✅ Sukses ditarik: {jumlah_kapal} kapal.")
+        if jumlah_kapal > 0:
+            print(f"   ✅ Sukses ditarik: {jumlah_kapal} kapal.")
+        else:
+            print(f"   ⚠️ Halaman berhasil dimuat tapi tabel jadwal kosong.")
 
     except Exception as e:
         print(f"   ⚠️ GAGAL narik rute {kota_tujuan}. BUKAN KOSONG, tapi ada error.")
-        print(f"   🛑 Detail Error: {type(e).__name__} - {str(e)[:200]}")
+        print(f"   🛑 Detail Error: {type(e).__name__} - Halaman Timeout/Diblokir Server")
         
         try:
             nama_file_error = f"error_meratus_{kota_tujuan}.png"
