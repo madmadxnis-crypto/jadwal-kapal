@@ -1,27 +1,24 @@
 import json
 import os
 import time
-from selenium import webdriver
+import undetected_chromedriver as uc
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
 
-print("🚀 Memulai Master Scraper TANTO (Mode Headless Standar & Fix Loading)...")
+print("🚀 Memulai Master Scraper TANTO (Versi UNDETECTED-CHROMEDRIVER - Anti Zonk)...")
 
-# --- KONFIGURASI HEADLESS CHROME STANDAR ---
-chrome_options = Options()
-chrome_options.add_argument("--headless=new")
-chrome_options.add_argument("--no-sandbox")
-chrome_options.add_argument("--disable-dev-shm-usage")
-chrome_options.add_argument("--window-size=1920,1080")
+# --- KONFIGURASI UNDETECTED CHROMEDRIVER ---
+options = uc.ChromeOptions()
+options.add_argument("--headless")
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-dev-shm-usage")
+options.add_argument("--window-size=1920,1080")
 
-service = Service(ChromeDriverManager().install())
-driver = webdriver.Chrome(service=service, options=chrome_options)
-# -----------------------------------
+# FIX: Gunakan uc.Chrome dan version_main=150 khusus untuk GitHub Actions
+driver = uc.Chrome(options=options, version_main=150)
+# -------------------------------------------
 
 daftar_tujuan = ["MAKASSAR", "Bitung", "Gorontalo", "Samarinda", "Balikpapan", "Banjarmasin", "Medan", "Tangkian", "Pontianak", "Batam"]
 data_jadwal_global = []
@@ -37,18 +34,21 @@ for tujuan in daftar_tujuan:
     
     try:
         driver.get("https://www.tantonet.com/schedule.php")
+        time.sleep(3) # Tunggu loading awal page
         
-        # 1. ISI PORT OF LOAD (JAKARTA)
+        # 1. ISI PORT OF LOAD (JAKARTA) - Diperbaiki logic kliknya
         try:
-            pol_container = WebDriverWait(driver, 30).until(
+            pol_container = WebDriverWait(driver, 15).until(
                 EC.element_to_be_clickable((By.ID, "select2-pol-container"))
             )
             if "JAKARTA" not in pol_container.text.upper(): 
                 pol_container.click()
                 time.sleep(1)
-                driver.switch_to.active_element.send_keys("JAKARTA")
+                # Langsung tembak input field-nya, lebih aman dari active_element
+                search_box = driver.find_element(By.XPATH, "//input[@class='select2-search__field']")
+                search_box.send_keys("JAKARTA")
                 time.sleep(1)
-                driver.switch_to.active_element.send_keys(Keys.ENTER)
+                search_box.send_keys(Keys.ENTER)
         except Exception as e:
             print(f"   ⚠️ Gagal set POL JAKARTA: {type(e).__name__}")
 
@@ -57,6 +57,9 @@ for tujuan in daftar_tujuan:
             pod_input = WebDriverWait(driver, 10).until(
                 EC.presence_of_element_located((By.XPATH, "//input[@placeholder='Select Port of Discharge']"))
             )
+            # Bersihkan input dulu sebelum ngetik
+            pod_input.clear()
+            time.sleep(0.5)
             pod_input.send_keys(tujuan_tanto.upper())
             time.sleep(1.5)
             pod_input.send_keys(Keys.ENTER)
@@ -65,12 +68,14 @@ for tujuan in daftar_tujuan:
 
         # 3. KLIK TOMBOL SEARCH
         time.sleep(1)
-        tombol_search = driver.find_element(By.XPATH, "//*[contains(text(), 'Search') or @value='Search']")
+        # Expansi locator pencarian tombol biar lebih tangguh
+        tombol_search = driver.find_element(By.XPATH, "//button[contains(text(), 'Search')] | //input[@value='Search']")
         driver.execute_script("arguments[0].click();", tombol_search) 
 
         print("   ⏳ Menunggu data ditarik dari server Tanto...")
         
         try:
+            # Tunggu sampai tabel ter-update
             WebDriverWait(driver, 15).until(
                 EC.presence_of_element_located((By.XPATH, "//table//tr[td]"))
             )
@@ -86,7 +91,7 @@ for tujuan in daftar_tujuan:
             
             if len(kolom) >= 5:
                 nama_kapal = kolom[0].text.strip()
-                if nama_kapal == "" or "No data" in nama_kapal:
+                if nama_kapal == "" or "No data" in nama_kapal or "No Schedule" in nama_kapal:
                     continue
                 
                 closing = kolom[2].text.strip()
