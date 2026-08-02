@@ -52,16 +52,6 @@
     {
         "rute": "Banjarmasin",
         "pelayaran": "SPIL",
-        "nama_kapal": "Akashia - 19/2026",
-        "closing": "02/08/2026 20:00",
-        "etd": "05/08/2026 01:00",
-        "eta": "07/08/2026 15:00",
-        "etb": "07/08/2026 17:00",
-        "open_stack": "29/07/2026 15:00 @DSN (004-005)"
-    },
-    {
-        "rute": "Banjarmasin",
-        "pelayaran": "SPIL",
         "nama_kapal": "Armada Serasi - 16/2026",
         "closing": "06/08/2026 23:59",
         "etd": "08/08/2026 10:00",
@@ -192,16 +182,6 @@
     {
         "rute": "Banjarmasin",
         "pelayaran": "ICON",
-        "nama_kapal": "IC V.46/26 - MV. ICON CORINTUS",
-        "closing": "31/07/2026 09:00",
-        "etd": "Sabtu, 01 Agustus 2026 10:36",
-        "eta": "Selasa, 04 Agustus 2026 10:48",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Banjarmasin",
-        "pelayaran": "ICON",
         "nama_kapal": "IG V V.30/26 - MV. ICON GALATIA V",
         "closing": "02/08/2026 06:45",
         "etd": "Selasa, 04 Agustus 2026 06:44",
@@ -256,16 +236,6 @@
         "closing": "31/07/2026 13:00",
         "etd": "Sabtu, 01 Agustus 2026 06:52",
         "eta": "Senin, 03 Agustus 2026 06:52",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "ICON",
-        "nama_kapal": "IL XIX V.35/26 - ICON LUKAS XIX",
-        "closing": "31/07/2026 17:00",
-        "etd": "Sabtu, 01 Agustus 2026 11:00",
-        "eta": "Senin, 03 Agustus 2026 06:00",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -2398,16 +2368,16 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Telaga Mas - 31/26",
         "closing": "N/A",
-        "etd": "04 Aug 2026",
-        "eta": "06 Aug 2026"
+        "etd": "08 Aug 2026",
+        "eta": "10 Aug 2026"
     },
     {
         "rute": "Banjarmasin",
         "pelayaran": "TEMAS",
         "nama_kapal": "Telaga Mas - 33/26",
         "closing": "N/A",
-        "etd": "11 Aug 2026",
-        "eta": "13 Aug 2026"
+        "etd": "15 Aug 2026",
+        "eta": "17 Aug 2026"
     },
     {
         "rute": "BELAWAN",
