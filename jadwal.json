@@ -10,16 +10,6 @@
         "open_stack": "06/08/2026 06:00"
     },
     {
-        "rute": "Bitung",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Manalagi Yasa - 09/2026",
-        "closing": "05/08/2026 16:00",
-        "etd": "06/08/2026 08:00",
-        "eta": "09/08/2026 13:00",
-        "etb": "09/08/2026 15:00",
-        "open_stack": "03/08/2026 04:00"
-    },
-    {
         "rute": "Gorontalo",
         "pelayaran": "SPIL",
         "nama_kapal": "Armada Senada - 15/2026",
@@ -102,22 +92,92 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SPIL",
-        "nama_kapal": "Spil Retno - 25/2026",
-        "closing": "05/08/2026 16:00",
-        "etd": "06/08/2026 06:00",
-        "eta": "09/08/2026 15:00",
-        "etb": "09/08/2026 17:00",
-        "open_stack": "01/08/2026 15:00"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SPIL",
         "nama_kapal": "Spil Rumi - 26/2026",
         "closing": "08/08/2026 22:00",
         "etd": "09/08/2026 10:00",
         "eta": "12/08/2026 19:00",
         "etb": "12/08/2026 21:00",
         "open_stack": "05/08/2026 18:00"
+    },
+    {
+        "rute": "Samarinda",
+        "pelayaran": "ICON",
+        "nama_kapal": "IE I 17 V.22/26 - ICON EFESUS I 17",
+        "closing": "27/02/2026 04:59",
+        "etd": "Senin, 02 Maret 2026 16:57",
+        "eta": "Jumat, 06 Maret 2026 04:57",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Samarinda",
+        "pelayaran": "ICON",
+        "nama_kapal": "IE I 17 V.26/26 - ICON EFESUS I 17",
+        "closing": "09/03/2026 03:03",
+        "etd": "Kamis, 12 Maret 2026 03:00",
+        "eta": "Senin, 16 Maret 2026 03:00",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Samarinda",
+        "pelayaran": "ICON",
+        "nama_kapal": "IB V.54/26 - ICON BRAVO",
+        "closing": "22/06/2026 07:36",
+        "etd": "Rabu, 24 Juni 2026 07:34",
+        "eta": "Sabtu, 27 Juni 2026 07:34",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Samarinda",
+        "pelayaran": "ICON",
+        "nama_kapal": "",
+        "closing": "N/A",
+        "etd": "N/A",
+        "eta": "N/A",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Balikpapan",
+        "pelayaran": "ICON",
+        "nama_kapal": "IE I 17 V.21/26 - ICON EFESUS I 17",
+        "closing": "27/02/2026 04:58",
+        "etd": "Senin, 02 Maret 2026 16:56",
+        "eta": "Kamis, 05 Maret 2026 04:56",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Balikpapan",
+        "pelayaran": "ICON",
+        "nama_kapal": "IE I 17 V.25/26 - ICON EFESUS I 17",
+        "closing": "09/03/2026 03:01",
+        "etd": "Kamis, 12 Maret 2026 02:59",
+        "eta": "Minggu, 15 Maret 2026 02:59",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Balikpapan",
+        "pelayaran": "ICON",
+        "nama_kapal": "IB V.53/26 - ICON BRAVO",
+        "closing": "12/06/2026 07:35",
+        "etd": "Minggu, 14 Juni 2026 07:33",
+        "eta": "Rabu, 17 Juni 2026 07:33",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Balikpapan",
+        "pelayaran": "ICON",
+        "nama_kapal": "IB V.71/26 - ICON BRAVO",
+        "closing": "05/08/2026 13:19",
+        "etd": "Jumat, 07 Agustus 2026 13:17",
+        "eta": "Senin, 10 Agustus 2026 13:17",
+        "etb": "N/A",
+        "open_stack": "N/A"
     },
     {
         "rute": "Banjarmasin",
@@ -156,6 +216,56 @@
         "closing": "03/08/2026 06:55",
         "etd": "Rabu, 05 Agustus 2026 06:54",
         "eta": "Jumat, 07 Agustus 2026 06:54",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "ICON",
+        "nama_kapal": "IJ II 13 V.46/26 - ICON JAMES II 13",
+        "closing": "13/06/2026 03:22",
+        "etd": "Senin, 15 Juni 2026 03:20",
+        "eta": "Rabu, 17 Juni 2026 03:21",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "ICON",
+        "nama_kapal": "IK III 23 V,46/26 - ICON KOLOSE III 23",
+        "closing": "15/07/2026 01:22",
+        "etd": "Jumat, 17 Juli 2026 01:21",
+        "eta": "Minggu, 19 Juli 2026 01:21",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "ICON",
+        "nama_kapal": "IM VI 8 V.17/26 - ICON MIKHA VI 8",
+        "closing": "05/08/2026 06:00",
+        "etd": "Rabu, 05 Agustus 2026 02:35",
+        "eta": "Jumat, 07 Agustus 2026 07:18",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "ICON",
+        "nama_kapal": "IL XIX V.37/2 - ICON LUKAS XIX",
+        "closing": "07/08/2026 07:05",
+        "etd": "Sabtu, 08 Agustus 2026 07:03",
+        "eta": "Senin, 10 Agustus 2026 07:04",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "ICON",
+        "nama_kapal": "IP V.63/26 - MV. ICON PERDANA",
+        "closing": "05/08/2026 07:16",
+        "etd": "Minggu, 09 Agustus 2026 07:14",
+        "eta": "Selasa, 11 Agustus 2026 07:14",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -1859,7 +1969,15 @@
         "nama_kapal": "Belik Mas - 44/26",
         "closing": "N/A",
         "etd": "06 Aug 2026",
-        "eta": "09 Aug 2026"
+        "eta": "10 Aug 2026"
+    },
+    {
+        "rute": "Makassar",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Umbul Mas - 47/26",
+        "closing": "N/A",
+        "etd": "09 Aug 2026",
+        "eta": "12 Aug 2026"
     },
     {
         "rute": "Makassar",
@@ -1868,6 +1986,14 @@
         "closing": "N/A",
         "etd": "10 Aug 2026",
         "eta": "13 Aug 2026"
+    },
+    {
+        "rute": "Makassar",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Umbul Mas - 49/26",
+        "closing": "N/A",
+        "etd": "17 Aug 2026",
+        "eta": "21 Aug 2026"
     },
     {
         "rute": "Bitung",
@@ -1890,7 +2016,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Izumi Mas - 41/26",
         "closing": "N/A",
-        "etd": "19 Aug 2026",
+        "etd": "18 Aug 2026",
         "eta": "25 Aug 2026"
     },
     {
@@ -1978,7 +2104,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Sungai Mas - 47/26",
         "closing": "N/A",
-        "etd": "13 Aug 2026",
+        "etd": "14 Aug 2026",
         "eta": "17 Aug 2026"
     },
     {
