@@ -10,10 +10,20 @@
         "open_stack": "06/08/2026 06:00"
     },
     {
+        "rute": "Makassar",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Emerald - 12/2026",
+        "closing": "13/08/2026 22:00",
+        "etd": "17/08/2026 12:00",
+        "eta": "19/08/2026 23:00",
+        "etb": "20/08/2026 01:00",
+        "open_stack": "07/08/2026 08:00"
+    },
+    {
         "rute": "Bitung",
         "pelayaran": "SPIL",
         "nama_kapal": "Oriental Emerald - 12/2026",
-        "closing": "12/08/2026 22:00",
+        "closing": "13/08/2026 22:00",
         "etd": "17/08/2026 12:00",
         "eta": "23/08/2026 11:00",
         "etb": "23/08/2026 13:00",
@@ -62,22 +72,12 @@
     {
         "rute": "Banjarmasin",
         "pelayaran": "SPIL",
-        "nama_kapal": "Bali Gianyar - 23/2026",
-        "closing": "07/08/2026 22:00",
-        "etd": "09/08/2026 10:00",
-        "eta": "12/08/2026 00:00",
-        "etb": "12/08/2026 02:00",
-        "open_stack": "04/08/2026 16:00 @ADP (101-105)"
-    },
-    {
-        "rute": "Banjarmasin",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Fortune - 20/2026",
-        "closing": "10/08/2026 22:00",
-        "etd": "11/08/2026 23:00",
-        "eta": "14/08/2026 13:00",
-        "etb": "14/08/2026 15:00",
-        "open_stack": "05/08/2026 15:00"
+        "nama_kapal": "Teluk Berau - 19/2026",
+        "closing": "11/08/2026 22:00",
+        "etd": "12/08/2026 18:00",
+        "eta": "15/08/2026 08:00",
+        "etb": "15/08/2026 10:00",
+        "open_stack": "07/08/2026 15:00"
     },
     {
         "rute": "Belawan",
@@ -102,22 +102,12 @@
     {
         "rute": "Batam",
         "pelayaran": "SPIL",
-        "nama_kapal": "Oriental Diamond - 07/2026",
-        "closing": "07/08/2026 16:00",
-        "etd": "08/08/2026 16:00",
-        "eta": "09/08/2026 21:00",
-        "etb": "09/08/2026 23:00",
-        "open_stack": "03/08/2026 18:00"
-    },
-    {
-        "rute": "Batam",
-        "pelayaran": "SPIL",
         "nama_kapal": "Akashia - 20/2026",
         "closing": "11/08/2026 22:00",
         "etd": "13/08/2026 23:00",
         "eta": "16/08/2026 15:00",
         "etb": "16/08/2026 17:00",
-        "open_stack": "07/08/2026 15:00"
+        "open_stack": "07/08/2026 15:00 @CELEBES (107)"
     },
     {
         "rute": "Pontianak",
@@ -133,8 +123,8 @@
         "rute": "Samarinda",
         "pelayaran": "ICON",
         "nama_kapal": "IB V.72/26 - ICON BRAVO",
-        "closing": "05/08/2026 13:21",
-        "etd": "Jumat, 07 Agustus 2026 13:18",
+        "closing": "07/08/2026 08:00",
+        "etd": "Jumat, 07 Agustus 2026 09:31",
         "eta": "Senin, 10 Agustus 2026 13:18",
         "etb": "N/A",
         "open_stack": "N/A"
@@ -153,9 +143,9 @@
         "rute": "Balikpapan",
         "pelayaran": "ICON",
         "nama_kapal": "IB V.71/26 - ICON BRAVO",
-        "closing": "07/08/2026 13:19",
-        "etd": "Jumat, 07 Agustus 2026 13:17",
-        "eta": "Senin, 10 Agustus 2026 13:17",
+        "closing": "07/08/2026 08:00",
+        "etd": "Jumat, 07 Agustus 2026 13:16",
+        "eta": "Minggu, 09 Agustus 2026 13:17",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -1016,6 +1006,16 @@
         "closing": "N/A",
         "etd": "23 Sep 2026",
         "eta": "29 Sep 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Batam",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SANUR V.148N -> SINAR PANGANDARAN V.0126S",
+        "closing": "N/A",
+        "etd": "09 Aug 2026",
+        "eta": "13 Aug 2026",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -2010,16 +2010,6 @@
         "open_stack": "N/A"
     },
     {
-        "rute": "Batam",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "SINAR CARITA V.027N -> SINAR PANGANDARAN V.0141S",
-        "closing": "N/A",
-        "etd": "31 Aug 2026",
-        "eta": "16 Sep 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
         "nama_kapal": "SINAR SANUR V.148N -> INDO SUKSES 51 V.229E",
@@ -2502,6 +2492,14 @@
         "eta": "14 Aug 2026"
     },
     {
+        "rute": "Makassar",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Tasik Mas - 42/26",
+        "closing": "N/A",
+        "etd": "23 Aug 2026",
+        "eta": "26 Aug 2026"
+    },
+    {
         "rute": "Bitung",
         "pelayaran": "TEMAS",
         "nama_kapal": "Ifama Mas - 41/26",
@@ -2694,11 +2692,19 @@
         "eta": "18 Aug 2026"
     },
     {
+        "rute": "Pontianak",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Tasik Mas - 39/26",
+        "closing": "N/A",
+        "etd": "10 Aug 2026",
+        "eta": "18 Aug 2026"
+    },
+    {
         "rute": "BATAM",
         "pelayaran": "TEMAS",
         "nama_kapal": "Jales Mas - 53/26",
         "closing": "N/A",
-        "etd": "11 Aug 2026",
+        "etd": "12 Aug 2026",
         "eta": "14 Aug 2026"
     },
     {
@@ -2706,7 +2712,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Jales Mas - 55/26",
         "closing": "N/A",
-        "etd": "18 Aug 2026",
+        "etd": "19 Aug 2026",
         "eta": "21 Aug 2026"
     },
     {
