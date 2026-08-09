@@ -172,30 +172,10 @@
     {
         "rute": "Batam",
         "pelayaran": "ICON",
-        "nama_kapal": "II XI V.79/26 - ICON IBRANI XI",
-        "closing": "08/08/2026 10:00",
-        "etd": "Jumat, 07 Agustus 2026 14:48",
-        "eta": "Senin, 10 Agustus 2026 07:25",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Batam",
-        "pelayaran": "ICON",
         "nama_kapal": "II XI V.81/26 - ICON IBRANI XI",
         "closing": "12/08/2026 01:46",
         "etd": "Jumat, 14 Agustus 2026 01:43",
         "eta": "Senin, 17 Agustus 2026 01:43",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "ICON",
-        "nama_kapal": "IL XIX V.37/26 - ICON LUKAS XIX",
-        "closing": "09/08/2026 05:00",
-        "etd": "Sabtu, 08 Agustus 2026 09:36",
-        "eta": "Senin, 10 Agustus 2026 07:04",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -2341,7 +2321,7 @@
         "nama_kapal": "Gale Mas - 42/26",
         "closing": "N/A",
         "etd": "20 Aug 2026",
-        "eta": "23 Aug 2026"
+        "eta": "24 Aug 2026"
     },
     {
         "rute": "Makassar",
@@ -2372,7 +2352,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Izumi Mas - 41/26",
         "closing": "N/A",
-        "etd": "20 Aug 2026",
+        "etd": "21 Aug 2026",
         "eta": "27 Aug 2026"
     },
     {
@@ -2444,15 +2424,15 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Umbul Mas - 47/26",
         "closing": "N/A",
-        "etd": "09 Aug 2026",
-        "eta": "11 Aug 2026"
+        "etd": "10 Aug 2026",
+        "eta": "12 Aug 2026"
     },
     {
         "rute": "Banjarmasin",
         "pelayaran": "TEMAS",
         "nama_kapal": "Umbul Mas - 49/26",
         "closing": "N/A",
-        "etd": "15 Aug 2026",
+        "etd": "16 Aug 2026",
         "eta": "18 Aug 2026"
     },
     {
