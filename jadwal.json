@@ -62,16 +62,6 @@
     {
         "rute": "Banjarmasin",
         "pelayaran": "SPIL",
-        "nama_kapal": "Pratiwi Satu - 19/2026",
-        "closing": "12/08/2026 22:00",
-        "etd": "14/08/2026 10:00",
-        "eta": "17/08/2026 00:00",
-        "etb": "17/08/2026 02:00",
-        "open_stack": "10/08/2026 22:00"
-    },
-    {
-        "rute": "Banjarmasin",
-        "pelayaran": "SPIL",
         "nama_kapal": "Armada Serasi - 17/2026",
         "closing": "17/08/2026 22:00",
         "etd": "19/08/2026 06:00",
@@ -102,32 +92,12 @@
     {
         "rute": "Batam",
         "pelayaran": "SPIL",
-        "nama_kapal": "Minas Baru - 19/2026",
-        "closing": "12/08/2026 14:00",
-        "etd": "14/08/2026 08:00",
-        "eta": "16/08/2026 11:00",
-        "etb": "16/08/2026 13:00",
-        "open_stack": "08/08/2026 18:00"
-    },
-    {
-        "rute": "Batam",
-        "pelayaran": "SPIL",
         "nama_kapal": "Oriental Pacific - 17/2026",
         "closing": "16/08/2026 23:59",
         "etd": "19/08/2026 23:00",
         "eta": "22/08/2026 15:00",
         "etb": "22/08/2026 17:00",
         "open_stack": "12/08/2026 08:00"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Spil Retno - 26/2026",
-        "closing": "12/08/2026 22:00",
-        "etd": "13/08/2026 13:00",
-        "eta": "16/08/2026 21:00",
-        "etb": "16/08/2026 23:00",
-        "open_stack": "07/08/2026 16:00 @ADP (101-105)"
     },
     {
         "rute": "Pontianak",
@@ -193,7 +163,7 @@
         "rute": "Pontianak",
         "pelayaran": "ICON",
         "nama_kapal": "IM VI 8 V.19/26 - ICON MIKHA VI 8",
-        "closing": "12/08/2026 09:07",
+        "closing": "12/08/2026 12:00",
         "etd": "Rabu, 12 Agustus 2026 09:06",
         "eta": "Jumat, 14 Agustus 2026 09:06",
         "etb": "N/A",
@@ -1132,16 +1102,6 @@
     {
         "rute": "Batam",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "XIN YANG PU V.205W -> SINAR PANGANDARAN V.0126S",
-        "closing": "N/A",
-        "etd": "13 Aug 2026",
-        "eta": "16 Aug 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Batam",
-        "pelayaran": "SAMUDERA",
         "nama_kapal": "XIN YANG PU V.205W -> SINAR PANGANDARAN V.0129S",
         "closing": "N/A",
         "etd": "13 Aug 2026",
@@ -2030,6 +1990,16 @@
         "open_stack": "N/A"
     },
     {
+        "rute": "Batam",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "HIGHWAY V.379N -> SINAR PANGANDARAN V.0141S",
+        "closing": "N/A",
+        "etd": "09 Sep 2026",
+        "eta": "16 Sep 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
         "nama_kapal": "XIN HANG ZHOU V.216W -> WAHANA 39 V.132S",
@@ -2474,10 +2444,18 @@
     {
         "rute": "Gorontalo",
         "pelayaran": "TEMAS",
+        "nama_kapal": "Hilir Mas - 43/26",
+        "closing": "N/A",
+        "etd": "12 Aug 2026",
+        "eta": "17 Aug 2026"
+    },
+    {
+        "rute": "Gorontalo",
+        "pelayaran": "TEMAS",
         "nama_kapal": "Hilir Mas - 46/26",
         "closing": "N/A",
-        "etd": "22 Aug 2026",
-        "eta": "27 Aug 2026"
+        "etd": "23 Aug 2026",
+        "eta": "29 Aug 2026"
     },
     {
         "rute": "Samarinda",
@@ -2530,10 +2508,42 @@
     {
         "rute": "BELAWAN",
         "pelayaran": "TEMAS",
+        "nama_kapal": "Sungai Mas - 50/26",
+        "closing": "N/A",
+        "etd": "24 Aug 2026",
+        "eta": "27 Aug 2026"
+    },
+    {
+        "rute": "BELAWAN",
+        "pelayaran": "TEMAS",
         "nama_kapal": "Gangga Mas - 38/26",
         "closing": "N/A",
         "etd": "12 Aug 2026",
         "eta": "16 Aug 2026"
+    },
+    {
+        "rute": "BELAWAN",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Huanghe Mas - 49/26",
+        "closing": "N/A",
+        "etd": "26 Aug 2026",
+        "eta": "30 Aug 2026"
+    },
+    {
+        "rute": "BELAWAN",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Gale Mas - 44/26",
+        "closing": "N/A",
+        "etd": "28 Aug 2026",
+        "eta": "01 Sep 2026"
+    },
+    {
+        "rute": "BELAWAN",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Gangga Mas - 42/26",
+        "closing": "N/A",
+        "etd": "01 Sep 2026",
+        "eta": "05 Sep 2026"
     },
     {
         "rute": "PALU",
@@ -2580,8 +2590,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Damaskus Mas - 54/26",
         "closing": "N/A",
-        "etd": "14 Aug 2026",
-        "eta": "16 Aug 2026"
+        "etd": "15 Aug 2026",
+        "eta": "17 Aug 2026"
     },
     {
         "rute": "Pontianak",
