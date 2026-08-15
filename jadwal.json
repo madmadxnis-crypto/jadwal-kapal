@@ -3,10 +3,10 @@
         "rute": "Makassar",
         "pelayaran": "SPIL",
         "nama_kapal": "Oriental Galaxy - 08/2026",
-        "closing": "18/08/2026 22:00",
-        "etd": "19/08/2026 12:00",
-        "eta": "25/08/2026 14:00",
-        "etb": "25/08/2026 16:00",
+        "closing": "16/08/2026 23:59",
+        "etd": "19/08/2026 08:00",
+        "eta": "25/08/2026 00:00",
+        "etb": "25/08/2026 02:00",
         "open_stack": "12/08/2026 15:00 @ADP (101-105)"
     },
     {
@@ -33,21 +33,11 @@
         "rute": "Gorontalo",
         "pelayaran": "SPIL",
         "nama_kapal": "Oriental Galaxy - 08/2026",
-        "closing": "18/08/2026 22:00",
-        "etd": "19/08/2026 12:00",
+        "closing": "16/08/2026 23:59",
+        "etd": "19/08/2026 08:00",
         "eta": "8 - 27 days (from departure)",
         "etb": "8 - 27 days (from departure)",
         "open_stack": "12/08/2026 15:00 @ADP (101-105)"
-    },
-    {
-        "rute": "Samarinda",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Selili Baru - 18/2026",
-        "closing": "15/08/2026 07:00",
-        "etd": "16/08/2026 18:00",
-        "eta": "21/08/2026 14:00",
-        "etb": "21/08/2026 16:00",
-        "open_stack": "11/08/2026 15:00"
     },
     {
         "rute": "Samarinda",
@@ -58,16 +48,6 @@
         "eta": "25/08/2026 18:00",
         "etb": "25/08/2026 20:00",
         "open_stack": "14/08/2026 18:00"
-    },
-    {
-        "rute": "Balikpapan",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Selili Baru - 18/2026",
-        "closing": "15/08/2026 07:00",
-        "etd": "16/08/2026 18:00",
-        "eta": "20/08/2026 10:00",
-        "etb": "20/08/2026 12:00",
-        "open_stack": "11/08/2026 15:00"
     },
     {
         "rute": "Balikpapan",
@@ -107,14 +87,14 @@
         "etd": "22/08/2026 18:00",
         "eta": "25/08/2026 15:00",
         "etb": "25/08/2026 17:00",
-        "open_stack": "16/08/2026 10:00"
+        "open_stack": "15/08/2026 20:00"
     },
     {
         "rute": "Palu",
         "pelayaran": "SPIL",
         "nama_kapal": "Oriental Galaxy - 08/2026",
-        "closing": "18/08/2026 22:00",
-        "etd": "19/08/2026 12:00",
+        "closing": "16/08/2026 23:59",
+        "etd": "19/08/2026 08:00",
         "eta": "4 - 12 days (from departure)",
         "etb": "4 - 12 days (from departure)",
         "open_stack": "12/08/2026 15:00 @ADP (101-105)"
@@ -123,7 +103,7 @@
         "rute": "Batam",
         "pelayaran": "SPIL",
         "nama_kapal": "Oriental Pacific - 17/2026",
-        "closing": "17/08/2026 22:00",
+        "closing": "18/08/2026 10:00",
         "etd": "19/08/2026 16:00",
         "eta": "22/08/2026 08:00",
         "etb": "22/08/2026 10:00",
@@ -144,10 +124,10 @@
         "pelayaran": "SPIL",
         "nama_kapal": "Pahala - 19/2026",
         "closing": "18/08/2026 22:00",
-        "etd": "20/08/2026 01:00",
-        "eta": "23/08/2026 17:00",
-        "etb": "23/08/2026 19:00",
-        "open_stack": "17/08/2026 01:00"
+        "etd": "19/08/2026 10:00",
+        "eta": "23/08/2026 09:00",
+        "etb": "23/08/2026 11:00",
+        "open_stack": "16/08/2026 16:00"
     },
     {
         "rute": "Samarinda",
@@ -174,8 +154,8 @@
         "pelayaran": "ICON",
         "nama_kapal": "IB V.75/26 - ICON BRAVO",
         "closing": "16/08/2026 07:56",
-        "etd": "Selasa, 18 Agustus 2026 07:53",
-        "eta": "Jumat, 21 Agustus 2026 07:53",
+        "etd": "Selasa, 18 Agustus 2026 19:53",
+        "eta": "Sabtu, 22 Agustus 2026 07:53",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -276,46 +256,6 @@
         "closing": "23/08/2026 03:31",
         "etd": "Senin, 24 Agustus 2026 04:32",
         "eta": "Rabu, 26 Agustus 2026 04:32",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Medan",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "CELSIUS EINDHOVEN V.033W -> MAO GANG GUANG ZHOU V.025S",
-        "closing": "N/A",
-        "etd": "15 Aug 2026",
-        "eta": "13 Sep 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Medan",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "CELSIUS EINDHOVEN V.033W -> MAO GANG GUANG ZHOU V.026S",
-        "closing": "N/A",
-        "etd": "15 Aug 2026",
-        "eta": "21 Sep 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Medan",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "CELSIUS EINDHOVEN V.033W -> MAO GANG GUANG ZHOU V.027S",
-        "closing": "N/A",
-        "etd": "15 Aug 2026",
-        "eta": "29 Sep 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Medan",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "INCRES V.079N -> MAO GANG GUANG ZHOU V.022S",
-        "closing": "N/A",
-        "etd": "18 Aug 2026",
-        "eta": "22 Aug 2026",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -946,46 +886,6 @@
         "closing": "N/A",
         "etd": "23 Sep 2026",
         "eta": "29 Sep 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Batam",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "CELSIUS EINDHOVEN V.033W -> SINAR PANGANDARAN V.0138S",
-        "closing": "N/A",
-        "etd": "15 Aug 2026",
-        "eta": "09 Sep 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Batam",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "CELSIUS EINDHOVEN V.033W -> SINAR PANGANDARAN V.0139S",
-        "closing": "N/A",
-        "etd": "15 Aug 2026",
-        "eta": "11 Sep 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Batam",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "CELSIUS EINDHOVEN V.033W -> SINAR PANGANDARAN V.0141S",
-        "closing": "N/A",
-        "etd": "15 Aug 2026",
-        "eta": "16 Sep 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Batam",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "CELSIUS EINDHOVEN V.033W -> SINAR PANGANDARAN V.0142S",
-        "closing": "N/A",
-        "etd": "15 Aug 2026",
-        "eta": "18 Sep 2026",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -2230,22 +2130,6 @@
         "closing": "N/A",
         "etd": "17 Aug 2026",
         "eta": "19 Aug 2026"
-    },
-    {
-        "rute": "BATAM",
-        "pelayaran": "TEMAS",
-        "nama_kapal": "Estuari Mas - 48/26",
-        "closing": "N/A",
-        "etd": "14 Aug 2026",
-        "eta": "16 Aug 2026"
-    },
-    {
-        "rute": "BATAM",
-        "pelayaran": "TEMAS",
-        "nama_kapal": "Berau Mas - 62/26",
-        "closing": "N/A",
-        "etd": "14 Aug 2026",
-        "eta": "17 Aug 2026"
     },
     {
         "rute": "BATAM",
