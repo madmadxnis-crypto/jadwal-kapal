@@ -193,8 +193,8 @@
         "rute": "Pontianak",
         "pelayaran": "ICON",
         "nama_kapal": "IL XIX V.39/26 - ICON LUKAS XIX",
-        "closing": "15/08/2026 09:22",
-        "etd": "Minggu, 16 Agustus 2026 07:20",
+        "closing": "16/08/2026 15:30",
+        "etd": "Minggu, 16 Agustus 2026 14:00",
         "eta": "Selasa, 18 Agustus 2026 07:20",
         "etb": "N/A",
         "open_stack": "N/A"
@@ -2010,8 +2010,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Mare Mas - 58/26",
         "closing": "N/A",
-        "etd": "08 Sep 2026",
-        "eta": "13 Sep 2026"
+        "etd": "10 Sep 2026",
+        "eta": "15 Sep 2026"
     },
     {
         "rute": "Samarinda",
@@ -2050,8 +2050,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Mare Mas - 58/26",
         "closing": "N/A",
-        "etd": "08 Sep 2026",
-        "eta": "12 Sep 2026"
+        "etd": "10 Sep 2026",
+        "eta": "14 Sep 2026"
     },
     {
         "rute": "Balikpapan",
@@ -2066,24 +2066,24 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Mare Mas - 52/26",
         "closing": "N/A",
-        "etd": "18 Aug 2026",
-        "eta": "21 Aug 2026"
+        "etd": "21 Aug 2026",
+        "eta": "23 Aug 2026"
     },
     {
         "rute": "Banjarmasin",
         "pelayaran": "TEMAS",
         "nama_kapal": "Mare Mas - 54/26",
         "closing": "N/A",
-        "etd": "25 Aug 2026",
-        "eta": "28 Aug 2026"
+        "etd": "27 Aug 2026",
+        "eta": "30 Aug 2026"
     },
     {
         "rute": "Banjarmasin",
         "pelayaran": "TEMAS",
         "nama_kapal": "Mare Mas - 56/26",
         "closing": "N/A",
-        "etd": "01 Sep 2026",
-        "eta": "04 Sep 2026"
+        "etd": "03 Sep 2026",
+        "eta": "06 Sep 2026"
     },
     {
         "rute": "BELAWAN",
@@ -2154,8 +2154,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Mare Mas - 58/26",
         "closing": "N/A",
-        "etd": "08 Sep 2026",
-        "eta": "15 Sep 2026"
+        "etd": "10 Sep 2026",
+        "eta": "17 Sep 2026"
     },
     {
         "rute": "PALU",
