@@ -62,32 +62,32 @@
     {
         "rute": "Banjarmasin",
         "pelayaran": "SPIL",
-        "nama_kapal": "Pratiwi Raya - 20/2026",
-        "closing": "21/08/2026 14:00",
-        "etd": "26/08/2026 06:00",
-        "eta": "28/08/2026 20:00",
-        "etb": "28/08/2026 22:00",
-        "open_stack": "19/08/2026 16:00"
-    },
-    {
-        "rute": "Banjarmasin",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Pahala - 20/2026",
+        "nama_kapal": "Pulau Nunukan - 19/2026",
         "closing": "25/08/2026 22:00",
-        "etd": "27/08/2026 23:00",
-        "eta": "30/08/2026 13:00",
-        "etb": "30/08/2026 15:00",
-        "open_stack": "21/08/2026 15:00"
+        "etd": "29/08/2026 06:00",
+        "eta": "31/08/2026 13:00",
+        "etb": "31/08/2026 15:00",
+        "open_stack": "21/08/2026 10:00 @DSN (004-005)"
     },
     {
         "rute": "Belawan",
         "pelayaran": "SPIL",
         "nama_kapal": "Hijau Samudra - 13/2026",
-        "closing": "22/08/2026 22:00",
+        "closing": "22/08/2026 12:00",
         "etd": "25/08/2026 01:00",
         "eta": "27/08/2026 22:00",
         "etb": "28/08/2026 00:00",
         "open_stack": "15/08/2026 20:00"
+    },
+    {
+        "rute": "Belawan",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Gold - 14/2026",
+        "closing": "26/08/2026 23:59",
+        "etd": "31/08/2026 06:00",
+        "eta": "03/09/2026 03:00",
+        "etb": "03/09/2026 05:00",
+        "open_stack": "21/08/2026 23:00"
     },
     {
         "rute": "Palu",
@@ -103,30 +103,30 @@
         "rute": "Batam",
         "pelayaran": "SPIL",
         "nama_kapal": "Fortune - 21/2026",
-        "closing": "21/08/2026 23:59",
-        "etd": "22/08/2026 20:00",
-        "eta": "25/08/2026 12:00",
-        "etb": "25/08/2026 14:00",
+        "closing": "22/08/2026 16:00",
+        "etd": "23/08/2026 01:00",
+        "eta": "25/08/2026 17:00",
+        "etb": "25/08/2026 19:00",
         "open_stack": "17/08/2026 23:00"
     },
     {
         "rute": "Batam",
         "pelayaran": "SPIL",
-        "nama_kapal": "Oriental Pacific - 18/2026",
+        "nama_kapal": "Pahala - 20/2026",
         "closing": "25/08/2026 22:00",
         "etd": "28/08/2026 23:00",
-        "eta": "02/09/2026 00:00",
-        "etb": "02/09/2026 02:00",
+        "eta": "31/08/2026 15:00",
+        "etb": "31/08/2026 17:00",
         "open_stack": "21/08/2026 15:00"
     },
     {
         "rute": "Pontianak",
         "pelayaran": "SPIL",
         "nama_kapal": "Spil Renata - 26/2026",
-        "closing": "21/08/2026 22:00",
-        "etd": "23/08/2026 09:00",
-        "eta": "26/08/2026 18:00",
-        "etb": "26/08/2026 20:00",
+        "closing": "22/08/2026 16:00",
+        "etd": "23/08/2026 18:00",
+        "eta": "25/08/2026 05:00",
+        "etb": "25/08/2026 07:00",
         "open_stack": "18/08/2026 17:00 @ADP (101-105)"
     },
     {
@@ -253,7 +253,7 @@
         "rute": "Pontianak",
         "pelayaran": "ICON",
         "nama_kapal": "IM VI 8 V.23/26 - ICON MIKHA VI 8",
-        "closing": "25/08/2026 06:25",
+        "closing": "26/08/2026 16:00",
         "etd": "Kamis, 27 Agustus 2026 06:23",
         "eta": "Sabtu, 29 Agustus 2026 06:24",
         "etb": "N/A",
@@ -2232,18 +2232,26 @@
     {
         "rute": "Banjarmasin",
         "pelayaran": "TEMAS",
-        "nama_kapal": "Eden Mas - 49/26",
-        "closing": "N/A",
-        "etd": "20 Aug 2026",
-        "eta": "22 Aug 2026"
-    },
-    {
-        "rute": "Banjarmasin",
-        "pelayaran": "TEMAS",
         "nama_kapal": "Eden Mas - 51/26",
         "closing": "N/A",
         "etd": "26 Aug 2026",
         "eta": "28 Aug 2026"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Tasik Mas - 42/26",
+        "closing": "N/A",
+        "etd": "27 Aug 2026",
+        "eta": "29 Aug 2026"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Tasik Mas - 44/26",
+        "closing": "N/A",
+        "etd": "02 Sep 2026",
+        "eta": "05 Sep 2026"
     },
     {
         "rute": "BELAWAN",
@@ -2324,6 +2332,30 @@
         "closing": "N/A",
         "etd": "04 Sep 2026",
         "eta": "06 Sep 2026"
+    },
+    {
+        "rute": "BATAM",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Warih Mas - 58/26",
+        "closing": "N/A",
+        "etd": "25 Aug 2026",
+        "eta": "27 Aug 2026"
+    },
+    {
+        "rute": "BATAM",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Warih Mas - 60/26",
+        "closing": "N/A",
+        "etd": "01 Sep 2026",
+        "eta": "03 Sep 2026"
+    },
+    {
+        "rute": "BATAM",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Warih Mas - 62/26",
+        "closing": "N/A",
+        "etd": "07 Sep 2026",
+        "eta": "09 Sep 2026"
     },
     {
         "rute": "BATAM",
