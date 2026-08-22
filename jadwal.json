@@ -40,6 +40,16 @@
         "open_stack": "18/08/2026 14:00"
     },
     {
+        "rute": "Gorontalo",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Jade - 11/2026",
+        "closing": "29/08/2026 22:00",
+        "etd": "31/08/2026 23:00",
+        "eta": "8 - 27 days (from departure)",
+        "etb": "8 - 27 days (from departure)",
+        "open_stack": "23/07/2026 15:00"
+    },
+    {
         "rute": "Samarinda",
         "pelayaran": "SPIL",
         "nama_kapal": "Pulau Wetar - 17/2026",
@@ -50,6 +60,16 @@
         "open_stack": "20/08/2026 10:00"
     },
     {
+        "rute": "Samarinda",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Teluk Berau - 21/2026",
+        "closing": "28/08/2026 22:00",
+        "etd": "31/08/2026 23:00",
+        "eta": "4 - 8 days (from departure)",
+        "etb": "4 - 8 days (from departure)",
+        "open_stack": "24/08/2026 15:00 @DSN (004-005)"
+    },
+    {
         "rute": "Balikpapan",
         "pelayaran": "SPIL",
         "nama_kapal": "Pulau Wetar - 17/2026",
@@ -58,6 +78,16 @@
         "eta": "31/08/2026 22:00",
         "etb": "01/09/2026 00:00",
         "open_stack": "20/08/2026 10:00"
+    },
+    {
+        "rute": "Balikpapan",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Fortune - 22/2026",
+        "closing": "29/08/2026 22:00",
+        "etd": "31/08/2026 23:00",
+        "eta": "05/09/2026 02:00",
+        "etb": "05/09/2026 04:00",
+        "open_stack": "24/08/2026 15:00"
     },
     {
         "rute": "Banjarmasin",
@@ -90,6 +120,16 @@
         "open_stack": "18/08/2026 14:00"
     },
     {
+        "rute": "Palu",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Jade - 11/2026",
+        "closing": "29/08/2026 22:00",
+        "etd": "31/08/2026 23:00",
+        "eta": "4 - 12 days (from departure)",
+        "etb": "4 - 12 days (from departure)",
+        "open_stack": "23/07/2026 15:00"
+    },
+    {
         "rute": "Batam",
         "pelayaran": "SPIL",
         "nama_kapal": "Pratiwi Raya - 20/2026",
@@ -112,12 +152,12 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SPIL",
-        "nama_kapal": "Spil Renata - 26/2026",
-        "closing": "22/08/2026 16:00",
-        "etd": "23/08/2026 18:00",
-        "eta": "25/08/2026 05:00",
-        "etb": "25/08/2026 07:00",
-        "open_stack": "18/08/2026 17:00 @ADP (101-105)"
+        "nama_kapal": "Spil Rumi - 27/2026",
+        "closing": "26/08/2026 12:00",
+        "etd": "27/08/2026 09:00",
+        "eta": "30/08/2026 18:00",
+        "etb": "30/08/2026 20:00",
+        "open_stack": "21/08/2026 15:00"
     },
     {
         "rute": "Samarinda",
@@ -153,8 +193,8 @@
         "rute": "Banjarmasin",
         "pelayaran": "ICON",
         "nama_kapal": "IC V.52/26 - MV. ICON CORINTUS",
-        "closing": "24/08/2026 02:01",
-        "etd": "Rabu, 26 Agustus 2026 02:01",
+        "closing": "25/08/2026 16:59",
+        "etd": "Kamis, 27 Agustus 2026 02:01",
         "eta": "Sabtu, 29 Agustus 2026 02:01",
         "etb": "N/A",
         "open_stack": "N/A"
@@ -193,19 +233,19 @@
         "rute": "Batam",
         "pelayaran": "ICON",
         "nama_kapal": "II XI V.86/26 - ICON IBRANI XI",
-        "closing": "25/08/2026 03:47",
-        "etd": "Kamis, 27 Agustus 2026 03:45",
-        "eta": "Minggu, 30 Agustus 2026 03:45",
+        "closing": "28/08/2026 03:47",
+        "etd": "Minggu, 30 Agustus 2026 03:45",
+        "eta": "Rabu, 02 September 2026 03:45",
         "etb": "N/A",
         "open_stack": "N/A"
     },
     {
         "rute": "Batam",
         "pelayaran": "ICON",
-        "nama_kapal": "II XI V.85/26 - ICON IBRANI XI",
-        "closing": "28/08/2026 06:37",
-        "etd": "Minggu, 30 Agustus 2026 06:36",
-        "eta": "Rabu, 02 September 2026 06:37",
+        "nama_kapal": "II XI V.90/26 - ICON IBRANI XI",
+        "closing": "04/09/2026 06:37",
+        "etd": "Minggu, 06 September 2026 06:36",
+        "eta": "Kamis, 10 September 2026 06:37",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -213,7 +253,7 @@
         "rute": "Pontianak",
         "pelayaran": "ICON",
         "nama_kapal": "IL XIX V.41/26 - ICON LUKAS XIX",
-        "closing": "21/08/2026 03:30",
+        "closing": "24/08/2026 03:30",
         "etd": "Minggu, 23 Agustus 2026 03:28",
         "eta": "Selasa, 25 Agustus 2026 03:28",
         "etb": "N/A",
@@ -2028,8 +2068,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Ifama Mas - 45/26",
         "closing": "N/A",
-        "etd": "30 Aug 2026",
-        "eta": "05 Sep 2026"
+        "etd": "31 Aug 2026",
+        "eta": "06 Sep 2026"
     },
     {
         "rute": "Bitung",
@@ -2140,7 +2180,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Sungai Mas - 50/26",
         "closing": "N/A",
-        "etd": "27 Aug 2026",
+        "etd": "28 Aug 2026",
         "eta": "31 Aug 2026"
     },
     {
@@ -2324,23 +2364,23 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Berau Mas - 64/26",
         "closing": "N/A",
-        "etd": "22 Aug 2026",
-        "eta": "25 Aug 2026"
+        "etd": "23 Aug 2026",
+        "eta": "26 Aug 2026"
     },
     {
         "rute": "BATAM",
         "pelayaran": "TEMAS",
         "nama_kapal": "Berau Mas - 66/26",
         "closing": "N/A",
-        "etd": "30 Aug 2026",
-        "eta": "01 Sep 2026"
+        "etd": "31 Aug 2026",
+        "eta": "02 Sep 2026"
     },
     {
         "rute": "BATAM",
         "pelayaran": "TEMAS",
         "nama_kapal": "Berau Mas - 68/26",
         "closing": "N/A",
-        "etd": "06 Sep 2026",
-        "eta": "09 Sep 2026"
+        "etd": "07 Sep 2026",
+        "eta": "10 Sep 2026"
     }
 ]
