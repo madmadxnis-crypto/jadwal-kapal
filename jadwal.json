@@ -213,8 +213,8 @@
         "rute": "Batam",
         "pelayaran": "ICON",
         "nama_kapal": "II XI V.83/26 - ICON IBRANI XI",
-        "closing": "20/08/2026 08:51",
-        "etd": "Minggu, 23 Agustus 2026 08:51",
+        "closing": "23/08/2026 15:00",
+        "etd": "Minggu, 23 Agustus 2026 04:40",
         "eta": "Rabu, 26 Agustus 2026 08:51",
         "etb": "N/A",
         "open_stack": "N/A"
@@ -253,8 +253,8 @@
         "rute": "Pontianak",
         "pelayaran": "ICON",
         "nama_kapal": "IL XIX V.41/26 - ICON LUKAS XIX",
-        "closing": "24/08/2026 03:30",
-        "etd": "Minggu, 23 Agustus 2026 03:28",
+        "closing": "23/08/2026 14:00",
+        "etd": "Minggu, 23 Agustus 2026 05:25",
         "eta": "Selasa, 25 Agustus 2026 03:28",
         "etb": "N/A",
         "open_stack": "N/A"
@@ -266,6 +266,16 @@
         "closing": "26/08/2026 16:00",
         "etd": "Kamis, 27 Agustus 2026 06:23",
         "eta": "Sabtu, 29 Agustus 2026 06:24",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "ICON",
+        "nama_kapal": "IL XIX V.43/26 - ICON LUKAS XIX",
+        "closing": "28/08/2026 10:57",
+        "etd": "Sabtu, 29 Agustus 2026 10:55",
+        "eta": "Senin, 31 Agustus 2026 10:55",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -1984,8 +1994,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gihon Mas - 42/26",
         "closing": "N/A",
-        "etd": "24 Aug 2026",
-        "eta": "27 Aug 2026"
+        "etd": "23 Aug 2026",
+        "eta": "26 Aug 2026"
     },
     {
         "rute": "Makassar",
@@ -2121,7 +2131,7 @@
         "nama_kapal": "Sungai Mas - 50/26",
         "closing": "N/A",
         "etd": "28 Aug 2026",
-        "eta": "31 Aug 2026"
+        "eta": "01 Sep 2026"
     },
     {
         "rute": "BELAWAN",
@@ -2200,15 +2210,15 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Damaskus Mas - 56/26",
         "closing": "N/A",
-        "etd": "23 Aug 2026",
-        "eta": "25 Aug 2026"
+        "etd": "24 Aug 2026",
+        "eta": "26 Aug 2026"
     },
     {
         "rute": "Pontianak",
         "pelayaran": "TEMAS",
         "nama_kapal": "Damaskus Mas - 58/26",
         "closing": "N/A",
-        "etd": "30 Aug 2026",
+        "etd": "31 Aug 2026",
         "eta": "01 Sep 2026"
     },
     {
@@ -2216,16 +2226,16 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Damaskus Mas - 60/26",
         "closing": "N/A",
-        "etd": "05 Sep 2026",
-        "eta": "07 Sep 2026"
+        "etd": "06 Sep 2026",
+        "eta": "08 Sep 2026"
     },
     {
         "rute": "Pontianak",
         "pelayaran": "TEMAS",
         "nama_kapal": "Damaskus Mas - 62/26",
         "closing": "N/A",
-        "etd": "12 Sep 2026",
-        "eta": "14 Sep 2026"
+        "etd": "13 Sep 2026",
+        "eta": "15 Sep 2026"
     },
     {
         "rute": "Pontianak",
@@ -2240,8 +2250,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Batanghari Mas - 63/26",
         "closing": "N/A",
-        "etd": "26 Aug 2026",
-        "eta": "28 Aug 2026"
+        "etd": "28 Aug 2026",
+        "eta": "30 Aug 2026"
     },
     {
         "rute": "Pontianak",
@@ -2256,8 +2266,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Batanghari Mas - 66/26",
         "closing": "N/A",
-        "etd": "04 Sep 2026",
-        "eta": "06 Sep 2026"
+        "etd": "06 Sep 2026",
+        "eta": "08 Sep 2026"
     },
     {
         "rute": "Pontianak",
