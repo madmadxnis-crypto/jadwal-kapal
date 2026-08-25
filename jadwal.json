@@ -260,14 +260,6 @@
     {
         "rute": "Bitung",
         "pelayaran": "TEMAS",
-        "nama_kapal": "Izumi Mas - 41/26",
-        "closing": "N/A",
-        "etd": "24 Aug 2026",
-        "eta": "31 Aug 2026"
-    },
-    {
-        "rute": "Bitung",
-        "pelayaran": "TEMAS",
         "nama_kapal": "Ifama Mas - 45/26",
         "closing": "N/A",
         "etd": "30 Aug 2026",
@@ -284,14 +276,6 @@
     {
         "rute": "Gorontalo",
         "pelayaran": "TEMAS",
-        "nama_kapal": "Izumi Mas - 41/26",
-        "closing": "N/A",
-        "etd": "24 Aug 2026",
-        "eta": "02 Sep 2026"
-    },
-    {
-        "rute": "Gorontalo",
-        "pelayaran": "TEMAS",
         "nama_kapal": "Ifama Mas - 45/26",
         "closing": "N/A",
         "etd": "30 Aug 2026",
@@ -303,7 +287,7 @@
         "nama_kapal": "Izumi Mas - 45/26",
         "closing": "N/A",
         "etd": "06 Sep 2026",
-        "eta": "20 Sep 2026"
+        "eta": "18 Sep 2026"
     },
     {
         "rute": "Gorontalo",
@@ -311,7 +295,7 @@
         "nama_kapal": "Umbul Mas - 51/26",
         "closing": "N/A",
         "etd": "28 Aug 2026",
-        "eta": "20 Sep 2026"
+        "eta": "06 Oct 2026"
     },
     {
         "rute": "Samarinda",
@@ -326,7 +310,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Kanal Mas - 53/26",
         "closing": "N/A",
-        "etd": "01 Sep 2026",
+        "etd": "02 Sep 2026",
         "eta": "06 Sep 2026"
     },
     {
@@ -358,7 +342,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Kanal Mas - 53/26",
         "closing": "N/A",
-        "etd": "01 Sep 2026",
+        "etd": "02 Sep 2026",
         "eta": "05 Sep 2026"
     },
     {
@@ -454,7 +438,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Kanal Mas - 53/26",
         "closing": "N/A",
-        "etd": "01 Sep 2026",
+        "etd": "02 Sep 2026",
         "eta": "08 Sep 2026"
     },
     {
@@ -472,14 +456,6 @@
         "closing": "N/A",
         "etd": "26 Aug 2026",
         "eta": "02 Sep 2026"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "TEMAS",
-        "nama_kapal": "Damaskus Mas - 56/26",
-        "closing": "N/A",
-        "etd": "24 Aug 2026",
-        "eta": "26 Aug 2026"
     },
     {
         "rute": "Pontianak",
@@ -567,7 +543,7 @@
         "nama_kapal": "Warih Mas - 62/26",
         "closing": "N/A",
         "etd": "07 Sep 2026",
-        "eta": "09 Sep 2026"
+        "eta": "10 Sep 2026"
     },
     {
         "rute": "BATAM",
