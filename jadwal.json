@@ -120,22 +120,12 @@
         "open_stack": "21/08/2026 15:00"
     },
     {
-        "rute": "Samarinda",
-        "pelayaran": "ICON",
-        "nama_kapal": "IB V.80/26 - ICON BRAVO",
-        "closing": "26/08/2026 03:48",
-        "etd": "Jumat, 28 Agustus 2026 03:44",
-        "eta": "Selasa, 01 September 2026 03:44",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
         "rute": "Balikpapan",
         "pelayaran": "ICON",
         "nama_kapal": "IB V.79/26 - ICON BRAVO",
         "closing": "26/08/2026 03:45",
-        "etd": "Jumat, 28 Agustus 2026 03:43",
-        "eta": "Senin, 31 Agustus 2026 03:43",
+        "etd": "Minggu, 30 Agustus 2026 03:43",
+        "eta": "Rabu, 02 September 2026 03:43",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -447,7 +437,7 @@
         "nama_kapal": "Telaga Mas - 38/26",
         "closing": "N/A",
         "etd": "06 Sep 2026",
-        "eta": "12 Sep 2026"
+        "eta": "13 Sep 2026"
     },
     {
         "rute": "PALU",
@@ -486,7 +476,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Eagle Mas - 56/26",
         "closing": "N/A",
-        "etd": "25 Aug 2026",
+        "etd": "26 Aug 2026",
         "eta": "28 Aug 2026"
     },
     {
