@@ -82,16 +82,6 @@
     {
         "rute": "Belawan",
         "pelayaran": "SPIL",
-        "nama_kapal": "Oriental Gold - 14/2026",
-        "closing": "28/08/2026 07:00",
-        "etd": "30/08/2026 01:00",
-        "eta": "01/09/2026 22:00",
-        "etb": "02/09/2026 00:00",
-        "open_stack": "21/08/2026 23:00"
-    },
-    {
-        "rute": "Belawan",
-        "pelayaran": "SPIL",
         "nama_kapal": "Armada Permata - 14/2026",
         "closing": "29/08/2026 22:00",
         "etd": "30/08/2026 12:00",
@@ -130,6 +120,26 @@
         "open_stack": "26/08/2026 08:00"
     },
     {
+        "rute": "Samarinda",
+        "pelayaran": "ICON",
+        "nama_kapal": "IB V.80/26 - ICON BRAVO",
+        "closing": "29/08/2026 03:48",
+        "etd": "Minggu, 30 Agustus 2026 03:44",
+        "eta": "Kamis, 03 September 2026 03:44",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Balikpapan",
+        "pelayaran": "ICON",
+        "nama_kapal": "IB V.79/26 - ICON BRAVO",
+        "closing": "29/08/2026 03:45",
+        "etd": "Minggu, 30 Agustus 2026 03:43",
+        "eta": "Rabu, 02 September 2026 03:43",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
         "rute": "Banjarmasin",
         "pelayaran": "ICON",
         "nama_kapal": "IC V.52/26 - MV. ICON CORINTUS",
@@ -164,8 +174,8 @@
         "pelayaran": "ICON",
         "nama_kapal": "IG V V.34/26 - MV. ICON GALATIA V",
         "closing": "25/08/2026 06:31",
-        "etd": "N/A",
-        "eta": "N/A",
+        "etd": "Rabu, 09 September 2026 06:30",
+        "eta": "Sabtu, 12 September 2026 06:30",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -232,7 +242,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Kanal Mas - 53/26",
         "closing": "N/A",
-        "etd": "02 Sep 2026",
+        "etd": "03 Sep 2026",
         "eta": "06 Sep 2026"
     },
     {
@@ -312,7 +322,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Kanal Mas - 53/26",
         "closing": "N/A",
-        "etd": "02 Sep 2026",
+        "etd": "03 Sep 2026",
         "eta": "04 Oct 2026"
     },
     {
@@ -378,14 +388,6 @@
         "closing": "N/A",
         "etd": "28 Aug 2026",
         "eta": "01 Sep 2026"
-    },
-    {
-        "rute": "BELAWAN",
-        "pelayaran": "TEMAS",
-        "nama_kapal": "Gale Mas - 42/26",
-        "closing": "N/A",
-        "etd": "27 Aug 2026",
-        "eta": "31 Aug 2026"
     },
     {
         "rute": "BELAWAN",
@@ -472,8 +474,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Eagle Mas - 58/26",
         "closing": "N/A",
-        "etd": "02 Sep 2026",
-        "eta": "04 Sep 2026"
+        "etd": "03 Sep 2026",
+        "eta": "05 Sep 2026"
     },
     {
         "rute": "Pontianak",
@@ -488,8 +490,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Eagle Mas - 60/26",
         "closing": "N/A",
-        "etd": "09 Sep 2026",
-        "eta": "11 Sep 2026"
+        "etd": "10 Sep 2026",
+        "eta": "13 Sep 2026"
     },
     {
         "rute": "BATAM",
