@@ -1628,7 +1628,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Telaga Mas - 38/26",
         "closing": "N/A",
-        "etd": "08 Sep 2026",
+        "etd": "07 Sep 2026",
         "eta": "12 Sep 2026"
     },
     {
@@ -1652,7 +1652,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Telaga Mas - 38/26",
         "closing": "N/A",
-        "etd": "08 Sep 2026",
+        "etd": "07 Sep 2026",
         "eta": "11 Sep 2026"
     },
     {
@@ -1722,6 +1722,14 @@
     {
         "rute": "BELAWAN",
         "pelayaran": "TEMAS",
+        "nama_kapal": "Huanghe Mas - 49/26",
+        "closing": "N/A",
+        "etd": "30 Aug 2026",
+        "eta": "03 Sep 2026"
+    },
+    {
+        "rute": "BELAWAN",
+        "pelayaran": "TEMAS",
         "nama_kapal": "Gale Mas - 44/26",
         "closing": "N/A",
         "etd": "06 Sep 2026",
@@ -1730,18 +1738,18 @@
     {
         "rute": "BELAWAN",
         "pelayaran": "TEMAS",
-        "nama_kapal": "Huanghe Mas - 51/26",
+        "nama_kapal": "Gangga Mas - 42/26",
         "closing": "N/A",
-        "etd": "08 Sep 2026",
+        "etd": "09 Sep 2026",
         "eta": "12 Sep 2026"
     },
     {
         "rute": "BELAWAN",
         "pelayaran": "TEMAS",
-        "nama_kapal": "Gangga Mas - 42/26",
+        "nama_kapal": "Huanghe Mas - 51/26",
         "closing": "N/A",
         "etd": "09 Sep 2026",
-        "eta": "12 Sep 2026"
+        "eta": "13 Sep 2026"
     },
     {
         "rute": "BELAWAN",
@@ -1764,7 +1772,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Telaga Mas - 38/26",
         "closing": "N/A",
-        "etd": "08 Sep 2026",
+        "etd": "07 Sep 2026",
         "eta": "14 Sep 2026"
     },
     {
@@ -1852,8 +1860,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Berau Mas - 66/26",
         "closing": "N/A",
-        "etd": "31 Aug 2026",
-        "eta": "03 Sep 2026"
+        "etd": "30 Aug 2026",
+        "eta": "02 Sep 2026"
     },
     {
         "rute": "BATAM",
@@ -1861,6 +1869,6 @@
         "nama_kapal": "Berau Mas - 68/26",
         "closing": "N/A",
         "etd": "07 Sep 2026",
-        "eta": "10 Sep 2026"
+        "eta": "09 Sep 2026"
     }
 ]
