@@ -194,8 +194,8 @@
         "pelayaran": "ICON",
         "nama_kapal": "IL XIX V.43/26 - ICON LUKAS XIX",
         "closing": "31/08/2026 07:00",
-        "etd": "Sabtu, 29 Agustus 2026 10:55",
-        "eta": "Senin, 31 Agustus 2026 10:55",
+        "etd": "Minggu, 30 Agustus 2026 19:42",
+        "eta": "Selasa, 01 September 2026 13:30",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -1926,8 +1926,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Damaskus Mas - 60/26",
         "closing": "N/A",
-        "etd": "07 Sep 2026",
-        "eta": "09 Sep 2026"
+        "etd": "08 Sep 2026",
+        "eta": "10 Sep 2026"
     },
     {
         "rute": "Pontianak",
@@ -1950,7 +1950,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Batanghari Mas - 66/26",
         "closing": "N/A",
-        "etd": "06 Sep 2026",
+        "etd": "07 Sep 2026",
         "eta": "09 Sep 2026"
     },
     {
