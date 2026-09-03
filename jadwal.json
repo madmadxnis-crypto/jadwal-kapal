@@ -10,6 +10,16 @@
         "open_stack": "30/08/2026 08:00 @ADP (101-105)"
     },
     {
+        "rute": "Makassar",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Emerald - 13/2026",
+        "closing": "07/09/2026 22:00",
+        "etd": "10/09/2026 06:00",
+        "eta": "12/09/2026 17:00",
+        "etb": "12/09/2026 19:00",
+        "open_stack": "06/09/2026 18:00"
+    },
+    {
         "rute": "Bitung",
         "pelayaran": "SPIL",
         "nama_kapal": "Oriental Emerald - 13/2026",
@@ -78,16 +88,6 @@
         "eta": "11/09/2026 03:00",
         "etb": "11/09/2026 05:00",
         "open_stack": "29/08/2026 23:00 @ADP (101-105)"
-    },
-    {
-        "rute": "Palu",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Pratiwi Satu - 21/2026",
-        "closing": "03/09/2026 22:00",
-        "etd": "04/09/2026 18:00",
-        "eta": "4 - 12 days (from departure)",
-        "etb": "4 - 12 days (from departure)",
-        "open_stack": "29/08/2026 10:00"
     },
     {
         "rute": "Palu",
@@ -1668,8 +1668,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Tasik Mas - 44/26",
         "closing": "N/A",
-        "etd": "05 Sep 2026",
-        "eta": "10 Sep 2026"
+        "etd": "06 Sep 2026",
+        "eta": "11 Sep 2026"
     },
     {
         "rute": "Samarinda",
@@ -1677,7 +1677,7 @@
         "nama_kapal": "Estuari Mas - 54/26",
         "closing": "N/A",
         "etd": "12 Sep 2026",
-        "eta": "17 Sep 2026"
+        "eta": "16 Sep 2026"
     },
     {
         "rute": "Samarinda",
@@ -1692,8 +1692,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Tasik Mas - 44/26",
         "closing": "N/A",
-        "etd": "05 Sep 2026",
-        "eta": "09 Sep 2026"
+        "etd": "06 Sep 2026",
+        "eta": "10 Sep 2026"
     },
     {
         "rute": "Balikpapan",
@@ -1701,7 +1701,7 @@
         "nama_kapal": "Estuari Mas - 54/26",
         "closing": "N/A",
         "etd": "12 Sep 2026",
-        "eta": "16 Sep 2026"
+        "eta": "15 Sep 2026"
     },
     {
         "rute": "Balikpapan",
@@ -1778,17 +1778,17 @@
     {
         "rute": "BELAWAN",
         "pelayaran": "TEMAS",
-        "nama_kapal": "Gangga Mas - 42/26",
+        "nama_kapal": "Huanghe Mas - 51/26",
         "closing": "N/A",
         "etd": "09 Sep 2026",
-        "eta": "12 Sep 2026"
+        "eta": "13 Sep 2026"
     },
     {
         "rute": "BELAWAN",
         "pelayaran": "TEMAS",
-        "nama_kapal": "Huanghe Mas - 51/26",
+        "nama_kapal": "Gangga Mas - 42/26",
         "closing": "N/A",
-        "etd": "09 Sep 2026",
+        "etd": "10 Sep 2026",
         "eta": "13 Sep 2026"
     },
     {
@@ -1804,16 +1804,16 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gangga Mas - 44/26",
         "closing": "N/A",
-        "etd": "19 Sep 2026",
-        "eta": "22 Sep 2026"
+        "etd": "20 Sep 2026",
+        "eta": "23 Sep 2026"
     },
     {
         "rute": "PALU",
         "pelayaran": "TEMAS",
         "nama_kapal": "Tasik Mas - 44/26",
         "closing": "N/A",
-        "etd": "05 Sep 2026",
-        "eta": "12 Sep 2026"
+        "etd": "06 Sep 2026",
+        "eta": "13 Sep 2026"
     },
     {
         "rute": "PALU",
@@ -1821,7 +1821,7 @@
         "nama_kapal": "Estuari Mas - 54/26",
         "closing": "N/A",
         "etd": "12 Sep 2026",
-        "eta": "19 Sep 2026"
+        "eta": "18 Sep 2026"
     },
     {
         "rute": "PALU",
