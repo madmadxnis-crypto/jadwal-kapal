@@ -110,6 +110,96 @@
         "open_stack": "04/09/2026 15:00"
     },
     {
+        "rute": "Samarinda",
+        "pelayaran": "ICON",
+        "nama_kapal": "IB V.84/26 - ICON BRAVO",
+        "closing": "09/09/2026 02:05",
+        "etd": "Jumat, 11 September 2026 02:03",
+        "eta": "Selasa, 15 September 2026 02:03",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Balikpapan",
+        "pelayaran": "ICON",
+        "nama_kapal": "IB V.83/26 - ICON BRAVO",
+        "closing": "09/09/2026 02:04",
+        "etd": "Jumat, 11 September 2026 02:02",
+        "eta": "Senin, 14 September 2026 02:02",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "ICON",
+        "nama_kapal": "IG V V.34/26 - MV. ICON GALATIA V",
+        "closing": "08/08/2026 06:31",
+        "etd": "Kamis, 10 September 2026 06:30",
+        "eta": "Sabtu, 12 September 2026 06:30",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "ICON",
+        "nama_kapal": "IP V.71/26 - MV. ICON PERDANA",
+        "closing": "09/09/2026 03:26",
+        "etd": "Jumat, 11 September 2026 03:26",
+        "eta": "Senin, 14 September 2026 03:26",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "ICON",
+        "nama_kapal": "IG V V.35/26 - MV. ICON GALATIA V",
+        "closing": "07/09/2026 04:34",
+        "etd": "Kamis, 17 September 2026 04:32",
+        "eta": "Sabtu, 19 September 2026 04:32",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Batam",
+        "pelayaran": "ICON",
+        "nama_kapal": "II XI V.88/26 - ICON IBRANI XI",
+        "closing": "05/09/2026 16:37",
+        "etd": "Minggu, 06 September 2026 06:36",
+        "eta": "Kamis, 10 September 2026 06:37",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Batam",
+        "pelayaran": "ICON",
+        "nama_kapal": "II XI V.90/26 - ICON IBRANI XI",
+        "closing": "12/09/2026 07:41",
+        "etd": "Senin, 14 September 2026 07:40",
+        "eta": "Kamis, 17 September 2026 07:40",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "ICON",
+        "nama_kapal": "IL XIX V.45/26 - ICON LUKAS XIX",
+        "closing": "05/09/2026 03:56",
+        "etd": "Senin, 07 September 2026 03:55",
+        "eta": "Jumat, 09 Oktober 2026 03:55",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "ICON",
+        "nama_kapal": "IM VI 8 V.27/2 - ICON MIKHA VI 8",
+        "closing": "09/09/2026 07:54",
+        "etd": "Jumat, 11 September 2026 07:50",
+        "eta": "Minggu, 13 September 2026 07:50",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
         "rute": "Medan",
         "pelayaran": "SAMUDERA",
         "nama_kapal": "CELSIUS EINDHOVEN V.034W -> MAO GANG GUANG ZHOU V.025S",
@@ -1896,8 +1986,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Estuari Mas - 54/26",
         "closing": "N/A",
-        "etd": "12 Sep 2026",
-        "eta": "17 Sep 2026"
+        "etd": "13 Sep 2026",
+        "eta": "18 Sep 2026"
     },
     {
         "rute": "Balikpapan",
@@ -1912,8 +2002,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Estuari Mas - 54/26",
         "closing": "N/A",
-        "etd": "12 Sep 2026",
-        "eta": "16 Sep 2026"
+        "etd": "13 Sep 2026",
+        "eta": "17 Sep 2026"
     },
     {
         "rute": "Banjarmasin",
@@ -2032,8 +2122,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Estuari Mas - 54/26",
         "closing": "N/A",
-        "etd": "12 Sep 2026",
-        "eta": "19 Sep 2026"
+        "etd": "13 Sep 2026",
+        "eta": "20 Sep 2026"
     },
     {
         "rute": "Pontianak",
