@@ -63,7 +63,7 @@
         "rute": "Banjarmasin",
         "pelayaran": "SPIL",
         "nama_kapal": "Teluk Flaminggo - 19/2026",
-        "closing": "09/09/2026 16:00",
+        "closing": "09/09/2026 12:00",
         "etd": "10/09/2026 23:00",
         "eta": "13/09/2026 13:00",
         "etb": "13/09/2026 15:00",
@@ -622,7 +622,7 @@
     {
         "rute": "Medan",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "HIGHWAY V.381N -> MAO GANG GUANG ZHOU V.029S",
+        "nama_kapal": "HIGHWAY V.380N -> MAO GANG GUANG ZHOU V.029S",
         "closing": "N/A",
         "etd": "23 Sep 2026",
         "eta": "19 Oct 2026",
@@ -632,7 +632,7 @@
     {
         "rute": "Medan",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "HIGHWAY V.380N -> MAO GANG GUANG ZHOU V.029S",
+        "nama_kapal": "HIGHWAY V.381N -> MAO GANG GUANG ZHOU V.029S",
         "closing": "N/A",
         "etd": "23 Sep 2026",
         "eta": "19 Oct 2026",
@@ -662,7 +662,7 @@
     {
         "rute": "Medan",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "HIGHWAY V.381N -> MAO GANG GUANG ZHOU V.031S",
+        "nama_kapal": "HIGHWAY V.380N -> MAO GANG GUANG ZHOU V.031S",
         "closing": "N/A",
         "etd": "23 Sep 2026",
         "eta": "04 Nov 2026",
@@ -672,7 +672,7 @@
     {
         "rute": "Medan",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "HIGHWAY V.380N -> MAO GANG GUANG ZHOU V.031S",
+        "nama_kapal": "HIGHWAY V.381N -> MAO GANG GUANG ZHOU V.031S",
         "closing": "N/A",
         "etd": "23 Sep 2026",
         "eta": "04 Nov 2026",
@@ -1085,6 +1085,26 @@
         "nama_kapal": "HUA DA 617 V.013W -> MAO GANG GUANG ZHOU V.031S",
         "closing": "N/A",
         "etd": "15 Oct 2026",
+        "eta": "04 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR CARITA V.030N -> MAO GANG GUANG ZHOU V.030S",
+        "closing": "N/A",
+        "etd": "18 Oct 2026",
+        "eta": "27 Oct 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR CARITA V.030N -> MAO GANG GUANG ZHOU V.031S",
+        "closing": "N/A",
+        "etd": "18 Oct 2026",
         "eta": "04 Nov 2026",
         "etb": "N/A",
         "open_stack": "N/A"
@@ -2106,7 +2126,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Ifama Mas - 51/26",
         "closing": "N/A",
-        "etd": "17 Sep 2026",
+        "etd": "18 Sep 2026",
         "eta": "24 Sep 2026"
     },
     {
@@ -2122,8 +2142,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Ifama Mas - 56/26",
         "closing": "N/A",
-        "etd": "02 Oct 2026",
-        "eta": "08 Oct 2026"
+        "etd": "03 Oct 2026",
+        "eta": "09 Oct 2026"
     },
     {
         "rute": "Gorontalo",
@@ -2243,7 +2263,7 @@
         "nama_kapal": "Estuari Mas - 54/26",
         "closing": "N/A",
         "etd": "14 Sep 2026",
-        "eta": "21 Sep 2026"
+        "eta": "20 Sep 2026"
     },
     {
         "rute": "PALU",
