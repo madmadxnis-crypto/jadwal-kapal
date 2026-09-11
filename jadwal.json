@@ -93,7 +93,7 @@
         "rute": "Pontianak",
         "pelayaran": "SPIL",
         "nama_kapal": "Spil Renata - 29/2026",
-        "closing": "11/09/2026 22:00",
+        "closing": "12/09/2026 22:00",
         "etd": "13/09/2026 14:00",
         "eta": "17/09/2026 03:00",
         "etb": "17/09/2026 05:00",
@@ -183,8 +183,8 @@
         "rute": "Batam",
         "pelayaran": "ICON",
         "nama_kapal": "II XI V.90/26 - ICON IBRANI XI",
-        "closing": "13/09/2026 07:41",
-        "etd": "Senin, 14 September 2026 15:40",
+        "closing": "14/09/2026 13:41",
+        "etd": "Selasa, 15 September 2026 15:40",
         "eta": "Rabu, 16 September 2026 07:40",
         "etb": "N/A",
         "open_stack": "N/A"
@@ -194,8 +194,8 @@
         "pelayaran": "ICON",
         "nama_kapal": "IM VI 8 V.27/2 - ICON MIKHA VI 8",
         "closing": "11/09/2026 08:00",
-        "etd": "Jumat, 11 September 2026 06:00",
-        "eta": "Minggu, 13 September 2026 07:50",
+        "etd": "Jumat, 11 September 2026 11:24",
+        "eta": "Minggu, 13 September 2026 05:00",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -2616,7 +2616,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Tasik Mas - 48/26",
         "closing": "N/A",
-        "etd": "20 Sep 2026",
+        "etd": "19 Sep 2026",
         "eta": "24 Sep 2026"
     },
     {
@@ -2648,7 +2648,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Tasik Mas - 48/26",
         "closing": "N/A",
-        "etd": "20 Sep 2026",
+        "etd": "19 Sep 2026",
         "eta": "23 Sep 2026"
     },
     {
@@ -2752,8 +2752,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Tasik Mas - 48/26",
         "closing": "N/A",
-        "etd": "20 Sep 2026",
-        "eta": "26 Sep 2026"
+        "etd": "19 Sep 2026",
+        "eta": "25 Sep 2026"
     },
     {
         "rute": "PALU",
@@ -2858,6 +2858,30 @@
         "closing": "N/A",
         "etd": "27 Sep 2026",
         "eta": "29 Sep 2026"
+    },
+    {
+        "rute": "BATAM",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Jales Mas - 59/26",
+        "closing": "N/A",
+        "etd": "12 Sep 2026",
+        "eta": "14 Sep 2026"
+    },
+    {
+        "rute": "BATAM",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Jales Mas - 61/26",
+        "closing": "N/A",
+        "etd": "19 Sep 2026",
+        "eta": "21 Sep 2026"
+    },
+    {
+        "rute": "BATAM",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Jales Mas - 63/26",
+        "closing": "N/A",
+        "etd": "26 Sep 2026",
+        "eta": "28 Sep 2026"
     },
     {
         "rute": "BATAM",
