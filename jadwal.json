@@ -152,16 +152,6 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SPIL",
-        "nama_kapal": "Spil Renata - 29/2026",
-        "closing": "12/09/2026 22:00",
-        "etd": "13/09/2026 14:00",
-        "eta": "17/09/2026 03:00",
-        "etb": "17/09/2026 05:00",
-        "open_stack": "09/09/2026 15:00 @ADP (101-105)"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SPIL",
         "nama_kapal": "Spil Rumi - 30/2026",
         "closing": "16/09/2026 22:00",
         "etd": "17/09/2026 23:00",
@@ -2608,7 +2598,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Ifama Mas - 51/26",
         "closing": "N/A",
-        "etd": "18 Sep 2026",
+        "etd": "19 Sep 2026",
         "eta": "25 Sep 2026"
     },
     {
