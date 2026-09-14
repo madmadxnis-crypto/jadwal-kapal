@@ -2,16 +2,6 @@
     {
         "rute": "Makassar",
         "pelayaran": "SPIL",
-        "nama_kapal": "Oriental Galaxy - 09/2026",
-        "closing": "14/09/2026 22:00",
-        "etd": "16/09/2026 14:00",
-        "eta": "21/09/2026 02:00",
-        "etb": "21/09/2026 04:00",
-        "open_stack": "07/09/2026 20:00"
-    },
-    {
-        "rute": "Makassar",
-        "pelayaran": "SPIL",
         "nama_kapal": "Oriental Silver - 12/2026",
         "closing": "17/09/2026 22:00",
         "etd": "21/09/2026 06:00",
@@ -28,6 +18,16 @@
         "eta": "26/09/2026 17:00",
         "etb": "26/09/2026 19:00",
         "open_stack": "09/09/2026 15:00 @ADP (101-105)"
+    },
+    {
+        "rute": "Gorontalo",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Ruby - 11/2026",
+        "closing": "21/09/2026 22:00",
+        "etd": "23/09/2026 06:00",
+        "eta": "24/09/2026 16:00",
+        "etb": "24/09/2026 19:00",
+        "open_stack": "14/09/2026 15:00"
     },
     {
         "rute": "Samarinda",
@@ -2602,7 +2602,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Ifama Mas - 51/26",
         "closing": "N/A",
-        "etd": "19 Sep 2026",
+        "etd": "18 Sep 2026",
         "eta": "25 Sep 2026"
     },
     {
@@ -2619,7 +2619,7 @@
         "nama_kapal": "Ifama Mas - 56/26",
         "closing": "N/A",
         "etd": "03 Oct 2026",
-        "eta": "10 Oct 2026"
+        "eta": "09 Oct 2026"
     },
     {
         "rute": "Bitung",
@@ -2722,7 +2722,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Eden Mas - 57/26",
         "closing": "N/A",
-        "etd": "21 Sep 2026",
+        "etd": "20 Sep 2026",
         "eta": "23 Sep 2026"
     },
     {
@@ -2842,8 +2842,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Damaskus Mas - 62/26",
         "closing": "N/A",
-        "etd": "18 Sep 2026",
-        "eta": "20 Sep 2026"
+        "etd": "19 Sep 2026",
+        "eta": "21 Sep 2026"
     },
     {
         "rute": "Pontianak",
