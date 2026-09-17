@@ -42,32 +42,12 @@
     {
         "rute": "Samarinda",
         "pelayaran": "SPIL",
-        "nama_kapal": "Pulau Nunukan - 21/2026",
-        "closing": "17/09/2026 22:00",
-        "etd": "19/09/2026 02:00",
-        "eta": "23/09/2026 23:00",
-        "etb": "24/09/2026 01:00",
-        "open_stack": "13/09/2026 22:00"
-    },
-    {
-        "rute": "Samarinda",
-        "pelayaran": "SPIL",
         "nama_kapal": "Spil Retno - 29/2026",
         "closing": "21/09/2026 22:00",
         "etd": "24/09/2026 06:00",
         "eta": "27/09/2026 15:00",
         "etb": "27/09/2026 17:00",
         "open_stack": "18/09/2026 08:00"
-    },
-    {
-        "rute": "Balikpapan",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Pulau Nunukan - 21/2026",
-        "closing": "17/09/2026 22:00",
-        "etd": "19/09/2026 02:00",
-        "eta": "22/09/2026 18:00",
-        "etb": "22/09/2026 20:00",
-        "open_stack": "13/09/2026 22:00"
     },
     {
         "rute": "Balikpapan",
@@ -2060,7 +2040,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Eden Mas - 57/26",
         "closing": "N/A",
-        "etd": "20 Sep 2026",
+        "etd": "21 Sep 2026",
         "eta": "23 Sep 2026"
     },
     {
@@ -2068,8 +2048,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Eden Mas - 59/26",
         "closing": "N/A",
-        "etd": "27 Sep 2026",
-        "eta": "29 Sep 2026"
+        "etd": "28 Sep 2026",
+        "eta": "30 Sep 2026"
     },
     {
         "rute": "BELAWAN",
@@ -2077,14 +2057,14 @@
         "nama_kapal": "Sungai Mas - 53/26",
         "closing": "N/A",
         "etd": "18 Sep 2026",
-        "eta": "21 Sep 2026"
+        "eta": "22 Sep 2026"
     },
     {
         "rute": "BELAWAN",
         "pelayaran": "TEMAS",
         "nama_kapal": "Sungai Mas - 56/26",
         "closing": "N/A",
-        "etd": "26 Sep 2026",
+        "etd": "27 Sep 2026",
         "eta": "30 Sep 2026"
     },
     {
@@ -2093,7 +2073,7 @@
         "nama_kapal": "Sungai Mas - 59/26",
         "closing": "N/A",
         "etd": "05 Oct 2026",
-        "eta": "08 Oct 2026"
+        "eta": "09 Oct 2026"
     },
     {
         "rute": "BELAWAN",
@@ -2252,8 +2232,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Berau Mas - 72/26",
         "closing": "N/A",
-        "etd": "21 Sep 2026",
-        "eta": "24 Sep 2026"
+        "etd": "22 Sep 2026",
+        "eta": "25 Sep 2026"
     },
     {
         "rute": "BATAM",
@@ -2261,14 +2241,14 @@
         "nama_kapal": "Berau Mas - 74/26",
         "closing": "N/A",
         "etd": "29 Sep 2026",
-        "eta": "01 Oct 2026"
+        "eta": "02 Oct 2026"
     },
     {
         "rute": "BATAM",
         "pelayaran": "TEMAS",
         "nama_kapal": "Berau Mas - 76/26",
         "closing": "N/A",
-        "etd": "06 Oct 2026",
-        "eta": "09 Oct 2026"
+        "etd": "07 Oct 2026",
+        "eta": "10 Oct 2026"
     }
 ]
