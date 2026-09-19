@@ -72,16 +72,6 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SPIL",
-        "nama_kapal": "Spil Renata - 30/2026",
-        "closing": "19/09/2026 22:00",
-        "etd": "20/09/2026 09:00",
-        "eta": "23/09/2026 19:00",
-        "etb": "23/09/2026 21:00",
-        "open_stack": "16/09/2026 15:00 @ADP (101-105)"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SPIL",
         "nama_kapal": "Spil Rumi - 31/2026",
         "closing": "23/09/2026 22:00",
         "etd": "24/09/2026 16:00",
@@ -1982,8 +1972,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Estuari Mas - 58/26",
         "closing": "N/A",
-        "etd": "27 Sep 2026",
-        "eta": "02 Oct 2026"
+        "etd": "28 Sep 2026",
+        "eta": "03 Oct 2026"
     },
     {
         "rute": "Balikpapan",
@@ -2006,7 +1996,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Estuari Mas - 58/26",
         "closing": "N/A",
-        "etd": "27 Sep 2026",
+        "etd": "28 Sep 2026",
         "eta": "01 Oct 2026"
     },
     {
@@ -2014,16 +2004,24 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Eden Mas - 57/26",
         "closing": "N/A",
-        "etd": "21 Sep 2026",
-        "eta": "23 Sep 2026"
+        "etd": "22 Sep 2026",
+        "eta": "25 Sep 2026"
     },
     {
         "rute": "Banjarmasin",
         "pelayaran": "TEMAS",
         "nama_kapal": "Eden Mas - 59/26",
         "closing": "N/A",
-        "etd": "28 Sep 2026",
-        "eta": "30 Sep 2026"
+        "etd": "29 Sep 2026",
+        "eta": "01 Oct 2026"
+    },
+    {
+        "rute": "BELAWAN",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Sungai Mas - 53/26",
+        "closing": "N/A",
+        "etd": "19 Sep 2026",
+        "eta": "22 Sep 2026"
     },
     {
         "rute": "BELAWAN",
@@ -2031,14 +2029,14 @@
         "nama_kapal": "Sungai Mas - 56/26",
         "closing": "N/A",
         "etd": "27 Sep 2026",
-        "eta": "30 Sep 2026"
+        "eta": "01 Oct 2026"
     },
     {
         "rute": "BELAWAN",
         "pelayaran": "TEMAS",
         "nama_kapal": "Sungai Mas - 59/26",
         "closing": "N/A",
-        "etd": "05 Oct 2026",
+        "etd": "06 Oct 2026",
         "eta": "09 Oct 2026"
     },
     {
@@ -2095,14 +2093,14 @@
         "nama_kapal": "Tasik Mas - 52/26",
         "closing": "N/A",
         "etd": "02 Oct 2026",
-        "eta": "08 Oct 2026"
+        "eta": "09 Oct 2026"
     },
     {
         "rute": "PALU",
         "pelayaran": "TEMAS",
         "nama_kapal": "Estuari Mas - 58/26",
         "closing": "N/A",
-        "etd": "27 Sep 2026",
+        "etd": "28 Sep 2026",
         "eta": "04 Oct 2026"
     },
     {
