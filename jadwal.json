@@ -1,5 +1,25 @@
 [
     {
+        "rute": "Makassar",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Jade - 12/2026",
+        "closing": "26/09/2026 22:00",
+        "etd": "28/09/2026 23:00",
+        "eta": "05/10/2026 00:00",
+        "etb": "05/10/2026 02:00",
+        "open_stack": "19/08/2026 15:00"
+    },
+    {
+        "rute": "Makassar",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Emerald - 14/2026",
+        "closing": "28/09/2026 10:00",
+        "etd": "29/09/2026 16:00",
+        "eta": "02/10/2026 03:00",
+        "etb": "02/10/2026 05:00",
+        "open_stack": "23/09/2026 23:00"
+    },
+    {
         "rute": "Bitung",
         "pelayaran": "SPIL",
         "nama_kapal": "Oriental Emerald - 14/2026",
@@ -23,10 +43,10 @@
         "rute": "Samarinda",
         "pelayaran": "SPIL",
         "nama_kapal": "Spil Retno - 29/2026",
-        "closing": "23/09/2026 10:00",
-        "etd": "25/09/2026 21:00",
-        "eta": "29/09/2026 06:00",
-        "etb": "29/09/2026 08:00",
+        "closing": "22/09/2026 23:59",
+        "etd": "26/09/2026 01:00",
+        "eta": "29/09/2026 10:00",
+        "etb": "29/09/2026 12:00",
         "open_stack": "18/09/2026 08:00 @DSN (004-005)"
     },
     {
@@ -53,8 +73,8 @@
         "rute": "Balikpapan",
         "pelayaran": "SPIL",
         "nama_kapal": "Spil Retno - 29/2026",
-        "closing": "23/09/2026 10:00",
-        "etd": "25/09/2026 21:00",
+        "closing": "22/09/2026 23:59",
+        "etd": "26/09/2026 01:00",
         "eta": "30/09/2026 09:00",
         "etb": "30/09/2026 11:00",
         "open_stack": "18/09/2026 08:00 @DSN (004-005)"
@@ -102,16 +122,6 @@
     {
         "rute": "Belawan",
         "pelayaran": "SPIL",
-        "nama_kapal": "Oriental Gold - 16/2026",
-        "closing": "25/09/2026 07:00",
-        "etd": "25/09/2026 20:00",
-        "eta": "27/09/2026 11:00",
-        "etb": "27/09/2026 13:00",
-        "open_stack": "20/09/2026 15:00"
-    },
-    {
-        "rute": "Belawan",
-        "pelayaran": "SPIL",
         "nama_kapal": "Armada Permata - 16/2026",
         "closing": "28/09/2026 22:00",
         "etd": "30/09/2026 13:00",
@@ -128,16 +138,6 @@
         "eta": "03/10/2026 23:00",
         "etb": "04/10/2026 02:00",
         "open_stack": "25/09/2026 10:00"
-    },
-    {
-        "rute": "Batam",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Oriental Gold - 16/2026",
-        "closing": "25/09/2026 07:00",
-        "etd": "25/09/2026 20:00",
-        "eta": "27/09/2026 11:00",
-        "etb": "27/09/2026 13:00",
-        "open_stack": "20/09/2026 15:00"
     },
     {
         "rute": "Batam",
@@ -2819,7 +2819,7 @@
         "nama_kapal": "Eagle Mas - 68/26",
         "closing": "N/A",
         "etd": "14 Oct 2026",
-        "eta": "17 Oct 2026"
+        "eta": "16 Oct 2026"
     },
     {
         "rute": "BATAM",
