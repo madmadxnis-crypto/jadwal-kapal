@@ -184,8 +184,8 @@
         "pelayaran": "ICON",
         "nama_kapal": "IB V.88/26 - ICON BRAVO",
         "closing": "25/09/2026 04:00",
-        "etd": "Jumat, 25 September 2026 15:00",
-        "eta": "Selasa, 29 September 2026 10:23",
+        "etd": "Sabtu, 26 September 2026 02:54",
+        "eta": "Rabu, 30 September 2026 18:00",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -204,8 +204,8 @@
         "pelayaran": "ICON",
         "nama_kapal": "IB V.87/26 - ICON BRAVO",
         "closing": "25/09/2026 04:00",
-        "etd": "Jumat, 25 September 2026 15:00",
-        "eta": "Senin, 28 September 2026 10:22",
+        "etd": "Sabtu, 26 September 2026 02:54",
+        "eta": "Selasa, 29 September 2026 18:00",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -256,16 +256,6 @@
         "closing": "28/09/2026 04:03",
         "etd": "Rabu, 30 September 2026 04:02",
         "eta": "Jumat, 02 Oktober 2026 04:02",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "ICON",
-        "nama_kapal": "IM VI 8 V.31/26 - ICON MIKHA VI 8",
-        "closing": "26/09/2026 03:00",
-        "etd": "Sabtu, 26 September 2026 00:15",
-        "eta": "Senin, 28 September 2026 03:09",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -2153,7 +2143,7 @@
         "nama_kapal": "Ifama Mas - 56/26",
         "closing": "N/A",
         "etd": "06 Oct 2026",
-        "eta": "12 Oct 2026"
+        "eta": "13 Oct 2026"
     },
     {
         "rute": "Bitung",
@@ -2256,8 +2246,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gale Mas - 46/26",
         "closing": "N/A",
-        "etd": "26 Sep 2026",
-        "eta": "30 Sep 2026"
+        "etd": "27 Sep 2026",
+        "eta": "01 Oct 2026"
     },
     {
         "rute": "BELAWAN",
@@ -2280,8 +2270,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gale Mas - 48/26",
         "closing": "N/A",
-        "etd": "06 Oct 2026",
-        "eta": "10 Oct 2026"
+        "etd": "07 Oct 2026",
+        "eta": "11 Oct 2026"
     },
     {
         "rute": "BELAWAN",
