@@ -72,16 +72,6 @@
     {
         "rute": "Banjarmasin",
         "pelayaran": "SPIL",
-        "nama_kapal": "Fortune - 25/2026",
-        "closing": "25/09/2026 17:00",
-        "etd": "29/09/2026 14:00",
-        "eta": "02/10/2026 04:00",
-        "etb": "02/10/2026 06:00",
-        "open_stack": "25/09/2026 15:00"
-    },
-    {
-        "rute": "Banjarmasin",
-        "pelayaran": "SPIL",
         "nama_kapal": "Minas Baru - 23/2026",
         "closing": "29/09/2026 22:00",
         "etd": "03/10/2026 12:00",
@@ -2254,8 +2244,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Telaga Mas - 44/26",
         "closing": "N/A",
-        "etd": "11 Oct 2026",
-        "eta": "18 Oct 2026"
+        "etd": "12 Oct 2026",
+        "eta": "19 Oct 2026"
     },
     {
         "rute": "Samarinda",
@@ -2319,7 +2309,7 @@
         "nama_kapal": "Gangga Mas - 44/26",
         "closing": "N/A",
         "etd": "30 Sep 2026",
-        "eta": "03 Oct 2026"
+        "eta": "04 Oct 2026"
     },
     {
         "rute": "BELAWAN",
@@ -2343,7 +2333,7 @@
         "nama_kapal": "Gangga Mas - 46/26",
         "closing": "N/A",
         "etd": "10 Oct 2026",
-        "eta": "13 Oct 2026"
+        "eta": "14 Oct 2026"
     },
     {
         "rute": "BELAWAN",
@@ -2406,7 +2396,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Berau Mas - 74/26",
         "closing": "N/A",
-        "etd": "30 Sep 2026",
+        "etd": "01 Oct 2026",
         "eta": "03 Oct 2026"
     },
     {
@@ -2415,6 +2405,6 @@
         "nama_kapal": "Berau Mas - 76/26",
         "closing": "N/A",
         "etd": "08 Oct 2026",
-        "eta": "10 Oct 2026"
+        "eta": "11 Oct 2026"
     }
 ]
