@@ -32,16 +32,6 @@
     {
         "rute": "Gorontalo",
         "pelayaran": "SPIL",
-        "nama_kapal": "Armada Senada - 20/2026",
-        "closing": "01/10/2026 16:00",
-        "etd": "02/10/2026 18:00",
-        "eta": "04/10/2026 23:00",
-        "etb": "05/10/2026 02:00",
-        "open_stack": "29/09/2026 18:00"
-    },
-    {
-        "rute": "Gorontalo",
-        "pelayaran": "SPIL",
         "nama_kapal": "Hijau Samudra - 16/2026",
         "closing": "03/10/2026 22:00",
         "etd": "05/10/2026 23:00",
@@ -112,16 +102,6 @@
     {
         "rute": "Palu",
         "pelayaran": "SPIL",
-        "nama_kapal": "Armada Senada - 20/2026",
-        "closing": "01/10/2026 16:00",
-        "etd": "02/10/2026 18:00",
-        "eta": "04/10/2026 23:00",
-        "etb": "05/10/2026 02:00",
-        "open_stack": "29/09/2026 18:00"
-    },
-    {
-        "rute": "Palu",
-        "pelayaran": "SPIL",
         "nama_kapal": "Hijau Samudra - 16/2026",
         "closing": "03/10/2026 22:00",
         "etd": "05/10/2026 23:00",
@@ -173,7 +153,7 @@
         "rute": "Samarinda",
         "pelayaran": "ICON",
         "nama_kapal": "IB V.92/26 - ICON BRAVO",
-        "closing": "03/10/2026 11:08",
+        "closing": "05/10/2026 03:08",
         "etd": "Senin, 05 Oktober 2026 11:05",
         "eta": "Jumat, 09 Oktober 2026 11:05",
         "etb": "N/A",
@@ -183,7 +163,7 @@
         "rute": "Balikpapan",
         "pelayaran": "ICON",
         "nama_kapal": "IB V.91/26 - ICON BRAVO",
-        "closing": "03/10/2026 11:07",
+        "closing": "05/10/2026 03:07",
         "etd": "Senin, 05 Oktober 2026 11:03",
         "eta": "Kamis, 08 Oktober 2026 11:04",
         "etb": "N/A",
@@ -2414,16 +2394,16 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gihon Mas - 50/26",
         "closing": "N/A",
-        "etd": "05 Oct 2026",
-        "eta": "08 Oct 2026"
+        "etd": "08 Oct 2026",
+        "eta": "11 Oct 2026"
     },
     {
         "rute": "Makassar",
         "pelayaran": "TEMAS",
         "nama_kapal": "Gihon Mas - 53/26",
         "closing": "N/A",
-        "etd": "17 Oct 2026",
-        "eta": "21 Oct 2026"
+        "etd": "20 Oct 2026",
+        "eta": "24 Oct 2026"
     },
     {
         "rute": "Makassar",
@@ -2495,7 +2475,7 @@
         "nama_kapal": "Jales Mas - 67/26",
         "closing": "N/A",
         "etd": "11 Oct 2026",
-        "eta": "15 Oct 2026"
+        "eta": "16 Oct 2026"
     },
     {
         "rute": "Balikpapan",
@@ -2519,14 +2499,6 @@
         "nama_kapal": "Ifama Mas - 56/26",
         "closing": "N/A",
         "etd": "07 Oct 2026",
-        "eta": "13 Oct 2026"
-    },
-    {
-        "rute": "Banjarmasin",
-        "pelayaran": "TEMAS",
-        "nama_kapal": "Gihon Mas - 50/26",
-        "closing": "N/A",
-        "etd": "05 Oct 2026",
         "eta": "13 Oct 2026"
     },
     {
