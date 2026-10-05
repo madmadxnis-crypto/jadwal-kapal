@@ -4,7 +4,7 @@
         "pelayaran": "SPIL",
         "nama_kapal": "Oriental Diamond - 10/2026",
         "closing": "04/10/2026 22:00",
-        "etd": "06/10/2026 04:00",
+        "etd": "06/10/2026 08:00",
         "eta": "07/10/2026 06:00",
         "etb": "07/10/2026 09:00",
         "open_stack": "06/09/2026 19:00"
@@ -93,10 +93,10 @@
         "rute": "Banjarmasin",
         "pelayaran": "SPIL",
         "nama_kapal": "Pratiwi Satu - 25/2026",
-        "closing": "03/10/2026 12:00",
-        "etd": "06/10/2026 01:00",
-        "eta": "08/10/2026 15:00",
-        "etb": "08/10/2026 17:00",
+        "closing": "03/10/2026 23:59",
+        "etd": "06/10/2026 06:00",
+        "eta": "08/10/2026 20:00",
+        "etb": "08/10/2026 22:00",
         "open_stack": "29/09/2026 15:00 @DSN (004-005)"
     },
     {
@@ -2220,16 +2220,16 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Fraser Mas - 28/26",
         "closing": "N/A",
-        "etd": "09 Oct 2026",
-        "eta": "13 Oct 2026"
+        "etd": "12 Oct 2026",
+        "eta": "16 Oct 2026"
     },
     {
         "rute": "Makassar",
         "pelayaran": "TEMAS",
         "nama_kapal": "Fraser Mas - 31/26",
         "closing": "N/A",
-        "etd": "24 Oct 2026",
-        "eta": "28 Oct 2026"
+        "etd": "27 Oct 2026",
+        "eta": "31 Oct 2026"
     },
     {
         "rute": "Bitung",
@@ -2332,8 +2332,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gangga Mas - 46/26",
         "closing": "N/A",
-        "etd": "10 Oct 2026",
-        "eta": "14 Oct 2026"
+        "etd": "11 Oct 2026",
+        "eta": "15 Oct 2026"
     },
     {
         "rute": "BELAWAN",
