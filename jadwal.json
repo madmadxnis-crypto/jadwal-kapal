@@ -43,8 +43,8 @@
         "rute": "Samarinda",
         "pelayaran": "SPIL",
         "nama_kapal": "Pulau Layang - 22/2026",
-        "closing": "05/10/2026 16:00",
-        "etd": "06/10/2026 23:00",
+        "closing": "04/10/2026 23:59",
+        "etd": "07/10/2026 09:00",
         "eta": "11/10/2026 21:00",
         "etb": "11/10/2026 23:00",
         "open_stack": "30/09/2026 00:00 @DSN (004-005)"
@@ -73,10 +73,10 @@
         "rute": "Balikpapan",
         "pelayaran": "SPIL",
         "nama_kapal": "Pulau Layang - 22/2026",
-        "closing": "05/10/2026 16:00",
-        "etd": "06/10/2026 23:00",
-        "eta": "10/10/2026 15:00",
-        "etb": "10/10/2026 17:00",
+        "closing": "04/10/2026 23:59",
+        "etd": "07/10/2026 09:00",
+        "eta": "11/10/2026 01:00",
+        "etb": "11/10/2026 03:00",
         "open_stack": "30/09/2026 00:00 @DSN (004-005)"
     },
     {
@@ -2263,7 +2263,7 @@
         "nama_kapal": "Ifama Mas - 61/26",
         "closing": "N/A",
         "etd": "22 Oct 2026",
-        "eta": "29 Oct 2026"
+        "eta": "28 Oct 2026"
     },
     {
         "rute": "Bitung",
@@ -2284,10 +2284,26 @@
     {
         "rute": "Samarinda",
         "pelayaran": "TEMAS",
+        "nama_kapal": "Tasik Mas - 52/26",
+        "closing": "N/A",
+        "etd": "06 Oct 2026",
+        "eta": "11 Oct 2026"
+    },
+    {
+        "rute": "Samarinda",
+        "pelayaran": "TEMAS",
         "nama_kapal": "Jales Mas - 67/26",
         "closing": "N/A",
         "etd": "12 Oct 2026",
-        "eta": "17 Oct 2026"
+        "eta": "16 Oct 2026"
+    },
+    {
+        "rute": "Balikpapan",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Tasik Mas - 52/26",
+        "closing": "N/A",
+        "etd": "06 Oct 2026",
+        "eta": "09 Oct 2026"
     },
     {
         "rute": "Balikpapan",
@@ -2295,7 +2311,7 @@
         "nama_kapal": "Jales Mas - 67/26",
         "closing": "N/A",
         "etd": "12 Oct 2026",
-        "eta": "16 Oct 2026"
+        "eta": "15 Oct 2026"
     },
     {
         "rute": "Banjarmasin",
@@ -2348,10 +2364,18 @@
     {
         "rute": "PALU",
         "pelayaran": "TEMAS",
+        "nama_kapal": "Tasik Mas - 52/26",
+        "closing": "N/A",
+        "etd": "06 Oct 2026",
+        "eta": "12 Oct 2026"
+    },
+    {
+        "rute": "PALU",
+        "pelayaran": "TEMAS",
         "nama_kapal": "Jales Mas - 67/26",
         "closing": "N/A",
         "etd": "12 Oct 2026",
-        "eta": "19 Oct 2026"
+        "eta": "18 Oct 2026"
     },
     {
         "rute": "Pontianak",
