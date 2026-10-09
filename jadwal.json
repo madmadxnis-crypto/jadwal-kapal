@@ -80,6 +80,26 @@
         "open_stack": "10/10/2026 15:00"
     },
     {
+        "rute": "Balikpapan",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Selili Baru - 23/2026",
+        "closing": "10/10/2026 22:00",
+        "etd": "12/10/2026 06:00",
+        "eta": "15/10/2026 22:00",
+        "etb": "16/10/2026 00:00",
+        "open_stack": "06/10/2026 18:00 @DSN (004-005)"
+    },
+    {
+        "rute": "Balikpapan",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Spil Retno - 31/2026",
+        "closing": "14/10/2026 22:00",
+        "etd": "18/10/2026 23:00",
+        "eta": "23/10/2026 18:00",
+        "etb": "23/10/2026 20:00",
+        "open_stack": "10/10/2026 15:00"
+    },
+    {
         "rute": "Banjarmasin",
         "pelayaran": "SPIL",
         "nama_kapal": "Minas Baru - 24/2026",
@@ -108,16 +128,6 @@
         "eta": "19/10/2026 17:00",
         "etb": "19/10/2026 19:00",
         "open_stack": "07/10/2026 15:00 @ADP (101-105)"
-    },
-    {
-        "rute": "Palu",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Pratiwi Raya - 25/2026",
-        "closing": "08/10/2026 23:59",
-        "etd": "09/10/2026 23:00",
-        "eta": "15/10/2026 19:00",
-        "etb": "15/10/2026 21:00",
-        "open_stack": "07/10/2026 17:00"
     },
     {
         "rute": "Palu",
@@ -2084,8 +2094,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gale Mas - 48/26",
         "closing": "N/A",
-        "etd": "10 Oct 2026",
-        "eta": "13 Oct 2026"
+        "etd": "11 Oct 2026",
+        "eta": "14 Oct 2026"
     },
     {
         "rute": "BELAWAN",
@@ -2109,7 +2119,7 @@
         "nama_kapal": "Gale Mas - 50/26",
         "closing": "N/A",
         "etd": "20 Oct 2026",
-        "eta": "23 Oct 2026"
+        "eta": "24 Oct 2026"
     },
     {
         "rute": "BELAWAN",
@@ -2244,8 +2254,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Kanal Mas - 63/26",
         "closing": "N/A",
-        "etd": "24 Oct 2026",
-        "eta": "26 Oct 2026"
+        "etd": "23 Oct 2026",
+        "eta": "25 Oct 2026"
     },
     {
         "rute": "BATAM",
