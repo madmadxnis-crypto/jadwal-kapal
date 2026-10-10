@@ -2,16 +2,6 @@
     {
         "rute": "Makassar",
         "pelayaran": "SPIL",
-        "nama_kapal": "Oriental Gold - 17/2026",
-        "closing": "08/10/2026 23:59",
-        "etd": "10/10/2026 23:00",
-        "eta": "14/10/2026 21:00",
-        "etb": "14/10/2026 23:00",
-        "open_stack": "03/10/2026 15:00"
-    },
-    {
-        "rute": "Makassar",
-        "pelayaran": "SPIL",
         "nama_kapal": "Oriental Galaxy - 10/2026",
         "closing": "10/10/2026 22:00",
         "etd": "12/10/2026 02:00",
@@ -32,32 +22,12 @@
     {
         "rute": "Bitung",
         "pelayaran": "SPIL",
-        "nama_kapal": "Oriental Gold - 17/2026",
-        "closing": "08/10/2026 23:59",
-        "etd": "10/10/2026 23:00",
-        "eta": "18/10/2026 13:00",
-        "etb": "18/10/2026 15:00",
-        "open_stack": "03/10/2026 15:00 @ADP (101-105)"
-    },
-    {
-        "rute": "Bitung",
-        "pelayaran": "SPIL",
         "nama_kapal": "Oriental Emerald - 15/2026",
         "closing": "16/10/2026 22:00",
         "etd": "18/10/2026 23:00",
         "eta": "25/10/2026 02:00",
         "etb": "25/10/2026 04:00",
         "open_stack": "08/10/2026 23:00 @ADP (101-105)"
-    },
-    {
-        "rute": "Gorontalo",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Oriental Gold - 17/2026",
-        "closing": "08/10/2026 23:59",
-        "etd": "10/10/2026 23:00",
-        "eta": "12/10/2026 06:00",
-        "etb": "12/10/2026 09:00",
-        "open_stack": "03/10/2026 15:00"
     },
     {
         "rute": "Gorontalo",
@@ -73,8 +43,8 @@
         "rute": "Samarinda",
         "pelayaran": "SPIL",
         "nama_kapal": "Pulau Nunukan - 23/2026",
-        "closing": "11/10/2026 16:00",
-        "etd": "12/10/2026 06:00",
+        "closing": "09/10/2026 23:59",
+        "etd": "12/10/2026 08:00",
         "eta": "18/10/2026 04:00",
         "etb": "18/10/2026 06:00",
         "open_stack": "07/10/2026 17:00"
@@ -93,10 +63,10 @@
         "rute": "Balikpapan",
         "pelayaran": "SPIL",
         "nama_kapal": "Pulau Nunukan - 23/2026",
-        "closing": "11/10/2026 16:00",
-        "etd": "12/10/2026 06:00",
-        "eta": "15/10/2026 22:00",
-        "etb": "16/10/2026 00:00",
+        "closing": "09/10/2026 23:59",
+        "etd": "12/10/2026 08:00",
+        "eta": "16/10/2026 00:00",
+        "etb": "16/10/2026 02:00",
         "open_stack": "07/10/2026 17:00"
     },
     {
@@ -173,8 +143,8 @@
         "rute": "Pontianak",
         "pelayaran": "SPIL",
         "nama_kapal": "Spil Renata - 33/2026",
-        "closing": "10/10/2026 18:00",
-        "etd": "11/10/2026 09:00",
+        "closing": "09/10/2026 23:59",
+        "etd": "11/10/2026 16:00",
         "eta": "14/10/2026 23:00",
         "etb": "15/10/2026 01:00",
         "open_stack": "07/10/2026 10:00 @ADP (101-105)"
@@ -253,8 +223,8 @@
         "rute": "Pontianak",
         "pelayaran": "ICON",
         "nama_kapal": "IM VI 8 V.35/26 - ICON MIKHA VI 8",
-        "closing": "09/10/2026 02:14",
-        "etd": "Sabtu, 10 Oktober 2026 02:12",
+        "closing": "10/10/2026 13:00",
+        "etd": "Sabtu, 10 Oktober 2026 09:25",
         "eta": "Senin, 12 Oktober 2026 02:12",
         "etb": "N/A",
         "open_stack": "N/A"
@@ -1864,16 +1834,16 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Mare Mas - 65/26",
         "closing": "N/A",
-        "etd": "19 Oct 2026",
-        "eta": "23 Oct 2026"
+        "etd": "20 Oct 2026",
+        "eta": "25 Oct 2026"
     },
     {
         "rute": "Samarinda",
         "pelayaran": "TEMAS",
         "nama_kapal": "Mare Mas - 69/26",
         "closing": "N/A",
-        "etd": "01 Nov 2026",
-        "eta": "05 Nov 2026"
+        "etd": "02 Nov 2026",
+        "eta": "07 Nov 2026"
     },
     {
         "rute": "Balikpapan",
@@ -1888,16 +1858,16 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Mare Mas - 65/26",
         "closing": "N/A",
-        "etd": "19 Oct 2026",
-        "eta": "22 Oct 2026"
+        "etd": "20 Oct 2026",
+        "eta": "23 Oct 2026"
     },
     {
         "rute": "Balikpapan",
         "pelayaran": "TEMAS",
         "nama_kapal": "Mare Mas - 69/26",
         "closing": "N/A",
-        "etd": "01 Nov 2026",
-        "eta": "04 Nov 2026"
+        "etd": "02 Nov 2026",
+        "eta": "06 Nov 2026"
     },
     {
         "rute": "Banjarmasin",
@@ -1944,7 +1914,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gale Mas - 48/26",
         "closing": "N/A",
-        "etd": "11 Oct 2026",
+        "etd": "10 Oct 2026",
         "eta": "14 Oct 2026"
     },
     {
@@ -1992,16 +1962,16 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Mare Mas - 65/26",
         "closing": "N/A",
-        "etd": "19 Oct 2026",
-        "eta": "25 Oct 2026"
+        "etd": "20 Oct 2026",
+        "eta": "26 Oct 2026"
     },
     {
         "rute": "PALU",
         "pelayaran": "TEMAS",
         "nama_kapal": "Mare Mas - 69/26",
         "closing": "N/A",
-        "etd": "01 Nov 2026",
-        "eta": "07 Nov 2026"
+        "etd": "02 Nov 2026",
+        "eta": "09 Nov 2026"
     },
     {
         "rute": "Pontianak",
@@ -2016,8 +1986,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Damaskus Mas - 70/26",
         "closing": "N/A",
-        "etd": "19 Oct 2026",
-        "eta": "21 Oct 2026"
+        "etd": "20 Oct 2026",
+        "eta": "22 Oct 2026"
     },
     {
         "rute": "Pontianak",
@@ -2032,8 +2002,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Damaskus Mas - 74/26",
         "closing": "N/A",
-        "etd": "01 Nov 2026",
-        "eta": "03 Nov 2026"
+        "etd": "02 Nov 2026",
+        "eta": "04 Nov 2026"
     },
     {
         "rute": "Pontianak",
@@ -2089,7 +2059,7 @@
         "nama_kapal": "Belik Mas - 59/26",
         "closing": "N/A",
         "etd": "11 Oct 2026",
-        "eta": "13 Oct 2026"
+        "eta": "14 Oct 2026"
     },
     {
         "rute": "BATAM",
@@ -2112,7 +2082,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Belik Mas - 63/26",
         "closing": "N/A",
-        "etd": "24 Oct 2026",
+        "etd": "25 Oct 2026",
         "eta": "27 Oct 2026"
     },
     {
