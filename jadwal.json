@@ -2,16 +2,6 @@
     {
         "rute": "Makassar",
         "pelayaran": "SPIL",
-        "nama_kapal": "Oriental Galaxy - 10/2026",
-        "closing": "10/10/2026 22:00",
-        "etd": "12/10/2026 02:00",
-        "eta": "17/10/2026 16:00",
-        "etb": "17/10/2026 18:00",
-        "open_stack": "04/09/2026 15:00"
-    },
-    {
-        "rute": "Makassar",
-        "pelayaran": "SPIL",
         "nama_kapal": "Oriental Emerald - 15/2026",
         "closing": "16/10/2026 22:00",
         "etd": "18/10/2026 23:00",
@@ -1735,7 +1725,7 @@
         "nama_kapal": "Gihon Mas - 53/26",
         "closing": "N/A",
         "etd": "20 Oct 2026",
-        "eta": "23 Oct 2026"
+        "eta": "24 Oct 2026"
     },
     {
         "rute": "Makassar",
@@ -1743,7 +1733,7 @@
         "nama_kapal": "Estuari Mas - 60/26",
         "closing": "N/A",
         "etd": "12 Oct 2026",
-        "eta": "15 Oct 2026"
+        "eta": "16 Oct 2026"
     },
     {
         "rute": "Makassar",
@@ -1751,7 +1741,7 @@
         "nama_kapal": "Estuari Mas - 63/26",
         "closing": "N/A",
         "etd": "25 Oct 2026",
-        "eta": "28 Oct 2026"
+        "eta": "29 Oct 2026"
     },
     {
         "rute": "Makassar",
@@ -1774,8 +1764,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Izumi Mas - 55/26",
         "closing": "N/A",
-        "etd": "17 Oct 2026",
-        "eta": "23 Oct 2026"
+        "etd": "18 Oct 2026",
+        "eta": "24 Oct 2026"
     },
     {
         "rute": "Bitung",
@@ -1790,8 +1780,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Izumi Mas - 60/26",
         "closing": "N/A",
-        "etd": "31 Oct 2026",
-        "eta": "07 Nov 2026"
+        "etd": "02 Nov 2026",
+        "eta": "08 Nov 2026"
     },
     {
         "rute": "Gorontalo",
@@ -1815,7 +1805,7 @@
         "nama_kapal": "Mare Mas - 65/26",
         "closing": "N/A",
         "etd": "20 Oct 2026",
-        "eta": "25 Oct 2026"
+        "eta": "24 Oct 2026"
     },
     {
         "rute": "Samarinda",
@@ -1847,7 +1837,7 @@
         "nama_kapal": "Mare Mas - 69/26",
         "closing": "N/A",
         "etd": "02 Nov 2026",
-        "eta": "06 Nov 2026"
+        "eta": "05 Nov 2026"
     },
     {
         "rute": "Banjarmasin",
@@ -1943,7 +1933,7 @@
         "nama_kapal": "Mare Mas - 69/26",
         "closing": "N/A",
         "etd": "02 Nov 2026",
-        "eta": "09 Nov 2026"
+        "eta": "08 Nov 2026"
     },
     {
         "rute": "Pontianak",
@@ -1998,7 +1988,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Batanghari Mas - 78/26",
         "closing": "N/A",
-        "etd": "23 Oct 2026",
+        "etd": "22 Oct 2026",
         "eta": "25 Oct 2026"
     },
     {
@@ -2015,7 +2005,7 @@
         "nama_kapal": "Estuari Mas - 60/26",
         "closing": "N/A",
         "etd": "12 Oct 2026",
-        "eta": "20 Oct 2026"
+        "eta": "21 Oct 2026"
     },
     {
         "rute": "BATAM",
