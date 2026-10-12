@@ -42,32 +42,12 @@
     {
         "rute": "Samarinda",
         "pelayaran": "SPIL",
-        "nama_kapal": "Pulau Nunukan - 23/2026",
-        "closing": "09/10/2026 23:59",
-        "etd": "13/10/2026 08:00",
-        "eta": "18/10/2026 06:00",
-        "etb": "18/10/2026 08:00",
-        "open_stack": "07/10/2026 17:00"
-    },
-    {
-        "rute": "Samarinda",
-        "pelayaran": "SPIL",
         "nama_kapal": "Spil Retno - 31/2026",
         "closing": "14/10/2026 22:00",
         "etd": "19/10/2026 03:00",
         "eta": "22/10/2026 12:00",
         "etb": "22/10/2026 14:00",
         "open_stack": "10/10/2026 15:00 @DSN (004-005)"
-    },
-    {
-        "rute": "Balikpapan",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Pulau Nunukan - 23/2026",
-        "closing": "09/10/2026 23:59",
-        "etd": "13/10/2026 08:00",
-        "eta": "17/10/2026 00:00",
-        "etb": "17/10/2026 02:00",
-        "open_stack": "07/10/2026 17:00"
     },
     {
         "rute": "Balikpapan",
@@ -2172,7 +2152,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Izumi Mas - 60/26",
         "closing": "N/A",
-        "etd": "02 Nov 2026",
+        "etd": "01 Nov 2026",
         "eta": "08 Nov 2026"
     },
     {
@@ -2189,14 +2169,14 @@
         "nama_kapal": "Mare Mas - 65/26",
         "closing": "N/A",
         "etd": "20 Oct 2026",
-        "eta": "24 Oct 2026"
+        "eta": "25 Oct 2026"
     },
     {
         "rute": "Samarinda",
         "pelayaran": "TEMAS",
         "nama_kapal": "Mare Mas - 69/26",
         "closing": "N/A",
-        "etd": "02 Nov 2026",
+        "etd": "03 Nov 2026",
         "eta": "07 Nov 2026"
     },
     {
@@ -2205,15 +2185,15 @@
         "nama_kapal": "Mare Mas - 65/26",
         "closing": "N/A",
         "etd": "20 Oct 2026",
-        "eta": "23 Oct 2026"
+        "eta": "24 Oct 2026"
     },
     {
         "rute": "Balikpapan",
         "pelayaran": "TEMAS",
         "nama_kapal": "Mare Mas - 69/26",
         "closing": "N/A",
-        "etd": "02 Nov 2026",
-        "eta": "05 Nov 2026"
+        "etd": "03 Nov 2026",
+        "eta": "06 Nov 2026"
     },
     {
         "rute": "Banjarmasin",
@@ -2309,15 +2289,15 @@
         "nama_kapal": "Mare Mas - 65/26",
         "closing": "N/A",
         "etd": "20 Oct 2026",
-        "eta": "26 Oct 2026"
+        "eta": "27 Oct 2026"
     },
     {
         "rute": "PALU",
         "pelayaran": "TEMAS",
         "nama_kapal": "Mare Mas - 69/26",
         "closing": "N/A",
-        "etd": "02 Nov 2026",
-        "eta": "08 Nov 2026"
+        "etd": "03 Nov 2026",
+        "eta": "09 Nov 2026"
     },
     {
         "rute": "Pontianak",
