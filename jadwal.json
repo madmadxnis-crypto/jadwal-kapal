@@ -2,16 +2,6 @@
     {
         "rute": "Makassar",
         "pelayaran": "SPIL",
-        "nama_kapal": "Oriental Emerald - 15/2026",
-        "closing": "16/10/2026 22:00",
-        "etd": "19/10/2026 06:00",
-        "eta": "21/10/2026 17:00",
-        "etb": "21/10/2026 19:00",
-        "open_stack": "08/10/2026 23:00 @ADP (101-105)"
-    },
-    {
-        "rute": "Makassar",
-        "pelayaran": "SPIL",
         "nama_kapal": "Oriental Ruby - 12/2026",
         "closing": "17/10/2026 23:59",
         "etd": "21/10/2026 01:00",
@@ -20,13 +10,23 @@
         "open_stack": "09/09/2026 23:00"
     },
     {
+        "rute": "Makassar",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Emerald - 15/2026",
+        "closing": "19/10/2026 23:59",
+        "etd": "21/10/2026 06:00",
+        "eta": "23/10/2026 17:00",
+        "etb": "23/10/2026 19:00",
+        "open_stack": "08/10/2026 23:00 @ADP (101-105)"
+    },
+    {
         "rute": "Bitung",
         "pelayaran": "SPIL",
         "nama_kapal": "Oriental Emerald - 15/2026",
-        "closing": "16/10/2026 22:00",
-        "etd": "19/10/2026 06:00",
-        "eta": "23/10/2026 18:00",
-        "etb": "23/10/2026 20:00",
+        "closing": "19/10/2026 23:59",
+        "etd": "21/10/2026 06:00",
+        "eta": "27/10/2026 09:00",
+        "etb": "27/10/2026 11:00",
         "open_stack": "08/10/2026 23:00 @ADP (101-105)"
     },
     {
@@ -92,22 +92,12 @@
     {
         "rute": "Belawan",
         "pelayaran": "SPIL",
-        "nama_kapal": "Armada Permata - 17/2026",
-        "closing": "13/10/2026 16:00",
-        "etd": "15/10/2026 06:00",
-        "eta": "18/10/2026 09:00",
-        "etb": "18/10/2026 11:00",
-        "open_stack": "07/10/2026 15:00 @ADP (101-105)"
-    },
-    {
-        "rute": "Belawan",
-        "pelayaran": "SPIL",
         "nama_kapal": "Pekan Tirta - 03/2026",
-        "closing": "17/10/2026 22:00",
-        "etd": "19/10/2026 23:00",
-        "eta": "26/10/2026 01:00",
-        "etb": "26/10/2026 03:00",
-        "open_stack": "11/10/2026 18:00"
+        "closing": "21/10/2026 23:59",
+        "etd": "23/10/2026 23:00",
+        "eta": "28/10/2026 21:00",
+        "etb": "28/10/2026 23:00",
+        "open_stack": "20/10/2026 18:00"
     },
     {
         "rute": "Palu",
