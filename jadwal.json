@@ -132,16 +132,6 @@
     {
         "rute": "Belawan",
         "pelayaran": "SPIL",
-        "nama_kapal": "Pekan Timur - 01/2026",
-        "closing": "17/10/2026 22:00",
-        "etd": "18/10/2026 10:00",
-        "eta": "22/10/2026 04:00",
-        "etb": "22/10/2026 06:00",
-        "open_stack": "15/10/2026 12:00 @ADP (101-105)"
-    },
-    {
-        "rute": "Belawan",
-        "pelayaran": "SPIL",
         "nama_kapal": "Pekan Bintang - 14/2026",
         "closing": "20/10/2026 22:00",
         "etd": "22/10/2026 06:00",
@@ -178,16 +168,6 @@
         "eta": "25/10/2026 07:00",
         "etb": "25/10/2026 09:00",
         "open_stack": "20/10/2026 08:00"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Spil Renata - 34/2026",
-        "closing": "17/10/2026 12:00",
-        "etd": "18/10/2026 16:00",
-        "eta": "22/10/2026 15:00",
-        "etb": "22/10/2026 17:00",
-        "open_stack": "14/10/2026 15:00 @ADP (101-105)"
     },
     {
         "rute": "Pontianak",
@@ -274,8 +254,8 @@
         "pelayaran": "ICON",
         "nama_kapal": "II XI V.99/26 - ICON IBRANI XI",
         "closing": "17/10/2026 10:00",
-        "etd": "Sabtu, 17 Oktober 2026 20:00",
-        "eta": "Senin, 19 Oktober 2026 05:00",
+        "etd": "Sabtu, 17 Oktober 2026 20:30",
+        "eta": "Selasa, 20 Oktober 2026 13:07",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -2322,14 +2302,6 @@
     {
         "rute": "Makassar",
         "pelayaran": "TEMAS",
-        "nama_kapal": "Gihon Mas - 52/26",
-        "closing": "N/A",
-        "etd": "17 Oct 2026",
-        "eta": "20 Oct 2026"
-    },
-    {
-        "rute": "Makassar",
-        "pelayaran": "TEMAS",
         "nama_kapal": "Gaung Mas - 50/26",
         "closing": "N/A",
         "etd": "21 Oct 2026",
@@ -2484,8 +2456,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gale Mas - 50/26",
         "closing": "N/A",
-        "etd": "21 Oct 2026",
-        "eta": "25 Oct 2026"
+        "etd": "22 Oct 2026",
+        "eta": "26 Oct 2026"
     },
     {
         "rute": "BELAWAN",
@@ -2532,8 +2504,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Damaskus Mas - 72/26",
         "closing": "N/A",
-        "etd": "26 Oct 2026",
-        "eta": "28 Oct 2026"
+        "etd": "27 Oct 2026",
+        "eta": "29 Oct 2026"
     },
     {
         "rute": "Pontianak",
@@ -2556,7 +2528,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Batanghari Mas - 78/26",
         "closing": "N/A",
-        "etd": "22 Oct 2026",
+        "etd": "23 Oct 2026",
         "eta": "25 Oct 2026"
     },
     {
