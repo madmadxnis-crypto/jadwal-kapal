@@ -42,32 +42,12 @@
     {
         "rute": "Samarinda",
         "pelayaran": "SPIL",
-        "nama_kapal": "Pulau Layang - 23/2026",
-        "closing": "17/10/2026 14:00",
-        "etd": "20/10/2026 15:00",
-        "eta": "25/10/2026 12:00",
-        "etb": "25/10/2026 14:00",
-        "open_stack": "15/10/2026 17:00"
-    },
-    {
-        "rute": "Samarinda",
-        "pelayaran": "SPIL",
         "nama_kapal": "Pulau Wetar - 21/2026",
         "closing": "21/10/2026 22:00",
         "etd": "22/10/2026 10:00",
         "eta": "27/10/2026 08:00",
         "etb": "27/10/2026 10:00",
         "open_stack": "17/10/2026 14:00"
-    },
-    {
-        "rute": "Balikpapan",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Pulau Layang - 23/2026",
-        "closing": "17/10/2026 14:00",
-        "etd": "20/10/2026 15:00",
-        "eta": "24/10/2026 07:00",
-        "etb": "24/10/2026 09:00",
-        "open_stack": "15/10/2026 17:00"
     },
     {
         "rute": "Balikpapan",
@@ -2054,8 +2034,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gaung Mas - 50/26",
         "closing": "N/A",
-        "etd": "21 Oct 2026",
-        "eta": "24 Oct 2026"
+        "etd": "23 Oct 2026",
+        "eta": "26 Oct 2026"
     },
     {
         "rute": "Makassar",
@@ -2070,8 +2050,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gaung Mas - 53/26",
         "closing": "N/A",
-        "etd": "02 Nov 2026",
-        "eta": "06 Nov 2026"
+        "etd": "04 Nov 2026",
+        "eta": "07 Nov 2026"
     },
     {
         "rute": "Makassar",
