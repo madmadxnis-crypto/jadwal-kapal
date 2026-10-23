@@ -1,5 +1,165 @@
 [
     {
+        "rute": "Makassar",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Silver - 14/2026",
+        "closing": "23/10/2026 22:00",
+        "etd": "24/10/2026 10:00",
+        "eta": "28/10/2026 21:00",
+        "etb": "28/10/2026 23:00",
+        "open_stack": "15/10/2026 15:00"
+    },
+    {
+        "rute": "Makassar",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Jade - 13/2026",
+        "closing": "25/10/2026 22:00",
+        "etd": "26/10/2026 08:00",
+        "eta": "31/10/2026 15:00",
+        "etb": "31/10/2026 17:00",
+        "open_stack": "16/10/2026 23:00"
+    },
+    {
+        "rute": "Makassar",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Hijau Samudra - 17/2026",
+        "closing": "25/10/2026 22:00",
+        "etd": "30/10/2026 07:00",
+        "eta": "01/11/2026 18:00",
+        "etb": "01/11/2026 20:00",
+        "open_stack": "27/10/2026 00:00"
+    },
+    {
+        "rute": "Bitung",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Hijau Samudra - 17/2026",
+        "closing": "25/10/2026 22:00",
+        "etd": "30/10/2026 07:00",
+        "eta": "05/11/2026 15:00",
+        "etb": "05/11/2026 17:00",
+        "open_stack": "16/10/2026 18:00 @ADP (101-105)"
+    },
+    {
+        "rute": "Gorontalo",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Silver - 14/2026",
+        "closing": "23/10/2026 22:00",
+        "etd": "24/10/2026 10:00",
+        "eta": "25/10/2026 06:00",
+        "etb": "25/10/2026 12:00",
+        "open_stack": "15/10/2026 15:00"
+    },
+    {
+        "rute": "Gorontalo",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Jade - 13/2026",
+        "closing": "25/10/2026 22:00",
+        "etd": "26/10/2026 08:00",
+        "eta": "27/10/2026 14:00",
+        "etb": "27/10/2026 17:00",
+        "open_stack": "16/10/2026 23:00"
+    },
+    {
+        "rute": "Samarinda",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Pulau Nunukan - 24/2026",
+        "closing": "25/10/2026 22:00",
+        "etd": "26/10/2026 12:00",
+        "eta": "03/11/2026 17:00",
+        "etb": "03/11/2026 19:00",
+        "open_stack": "22/10/2026 15:00 @ADP (101-105)"
+    },
+    {
+        "rute": "Balikpapan",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Pulau Nunukan - 24/2026",
+        "closing": "25/10/2026 22:00",
+        "etd": "26/10/2026 12:00",
+        "eta": "30/10/2026 04:00",
+        "etb": "30/10/2026 06:00",
+        "open_stack": "22/10/2026 15:00 @ADP (101-105)"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Armada Serasi - 23/2026",
+        "closing": "21/10/2026 14:00",
+        "etd": "23/10/2026 16:00",
+        "eta": "26/10/2026 06:00",
+        "etb": "26/10/2026 08:00",
+        "open_stack": "17/10/2026 11:00 @DSN (004-005)"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Spil Retno - 32/2026",
+        "closing": "25/10/2026 22:00",
+        "etd": "28/10/2026 19:00",
+        "eta": "30/10/2026 21:00",
+        "etb": "30/10/2026 23:00",
+        "open_stack": "21/10/2026 15:00 @DSN (004-005)"
+    },
+    {
+        "rute": "Belawan",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Nelly A100 - 08/2026",
+        "closing": "23/10/2026 22:00",
+        "etd": "26/10/2026 01:00",
+        "eta": "31/10/2026 09:00",
+        "etb": "31/10/2026 11:00",
+        "open_stack": "20/10/2026 15:00"
+    },
+    {
+        "rute": "Belawan",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Armada Permata - 18/2026",
+        "closing": "26/10/2026 22:00",
+        "etd": "28/10/2026 15:00",
+        "eta": "31/10/2026 18:00",
+        "etb": "31/10/2026 20:00",
+        "open_stack": "22/10/2026 12:00 @ADP (101-105)"
+    },
+    {
+        "rute": "Palu",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Pulau Nunukan - 24/2026",
+        "closing": "25/10/2026 22:00",
+        "etd": "26/10/2026 12:00",
+        "eta": "06/11/2026 06:00",
+        "etb": "06/11/2026 08:00",
+        "open_stack": "22/10/2026 15:00 @ADP (101-105)"
+    },
+    {
+        "rute": "Batam",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Selili Baru - 24/2026",
+        "closing": "25/10/2026 22:00",
+        "etd": "27/10/2026 21:00",
+        "eta": "30/10/2026 06:00",
+        "etb": "30/10/2026 08:00",
+        "open_stack": "20/10/2026 14:00"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Spil Renata - 35/2026",
+        "closing": "23/10/2026 12:00",
+        "etd": "25/10/2026 10:00",
+        "eta": "28/10/2026 21:00",
+        "etb": "28/10/2026 23:00",
+        "open_stack": "20/10/2026 16:00"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Spil Rumi - 36/2026",
+        "closing": "28/10/2026 12:00",
+        "etd": "29/10/2026 10:00",
+        "eta": "01/11/2026 19:00",
+        "etb": "01/11/2026 21:00",
+        "open_stack": "23/10/2026 15:00 @ADP (101-105)"
+    },
+    {
         "rute": "Samarinda",
         "pelayaran": "ICON",
         "nama_kapal": "IN I 11 V.2/26 - ICON NEHEMIA I 11",
@@ -74,8 +234,8 @@
         "pelayaran": "ICON",
         "nama_kapal": "IP V,83/26 - MV. ICON PERDANA",
         "closing": "25/10/2026 08:32",
-        "etd": "Selasa, 27 Oktober 2026 08:31",
-        "eta": "Jumat, 30 Oktober 2026 08:31",
+        "etd": "Kamis, 29 Oktober 2026 08:31",
+        "eta": "Minggu, 01 November 2026 08:31",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -84,8 +244,8 @@
         "pelayaran": "ICON",
         "nama_kapal": "II XI V.101/26 - ICON IBRANI XI",
         "closing": "22/10/2026 02:02",
-        "etd": "Sabtu, 24 Oktober 2026 01:59",
-        "eta": "Selasa, 27 Oktober 2026 01:59",
+        "etd": "Senin, 26 Oktober 2026 01:59",
+        "eta": "Rabu, 28 Oktober 2026 01:59",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -126,6 +286,706 @@
         "closing": "27/10/2026 02:33",
         "etd": "Kamis, 29 Oktober 2026 02:31",
         "eta": "Sabtu, 31 Oktober 2026 02:31",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "NATTHA BHUM V.067N -> MAO GANG GUANG ZHOU V.030S",
+        "closing": "N/A",
+        "etd": "25 Oct 2026",
+        "eta": "02 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "NATTHA BHUM V.067N -> MAO GANG GUANG ZHOU V.031S",
+        "closing": "N/A",
+        "etd": "25 Oct 2026",
+        "eta": "06 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "NATTHA BHUM V.067N -> MAO GANG GUANG ZHOU V.032S",
+        "closing": "N/A",
+        "etd": "25 Oct 2026",
+        "eta": "15 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "NATTHA BHUM V.067N -> MAO GANG GUANG ZHOU V.033S",
+        "closing": "N/A",
+        "etd": "25 Oct 2026",
+        "eta": "22 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "NATTHA BHUM V.067N -> MAO GANG GUANG ZHOU V.034S",
+        "closing": "N/A",
+        "etd": "25 Oct 2026",
+        "eta": "30 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "INCRES V.083N -> MAO GANG GUANG ZHOU V.030S",
+        "closing": "N/A",
+        "etd": "26 Oct 2026",
+        "eta": "02 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "INCRES V.083N -> MAO GANG GUANG ZHOU V.031S",
+        "closing": "N/A",
+        "etd": "26 Oct 2026",
+        "eta": "06 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "INCRES V.083N -> MAO GANG GUANG ZHOU V.032S",
+        "closing": "N/A",
+        "etd": "26 Oct 2026",
+        "eta": "15 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "INCRES V.083N -> MAO GANG GUANG ZHOU V.033S",
+        "closing": "N/A",
+        "etd": "26 Oct 2026",
+        "eta": "22 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "INCRES V.083N -> MAO GANG GUANG ZHOU V.034S",
+        "closing": "N/A",
+        "etd": "26 Oct 2026",
+        "eta": "30 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "HIGHWAY V.382N -> MAO GANG GUANG ZHOU V.030S",
+        "closing": "N/A",
+        "etd": "24 Oct 2026",
+        "eta": "02 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "HIGHWAY V.382N -> MAO GANG GUANG ZHOU V.031S",
+        "closing": "N/A",
+        "etd": "24 Oct 2026",
+        "eta": "06 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "HIGHWAY V.382N -> MAO GANG GUANG ZHOU V.032S",
+        "closing": "N/A",
+        "etd": "24 Oct 2026",
+        "eta": "15 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "HIGHWAY V.382N -> MAO GANG GUANG ZHOU V.033S",
+        "closing": "N/A",
+        "etd": "24 Oct 2026",
+        "eta": "22 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "HIGHWAY V.382N -> MAO GANG GUANG ZHOU V.034S",
+        "closing": "N/A",
+        "etd": "24 Oct 2026",
+        "eta": "30 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "NATTHA BHUM V.066N -> MAO GANG GUANG ZHOU V.030S",
+        "closing": "N/A",
+        "etd": "28 Oct 2026",
+        "eta": "02 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "NATTHA BHUM V.066N -> MAO GANG GUANG ZHOU V.031S",
+        "closing": "N/A",
+        "etd": "28 Oct 2026",
+        "eta": "06 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "NATTHA BHUM V.066N -> MAO GANG GUANG ZHOU V.032S",
+        "closing": "N/A",
+        "etd": "28 Oct 2026",
+        "eta": "15 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "NATTHA BHUM V.066N -> MAO GANG GUANG ZHOU V.033S",
+        "closing": "N/A",
+        "etd": "28 Oct 2026",
+        "eta": "22 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "NATTHA BHUM V.066N -> MAO GANG GUANG ZHOU V.034S",
+        "closing": "N/A",
+        "etd": "28 Oct 2026",
+        "eta": "30 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "XIN YANG PU V.207W -> MAO GANG GUANG ZHOU V.030S",
+        "closing": "N/A",
+        "etd": "29 Oct 2026",
+        "eta": "02 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "XIN YANG PU V.207W -> MAO GANG GUANG ZHOU V.031S",
+        "closing": "N/A",
+        "etd": "29 Oct 2026",
+        "eta": "06 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "XIN YANG PU V.207W -> MAO GANG GUANG ZHOU V.032S",
+        "closing": "N/A",
+        "etd": "29 Oct 2026",
+        "eta": "15 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "XIN YANG PU V.207W -> MAO GANG GUANG ZHOU V.033S",
+        "closing": "N/A",
+        "etd": "29 Oct 2026",
+        "eta": "22 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "XIN YANG PU V.207W -> MAO GANG GUANG ZHOU V.034S",
+        "closing": "N/A",
+        "etd": "29 Oct 2026",
+        "eta": "30 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "CELSIUS EINDHOVEN V.036W -> MAO GANG GUANG ZHOU V.030S",
+        "closing": "N/A",
+        "etd": "29 Oct 2026",
+        "eta": "02 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "CELSIUS EINDHOVEN V.036W -> MAO GANG GUANG ZHOU V.031S",
+        "closing": "N/A",
+        "etd": "29 Oct 2026",
+        "eta": "06 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "CELSIUS EINDHOVEN V.036W -> MAO GANG GUANG ZHOU V.032S",
+        "closing": "N/A",
+        "etd": "29 Oct 2026",
+        "eta": "15 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "CELSIUS EINDHOVEN V.036W -> MAO GANG GUANG ZHOU V.033S",
+        "closing": "N/A",
+        "etd": "29 Oct 2026",
+        "eta": "22 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "CELSIUS EINDHOVEN V.036W -> MAO GANG GUANG ZHOU V.034S",
+        "closing": "N/A",
+        "etd": "29 Oct 2026",
+        "eta": "30 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SANUR V.153N -> MAO GANG GUANG ZHOU V.031S",
+        "closing": "N/A",
+        "etd": "30 Oct 2026",
+        "eta": "06 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SANUR V.153N -> MAO GANG GUANG ZHOU V.032S",
+        "closing": "N/A",
+        "etd": "30 Oct 2026",
+        "eta": "15 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SANUR V.153N -> MAO GANG GUANG ZHOU V.033S",
+        "closing": "N/A",
+        "etd": "30 Oct 2026",
+        "eta": "22 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SANUR V.153N -> MAO GANG GUANG ZHOU V.034S",
+        "closing": "N/A",
+        "etd": "30 Oct 2026",
+        "eta": "30 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "HUA DA 617 V.013W -> MAO GANG GUANG ZHOU V.031S",
+        "closing": "N/A",
+        "etd": "31 Oct 2026",
+        "eta": "06 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "HUA DA 617 V.013W -> MAO GANG GUANG ZHOU V.032S",
+        "closing": "N/A",
+        "etd": "31 Oct 2026",
+        "eta": "15 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "HUA DA 617 V.013W -> MAO GANG GUANG ZHOU V.033S",
+        "closing": "N/A",
+        "etd": "31 Oct 2026",
+        "eta": "22 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "HUA DA 617 V.013W -> MAO GANG GUANG ZHOU V.034S",
+        "closing": "N/A",
+        "etd": "31 Oct 2026",
+        "eta": "30 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SIGLI V.110N -> MAO GANG GUANG ZHOU V.032S",
+        "closing": "N/A",
+        "etd": "03 Nov 2026",
+        "eta": "15 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SIGLI V.110N -> MAO GANG GUANG ZHOU V.033S",
+        "closing": "N/A",
+        "etd": "03 Nov 2026",
+        "eta": "22 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SIGLI V.110N -> MAO GANG GUANG ZHOU V.034S",
+        "closing": "N/A",
+        "etd": "03 Nov 2026",
+        "eta": "30 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR CARITA V.030N -> MAO GANG GUANG ZHOU V.032S",
+        "closing": "N/A",
+        "etd": "04 Nov 2026",
+        "eta": "15 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR CARITA V.030N -> MAO GANG GUANG ZHOU V.033S",
+        "closing": "N/A",
+        "etd": "04 Nov 2026",
+        "eta": "22 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR CARITA V.030N -> MAO GANG GUANG ZHOU V.034S",
+        "closing": "N/A",
+        "etd": "04 Nov 2026",
+        "eta": "30 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "HALLEY V.018W -> MAO GANG GUANG ZHOU V.032S",
+        "closing": "N/A",
+        "etd": "05 Nov 2026",
+        "eta": "15 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "HALLEY V.018W -> MAO GANG GUANG ZHOU V.033S",
+        "closing": "N/A",
+        "etd": "05 Nov 2026",
+        "eta": "22 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "HALLEY V.018W -> MAO GANG GUANG ZHOU V.034S",
+        "closing": "N/A",
+        "etd": "05 Nov 2026",
+        "eta": "30 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "INCRES V.084N -> MAO GANG GUANG ZHOU V.032S",
+        "closing": "N/A",
+        "etd": "07 Nov 2026",
+        "eta": "15 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "INCRES V.084N -> MAO GANG GUANG ZHOU V.033S",
+        "closing": "N/A",
+        "etd": "07 Nov 2026",
+        "eta": "22 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "INCRES V.084N -> MAO GANG GUANG ZHOU V.034S",
+        "closing": "N/A",
+        "etd": "07 Nov 2026",
+        "eta": "30 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "HIGHWAY V.383N -> MAO GANG GUANG ZHOU V.032S",
+        "closing": "N/A",
+        "etd": "07 Nov 2026",
+        "eta": "15 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "HIGHWAY V.383N -> MAO GANG GUANG ZHOU V.033S",
+        "closing": "N/A",
+        "etd": "07 Nov 2026",
+        "eta": "22 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "HIGHWAY V.383N -> MAO GANG GUANG ZHOU V.034S",
+        "closing": "N/A",
+        "etd": "07 Nov 2026",
+        "eta": "30 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "NATTHA BHUM V.068N -> MAO GANG GUANG ZHOU V.032S",
+        "closing": "N/A",
+        "etd": "08 Nov 2026",
+        "eta": "15 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "NATTHA BHUM V.068N -> MAO GANG GUANG ZHOU V.033S",
+        "closing": "N/A",
+        "etd": "08 Nov 2026",
+        "eta": "22 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "NATTHA BHUM V.068N -> MAO GANG GUANG ZHOU V.034S",
+        "closing": "N/A",
+        "etd": "08 Nov 2026",
+        "eta": "30 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SANUR V.154N -> MAO GANG GUANG ZHOU V.032S",
+        "closing": "N/A",
+        "etd": "08 Nov 2026",
+        "eta": "15 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SANUR V.154N -> MAO GANG GUANG ZHOU V.033S",
+        "closing": "N/A",
+        "etd": "08 Nov 2026",
+        "eta": "22 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SANUR V.154N -> MAO GANG GUANG ZHOU V.034S",
+        "closing": "N/A",
+        "etd": "08 Nov 2026",
+        "eta": "30 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "HUA DA 617 V.014W -> MAO GANG GUANG ZHOU V.033S",
+        "closing": "N/A",
+        "etd": "12 Nov 2026",
+        "eta": "22 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "HUA DA 617 V.014W -> MAO GANG GUANG ZHOU V.034S",
+        "closing": "N/A",
+        "etd": "12 Nov 2026",
+        "eta": "30 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SIGLI V.111N -> MAO GANG GUANG ZHOU V.033S",
+        "closing": "N/A",
+        "etd": "16 Nov 2026",
+        "eta": "22 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SIGLI V.111N -> MAO GANG GUANG ZHOU V.034S",
+        "closing": "N/A",
+        "etd": "16 Nov 2026",
+        "eta": "30 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR CARITA V.031N -> MAO GANG GUANG ZHOU V.033S",
+        "closing": "N/A",
+        "etd": "17 Nov 2026",
+        "eta": "22 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR CARITA V.031N -> MAO GANG GUANG ZHOU V.034S",
+        "closing": "N/A",
+        "etd": "17 Nov 2026",
+        "eta": "30 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "XIN YANG PU V.208W -> MAO GANG GUANG ZHOU V.034S",
+        "closing": "N/A",
+        "etd": "19 Nov 2026",
+        "eta": "30 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "INCRES V.085N -> MAO GANG GUANG ZHOU V.034S",
+        "closing": "N/A",
+        "etd": "20 Nov 2026",
+        "eta": "30 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "HIGHWAY V.384N -> MAO GANG GUANG ZHOU V.034S",
+        "closing": "N/A",
+        "etd": "22 Nov 2026",
+        "eta": "30 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SANUR V.155N -> MAO GANG GUANG ZHOU V.034S",
+        "closing": "N/A",
+        "etd": "22 Nov 2026",
+        "eta": "30 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Medan",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SIGLI V.112N -> MAO GANG GUANG ZHOU V.034S",
+        "closing": "N/A",
+        "etd": "25 Nov 2026",
+        "eta": "30 Nov 2026",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -322,46 +1182,6 @@
     {
         "rute": "Batam",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "SINAR SANUR V.153N -> SINAR PANGANDARAN V.0148S",
-        "closing": "N/A",
-        "etd": "28 Oct 2026",
-        "eta": "31 Oct 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Batam",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "SINAR SANUR V.153N -> JAYA NUUR V.001S",
-        "closing": "N/A",
-        "etd": "28 Oct 2026",
-        "eta": "04 Nov 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Batam",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "SINAR SANUR V.153N -> SINAR PANGANDARAN V.0149S",
-        "closing": "N/A",
-        "etd": "28 Oct 2026",
-        "eta": "04 Nov 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Batam",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "SINAR SANUR V.153N -> JAYA NUUR V.002S",
-        "closing": "N/A",
-        "etd": "28 Oct 2026",
-        "eta": "08 Nov 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Batam",
-        "pelayaran": "SAMUDERA",
         "nama_kapal": "XIN YANG PU V.207W -> JAYA NUUR V.001S",
         "closing": "N/A",
         "etd": "29 Oct 2026",
@@ -415,6 +1235,36 @@
         "nama_kapal": "CELSIUS EINDHOVEN V.036W -> JAYA NUUR V.002S",
         "closing": "N/A",
         "etd": "29 Oct 2026",
+        "eta": "08 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Batam",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SANUR V.153N -> JAYA NUUR V.001S",
+        "closing": "N/A",
+        "etd": "30 Oct 2026",
+        "eta": "04 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Batam",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SANUR V.153N -> SINAR PANGANDARAN V.0149S",
+        "closing": "N/A",
+        "etd": "30 Oct 2026",
+        "eta": "04 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Batam",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SANUR V.153N -> JAYA NUUR V.002S",
+        "closing": "N/A",
+        "etd": "30 Oct 2026",
         "eta": "08 Nov 2026",
         "etb": "N/A",
         "open_stack": "N/A"
@@ -482,7 +1332,7 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "NATTHA BHUM V.067N -> INDO SUKSES 103 V.141S",
+        "nama_kapal": "NATTHA BHUM V.067N -> INDO SUKSES 103 V.238E",
         "closing": "N/A",
         "etd": "25 Oct 2026",
         "eta": "13 Nov 2026",
@@ -492,7 +1342,7 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "NATTHA BHUM V.067N -> INDO SUKSES 103 V.238E",
+        "nama_kapal": "NATTHA BHUM V.067N -> INDO SUKSES 103 V.141S",
         "closing": "N/A",
         "etd": "25 Oct 2026",
         "eta": "13 Nov 2026",
@@ -572,16 +1422,6 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "NATTHA BHUM V.067N -> INDO SUKSES 103 V.240E",
-        "closing": "N/A",
-        "etd": "25 Oct 2026",
-        "eta": "03 Dec 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SAMUDERA",
         "nama_kapal": "NATTHA BHUM V.067N -> INDO SUKSES 103 V.241E",
         "closing": "N/A",
         "etd": "25 Oct 2026",
@@ -602,10 +1442,10 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "INCRES V.083N -> INDO SUKSES 103 V.141S",
+        "nama_kapal": "NATTHA BHUM V.067N -> INDO SUKSES 103 V.240E",
         "closing": "N/A",
-        "etd": "26 Oct 2026",
-        "eta": "13 Nov 2026",
+        "etd": "25 Oct 2026",
+        "eta": "03 Dec 2026",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -623,6 +1463,16 @@
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
         "nama_kapal": "INCRES V.083N -> INDO SUKSES 103 V.238E",
+        "closing": "N/A",
+        "etd": "26 Oct 2026",
+        "eta": "13 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "INCRES V.083N -> INDO SUKSES 103 V.141S",
         "closing": "N/A",
         "etd": "26 Oct 2026",
         "eta": "13 Nov 2026",
@@ -652,20 +1502,20 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "INCRES V.083N -> INDO SUKSES 103 V.144S",
+        "nama_kapal": "INCRES V.083N -> INDO SUKSES 103 V.145S",
         "closing": "N/A",
         "etd": "26 Oct 2026",
-        "eta": "04 Dec 2026",
+        "eta": "03 Dec 2026",
         "etb": "N/A",
         "open_stack": "N/A"
     },
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "INCRES V.083N -> INDO SUKSES 103 V.145S",
+        "nama_kapal": "INCRES V.083N -> INDO SUKSES 103 V.144S",
         "closing": "N/A",
         "etd": "26 Oct 2026",
-        "eta": "03 Dec 2026",
+        "eta": "04 Dec 2026",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -692,7 +1542,7 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "INCRES V.083N -> INDO SUKSES 103 V.240E",
+        "nama_kapal": "INCRES V.083N -> INDO SUKSES 103 V.145S",
         "closing": "N/A",
         "etd": "26 Oct 2026",
         "eta": "03 Dec 2026",
@@ -702,7 +1552,7 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "INCRES V.083N -> INDO SUKSES 103 V.145S",
+        "nama_kapal": "INCRES V.083N -> INDO SUKSES 103 V.240E",
         "closing": "N/A",
         "etd": "26 Oct 2026",
         "eta": "03 Dec 2026",
@@ -832,16 +1682,6 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "HIGHWAY V.382N -> INDO SUKSES 103 V.241E",
-        "closing": "N/A",
-        "etd": "24 Oct 2026",
-        "eta": "04 Dec 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SAMUDERA",
         "nama_kapal": "HIGHWAY V.382N -> INDO SUKSES 103 V.145S",
         "closing": "N/A",
         "etd": "24 Oct 2026",
@@ -852,10 +1692,10 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "HIGHWAY V.382N -> INDO SUKSES 103 V.240E",
+        "nama_kapal": "HIGHWAY V.382N -> INDO SUKSES 103 V.241E",
         "closing": "N/A",
         "etd": "24 Oct 2026",
-        "eta": "03 Dec 2026",
+        "eta": "04 Dec 2026",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -866,6 +1706,16 @@
         "closing": "N/A",
         "etd": "24 Oct 2026",
         "eta": "04 Dec 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "HIGHWAY V.382N -> INDO SUKSES 103 V.240E",
+        "closing": "N/A",
+        "etd": "24 Oct 2026",
+        "eta": "03 Dec 2026",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -962,6 +1812,16 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
+        "nama_kapal": "NATTHA BHUM V.066N -> INDO SUKSES 103 V.241E",
+        "closing": "N/A",
+        "etd": "28 Oct 2026",
+        "eta": "04 Dec 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SAMUDERA",
         "nama_kapal": "NATTHA BHUM V.066N -> INDO SUKSES 103 V.240E",
         "closing": "N/A",
         "etd": "28 Oct 2026",
@@ -976,136 +1836,6 @@
         "closing": "N/A",
         "etd": "28 Oct 2026",
         "eta": "04 Dec 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "NATTHA BHUM V.066N -> INDO SUKSES 103 V.241E",
-        "closing": "N/A",
-        "etd": "28 Oct 2026",
-        "eta": "04 Dec 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "SINAR SANUR V.153N -> INDO SUKSES 103 V.238E",
-        "closing": "N/A",
-        "etd": "28 Oct 2026",
-        "eta": "13 Nov 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "SINAR SANUR V.153N -> INDO SUKSES 103 V.141S",
-        "closing": "N/A",
-        "etd": "28 Oct 2026",
-        "eta": "13 Nov 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "SINAR SANUR V.153N -> INDO SUKSES 51 V.238E",
-        "closing": "N/A",
-        "etd": "28 Oct 2026",
-        "eta": "19 Nov 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "SINAR SANUR V.153N -> INDO SUKSES 51 V.239E",
-        "closing": "N/A",
-        "etd": "28 Oct 2026",
-        "eta": "20 Nov 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "SINAR SANUR V.153N -> INDO SUKSES 103 V.145S",
-        "closing": "N/A",
-        "etd": "28 Oct 2026",
-        "eta": "03 Dec 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "SINAR SANUR V.153N -> INDO SUKSES 103 V.144S",
-        "closing": "N/A",
-        "etd": "28 Oct 2026",
-        "eta": "04 Dec 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "SINAR SANUR V.153N -> INDO SUKSES 50 V.240E",
-        "closing": "N/A",
-        "etd": "28 Oct 2026",
-        "eta": "27 Nov 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "SINAR SANUR V.153N -> INDO SUKSES 50 V.239E",
-        "closing": "N/A",
-        "etd": "28 Oct 2026",
-        "eta": "28 Nov 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "SINAR SANUR V.153N -> INDO SUKSES 103 V.241E",
-        "closing": "N/A",
-        "etd": "28 Oct 2026",
-        "eta": "04 Dec 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "SINAR SANUR V.153N -> INDO SUKSES 103 V.240E",
-        "closing": "N/A",
-        "etd": "28 Oct 2026",
-        "eta": "03 Dec 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "SINAR SANUR V.153N -> INDO SUKSES 103 V.144S",
-        "closing": "N/A",
-        "etd": "28 Oct 2026",
-        "eta": "04 Dec 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SAMUDERA",
-        "nama_kapal": "SINAR SANUR V.153N -> INDO SUKSES 103 V.145S",
-        "closing": "N/A",
-        "etd": "28 Oct 2026",
-        "eta": "03 Dec 2026",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -1192,16 +1922,6 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
-        "nama_kapal": "XIN YANG PU V.207W -> INDO SUKSES 103 V.240E",
-        "closing": "N/A",
-        "etd": "29 Oct 2026",
-        "eta": "03 Dec 2026",
-        "etb": "N/A",
-        "open_stack": "N/A"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SAMUDERA",
         "nama_kapal": "XIN YANG PU V.207W -> INDO SUKSES 103 V.241E",
         "closing": "N/A",
         "etd": "29 Oct 2026",
@@ -1213,6 +1933,16 @@
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
         "nama_kapal": "XIN YANG PU V.207W -> INDO SUKSES 103 V.145S",
+        "closing": "N/A",
+        "etd": "29 Oct 2026",
+        "eta": "03 Dec 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "XIN YANG PU V.207W -> INDO SUKSES 103 V.240E",
         "closing": "N/A",
         "etd": "29 Oct 2026",
         "eta": "03 Dec 2026",
@@ -1352,6 +2082,126 @@
     {
         "rute": "Pontianak",
         "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SANUR V.153N -> INDO SUKSES 103 V.238E",
+        "closing": "N/A",
+        "etd": "30 Oct 2026",
+        "eta": "13 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SANUR V.153N -> INDO SUKSES 103 V.141S",
+        "closing": "N/A",
+        "etd": "30 Oct 2026",
+        "eta": "13 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SANUR V.153N -> INDO SUKSES 51 V.238E",
+        "closing": "N/A",
+        "etd": "30 Oct 2026",
+        "eta": "19 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SANUR V.153N -> INDO SUKSES 51 V.239E",
+        "closing": "N/A",
+        "etd": "30 Oct 2026",
+        "eta": "20 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SANUR V.153N -> INDO SUKSES 103 V.144S",
+        "closing": "N/A",
+        "etd": "30 Oct 2026",
+        "eta": "04 Dec 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SANUR V.153N -> INDO SUKSES 103 V.145S",
+        "closing": "N/A",
+        "etd": "30 Oct 2026",
+        "eta": "03 Dec 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SANUR V.153N -> INDO SUKSES 50 V.240E",
+        "closing": "N/A",
+        "etd": "30 Oct 2026",
+        "eta": "27 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SANUR V.153N -> INDO SUKSES 50 V.239E",
+        "closing": "N/A",
+        "etd": "30 Oct 2026",
+        "eta": "28 Nov 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SANUR V.153N -> INDO SUKSES 103 V.241E",
+        "closing": "N/A",
+        "etd": "30 Oct 2026",
+        "eta": "04 Dec 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SANUR V.153N -> INDO SUKSES 103 V.240E",
+        "closing": "N/A",
+        "etd": "30 Oct 2026",
+        "eta": "03 Dec 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SANUR V.153N -> INDO SUKSES 103 V.144S",
+        "closing": "N/A",
+        "etd": "30 Oct 2026",
+        "eta": "04 Dec 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SAMUDERA",
+        "nama_kapal": "SINAR SANUR V.153N -> INDO SUKSES 103 V.145S",
+        "closing": "N/A",
+        "etd": "30 Oct 2026",
+        "eta": "03 Dec 2026",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SAMUDERA",
         "nama_kapal": "HUA DA 617 V.013W -> INDO SUKSES 103 V.141S",
         "closing": "N/A",
         "etd": "31 Oct 2026",
@@ -1482,8 +2332,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gihon Mas - 54/26",
         "closing": "N/A",
-        "etd": "27 Oct 2026",
-        "eta": "30 Oct 2026"
+        "etd": "28 Oct 2026",
+        "eta": "31 Oct 2026"
     },
     {
         "rute": "Makassar",
@@ -1491,15 +2341,15 @@
         "nama_kapal": "Gaung Mas - 53/26",
         "closing": "N/A",
         "etd": "04 Nov 2026",
-        "eta": "07 Nov 2026"
+        "eta": "08 Nov 2026"
     },
     {
         "rute": "Makassar",
         "pelayaran": "TEMAS",
         "nama_kapal": "Gihon Mas - 57/26",
         "closing": "N/A",
-        "etd": "08 Nov 2026",
-        "eta": "11 Nov 2026"
+        "etd": "09 Nov 2026",
+        "eta": "12 Nov 2026"
     },
     {
         "rute": "Bitung",
@@ -1514,8 +2364,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Izumi Mas - 59/26",
         "closing": "N/A",
-        "etd": "02 Nov 2026",
-        "eta": "08 Nov 2026"
+        "etd": "03 Nov 2026",
+        "eta": "09 Nov 2026"
     },
     {
         "rute": "Bitung",
@@ -1530,8 +2380,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Izumi Mas - 64/26",
         "closing": "N/A",
-        "etd": "17 Nov 2026",
-        "eta": "23 Nov 2026"
+        "etd": "18 Nov 2026",
+        "eta": "24 Nov 2026"
     },
     {
         "rute": "Gorontalo",
@@ -1578,8 +2428,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Meratus Konawe - 64/26",
         "closing": "N/A",
-        "etd": "29 Oct 2026",
-        "eta": "03 Nov 2026"
+        "etd": "27 Oct 2026",
+        "eta": "02 Nov 2026"
     },
     {
         "rute": "Balikpapan",
@@ -1618,8 +2468,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Meratus Konawe - 64/26",
         "closing": "N/A",
-        "etd": "29 Oct 2026",
-        "eta": "02 Nov 2026"
+        "etd": "27 Oct 2026",
+        "eta": "01 Nov 2026"
     },
     {
         "rute": "Banjarmasin",
@@ -1644,6 +2494,14 @@
         "closing": "N/A",
         "etd": "08 Nov 2026",
         "eta": "10 Nov 2026"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Kanal Mas - 64/26",
+        "closing": "N/A",
+        "etd": "27 Oct 2026",
+        "eta": "06 Nov 2026"
     },
     {
         "rute": "BELAWAN",
@@ -1696,6 +2554,14 @@
     {
         "rute": "BELAWAN",
         "pelayaran": "TEMAS",
+        "nama_kapal": "Huanghe Mas - 59/26",
+        "closing": "N/A",
+        "etd": "05 Nov 2026",
+        "eta": "09 Nov 2026"
+    },
+    {
+        "rute": "BELAWAN",
+        "pelayaran": "TEMAS",
         "nama_kapal": "Gangga Mas - 50/26",
         "closing": "N/A",
         "etd": "06 Nov 2026",
@@ -1738,8 +2604,16 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Meratus Konawe - 64/26",
         "closing": "N/A",
-        "etd": "29 Oct 2026",
-        "eta": "05 Nov 2026"
+        "etd": "27 Oct 2026",
+        "eta": "04 Nov 2026"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Kanal Mas - 64/26",
+        "closing": "N/A",
+        "etd": "27 Oct 2026",
+        "eta": "29 Oct 2026"
     },
     {
         "rute": "Pontianak",
@@ -1760,14 +2634,6 @@
     {
         "rute": "Pontianak",
         "pelayaran": "TEMAS",
-        "nama_kapal": "Mare Mas - 65/26",
-        "closing": "N/A",
-        "etd": "22 Oct 2026",
-        "eta": "24 Oct 2026"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "TEMAS",
         "nama_kapal": "Mare Mas - 67/26",
         "closing": "N/A",
         "etd": "29 Oct 2026",
@@ -1780,14 +2646,6 @@
         "closing": "N/A",
         "etd": "04 Nov 2026",
         "eta": "06 Nov 2026"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "TEMAS",
-        "nama_kapal": "Eagle Mas - 68/26",
-        "closing": "N/A",
-        "etd": "22 Oct 2026",
-        "eta": "24 Oct 2026"
     },
     {
         "rute": "Pontianak",
@@ -1810,16 +2668,32 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Batanghari Mas - 81/26",
         "closing": "N/A",
-        "etd": "01 Nov 2026",
-        "eta": "03 Nov 2026"
+        "etd": "31 Oct 2026",
+        "eta": "02 Nov 2026"
     },
     {
         "rute": "BATAM",
         "pelayaran": "TEMAS",
         "nama_kapal": "Belik Mas - 63/26",
         "closing": "N/A",
-        "etd": "26 Oct 2026",
+        "etd": "27 Oct 2026",
         "eta": "29 Oct 2026"
+    },
+    {
+        "rute": "BATAM",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Belik Mas - 65/26",
+        "closing": "N/A",
+        "etd": "03 Nov 2026",
+        "eta": "05 Nov 2026"
+    },
+    {
+        "rute": "BATAM",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Belik Mas - 67/26",
+        "closing": "N/A",
+        "etd": "09 Nov 2026",
+        "eta": "11 Nov 2026"
     },
     {
         "rute": "BATAM",
