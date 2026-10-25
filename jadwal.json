@@ -293,8 +293,8 @@
         "rute": "Pontianak",
         "pelayaran": "ICON",
         "nama_kapal": "IJ II 13 V.78/26 - ICON JAMES II 13",
-        "closing": "23/10/2026 08:34",
-        "etd": "Minggu, 25 Oktober 2026 08:31",
+        "closing": "25/10/2026 08:00",
+        "etd": "Minggu, 25 Oktober 2026 04:35",
         "eta": "Selasa, 27 Oktober 2026 08:31",
         "etb": "N/A",
         "open_stack": "N/A"
@@ -318,14 +318,6 @@
         "eta": "Selasa, 03 November 2026 02:42",
         "etb": "N/A",
         "open_stack": "N/A"
-    },
-    {
-        "rute": "Makassar",
-        "pelayaran": "TEMAS",
-        "nama_kapal": "Gaung Mas - 50/26",
-        "closing": "N/A",
-        "etd": "24 Oct 2026",
-        "eta": "27 Oct 2026"
     },
     {
         "rute": "Makassar",
@@ -396,16 +388,16 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Hilir Mas - 56/26",
         "closing": "N/A",
-        "etd": "24 Oct 2026",
-        "eta": "28 Oct 2026"
+        "etd": "26 Oct 2026",
+        "eta": "29 Oct 2026"
     },
     {
         "rute": "Samarinda",
         "pelayaran": "TEMAS",
         "nama_kapal": "Hilir Mas - 60/26",
         "closing": "N/A",
-        "etd": "03 Nov 2026",
-        "eta": "07 Nov 2026"
+        "etd": "04 Nov 2026",
+        "eta": "08 Nov 2026"
     },
     {
         "rute": "Samarinda",
@@ -436,16 +428,16 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Hilir Mas - 56/26",
         "closing": "N/A",
-        "etd": "24 Oct 2026",
-        "eta": "27 Oct 2026"
+        "etd": "26 Oct 2026",
+        "eta": "28 Oct 2026"
     },
     {
         "rute": "Balikpapan",
         "pelayaran": "TEMAS",
         "nama_kapal": "Hilir Mas - 60/26",
         "closing": "N/A",
-        "etd": "03 Nov 2026",
-        "eta": "05 Nov 2026"
+        "etd": "04 Nov 2026",
+        "eta": "07 Nov 2026"
     },
     {
         "rute": "Balikpapan",
@@ -461,7 +453,7 @@
         "nama_kapal": "Telaga Mas - 52/26",
         "closing": "N/A",
         "etd": "12 Nov 2026",
-        "eta": "15 Nov 2026"
+        "eta": "16 Nov 2026"
     },
     {
         "rute": "Balikpapan",
@@ -556,16 +548,16 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Hilir Mas - 56/26",
         "closing": "N/A",
-        "etd": "24 Oct 2026",
-        "eta": "29 Oct 2026"
+        "etd": "26 Oct 2026",
+        "eta": "30 Oct 2026"
     },
     {
         "rute": "PALU",
         "pelayaran": "TEMAS",
         "nama_kapal": "Hilir Mas - 60/26",
         "closing": "N/A",
-        "etd": "03 Nov 2026",
-        "eta": "08 Nov 2026"
+        "etd": "04 Nov 2026",
+        "eta": "09 Nov 2026"
     },
     {
         "rute": "PALU",
@@ -581,7 +573,7 @@
         "nama_kapal": "Telaga Mas - 52/26",
         "closing": "N/A",
         "etd": "12 Nov 2026",
-        "eta": "18 Nov 2026"
+        "eta": "19 Nov 2026"
     },
     {
         "rute": "PALU",
@@ -628,8 +620,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Mare Mas - 69/26",
         "closing": "N/A",
-        "etd": "04 Nov 2026",
-        "eta": "06 Nov 2026"
+        "etd": "05 Nov 2026",
+        "eta": "07 Nov 2026"
     },
     {
         "rute": "Pontianak",
@@ -670,14 +662,6 @@
         "closing": "N/A",
         "etd": "09 Nov 2026",
         "eta": "11 Nov 2026"
-    },
-    {
-        "rute": "BATAM",
-        "pelayaran": "TEMAS",
-        "nama_kapal": "Estuari Mas - 62/26",
-        "closing": "N/A",
-        "etd": "24 Oct 2026",
-        "eta": "27 Oct 2026"
     },
     {
         "rute": "BATAM",
