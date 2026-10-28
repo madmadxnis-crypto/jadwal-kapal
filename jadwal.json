@@ -82,16 +82,6 @@
     {
         "rute": "Banjarmasin",
         "pelayaran": "SPIL",
-        "nama_kapal": "Spil Retno - 32/2026",
-        "closing": "27/10/2026 16:00",
-        "etd": "28/10/2026 18:00",
-        "eta": "30/10/2026 20:00",
-        "etb": "30/10/2026 22:00",
-        "open_stack": "21/10/2026 15:00 @DSN (004-005)"
-    },
-    {
-        "rute": "Banjarmasin",
-        "pelayaran": "SPIL",
         "nama_kapal": "Bali Sanur - 25/2026",
         "closing": "30/10/2026 22:00",
         "etd": "31/10/2026 16:00",
@@ -312,7 +302,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gaung Mas - 53/26",
         "closing": "N/A",
-        "etd": "05 Nov 2026",
+        "etd": "06 Nov 2026",
         "eta": "09 Nov 2026"
     },
     {
@@ -384,7 +374,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Kanal Mas - 64/26",
         "closing": "N/A",
-        "etd": "29 Oct 2026",
+        "etd": "28 Oct 2026",
         "eta": "24 Nov 2026"
     },
     {
@@ -480,7 +470,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Kanal Mas - 64/26",
         "closing": "N/A",
-        "etd": "29 Oct 2026",
+        "etd": "28 Oct 2026",
         "eta": "07 Nov 2026"
     },
     {
@@ -504,8 +494,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gale Mas - 52/26",
         "closing": "N/A",
-        "etd": "02 Nov 2026",
-        "eta": "06 Nov 2026"
+        "etd": "04 Nov 2026",
+        "eta": "07 Nov 2026"
     },
     {
         "rute": "BELAWAN",
@@ -552,7 +542,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Kanal Mas - 64/26",
         "closing": "N/A",
-        "etd": "29 Oct 2026",
+        "etd": "28 Oct 2026",
         "eta": "30 Oct 2026"
     },
     {
