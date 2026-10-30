@@ -52,32 +52,12 @@
     {
         "rute": "Samarinda",
         "pelayaran": "SPIL",
-        "nama_kapal": "Vertikal - 22/2026",
-        "closing": "29/10/2026 12:00",
-        "etd": "30/10/2026 22:00",
-        "eta": "05/11/2026 11:00",
-        "etb": "05/11/2026 13:00",
-        "open_stack": "24/10/2026 23:00"
-    },
-    {
-        "rute": "Samarinda",
-        "pelayaran": "SPIL",
         "nama_kapal": "Spil Retno - 33/2026",
         "closing": "02/11/2026 22:00",
         "etd": "06/11/2026 01:00",
         "eta": "09/11/2026 10:00",
         "etb": "09/11/2026 12:00",
         "open_stack": "29/10/2026 15:00 @DSN (004-005)"
-    },
-    {
-        "rute": "Balikpapan",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Vertikal - 22/2026",
-        "closing": "29/10/2026 12:00",
-        "etd": "30/10/2026 22:00",
-        "eta": "03/11/2026 05:00",
-        "etb": "03/11/2026 07:00",
-        "open_stack": "24/10/2026 23:00"
     },
     {
         "rute": "Balikpapan",
@@ -108,16 +88,6 @@
         "eta": "06/11/2026 05:00",
         "etb": "06/11/2026 07:00",
         "open_stack": "29/10/2026 10:00 @DSN (004-005)"
-    },
-    {
-        "rute": "Belawan",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Ksm Xplorer 135 - 04/2026",
-        "closing": "30/10/2026 10:00",
-        "etd": "30/10/2026 18:00",
-        "eta": "03/11/2026 12:00",
-        "etb": "03/11/2026 14:00",
-        "open_stack": "28/10/2026 07:00"
     },
     {
         "rute": "Belawan",
@@ -454,18 +424,26 @@
     {
         "rute": "Banjarmasin",
         "pelayaran": "TEMAS",
+        "nama_kapal": "Eden Mas - 65/26",
+        "closing": "N/A",
+        "etd": "30 Oct 2026",
+        "eta": "01 Nov 2026"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "TEMAS",
         "nama_kapal": "Eden Mas - 67/26",
         "closing": "N/A",
-        "etd": "04 Nov 2026",
-        "eta": "06 Nov 2026"
+        "etd": "05 Nov 2026",
+        "eta": "07 Nov 2026"
     },
     {
         "rute": "Banjarmasin",
         "pelayaran": "TEMAS",
         "nama_kapal": "Eden Mas - 69/26",
         "closing": "N/A",
-        "etd": "10 Nov 2026",
-        "eta": "13 Nov 2026"
+        "etd": "12 Nov 2026",
+        "eta": "14 Nov 2026"
     },
     {
         "rute": "BELAWAN",
@@ -482,6 +460,14 @@
         "closing": "N/A",
         "etd": "10 Nov 2026",
         "eta": "14 Nov 2026"
+    },
+    {
+        "rute": "BELAWAN",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Huanghe Mas - 57/26",
+        "closing": "N/A",
+        "etd": "30 Oct 2026",
+        "eta": "03 Nov 2026"
     },
     {
         "rute": "BELAWAN",
@@ -504,8 +490,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Huanghe Mas - 59/26",
         "closing": "N/A",
-        "etd": "07 Nov 2026",
-        "eta": "11 Nov 2026"
+        "etd": "09 Nov 2026",
+        "eta": "13 Nov 2026"
     },
     {
         "rute": "PALU",
@@ -553,14 +539,14 @@
         "nama_kapal": "Eagle Mas - 70/26",
         "closing": "N/A",
         "etd": "30 Oct 2026",
-        "eta": "02 Nov 2026"
+        "eta": "01 Nov 2026"
     },
     {
         "rute": "Pontianak",
         "pelayaran": "TEMAS",
         "nama_kapal": "Eagle Mas - 72/26",
         "closing": "N/A",
-        "etd": "07 Nov 2026",
+        "etd": "06 Nov 2026",
         "eta": "09 Nov 2026"
     },
     {
@@ -568,7 +554,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Eagle Mas - 74/26",
         "closing": "N/A",
-        "etd": "14 Nov 2026",
+        "etd": "13 Nov 2026",
         "eta": "16 Nov 2026"
     },
     {
@@ -608,8 +594,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Belik Mas - 65/26",
         "closing": "N/A",
-        "etd": "03 Nov 2026",
-        "eta": "05 Nov 2026"
+        "etd": "04 Nov 2026",
+        "eta": "06 Nov 2026"
     },
     {
         "rute": "BATAM",
@@ -617,7 +603,7 @@
         "nama_kapal": "Belik Mas - 67/26",
         "closing": "N/A",
         "etd": "10 Nov 2026",
-        "eta": "12 Nov 2026"
+        "eta": "13 Nov 2026"
     },
     {
         "rute": "BATAM",
