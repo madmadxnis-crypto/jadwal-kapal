@@ -2,32 +2,12 @@
     {
         "rute": "Makassar",
         "pelayaran": "SPIL",
-        "nama_kapal": "Oriental Gold - 18/2026",
-        "closing": "31/10/2026 10:00",
-        "etd": "01/11/2026 14:00",
-        "eta": "04/11/2026 01:00",
-        "etb": "04/11/2026 03:00",
-        "open_stack": "28/10/2026 20:00"
-    },
-    {
-        "rute": "Makassar",
-        "pelayaran": "SPIL",
         "nama_kapal": "Oriental Diamond - 11/2026",
         "closing": "02/11/2026 22:00",
         "etd": "04/11/2026 04:00",
         "eta": "10/11/2026 08:00",
         "etb": "10/11/2026 10:00",
         "open_stack": "25/10/2026 16:00"
-    },
-    {
-        "rute": "Bitung",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Oriental Gold - 18/2026",
-        "closing": "31/10/2026 10:00",
-        "etd": "01/11/2026 14:00",
-        "eta": "07/11/2026 19:00",
-        "etb": "07/11/2026 21:00",
-        "open_stack": "28/10/2026 20:00"
     },
     {
         "rute": "Bitung",
@@ -302,14 +282,6 @@
     {
         "rute": "Makassar",
         "pelayaran": "TEMAS",
-        "nama_kapal": "Gihon Mas - 54/26",
-        "closing": "N/A",
-        "etd": "31 Oct 2026",
-        "eta": "03 Nov 2026"
-    },
-    {
-        "rute": "Makassar",
-        "pelayaran": "TEMAS",
         "nama_kapal": "Gaung Mas - 53/26",
         "closing": "N/A",
         "etd": "06 Nov 2026",
@@ -376,7 +348,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Hilir Mas - 60/26",
         "closing": "N/A",
-        "etd": "05 Nov 2026",
+        "etd": "06 Nov 2026",
         "eta": "09 Nov 2026"
     },
     {
@@ -400,8 +372,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Hilir Mas - 60/26",
         "closing": "N/A",
-        "etd": "05 Nov 2026",
-        "eta": "07 Nov 2026"
+        "etd": "06 Nov 2026",
+        "eta": "08 Nov 2026"
     },
     {
         "rute": "Balikpapan",
@@ -480,8 +452,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Hilir Mas - 60/26",
         "closing": "N/A",
-        "etd": "05 Nov 2026",
-        "eta": "10 Nov 2026"
+        "etd": "06 Nov 2026",
+        "eta": "11 Nov 2026"
     },
     {
         "rute": "PALU",
@@ -502,10 +474,18 @@
     {
         "rute": "Pontianak",
         "pelayaran": "TEMAS",
+        "nama_kapal": "Damaskus Mas - 72/26",
+        "closing": "N/A",
+        "etd": "03 Nov 2026",
+        "eta": "05 Nov 2026"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "TEMAS",
         "nama_kapal": "Damaskus Mas - 74/26",
         "closing": "N/A",
-        "etd": "05 Nov 2026",
-        "eta": "07 Nov 2026"
+        "etd": "10 Nov 2026",
+        "eta": "12 Nov 2026"
     },
     {
         "rute": "Pontianak",
