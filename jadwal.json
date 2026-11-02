@@ -1,5 +1,25 @@
 [
     {
+        "rute": "Makassar",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Diamond - 11/2026",
+        "closing": "02/11/2026 22:00",
+        "etd": "04/11/2026 04:00",
+        "eta": "10/11/2026 18:00",
+        "etb": "10/11/2026 20:00",
+        "open_stack": "25/10/2026 16:00"
+    },
+    {
+        "rute": "Makassar",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Emerald - 16/2026",
+        "closing": "06/11/2026 22:00",
+        "etd": "08/11/2026 14:00",
+        "eta": "11/11/2026 01:00",
+        "etb": "11/11/2026 03:00",
+        "open_stack": "31/10/2026 09:00"
+    },
+    {
         "rute": "Bitung",
         "pelayaran": "SPIL",
         "nama_kapal": "Oriental Emerald - 16/2026",
@@ -82,16 +102,6 @@
     {
         "rute": "Belawan",
         "pelayaran": "SPIL",
-        "nama_kapal": "Pekan Timur - 02/2026",
-        "closing": "31/10/2026 22:00",
-        "etd": "02/11/2026 20:00",
-        "eta": "08/11/2026 03:00",
-        "etb": "08/11/2026 05:00",
-        "open_stack": "28/10/2026 12:00 @ADP (101-105)"
-    },
-    {
-        "rute": "Belawan",
-        "pelayaran": "SPIL",
         "nama_kapal": "Pekan Bintang - 15/2026",
         "closing": "04/11/2026 22:00",
         "etd": "05/11/2026 14:00",
@@ -128,16 +138,6 @@
         "eta": "12/11/2026 14:00",
         "etb": "12/11/2026 17:00",
         "open_stack": "01/11/2026 22:00 @ADP (101-105)"
-    },
-    {
-        "rute": "Batam",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Pekan Timur - 02/2026",
-        "closing": "31/10/2026 22:00",
-        "etd": "02/11/2026 20:00",
-        "eta": "04/11/2026 23:00",
-        "etb": "05/11/2026 01:00",
-        "open_stack": "28/10/2026 12:00 @ADP (101-105)"
     },
     {
         "rute": "Batam",
@@ -370,8 +370,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Tasik Mas - 60/26",
         "closing": "N/A",
-        "etd": "08 Nov 2026",
-        "eta": "15 Nov 2026"
+        "etd": "11 Nov 2026",
+        "eta": "18 Nov 2026"
     },
     {
         "rute": "Samarinda",
@@ -450,8 +450,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gangga Mas - 50/26",
         "closing": "N/A",
-        "etd": "06 Nov 2026",
-        "eta": "10 Nov 2026"
+        "etd": "07 Nov 2026",
+        "eta": "11 Nov 2026"
     },
     {
         "rute": "BELAWAN",
