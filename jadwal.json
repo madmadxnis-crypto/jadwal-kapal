@@ -268,10 +268,18 @@
     {
         "rute": "Makassar",
         "pelayaran": "TEMAS",
+        "nama_kapal": "Umbul Mas - 63/26",
+        "closing": "N/A",
+        "etd": "04 Nov 2026",
+        "eta": "08 Nov 2026"
+    },
+    {
+        "rute": "Makassar",
+        "pelayaran": "TEMAS",
         "nama_kapal": "Umbul Mas - 66/26",
         "closing": "N/A",
-        "etd": "15 Nov 2026",
-        "eta": "18 Nov 2026"
+        "etd": "17 Nov 2026",
+        "eta": "20 Nov 2026"
     },
     {
         "rute": "Bitung",
@@ -279,7 +287,7 @@
         "nama_kapal": "Izumi Mas - 59/26",
         "closing": "N/A",
         "etd": "05 Nov 2026",
-        "eta": "11 Nov 2026"
+        "eta": "10 Nov 2026"
     },
     {
         "rute": "Bitung",
@@ -452,10 +460,18 @@
     {
         "rute": "Pontianak",
         "pelayaran": "TEMAS",
+        "nama_kapal": "Umbul Mas - 63/26",
+        "closing": "N/A",
+        "etd": "04 Nov 2026",
+        "eta": "12 Nov 2026"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "TEMAS",
         "nama_kapal": "Umbul Mas - 66/26",
         "closing": "N/A",
-        "etd": "15 Nov 2026",
-        "eta": "23 Nov 2026"
+        "etd": "17 Nov 2026",
+        "eta": "24 Nov 2026"
     },
     {
         "rute": "BATAM",
