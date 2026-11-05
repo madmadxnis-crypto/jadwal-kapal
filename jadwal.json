@@ -122,16 +122,6 @@
     {
         "rute": "Batam",
         "pelayaran": "SPIL",
-        "nama_kapal": "Pratiwi Satu - 28/2026",
-        "closing": "05/11/2026 12:00",
-        "etd": "06/11/2026 07:00",
-        "eta": "08/11/2026 23:00",
-        "etb": "09/11/2026 01:00",
-        "open_stack": "31/10/2026 10:00"
-    },
-    {
-        "rute": "Batam",
-        "pelayaran": "SPIL",
         "nama_kapal": "Pekan Tirta - 04/2026",
         "closing": "07/11/2026 22:00",
         "etd": "09/11/2026 20:00",
@@ -338,8 +328,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Telaga Mas - 52/26",
         "closing": "N/A",
-        "etd": "13 Nov 2026",
-        "eta": "18 Nov 2026"
+        "etd": "14 Nov 2026",
+        "eta": "19 Nov 2026"
     },
     {
         "rute": "Samarinda",
@@ -362,8 +352,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Telaga Mas - 52/26",
         "closing": "N/A",
-        "etd": "13 Nov 2026",
-        "eta": "17 Nov 2026"
+        "etd": "14 Nov 2026",
+        "eta": "18 Nov 2026"
     },
     {
         "rute": "Balikpapan",
@@ -392,10 +382,18 @@
     {
         "rute": "BELAWAN",
         "pelayaran": "TEMAS",
+        "nama_kapal": "Sungai Mas - 63/26",
+        "closing": "N/A",
+        "etd": "05 Nov 2026",
+        "eta": "09 Nov 2026"
+    },
+    {
+        "rute": "BELAWAN",
+        "pelayaran": "TEMAS",
         "nama_kapal": "Sungai Mas - 66/26",
         "closing": "N/A",
-        "etd": "12 Nov 2026",
-        "eta": "16 Nov 2026"
+        "etd": "14 Nov 2026",
+        "eta": "17 Nov 2026"
     },
     {
         "rute": "BELAWAN",
@@ -434,8 +432,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Telaga Mas - 52/26",
         "closing": "N/A",
-        "etd": "13 Nov 2026",
-        "eta": "20 Nov 2026"
+        "etd": "14 Nov 2026",
+        "eta": "21 Nov 2026"
     },
     {
         "rute": "PALU",
