@@ -62,16 +62,6 @@
     {
         "rute": "Samarinda",
         "pelayaran": "SPIL",
-        "nama_kapal": "Spil Retno - 33/2026",
-        "closing": "05/11/2026 12:00",
-        "etd": "06/11/2026 12:00",
-        "eta": "09/11/2026 21:00",
-        "etb": "09/11/2026 23:00",
-        "open_stack": "29/10/2026 15:00 @DSN (004-005)"
-    },
-    {
-        "rute": "Samarinda",
-        "pelayaran": "SPIL",
         "nama_kapal": "Teluk Flaminggo - 25/2026",
         "closing": "07/11/2026 09:00",
         "etd": "09/11/2026 23:00",
@@ -354,6 +344,14 @@
     {
         "rute": "Bitung",
         "pelayaran": "TEMAS",
+        "nama_kapal": "Izumi Mas - 59/26",
+        "closing": "N/A",
+        "etd": "06 Nov 2026",
+        "eta": "12 Nov 2026"
+    },
+    {
+        "rute": "Bitung",
+        "pelayaran": "TEMAS",
         "nama_kapal": "Ifama Mas - 65/26",
         "closing": "N/A",
         "etd": "12 Nov 2026",
@@ -364,8 +362,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Izumi Mas - 63/26",
         "closing": "N/A",
-        "etd": "19 Nov 2026",
-        "eta": "25 Nov 2026"
+        "etd": "20 Nov 2026",
+        "eta": "26 Nov 2026"
     },
     {
         "rute": "Gorontalo",
