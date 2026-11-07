@@ -134,7 +134,7 @@
         "pelayaran": "SPIL",
         "nama_kapal": "Bali Sanur - 26/2026",
         "closing": "06/11/2026 23:59",
-        "etd": "08/11/2026 08:00",
+        "etd": "08/11/2026 23:00",
         "eta": "10/11/2026 12:00",
         "etb": "10/11/2026 15:00",
         "open_stack": "05/11/2026 12:00 @ADP (101-105)"
@@ -173,8 +173,8 @@
         "rute": "Pontianak",
         "pelayaran": "SPIL",
         "nama_kapal": "Spil Renata - 37/2026",
-        "closing": "06/11/2026 22:00",
-        "etd": "08/11/2026 13:00",
+        "closing": "06/11/2026 23:59",
+        "etd": "08/11/2026 20:00",
         "eta": "11/11/2026 21:00",
         "etb": "11/11/2026 23:00",
         "open_stack": "03/11/2026 10:00 @ADP (101-105)"
@@ -360,8 +360,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Hilir Mas - 60/26",
         "closing": "N/A",
-        "etd": "07 Nov 2026",
-        "eta": "10 Nov 2026"
+        "etd": "09 Nov 2026",
+        "eta": "13 Nov 2026"
     },
     {
         "rute": "Samarinda",
@@ -384,8 +384,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Hilir Mas - 60/26",
         "closing": "N/A",
-        "etd": "07 Nov 2026",
-        "eta": "09 Nov 2026"
+        "etd": "09 Nov 2026",
+        "eta": "12 Nov 2026"
     },
     {
         "rute": "Balikpapan",
@@ -456,8 +456,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Hilir Mas - 60/26",
         "closing": "N/A",
-        "etd": "07 Nov 2026",
-        "eta": "12 Nov 2026"
+        "etd": "09 Nov 2026",
+        "eta": "14 Nov 2026"
     },
     {
         "rute": "PALU",
