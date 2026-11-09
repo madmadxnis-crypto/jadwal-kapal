@@ -4,7 +4,7 @@
         "pelayaran": "SPIL",
         "nama_kapal": "Oriental Ruby - 13/2026",
         "closing": "13/11/2026 22:00",
-        "etd": "14/11/2026 18:00",
+        "etd": "14/11/2026 12:00",
         "eta": "22/11/2026 00:00",
         "etb": "22/11/2026 02:00",
         "open_stack": "07/11/2026 15:00"
@@ -24,7 +24,7 @@
         "pelayaran": "SPIL",
         "nama_kapal": "Oriental Ruby - 13/2026",
         "closing": "13/11/2026 22:00",
-        "etd": "14/11/2026 18:00",
+        "etd": "14/11/2026 12:00",
         "eta": "17/11/2026 06:00",
         "etb": "17/11/2026 09:00",
         "open_stack": "07/11/2026 15:00"
@@ -43,7 +43,7 @@
         "rute": "Samarinda",
         "pelayaran": "SPIL",
         "nama_kapal": "Pulau Layang - 25/2026",
-        "closing": "10/11/2026 22:00",
+        "closing": "11/11/2026 16:00",
         "etd": "12/11/2026 16:00",
         "eta": "17/11/2026 14:00",
         "etb": "17/11/2026 16:00",
@@ -63,7 +63,7 @@
         "rute": "Balikpapan",
         "pelayaran": "SPIL",
         "nama_kapal": "Pulau Layang - 25/2026",
-        "closing": "10/11/2026 22:00",
+        "closing": "11/11/2026 16:00",
         "etd": "12/11/2026 16:00",
         "eta": "16/11/2026 08:00",
         "etb": "16/11/2026 10:00",
@@ -73,30 +73,20 @@
         "rute": "Banjarmasin",
         "pelayaran": "SPIL",
         "nama_kapal": "Selili Baru - 25/2026",
-        "closing": "09/11/2026 23:59",
-        "etd": "12/11/2026 00:00",
-        "eta": "14/11/2026 07:00",
-        "etb": "14/11/2026 09:00",
+        "closing": "10/11/2026 22:00",
+        "etd": "11/11/2026 17:00",
+        "eta": "14/11/2026 00:00",
+        "etb": "14/11/2026 02:00",
         "open_stack": "07/11/2026 10:00 @DSN (004-005)"
     },
     {
         "rute": "Belawan",
         "pelayaran": "SPIL",
-        "nama_kapal": "Pekan Tirta - 04/2026",
-        "closing": "07/11/2026 22:00",
-        "etd": "09/11/2026 18:00",
-        "eta": "16/11/2026 18:00",
-        "etb": "16/11/2026 20:00",
-        "open_stack": "03/11/2026 18:00 @ADP (101-105)"
-    },
-    {
-        "rute": "Belawan",
-        "pelayaran": "SPIL",
         "nama_kapal": "Armada Permata - 19/2026",
-        "closing": "10/11/2026 22:00",
-        "etd": "11/11/2026 08:00",
-        "eta": "14/11/2026 11:00",
-        "etb": "14/11/2026 13:00",
+        "closing": "11/11/2026 22:00",
+        "etd": "12/11/2026 18:00",
+        "eta": "15/11/2026 21:00",
+        "etb": "15/11/2026 23:00",
         "open_stack": "07/10/2026 15:00"
     },
     {
@@ -104,7 +94,7 @@
         "pelayaran": "SPIL",
         "nama_kapal": "Oriental Ruby - 13/2026",
         "closing": "13/11/2026 22:00",
-        "etd": "14/11/2026 18:00",
+        "etd": "14/11/2026 12:00",
         "eta": "17/11/2026 06:00",
         "etb": "17/11/2026 09:00",
         "open_stack": "07/11/2026 15:00"
@@ -112,32 +102,32 @@
     {
         "rute": "Batam",
         "pelayaran": "SPIL",
-        "nama_kapal": "Pekan Tirta - 04/2026",
-        "closing": "07/11/2026 22:00",
-        "etd": "09/11/2026 18:00",
-        "eta": "11/11/2026 21:00",
-        "etb": "11/11/2026 23:00",
-        "open_stack": "03/11/2026 18:00"
-    },
-    {
-        "rute": "Batam",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Armada Serasi - 25/2026",
-        "closing": "12/11/2026 22:00",
-        "etd": "15/11/2026 12:00",
-        "eta": "18/11/2026 04:00",
-        "etb": "18/11/2026 06:00",
-        "open_stack": "07/11/2026 15:00"
+        "nama_kapal": "Pgl 01 - 18/2026",
+        "closing": "13/11/2026 16:00",
+        "etd": "19/11/2026 08:00",
+        "eta": "22/11/2026 00:00",
+        "etb": "22/11/2026 02:00",
+        "open_stack": "09/11/2026 17:00 @ADP (101-105)"
     },
     {
         "rute": "Pontianak",
         "pelayaran": "SPIL",
         "nama_kapal": "Spil Rumi - 38/2026",
         "closing": "10/11/2026 22:00",
-        "etd": "12/11/2026 10:00",
-        "eta": "15/11/2026 18:00",
-        "etb": "15/11/2026 20:00",
+        "etd": "12/11/2026 23:00",
+        "eta": "16/11/2026 08:00",
+        "etb": "16/11/2026 10:00",
         "open_stack": "06/11/2026 23:00 @ADP (101-105)"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Spil Renata - 38/2026",
+        "closing": "13/11/2026 22:00",
+        "etd": "15/11/2026 14:00",
+        "eta": "18/11/2026 23:00",
+        "etb": "19/11/2026 01:00",
+        "open_stack": "10/11/2026 15:00"
     },
     {
         "rute": "Samarinda",
@@ -193,9 +183,9 @@
         "rute": "Banjarmasin",
         "pelayaran": "ICON",
         "nama_kapal": "IN I 11 V,3/26 - ICON NEHEMIA I 11",
-        "closing": "09/11/2026 16:00",
-        "etd": "Rabu, 11 November 2026 10:22",
-        "eta": "Sabtu, 14 November 2026 10:22",
+        "closing": "10/11/2026 16:00",
+        "etd": "Kamis, 12 November 2026 10:22",
+        "eta": "Minggu, 15 November 2026 10:22",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -213,19 +203,19 @@
         "rute": "Batam",
         "pelayaran": "ICON",
         "nama_kapal": "II XI V.105/26 - ICON IBRANI XI",
-        "closing": "07/11/2026 09:51",
-        "etd": "Senin, 09 November 2026 09:49",
+        "closing": "09/11/2026 08:00",
+        "etd": "Senin, 09 November 2026 10:00",
         "eta": "Kamis, 12 November 2026 09:50",
         "etb": "N/A",
         "open_stack": "N/A"
     },
     {
-        "rute": "Pontianak",
+        "rute": "Batam",
         "pelayaran": "ICON",
-        "nama_kapal": "IL XIX V.63/26 - ICON LUKAS XIX",
-        "closing": "06/11/2026 07:56",
-        "etd": "Minggu, 08 November 2026 07:54",
-        "eta": "Selasa, 10 November 2026 07:54",
+        "nama_kapal": "II XI V.107/26 - ICON IBRANI XI",
+        "closing": "15/11/2026 03:20",
+        "etd": "Selasa, 17 November 2026 03:18",
+        "eta": "Jumat, 20 November 2026 03:18",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -236,6 +226,16 @@
         "closing": "11/11/2026 01:58",
         "etd": "Jumat, 13 November 2026 01:57",
         "eta": "Minggu, 15 November 2026 01:57",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "ICON",
+        "nama_kapal": "IL XIX V.65/26 - ICON LUKAS XIX",
+        "closing": "14/11/2026 02:04",
+        "etd": "Senin, 16 November 2026 02:03",
+        "eta": "Rabu, 18 November 2026 02:03",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -296,12 +296,12 @@
         "eta": "18 Nov 2026"
     },
     {
-        "rute": "Samarinda",
+        "rute": "Gorontalo",
         "pelayaran": "TEMAS",
-        "nama_kapal": "Hilir Mas - 60/26",
+        "nama_kapal": "Tasik Mas - 63/26",
         "closing": "N/A",
-        "etd": "08 Nov 2026",
-        "eta": "12 Nov 2026"
+        "etd": "26 Nov 2026",
+        "eta": "03 Dec 2026"
     },
     {
         "rute": "Samarinda",
@@ -318,14 +318,6 @@
         "closing": "N/A",
         "etd": "11 Nov 2026",
         "eta": "16 Nov 2026"
-    },
-    {
-        "rute": "Balikpapan",
-        "pelayaran": "TEMAS",
-        "nama_kapal": "Hilir Mas - 60/26",
-        "closing": "N/A",
-        "etd": "08 Nov 2026",
-        "eta": "10 Nov 2026"
     },
     {
         "rute": "Balikpapan",
@@ -348,16 +340,16 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Eden Mas - 67/26",
         "closing": "N/A",
-        "etd": "08 Nov 2026",
-        "eta": "10 Nov 2026"
+        "etd": "09 Nov 2026",
+        "eta": "11 Nov 2026"
     },
     {
         "rute": "Banjarmasin",
         "pelayaran": "TEMAS",
         "nama_kapal": "Eden Mas - 69/26",
         "closing": "N/A",
-        "etd": "14 Nov 2026",
-        "eta": "16 Nov 2026"
+        "etd": "15 Nov 2026",
+        "eta": "17 Nov 2026"
     },
     {
         "rute": "BELAWAN",
@@ -365,7 +357,7 @@
         "nama_kapal": "Sungai Mas - 66/26",
         "closing": "N/A",
         "etd": "14 Nov 2026",
-        "eta": "17 Nov 2026"
+        "eta": "18 Nov 2026"
     },
     {
         "rute": "BELAWAN",
@@ -373,7 +365,7 @@
         "nama_kapal": "Gangga Mas - 50/26",
         "closing": "N/A",
         "etd": "09 Nov 2026",
-        "eta": "13 Nov 2026"
+        "eta": "12 Nov 2026"
     },
     {
         "rute": "BELAWAN",
@@ -392,12 +384,20 @@
         "eta": "22 Nov 2026"
     },
     {
-        "rute": "PALU",
+        "rute": "BELAWAN",
         "pelayaran": "TEMAS",
-        "nama_kapal": "Hilir Mas - 60/26",
+        "nama_kapal": "Huanghe Mas - 61/26",
         "closing": "N/A",
-        "etd": "08 Nov 2026",
-        "eta": "13 Nov 2026"
+        "etd": "21 Nov 2026",
+        "eta": "25 Nov 2026"
+    },
+    {
+        "rute": "BELAWAN",
+        "pelayaran": "TEMAS",
+        "nama_kapal": "Huanghe Mas - 63/26",
+        "closing": "N/A",
+        "etd": "01 Dec 2026",
+        "eta": "05 Dec 2026"
     },
     {
         "rute": "PALU",
@@ -429,7 +429,7 @@
         "nama_kapal": "Damaskus Mas - 74/26",
         "closing": "N/A",
         "etd": "11 Nov 2026",
-        "eta": "12 Nov 2026"
+        "eta": "13 Nov 2026"
     },
     {
         "rute": "Pontianak",
