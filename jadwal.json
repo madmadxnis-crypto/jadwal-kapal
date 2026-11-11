@@ -82,16 +82,6 @@
     {
         "rute": "Banjarmasin",
         "pelayaran": "SPIL",
-        "nama_kapal": "Selili Baru - 25/2026",
-        "closing": "10/11/2026 22:00",
-        "etd": "11/11/2026 20:00",
-        "eta": "14/11/2026 03:00",
-        "etb": "14/11/2026 05:00",
-        "open_stack": "07/11/2026 10:00 @DSN (004-005)"
-    },
-    {
-        "rute": "Banjarmasin",
-        "pelayaran": "SPIL",
         "nama_kapal": "Akashia - 29/2026",
         "closing": "12/11/2026 22:00",
         "etd": "13/11/2026 19:00",
@@ -174,8 +164,8 @@
         "pelayaran": "ICON",
         "nama_kapal": "IJ II 13 V.85/26 - ICON JAMES II 13",
         "closing": "11/11/2026 06:00",
-        "etd": "Rabu, 11 November 2026 05:00",
-        "eta": "Minggu, 15 November 2026 10:19",
+        "etd": "Rabu, 11 November 2026 06:42",
+        "eta": "Minggu, 15 November 2026 13:00",
         "etb": "N/A",
         "open_stack": "N/A"
     },
@@ -204,8 +194,8 @@
         "pelayaran": "ICON",
         "nama_kapal": "IJ II 13 V,84/26 - ICON JAMES II 13",
         "closing": "11/11/2026 06:00",
-        "etd": "Rabu, 11 November 2026 05:00",
-        "eta": "Sabtu, 14 November 2026 10:18",
+        "etd": "Rabu, 11 November 2026 06:42",
+        "eta": "Sabtu, 14 November 2026 15:56",
         "etb": "N/A",
         "open_stack": "N/A"
     },
