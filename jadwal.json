@@ -72,16 +72,6 @@
     {
         "rute": "Banjarmasin",
         "pelayaran": "SPIL",
-        "nama_kapal": "Akashia - 29/2026",
-        "closing": "11/11/2026 23:59",
-        "etd": "13/11/2026 23:55",
-        "eta": "16/11/2026 14:00",
-        "etb": "16/11/2026 16:00",
-        "open_stack": "10/11/2026 23:00 @DSN (004-005)"
-    },
-    {
-        "rute": "Banjarmasin",
-        "pelayaran": "SPIL",
         "nama_kapal": "Armada Serasi - 25/2026",
         "closing": "16/11/2026 22:00",
         "etd": "17/11/2026 18:00",
@@ -370,6 +360,14 @@
     {
         "rute": "BELAWAN",
         "pelayaran": "TEMAS",
+        "nama_kapal": "Huanghe Mas - 59/26",
+        "closing": "N/A",
+        "etd": "13 Nov 2026",
+        "eta": "17 Nov 2026"
+    },
+    {
+        "rute": "BELAWAN",
+        "pelayaran": "TEMAS",
         "nama_kapal": "Gangga Mas - 52/26",
         "closing": "N/A",
         "etd": "19 Nov 2026",
@@ -380,16 +378,16 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Huanghe Mas - 61/26",
         "closing": "N/A",
-        "etd": "22 Nov 2026",
-        "eta": "25 Nov 2026"
+        "etd": "23 Nov 2026",
+        "eta": "27 Nov 2026"
     },
     {
         "rute": "BELAWAN",
         "pelayaran": "TEMAS",
         "nama_kapal": "Huanghe Mas - 63/26",
         "closing": "N/A",
-        "etd": "02 Dec 2026",
-        "eta": "05 Dec 2026"
+        "etd": "03 Dec 2026",
+        "eta": "07 Dec 2026"
     },
     {
         "rute": "PALU",
