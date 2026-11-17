@@ -70,6 +70,16 @@
         "open_stack": "16/11/2026 12:00 @DSN (004-005)"
     },
     {
+        "rute": "Banjarmasin",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Pulau Wetar - 23/2026",
+        "closing": "18/11/2026 15:00",
+        "etd": "19/11/2026 09:00",
+        "eta": "21/11/2026 16:00",
+        "etb": "21/11/2026 18:00",
+        "open_stack": "14/11/2026 10:00"
+    },
+    {
         "rute": "Belawan",
         "pelayaran": "SPIL",
         "nama_kapal": "Oriental Pacific - 24/2026",
@@ -254,8 +264,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gale Mas - 54/26",
         "closing": "N/A",
-        "etd": "16 Nov 2026",
-        "eta": "19 Nov 2026"
+        "etd": "17 Nov 2026",
+        "eta": "21 Nov 2026"
     },
     {
         "rute": "Makassar",
@@ -270,8 +280,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gale Mas - 57/26",
         "closing": "N/A",
-        "etd": "29 Nov 2026",
-        "eta": "02 Dec 2026"
+        "etd": "30 Nov 2026",
+        "eta": "03 Dec 2026"
     },
     {
         "rute": "Makassar",
@@ -280,14 +290,6 @@
         "closing": "N/A",
         "etd": "05 Dec 2026",
         "eta": "08 Dec 2026"
-    },
-    {
-        "rute": "Makassar",
-        "pelayaran": "TEMAS",
-        "nama_kapal": "Warih Mas - 75/26",
-        "closing": "N/A",
-        "etd": "16 Nov 2026",
-        "eta": "21 Nov 2026"
     },
     {
         "rute": "Bitung",
@@ -303,7 +305,7 @@
         "nama_kapal": "Izumi Mas - 63/26",
         "closing": "N/A",
         "etd": "22 Nov 2026",
-        "eta": "29 Nov 2026"
+        "eta": "28 Nov 2026"
     },
     {
         "rute": "Bitung",
@@ -340,14 +342,6 @@
     {
         "rute": "Samarinda",
         "pelayaran": "TEMAS",
-        "nama_kapal": "Telaga Mas - 52/26",
-        "closing": "N/A",
-        "etd": "16 Nov 2026",
-        "eta": "20 Nov 2026"
-    },
-    {
-        "rute": "Samarinda",
-        "pelayaran": "TEMAS",
         "nama_kapal": "Telaga Mas - 56/26",
         "closing": "N/A",
         "etd": "28 Nov 2026",
@@ -380,14 +374,6 @@
     {
         "rute": "Balikpapan",
         "pelayaran": "TEMAS",
-        "nama_kapal": "Telaga Mas - 52/26",
-        "closing": "N/A",
-        "etd": "16 Nov 2026",
-        "eta": "19 Nov 2026"
-    },
-    {
-        "rute": "Balikpapan",
-        "pelayaran": "TEMAS",
         "nama_kapal": "Telaga Mas - 56/26",
         "closing": "N/A",
         "etd": "28 Nov 2026",
@@ -400,14 +386,6 @@
         "closing": "N/A",
         "etd": "17 Nov 2026",
         "eta": "21 Nov 2026"
-    },
-    {
-        "rute": "Banjarmasin",
-        "pelayaran": "TEMAS",
-        "nama_kapal": "Warih Mas - 75/26",
-        "closing": "N/A",
-        "etd": "16 Nov 2026",
-        "eta": "18 Nov 2026"
     },
     {
         "rute": "Banjarmasin",
@@ -472,14 +450,6 @@
         "closing": "N/A",
         "etd": "29 Nov 2026",
         "eta": "04 Dec 2026"
-    },
-    {
-        "rute": "PALU",
-        "pelayaran": "TEMAS",
-        "nama_kapal": "Telaga Mas - 52/26",
-        "closing": "N/A",
-        "etd": "16 Nov 2026",
-        "eta": "22 Nov 2026"
     },
     {
         "rute": "PALU",
@@ -552,14 +522,6 @@
         "closing": "N/A",
         "etd": "28 Nov 2026",
         "eta": "01 Dec 2026"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "TEMAS",
-        "nama_kapal": "Warih Mas - 75/26",
-        "closing": "N/A",
-        "etd": "16 Nov 2026",
-        "eta": "25 Nov 2026"
     },
     {
         "rute": "BATAM",
