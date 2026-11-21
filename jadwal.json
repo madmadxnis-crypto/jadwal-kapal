@@ -1,5 +1,45 @@
 [
     {
+        "rute": "Makassar",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Gold - 19/2026",
+        "closing": "22/11/2026 22:00",
+        "etd": "24/11/2026 07:00",
+        "eta": "26/11/2026 18:00",
+        "etb": "26/11/2026 20:00",
+        "open_stack": "21/11/2026 01:00"
+    },
+    {
+        "rute": "Makassar",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Diamond - 12/2026",
+        "closing": "27/11/2026 22:00",
+        "etd": "29/11/2026 10:00",
+        "eta": "04/12/2026 08:00",
+        "etb": "04/12/2026 10:00",
+        "open_stack": "13/11/2026 23:00"
+    },
+    {
+        "rute": "Bitung",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Gold - 19/2026",
+        "closing": "22/11/2026 22:00",
+        "etd": "24/11/2026 07:00",
+        "eta": "30/11/2026 07:00",
+        "etb": "30/11/2026 09:00",
+        "open_stack": "21/11/2026 01:00"
+    },
+    {
+        "rute": "Bitung",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Oriental Emerald - 17/2026",
+        "closing": "28/11/2026 22:00",
+        "etd": "30/11/2026 06:00",
+        "eta": "06/12/2026 09:00",
+        "etb": "06/12/2026 11:00",
+        "open_stack": "22/11/2026 15:00 @ADP (101-105)"
+    },
+    {
         "rute": "Gorontalo",
         "pelayaran": "SPIL",
         "nama_kapal": "Oriental Diamond - 12/2026",
@@ -10,14 +50,24 @@
         "open_stack": "13/11/2026 23:00"
     },
     {
-        "rute": "Balikpapan",
+        "rute": "Samarinda",
         "pelayaran": "SPIL",
-        "nama_kapal": "Pulau Hoki - 22/2026",
-        "closing": "19/11/2026 14:00",
-        "etd": "21/11/2026 11:00",
-        "eta": "25/11/2026 14:00",
-        "etb": "25/11/2026 16:00",
-        "open_stack": "16/11/2026 12:00 @DSN (004-005)"
+        "nama_kapal": "Teluk Berau - 27/2026",
+        "closing": "21/11/2026 22:00",
+        "etd": "22/11/2026 16:00",
+        "eta": "28/11/2026 08:00",
+        "etb": "28/11/2026 10:00",
+        "open_stack": "18/11/2026 23:00 @DSN (004-005)"
+    },
+    {
+        "rute": "Samarinda",
+        "pelayaran": "SPIL",
+        "nama_kapal": "Akashia - 30/2026",
+        "closing": "23/11/2026 23:59",
+        "etd": "25/11/2026 13:00",
+        "eta": "01/12/2026 02:00",
+        "etb": "01/12/2026 04:00",
+        "open_stack": "21/11/2026 15:00 @DSN (004-005)"
     },
     {
         "rute": "Balikpapan",
@@ -43,10 +93,10 @@
         "rute": "Banjarmasin",
         "pelayaran": "SPIL",
         "nama_kapal": "Teluk Flaminggo - 26/2026",
-        "closing": "21/11/2026 16:00",
-        "etd": "22/11/2026 06:00",
-        "eta": "24/11/2026 20:00",
-        "etb": "24/11/2026 22:00",
+        "closing": "20/11/2026 23:59",
+        "etd": "22/11/2026 16:00",
+        "eta": "25/11/2026 06:00",
+        "etb": "25/11/2026 08:00",
         "open_stack": "18/11/2026 16:00 @CELEBES (107)"
     },
     {
@@ -330,8 +380,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Kanal Mas - 72/26",
         "closing": "N/A",
-        "etd": "01 Dec 2026",
-        "eta": "05 Dec 2026"
+        "etd": "02 Dec 2026",
+        "eta": "06 Dec 2026"
     },
     {
         "rute": "Samarinda",
@@ -378,8 +428,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Kanal Mas - 72/26",
         "closing": "N/A",
-        "etd": "01 Dec 2026",
-        "eta": "04 Dec 2026"
+        "etd": "02 Dec 2026",
+        "eta": "05 Dec 2026"
     },
     {
         "rute": "Balikpapan",
@@ -490,8 +540,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Kanal Mas - 72/26",
         "closing": "N/A",
-        "etd": "01 Dec 2026",
-        "eta": "07 Dec 2026"
+        "etd": "02 Dec 2026",
+        "eta": "08 Dec 2026"
     },
     {
         "rute": "PALU",
