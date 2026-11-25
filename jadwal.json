@@ -140,6 +140,86 @@
         "open_stack": "24/11/2026 15:00"
     },
     {
+        "rute": "Samarinda",
+        "pelayaran": "ICON",
+        "nama_kapal": "IB V.106/26 - ICON BRAVO",
+        "closing": "29/11/2026 04:41",
+        "etd": "Selasa, 01 Desember 2026 04:39",
+        "eta": "Sabtu, 05 Desember 2026 04:39",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Balikpapan",
+        "pelayaran": "ICON",
+        "nama_kapal": "IB V.105/26 - ICON BRAVO",
+        "closing": "29/11/2026 04:40",
+        "etd": "Selasa, 01 Desember 2026 04:37",
+        "eta": "Jumat, 04 Desember 2026 04:37",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "ICON",
+        "nama_kapal": "IG V V.42/26 - MV. ICON GALATIA V",
+        "closing": "24/11/2026 02:08",
+        "etd": "Kamis, 26 November 2026 02:06",
+        "eta": "Sabtu, 28 November 2026 02:06",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Banjarmasin",
+        "pelayaran": "ICON",
+        "nama_kapal": "IN I 11 V.7/26 - ICON NEHEMIA I 11",
+        "closing": "28/11/2026 09:14",
+        "etd": "Selasa, 01 Desember 2026 09:13",
+        "eta": "Jumat, 04 Desember 2026 09:13",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Batam",
+        "pelayaran": "ICON",
+        "nama_kapal": "II XI V.109/26 - ICON IBRANI XI",
+        "closing": "25/11/2026 05:00",
+        "etd": "Rabu, 25 November 2026 02:16",
+        "eta": "Sabtu, 28 November 2026 02:16",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Batam",
+        "pelayaran": "ICON",
+        "nama_kapal": "IJ II 13 V.92/26 - ICON JAMES II 13",
+        "closing": "28/11/2026 04:35",
+        "etd": "Senin, 30 November 2026 08:59",
+        "eta": "Kamis, 03 Desember 2026 08:59",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "ICON",
+        "nama_kapal": "IL XIX V.67'25 - ICON LUKAS XIX",
+        "closing": "24/11/2026 10:00",
+        "etd": "Selasa, 24 November 2026 19:00",
+        "eta": "Jumat, 27 November 2026 02:23",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
+        "rute": "Pontianak",
+        "pelayaran": "ICON",
+        "nama_kapal": "IM VI 8 V.49/26 - ICON MIKHA VI 8",
+        "closing": "27/11/2026 00:05",
+        "etd": "Sabtu, 28 November 2026 00:04",
+        "eta": "Selasa, 01 Desember 2026 00:04",
+        "etb": "N/A",
+        "open_stack": "N/A"
+    },
+    {
         "rute": "Tanjung Pinang",
         "pelayaran": "ICON",
         "nama_kapal": "IJ II 13 V.93/26 - ICON JAMES II 13",
@@ -170,7 +250,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Gaung Mas - 59/26",
         "closing": "N/A",
-        "etd": "07 Dec 2026",
+        "etd": "08 Dec 2026",
         "eta": "11 Dec 2026"
     },
     {
@@ -202,8 +282,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Tasik Mas - 63/26",
         "closing": "N/A",
-        "etd": "28 Nov 2026",
-        "eta": "05 Dec 2026"
+        "etd": "01 Dec 2026",
+        "eta": "09 Dec 2026"
     },
     {
         "rute": "Samarinda",
@@ -238,14 +318,6 @@
         "eta": "06 Dec 2026"
     },
     {
-        "rute": "Samarinda",
-        "pelayaran": "TEMAS",
-        "nama_kapal": "Meratus Konawe - 72/26",
-        "closing": "N/A",
-        "etd": "24 Nov 2026",
-        "eta": "29 Nov 2026"
-    },
-    {
         "rute": "Balikpapan",
         "pelayaran": "TEMAS",
         "nama_kapal": "Hilir Mas - 68/26",
@@ -278,14 +350,6 @@
         "eta": "05 Dec 2026"
     },
     {
-        "rute": "Balikpapan",
-        "pelayaran": "TEMAS",
-        "nama_kapal": "Meratus Konawe - 72/26",
-        "closing": "N/A",
-        "etd": "24 Nov 2026",
-        "eta": "28 Nov 2026"
-    },
-    {
         "rute": "Banjarmasin",
         "pelayaran": "TEMAS",
         "nama_kapal": "Eden Mas - 72/26",
@@ -308,14 +372,6 @@
         "closing": "N/A",
         "etd": "28 Nov 2026",
         "eta": "02 Dec 2026"
-    },
-    {
-        "rute": "BELAWAN",
-        "pelayaran": "TEMAS",
-        "nama_kapal": "Huanghe Mas - 61/26",
-        "closing": "N/A",
-        "etd": "24 Nov 2026",
-        "eta": "27 Nov 2026"
     },
     {
         "rute": "BELAWAN",
@@ -374,14 +430,6 @@
         "eta": "08 Dec 2026"
     },
     {
-        "rute": "PALU",
-        "pelayaran": "TEMAS",
-        "nama_kapal": "Meratus Konawe - 72/26",
-        "closing": "N/A",
-        "etd": "24 Nov 2026",
-        "eta": "01 Dec 2026"
-    },
-    {
         "rute": "Pontianak",
         "pelayaran": "TEMAS",
         "nama_kapal": "Damaskus Mas - 78/26",
@@ -394,8 +442,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Eagle Mas - 76/26",
         "closing": "N/A",
-        "etd": "26 Nov 2026",
-        "eta": "28 Nov 2026"
+        "etd": "25 Nov 2026",
+        "eta": "27 Nov 2026"
     },
     {
         "rute": "Pontianak",
@@ -410,7 +458,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Eagle Mas - 78/26",
         "closing": "N/A",
-        "etd": "03 Dec 2026",
+        "etd": "02 Dec 2026",
         "eta": "05 Dec 2026"
     },
     {
@@ -418,7 +466,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Eagle Mas - 80/26",
         "closing": "N/A",
-        "etd": "10 Dec 2026",
+        "etd": "09 Dec 2026",
         "eta": "12 Dec 2026"
     },
     {
@@ -436,13 +484,5 @@
         "closing": "N/A",
         "etd": "08 Dec 2026",
         "eta": "10 Dec 2026"
-    },
-    {
-        "rute": "BATAM",
-        "pelayaran": "TEMAS",
-        "nama_kapal": "Jales Mas - 75/26",
-        "closing": "N/A",
-        "etd": "24 Nov 2026",
-        "eta": "27 Nov 2026"
     }
 ]
