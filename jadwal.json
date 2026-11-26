@@ -1,25 +1,5 @@
 [
     {
-        "rute": "Makassar",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Oriental Diamond - 12/2026",
-        "closing": "27/11/2026 22:00",
-        "etd": "28/11/2026 22:00",
-        "eta": "04/12/2026 08:00",
-        "etb": "04/12/2026 10:00",
-        "open_stack": "13/11/2026 23:00"
-    },
-    {
-        "rute": "Makassar",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Oriental Emerald - 17/2026",
-        "closing": "29/11/2026 10:00",
-        "etd": "30/11/2026 04:00",
-        "eta": "02/12/2026 15:00",
-        "etb": "02/12/2026 17:00",
-        "open_stack": "22/11/2026 15:00"
-    },
-    {
         "rute": "Bitung",
         "pelayaran": "SPIL",
         "nama_kapal": "Oriental Emerald - 17/2026",
@@ -28,16 +8,6 @@
         "eta": "05/12/2026 23:00",
         "etb": "06/12/2026 01:00",
         "open_stack": "22/11/2026 15:00 @ADP (101-105)"
-    },
-    {
-        "rute": "Gorontalo",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Akashia - 30/2026",
-        "closing": "24/11/2026 22:00",
-        "etd": "25/11/2026 14:00",
-        "eta": "27/11/2026 14:00",
-        "etb": "27/11/2026 17:00",
-        "open_stack": "23/11/2026 18:00"
     },
     {
         "rute": "Gorontalo",
@@ -122,16 +92,6 @@
     {
         "rute": "Palu",
         "pelayaran": "SPIL",
-        "nama_kapal": "Akashia - 30/2026",
-        "closing": "24/11/2026 22:00",
-        "etd": "25/11/2026 14:00",
-        "eta": "01/12/2026 15:00",
-        "etb": "01/12/2026 17:00",
-        "open_stack": "23/11/2026 18:00"
-    },
-    {
-        "rute": "Palu",
-        "pelayaran": "SPIL",
         "nama_kapal": "Oriental Diamond - 12/2026",
         "closing": "27/11/2026 22:00",
         "etd": "28/11/2026 22:00",
@@ -148,16 +108,6 @@
         "eta": "02/12/2026 12:00",
         "etb": "02/12/2026 14:00",
         "open_stack": "23/11/2026 18:00"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Spil Rumi - 40/2026",
-        "closing": "24/11/2026 22:00",
-        "etd": "25/11/2026 23:00",
-        "eta": "29/11/2026 15:00",
-        "etb": "29/11/2026 17:00",
-        "open_stack": "19/11/2026 15:00"
     },
     {
         "rute": "Pontianak",
@@ -262,14 +212,6 @@
     {
         "rute": "Makassar",
         "pelayaran": "TEMAS",
-        "nama_kapal": "Gaung Mas - 56/26",
-        "closing": "N/A",
-        "etd": "25 Nov 2026",
-        "eta": "28 Nov 2026"
-    },
-    {
-        "rute": "Makassar",
-        "pelayaran": "TEMAS",
         "nama_kapal": "Gale Mas - 56/26",
         "closing": "N/A",
         "etd": "27 Nov 2026",
@@ -329,14 +271,14 @@
         "nama_kapal": "Hilir Mas - 68/26",
         "closing": "N/A",
         "etd": "02 Dec 2026",
-        "eta": "06 Dec 2026"
+        "eta": "05 Dec 2026"
     },
     {
         "rute": "Samarinda",
         "pelayaran": "TEMAS",
         "nama_kapal": "Hilir Mas - 72/26",
         "closing": "N/A",
-        "etd": "12 Dec 2026",
+        "etd": "11 Dec 2026",
         "eta": "15 Dec 2026"
     },
     {
@@ -368,7 +310,7 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Hilir Mas - 72/26",
         "closing": "N/A",
-        "etd": "12 Dec 2026",
+        "etd": "11 Dec 2026",
         "eta": "14 Dec 2026"
     },
     {
@@ -422,14 +364,6 @@
     {
         "rute": "BELAWAN",
         "pelayaran": "TEMAS",
-        "nama_kapal": "Huanghe Mas - 61/26",
-        "closing": "N/A",
-        "etd": "25 Nov 2026",
-        "eta": "28 Nov 2026"
-    },
-    {
-        "rute": "BELAWAN",
-        "pelayaran": "TEMAS",
         "nama_kapal": "Gangga Mas - 54/26",
         "closing": "N/A",
         "etd": "02 Dec 2026",
@@ -457,15 +391,15 @@
         "nama_kapal": "Hilir Mas - 68/26",
         "closing": "N/A",
         "etd": "02 Dec 2026",
-        "eta": "07 Dec 2026"
+        "eta": "06 Dec 2026"
     },
     {
         "rute": "PALU",
         "pelayaran": "TEMAS",
         "nama_kapal": "Hilir Mas - 72/26",
         "closing": "N/A",
-        "etd": "12 Dec 2026",
-        "eta": "17 Dec 2026"
+        "etd": "11 Dec 2026",
+        "eta": "16 Dec 2026"
     },
     {
         "rute": "PALU",
@@ -490,14 +424,6 @@
         "closing": "N/A",
         "etd": "29 Nov 2026",
         "eta": "01 Dec 2026"
-    },
-    {
-        "rute": "Pontianak",
-        "pelayaran": "TEMAS",
-        "nama_kapal": "Eagle Mas - 76/26",
-        "closing": "N/A",
-        "etd": "25 Nov 2026",
-        "eta": "27 Nov 2026"
     },
     {
         "rute": "Pontianak",
