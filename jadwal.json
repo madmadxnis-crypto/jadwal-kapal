@@ -222,14 +222,6 @@
     {
         "rute": "Makassar",
         "pelayaran": "TEMAS",
-        "nama_kapal": "Gaung Mas - 56/26",
-        "closing": "N/A",
-        "etd": "26 Nov 2026",
-        "eta": "29 Nov 2026"
-    },
-    {
-        "rute": "Makassar",
-        "pelayaran": "TEMAS",
         "nama_kapal": "Gale Mas - 56/26",
         "closing": "N/A",
         "etd": "27 Nov 2026",
@@ -256,8 +248,8 @@
         "pelayaran": "TEMAS",
         "nama_kapal": "Ifama Mas - 69/26",
         "closing": "N/A",
-        "etd": "29 Nov 2026",
-        "eta": "04 Dec 2026"
+        "etd": "30 Nov 2026",
+        "eta": "05 Dec 2026"
     },
     {
         "rute": "Bitung",
@@ -273,7 +265,7 @@
         "nama_kapal": "Ifama Mas - 72/26",
         "closing": "N/A",
         "etd": "11 Dec 2026",
-        "eta": "16 Dec 2026"
+        "eta": "17 Dec 2026"
     },
     {
         "rute": "Gorontalo",
