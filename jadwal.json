@@ -30,16 +30,6 @@
         "open_stack": "27/11/2026 15:00 @ADP (101-105)"
     },
     {
-        "rute": "Bitung",
-        "pelayaran": "SPIL",
-        "nama_kapal": "Oriental Emerald - 17/2026",
-        "closing": "29/11/2026 10:00",
-        "etd": "30/11/2026 06:00",
-        "eta": "05/12/2026 23:00",
-        "etb": "06/12/2026 01:00",
-        "open_stack": "22/11/2026 15:00 @ADP (101-105)"
-    },
-    {
         "rute": "Gorontalo",
         "pelayaran": "SPIL",
         "nama_kapal": "Oriental Diamond - 12/2026",
